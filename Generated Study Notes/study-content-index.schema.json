@@ -1,0 +1,610 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/schemas/study-content-index.schema.json",
+  "title": "Study Content Index",
+  "description": "JSON Schema for the generated study-content index. Covers chapter-level cataloging of notes, exam-question files, and flashcard outputs created for spaced-repetition workflows, including metadata for keyed answer sets that remain stable under answer-order randomization.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "index_type",
+    "collection_title",
+    "collection_slug",
+    "description",
+    "supported_asset_types",
+    "disclaimer",
+    "content_status",
+    "source_registry",
+    "chapters"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "index_type": {
+      "const": "study_content_catalog"
+    },
+    "collection_title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "collection_slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "supported_asset_types": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/assetType"
+      },
+      "uniqueItems": true
+    },
+    "disclaimer": {
+      "$ref": "#/$defs/disclaimer"
+    },
+    "content_status": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "chapter_count_total",
+        "chapter_count_complete",
+        "chapter_count_planned"
+      ],
+      "properties": {
+        "chapter_count_total": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "chapter_count_complete": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "chapter_count_planned": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "source_registry": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/sourceRegistryItem"
+      }
+    },
+    "chapters": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/chapterEntry"
+      }
+    }
+  },
+  "$defs": {
+    "assetType": {
+      "enum": [
+        "study_notes_markdown",
+        "exam_prep_questions_json",
+        "flashcards_json",
+        "flashcards_markdown",
+        "flashcards_anki_tsv"
+      ]
+    },
+    "disclaimer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "endorsement_notice",
+        "use_note"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "endorsement_notice": {
+          "type": "string",
+          "minLength": 1
+        },
+        "use_note": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "sourceRegistryItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_id",
+        "source_type",
+        "source_title"
+      ],
+      "properties": {
+        "source_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "source_type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "organization": {
+          "type": "string"
+        },
+        "publisher": {
+          "type": "string"
+        },
+        "edition": {
+          "type": "string"
+        },
+        "publication_year": {
+          "type": "integer",
+          "minimum": 1000,
+          "maximum": 9999
+        },
+        "editors": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "websiteCard": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "nav_label",
+        "card_title",
+        "card_description"
+      ],
+      "properties": {
+        "nav_label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "card_title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "card_description": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "chapterEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "chapter_number",
+        "chapter_code",
+        "title",
+        "slug",
+        "status",
+        "sources_used",
+        "recommended_asset_types",
+        "assets"
+      ],
+      "properties": {
+        "chapter_number": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "chapter_code": {
+          "type": "string",
+          "pattern": "^[0-9]{2}$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "status": {
+          "enum": [
+            "planned",
+            "in_progress",
+            "complete"
+          ]
+        },
+        "website": {
+          "$ref": "#/$defs/websiteCard"
+        },
+        "description": {
+          "type": "string"
+        },
+        "topics": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "sources_used": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          }
+        },
+        "recommended_asset_types": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/assetType"
+          },
+          "uniqueItems": true
+        },
+        "assets": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/asset"
+          }
+        }
+      }
+    },
+    "assetBase": {
+      "type": "object",
+      "required": [
+        "asset_type",
+        "title",
+        "path",
+        "status"
+      ],
+      "properties": {
+        "asset_type": {
+          "$ref": "#/$defs/assetType"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "enum": [
+            "planned",
+            "in_progress",
+            "complete"
+          ]
+        },
+        "description": {
+          "type": "string"
+        }
+      }
+    },
+    "studyNotesAsset": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/assetBase"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "asset_type",
+            "title",
+            "path",
+            "status"
+          ],
+          "properties": {
+            "asset_type": {
+              "const": "study_notes_markdown"
+            },
+            "title": {
+              "type": "string",
+              "minLength": 1
+            },
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "status": {
+              "enum": [
+                "planned",
+                "in_progress",
+                "complete"
+              ]
+            },
+            "description": {
+              "type": "string"
+            }
+          }
+        }
+      ]
+    },
+    "examQuestionsAsset": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/assetBase"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "asset_type",
+            "title",
+            "path",
+            "status",
+            "question_count",
+            "answer_key_included",
+            "answer_key_format"
+          ],
+          "properties": {
+            "asset_type": {
+              "const": "exam_prep_questions_json"
+            },
+            "title": {
+              "type": "string",
+              "minLength": 1
+            },
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "status": {
+              "enum": [
+                "planned",
+                "in_progress",
+                "complete"
+              ]
+            },
+            "description": {
+              "type": "string"
+            },
+            "question_count": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "answer_key_included": {
+              "type": "boolean"
+            },
+            "answer_key_format": {
+              "type": "string",
+              "minLength": 1
+            },
+            "choice_key_format": {
+              "type": "string"
+            },
+            "choice_order_randomizable": {
+              "type": "boolean"
+            },
+            "page_reference_style": {
+              "type": "string"
+            }
+          }
+        }
+      ]
+    },
+    "flashcardsJsonAsset": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/assetBase"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "asset_type",
+            "title",
+            "path",
+            "status",
+            "card_count",
+            "deck_name",
+            "flashcard_format"
+          ],
+          "properties": {
+            "asset_type": {
+              "const": "flashcards_json"
+            },
+            "title": {
+              "type": "string",
+              "minLength": 1
+            },
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "status": {
+              "enum": [
+                "planned",
+                "in_progress",
+                "complete"
+              ]
+            },
+            "description": {
+              "type": "string"
+            },
+            "card_count": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "deck_name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "flashcard_format": {
+              "enum": [
+                "basic",
+                "reversed",
+                "cloze",
+                "mixed"
+              ]
+            },
+            "tags": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "flashcardsMarkdownAsset": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/assetBase"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "asset_type",
+            "title",
+            "path",
+            "status",
+            "card_count",
+            "deck_name"
+          ],
+          "properties": {
+            "asset_type": {
+              "const": "flashcards_markdown"
+            },
+            "title": {
+              "type": "string",
+              "minLength": 1
+            },
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "status": {
+              "enum": [
+                "planned",
+                "in_progress",
+                "complete"
+              ]
+            },
+            "description": {
+              "type": "string"
+            },
+            "card_count": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "deck_name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "tags": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "flashcardsAnkiAsset": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/assetBase"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "asset_type",
+            "title",
+            "path",
+            "status",
+            "card_count",
+            "deck_name",
+            "export_format"
+          ],
+          "properties": {
+            "asset_type": {
+              "const": "flashcards_anki_tsv"
+            },
+            "title": {
+              "type": "string",
+              "minLength": 1
+            },
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "status": {
+              "enum": [
+                "planned",
+                "in_progress",
+                "complete"
+              ]
+            },
+            "description": {
+              "type": "string"
+            },
+            "card_count": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "deck_name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "export_format": {
+              "const": "anki_tsv"
+            },
+            "flashcard_format": {
+              "enum": [
+                "basic",
+                "reversed",
+                "cloze",
+                "mixed"
+              ]
+            },
+            "tags": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "asset": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/studyNotesAsset"
+        },
+        {
+          "$ref": "#/$defs/examQuestionsAsset"
+        },
+        {
+          "$ref": "#/$defs/flashcardsJsonAsset"
+        },
+        {
+          "$ref": "#/$defs/flashcardsMarkdownAsset"
+        },
+        {
+          "$ref": "#/$defs/flashcardsAnkiAsset"
+        }
+      ]
+    }
+  }
+}

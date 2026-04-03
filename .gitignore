@@ -1,0 +1,32 @@
+# Codex and local agent workspaces
+/.agents/
+/.codex-tmp/
+
+# Local source/reference material not needed for the Pages site
+/External Douments/
+/Robbins Basic Pathology - Tenth Edition - Chapters/
+/Robbins Basic Pathology - Tenth Edition.pdf
+/Trusted Sources From The College/
+/skills-lock.json
+/source_note.txt
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor/IDE files
+.idea/
+.vs/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.bak
+*.orig
+~$*

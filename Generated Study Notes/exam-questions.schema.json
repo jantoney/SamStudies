@@ -1,0 +1,1340 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/schemas/exam-questions.schema.json",
+  "title": "Exam Prep Question Set",
+  "description": "JSON Schema for generated exam-prep question documents. Supports the current single-choice format with keyed options and keyed answers, plus common future exam formats such as multiple-select, true/false, short answer, matching, ordering, cloze, essay, extended matching, and data-interpretation questions.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "resource_type",
+    "title",
+    "slug",
+    "chapter",
+    "description",
+    "disclaimer",
+    "source_notes",
+    "format",
+    "questions"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "resource_type": {
+      "const": "exam_prep_question_set"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "chapter": {
+      "$ref": "#/$defs/chapter"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "disclaimer": {
+      "$ref": "#/$defs/disclaimer"
+    },
+    "source_notes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/sourceNote"
+      }
+    },
+    "format": {
+      "$ref": "#/$defs/format"
+    },
+    "questions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/question"
+      }
+    }
+  },
+  "$defs": {
+    "chapter": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "number",
+        "code",
+        "title",
+        "status"
+      ],
+      "properties": {
+        "number": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "code": {
+          "type": "string",
+          "pattern": "^[0-9]{2}$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "enum": [
+            "planned",
+            "in_progress",
+            "complete"
+          ]
+        }
+      }
+    },
+    "disclaimer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "endorsement_notice"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "endorsement_notice": {
+          "type": "string",
+          "minLength": 1
+        },
+        "answer_key_note": {
+          "type": "string"
+        }
+      }
+    },
+    "sourceNote": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_type",
+        "source_title"
+      ],
+      "properties": {
+        "source_type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "organization": {
+          "type": "string"
+        },
+        "publisher": {
+          "type": "string"
+        },
+        "edition": {
+          "type": "string"
+        },
+        "publication_year": {
+          "type": "integer",
+          "minimum": 1000,
+          "maximum": 9999
+        },
+        "reference_note": {
+          "type": "string"
+        }
+      }
+    },
+    "format": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "question_count",
+        "question_type",
+        "answer_key_included"
+      ],
+      "properties": {
+        "question_count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "question_type": {
+          "enum": [
+            "single_choice",
+            "multiple_select",
+            "true_false",
+            "short_answer",
+            "fill_in_blank",
+            "cloze",
+            "matching",
+            "ordering",
+            "extended_matching",
+            "essay",
+            "data_interpretation",
+            "mixed"
+          ]
+        },
+        "choices_distribution": {
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^[0-9]+$"
+          },
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "answer_key_included": {
+          "type": "boolean"
+        },
+        "answer_format": {
+          "type": "string",
+          "description": "Describes how answers are encoded, for example correct_choice_key_with_reason."
+        },
+        "choice_keys_included": {
+          "type": "boolean"
+        },
+        "choice_key_format": {
+          "type": "string"
+        },
+        "choice_order_randomizable": {
+          "type": "boolean"
+        },
+        "page_reference_style": {
+          "type": "string"
+        }
+      }
+    },
+    "questionBase": {
+      "type": "object",
+      "required": [
+        "number",
+        "question_id",
+        "type",
+        "question"
+      ],
+      "properties": {
+        "number": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "question_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "type": {
+          "type": "string"
+        },
+        "question": {
+          "type": "string",
+          "minLength": 1
+        },
+        "stem": {
+          "type": "string"
+        },
+        "instructions": {
+          "type": "string"
+        },
+        "difficulty": {
+          "enum": [
+            "easy",
+            "medium",
+            "hard"
+          ]
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "answer_explanation": {
+          "type": "string"
+        }
+      }
+    },
+    "choiceArray": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "$ref": "#/$defs/choice"
+      }
+    },
+    "singleChoiceAnswer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "correct_choice_key"
+      ],
+      "properties": {
+        "correct_choice_key": {
+          "type": "string",
+          "minLength": 1
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_page_refs": {
+          "$ref": "#/$defs/pageRefArray"
+        }
+      }
+    },
+    "singleChoiceQuestion": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/questionBase"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "number",
+            "question_id",
+            "type",
+            "question",
+            "choices"
+          ],
+          "properties": {
+            "number": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "question_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "type": {
+              "const": "single_choice"
+            },
+            "question": {
+              "type": "string",
+              "minLength": 1
+            },
+            "stem": {
+              "type": "string"
+            },
+            "instructions": {
+              "type": "string"
+            },
+            "difficulty": {
+              "enum": [
+                "easy",
+                "medium",
+                "hard"
+              ]
+            },
+            "tags": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "answer_explanation": {
+              "type": "string"
+            },
+            "choices": {
+              "$ref": "#/$defs/choiceArray"
+            },
+            "answer": {
+              "$ref": "#/$defs/singleChoiceAnswer"
+            }
+          }
+        }
+      ]
+    },
+    "multipleSelectQuestion": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/questionBase"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "number",
+            "question_id",
+            "type",
+            "question",
+            "choices"
+          ],
+          "properties": {
+            "number": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "question_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "type": {
+              "const": "multiple_select"
+            },
+            "question": {
+              "type": "string",
+              "minLength": 1
+            },
+            "stem": {
+              "type": "string"
+            },
+            "instructions": {
+              "type": "string"
+            },
+            "difficulty": {
+              "enum": [
+                "easy",
+                "medium",
+                "hard"
+              ]
+            },
+            "tags": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "answer_explanation": {
+              "type": "string"
+            },
+            "choices": {
+              "$ref": "#/$defs/choiceArray"
+            },
+            "answer": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "correct_choice_keys"
+              ],
+              "properties": {
+                "correct_choice_keys": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "uniqueItems": true
+                },
+                "reason": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "source_page_refs": {
+                  "$ref": "#/$defs/pageRefArray"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "trueFalseQuestion": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/questionBase"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "number",
+            "question_id",
+            "type",
+            "question"
+          ],
+          "properties": {
+            "number": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "question_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "type": {
+              "const": "true_false"
+            },
+            "question": {
+              "type": "string",
+              "minLength": 1
+            },
+            "stem": {
+              "type": "string"
+            },
+            "instructions": {
+              "type": "string"
+            },
+            "difficulty": {
+              "enum": [
+                "easy",
+                "medium",
+                "hard"
+              ]
+            },
+            "tags": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "answer_explanation": {
+              "type": "string"
+            },
+            "choices": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 2,
+              "items": {
+                "enum": [
+                  "True",
+                  "False"
+                ]
+              }
+            },
+            "answer": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "correct_value"
+              ],
+              "properties": {
+                "correct_value": {
+                  "type": "boolean"
+                },
+                "reason": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "source_page_refs": {
+                  "$ref": "#/$defs/pageRefArray"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "shortAnswerQuestion": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/questionBase"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "number",
+            "question_id",
+            "type",
+            "question"
+          ],
+          "properties": {
+            "number": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "question_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "type": {
+              "const": "short_answer"
+            },
+            "question": {
+              "type": "string",
+              "minLength": 1
+            },
+            "stem": {
+              "type": "string"
+            },
+            "instructions": {
+              "type": "string"
+            },
+            "difficulty": {
+              "enum": [
+                "easy",
+                "medium",
+                "hard"
+              ]
+            },
+            "tags": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "answer_explanation": {
+              "type": "string"
+            },
+            "answer": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "accepted_answers"
+              ],
+              "properties": {
+                "accepted_answers": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "model_answer": {
+                  "type": "string"
+                },
+                "reason": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "source_page_refs": {
+                  "$ref": "#/$defs/pageRefArray"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "fillInBlankQuestion": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/questionBase"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "number",
+            "question_id",
+            "type",
+            "question",
+            "blanks"
+          ],
+          "properties": {
+            "number": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "question_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "type": {
+              "const": "fill_in_blank"
+            },
+            "question": {
+              "type": "string",
+              "minLength": 1
+            },
+            "stem": {
+              "type": "string"
+            },
+            "instructions": {
+              "type": "string"
+            },
+            "difficulty": {
+              "enum": [
+                "easy",
+                "medium",
+                "hard"
+              ]
+            },
+            "tags": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "answer_explanation": {
+              "type": "string"
+            },
+            "blanks": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "blank_id",
+                  "accepted_answers"
+                ],
+                "properties": {
+                  "blank_id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "accepted_answers": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "clozeQuestion": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/questionBase"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "number",
+            "question_id",
+            "type",
+            "question",
+            "cloze_text"
+          ],
+          "properties": {
+            "number": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "question_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "type": {
+              "const": "cloze"
+            },
+            "question": {
+              "type": "string",
+              "minLength": 1
+            },
+            "stem": {
+              "type": "string"
+            },
+            "instructions": {
+              "type": "string"
+            },
+            "difficulty": {
+              "enum": [
+                "easy",
+                "medium",
+                "hard"
+              ]
+            },
+            "tags": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "answer_explanation": {
+              "type": "string"
+            },
+            "cloze_text": {
+              "type": "string",
+              "minLength": 1
+            },
+            "answer": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "cloze_answers"
+              ],
+              "properties": {
+                "cloze_answers": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "cloze_id",
+                      "accepted_answers"
+                    ],
+                    "properties": {
+                      "cloze_id": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "accepted_answers": {
+                        "type": "array",
+                        "minItems": 1,
+                        "items": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      }
+                    }
+                  }
+                },
+                "reason": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "source_page_refs": {
+                  "$ref": "#/$defs/pageRefArray"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "matchingQuestion": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/questionBase"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "number",
+            "question_id",
+            "type",
+            "question",
+            "left_items",
+            "right_items"
+          ],
+          "properties": {
+            "number": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "question_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "type": {
+              "const": "matching"
+            },
+            "question": {
+              "type": "string",
+              "minLength": 1
+            },
+            "stem": {
+              "type": "string"
+            },
+            "instructions": {
+              "type": "string"
+            },
+            "difficulty": {
+              "enum": [
+                "easy",
+                "medium",
+                "hard"
+              ]
+            },
+            "tags": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "answer_explanation": {
+              "type": "string"
+            },
+            "left_items": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "right_items": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "answer": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "matches"
+              ],
+              "properties": {
+                "matches": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "left_item",
+                      "right_item"
+                    ],
+                    "properties": {
+                      "left_item": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "right_item": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    }
+                  }
+                },
+                "reason": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "source_page_refs": {
+                  "$ref": "#/$defs/pageRefArray"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "orderingQuestion": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/questionBase"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "number",
+            "question_id",
+            "type",
+            "question",
+            "items"
+          ],
+          "properties": {
+            "number": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "question_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "type": {
+              "const": "ordering"
+            },
+            "question": {
+              "type": "string",
+              "minLength": 1
+            },
+            "stem": {
+              "type": "string"
+            },
+            "instructions": {
+              "type": "string"
+            },
+            "difficulty": {
+              "enum": [
+                "easy",
+                "medium",
+                "hard"
+              ]
+            },
+            "tags": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "answer_explanation": {
+              "type": "string"
+            },
+            "items": {
+              "type": "array",
+              "minItems": 2,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "answer": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "correct_order"
+              ],
+              "properties": {
+                "correct_order": {
+                  "type": "array",
+                  "minItems": 2,
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "reason": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "source_page_refs": {
+                  "$ref": "#/$defs/pageRefArray"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "extendedMatchingQuestion": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/questionBase"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "number",
+            "question_id",
+            "type",
+            "question",
+            "option_list",
+            "prompt_set"
+          ],
+          "properties": {
+            "number": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "question_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "type": {
+              "const": "extended_matching"
+            },
+            "question": {
+              "type": "string",
+              "minLength": 1
+            },
+            "stem": {
+              "type": "string"
+            },
+            "instructions": {
+              "type": "string"
+            },
+            "difficulty": {
+              "enum": [
+                "easy",
+                "medium",
+                "hard"
+              ]
+            },
+            "tags": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "answer_explanation": {
+              "type": "string"
+            },
+            "option_list": {
+              "type": "array",
+              "minItems": 2,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "prompt_set": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "prompt_id",
+                  "prompt_text"
+                ],
+                "properties": {
+                  "prompt_id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "prompt_text": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "correct_option": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "essayQuestion": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/questionBase"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "number",
+            "question_id",
+            "type",
+            "question"
+          ],
+          "properties": {
+            "number": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "question_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "type": {
+              "const": "essay"
+            },
+            "question": {
+              "type": "string",
+              "minLength": 1
+            },
+            "stem": {
+              "type": "string"
+            },
+            "instructions": {
+              "type": "string"
+            },
+            "difficulty": {
+              "enum": [
+                "easy",
+                "medium",
+                "hard"
+              ]
+            },
+            "tags": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "answer_explanation": {
+              "type": "string"
+            },
+            "answer": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "model_answer": {
+                  "type": "string"
+                },
+                "rubric_points": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "reason": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "source_page_refs": {
+                  "$ref": "#/$defs/pageRefArray"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "dataInterpretationQuestion": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/questionBase"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "number",
+            "question_id",
+            "type",
+            "question",
+            "stimulus"
+          ],
+          "properties": {
+            "number": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "question_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "type": {
+              "const": "data_interpretation"
+            },
+            "question": {
+              "type": "string",
+              "minLength": 1
+            },
+            "stem": {
+              "type": "string"
+            },
+            "instructions": {
+              "type": "string"
+            },
+            "difficulty": {
+              "enum": [
+                "easy",
+                "medium",
+                "hard"
+              ]
+            },
+            "tags": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "answer_explanation": {
+              "type": "string"
+            },
+            "stimulus": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "stimulus_type",
+                "content"
+              ],
+              "properties": {
+                "stimulus_type": {
+                  "enum": [
+                    "table",
+                    "chart",
+                    "graph",
+                    "image",
+                    "case_data",
+                    "mixed"
+                  ]
+                },
+                "content": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            },
+            "choices": {
+              "$ref": "#/$defs/choiceArray"
+            },
+            "answer": {
+              "oneOf": [
+                {
+                  "$ref": "#/$defs/singleChoiceAnswer"
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "accepted_answers"
+                  ],
+                  "properties": {
+                    "accepted_answers": {
+                      "type": "array",
+                      "minItems": 1,
+                      "items": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    },
+                    "reason": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "source_page_refs": {
+                      "$ref": "#/$defs/pageRefArray"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "question": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/singleChoiceQuestion"
+        },
+        {
+          "$ref": "#/$defs/multipleSelectQuestion"
+        },
+        {
+          "$ref": "#/$defs/trueFalseQuestion"
+        },
+        {
+          "$ref": "#/$defs/shortAnswerQuestion"
+        },
+        {
+          "$ref": "#/$defs/fillInBlankQuestion"
+        },
+        {
+          "$ref": "#/$defs/clozeQuestion"
+        },
+        {
+          "$ref": "#/$defs/matchingQuestion"
+        },
+        {
+          "$ref": "#/$defs/orderingQuestion"
+        },
+        {
+          "$ref": "#/$defs/extendedMatchingQuestion"
+        },
+        {
+          "$ref": "#/$defs/essayQuestion"
+        },
+        {
+          "$ref": "#/$defs/dataInterpretationQuestion"
+        }
+      ]
+    },
+    "pageRefArray": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 1
+      },
+      "uniqueItems": true
+    },
+    "choice": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "key",
+        "text"
+      ],
+      "properties": {
+        "key": {
+          "type": "string",
+          "minLength": 1
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}

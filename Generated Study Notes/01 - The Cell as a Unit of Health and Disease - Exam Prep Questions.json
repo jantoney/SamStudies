@@ -1,0 +1,1099 @@
+{
+  "schema_version": "1.2",
+  "resource_type": "exam_prep_question_set",
+  "title": "01 - The Cell as a Unit of Health and Disease - Exam Prep Questions",
+  "slug": "01-the-cell-as-a-unit-of-health-and-disease-exam-prep-questions",
+  "chapter": {
+    "number": 1,
+    "code": "01",
+    "title": "The Cell as a Unit of Health and Disease",
+    "status": "complete"
+  },
+  "description": "Third-party generated single-choice exam-prep questions for Chapter 1. The set is aligned primarily to the Chapter 1 textbook content and shaped to reflect the style, tone, and difficulty distribution of the RCPA Basic Pathological Sciences mock exam format. Choices are keyed so answers remain stable if an application randomizes display order.",
+  "disclaimer": {
+    "summary": "Third-party generated study aid.",
+    "endorsement_notice": "These questions are third-party generated study materials. They are not produced by, reviewed by, approved by, endorsed by, or affiliated with the textbook authors, Elsevier, the Royal College of Pathologists of Australasia, or any other authority, institution, publisher, or examining body.",
+    "answer_key_note": "Answers are included as stable choice keys with brief source-grounded rationales for study and review purposes."
+  },
+  "source_notes": [
+    {
+      "source_type": "primary_textbook_chapter",
+      "source_title": "Robbins Basic Pathology, 10th Edition, Chapter 1: The Cell as a Unit of Health and Disease",
+      "publisher": "Elsevier",
+      "edition": "10th Edition"
+    },
+    {
+      "source_type": "course_alignment_reference",
+      "source_title": "RCPA - Basic Pathological Sciences Syllabus 2026 - October 2025",
+      "organization": "Royal College of Pathologists of Australasia",
+      "reference_note": "Used for topic emphasis and exam framing."
+    },
+    {
+      "source_type": "style_reference",
+      "source_title": "BPS 2026 Mock Exam Question Set",
+      "organization": "Royal College of Pathologists of Australasia",
+      "reference_note": "Used as a style, structure, and difficulty reference."
+    }
+  ],
+  "format": {
+    "question_count": 30,
+    "question_type": "single_choice",
+    "choices_distribution": {
+      "4": 5,
+      "5": 25
+    },
+    "answer_key_included": true,
+    "answer_format": "correct_choice_key_with_reason",
+    "choice_keys_included": true,
+    "choice_key_format": "uppercase_letters",
+    "choice_order_randomizable": true,
+    "page_reference_style": "printed_book_page_numbers"
+  },
+  "questions": [
+    {
+      "number": 1,
+      "question_id": "ch1-q01",
+      "type": "single_choice",
+      "question": "A genome-wide association study identifies a variant in an enhancer region that increases the expression of a cytokine receptor without changing the amino acid sequence of the receptor.\n\nWhat is the MOST accurate interpretation of this finding?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A noncoding regulatory variant can alter disease susceptibility by changing gene expression"
+        },
+        {
+          "key": "B",
+          "text": "A synonymous exonic mutation is the most likely mechanism"
+        },
+        {
+          "key": "C",
+          "text": "Only mutations in protein-coding exons can influence phenotype"
+        },
+        {
+          "key": "D",
+          "text": "The variant must be a mitochondrial DNA mutation"
+        },
+        {
+          "key": "E",
+          "text": "The finding excludes an epigenetic contribution to disease"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Noncoding enhancer variants can change transcription and disease susceptibility without altering the encoded amino acid sequence.",
+        "source_page_refs": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "number": 2,
+      "question_id": "ch1-q02",
+      "type": "single_choice",
+      "question": "Two healthy individuals are found to differ at large contiguous stretches of genomic DNA rather than at isolated single bases.\n\nWhat type of genomic variation is MOST likely being described?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Copy number variation"
+        },
+        {
+          "key": "B",
+          "text": "Enhancer methylation"
+        },
+        {
+          "key": "C",
+          "text": "Histone acetylation"
+        },
+        {
+          "key": "D",
+          "text": "Single-nucleotide polymorphism"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "CNVs are large gains, losses, or rearrangements of contiguous DNA rather than single-base variants.",
+        "source_page_refs": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "number": 3,
+      "question_id": "ch1-q03",
+      "type": "single_choice",
+      "question": "A neutral SNP is repeatedly inherited with a nearby disease-causing allele because of physical proximity on the chromosome.\n\nWhat term BEST describes this relationship?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Gene amplification"
+        },
+        {
+          "key": "B",
+          "text": "Genomic imprinting"
+        },
+        {
+          "key": "C",
+          "text": "Linkage disequilibrium"
+        },
+        {
+          "key": "D",
+          "text": "Mitotic recombination"
+        },
+        {
+          "key": "E",
+          "text": "Variable penetrance"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "A neutral SNP that is coinherited with a nearby causal allele because of physical proximity shows linkage disequilibrium.",
+        "source_page_refs": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "number": 4,
+      "question_id": "ch1-q04",
+      "type": "single_choice",
+      "question": "Monozygotic twins have the same DNA sequence but develop different cellular phenotypes in several tissues.\n\nWhat is the BEST explanation for this observation?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Epigenetic modification causing altered gene expression"
+        },
+        {
+          "key": "B",
+          "text": "Independent mitochondrial inheritance"
+        },
+        {
+          "key": "C",
+          "text": "Loss of all noncoding DNA"
+        },
+        {
+          "key": "D",
+          "text": "Obligate mutation of coding exons"
+        },
+        {
+          "key": "E",
+          "text": "Random loss of centromeres"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Cells with the same genome can develop different phenotypes when epigenetic changes alter gene expression without changing DNA sequence.",
+        "source_page_refs": [
+          3
+        ]
+      }
+    },
+    {
+      "number": 5,
+      "question_id": "ch1-q05",
+      "type": "single_choice",
+      "question": "A drug increases histone acetylation at selected genomic regions.\n\nWhat is the MOST likely immediate effect on chromatin at those sites?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Chromatin opening with increased transcriptional accessibility"
+        },
+        {
+          "key": "B",
+          "text": "Chromatin condensation with transcriptional silencing"
+        },
+        {
+          "key": "C",
+          "text": "Immediate deletion of the targeted DNA sequence"
+        },
+        {
+          "key": "D",
+          "text": "Replacement of histones by proteasomes"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Histone acetylation generally opens chromatin and increases transcriptional accessibility.",
+        "source_page_refs": [
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "number": 6,
+      "question_id": "ch1-q06",
+      "type": "single_choice",
+      "question": "A female cell maintains physiologic silencing of one X chromosome through expression of XIST.\n\nXIST is BEST classified as which of the following?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "An enhancer-binding protein"
+        },
+        {
+          "key": "B",
+          "text": "A long noncoding RNA"
+        },
+        {
+          "key": "C",
+          "text": "A microRNA"
+        },
+        {
+          "key": "D",
+          "text": "A receptor tyrosine kinase"
+        },
+        {
+          "key": "E",
+          "text": "A small interfering DNA"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "XIST is a long noncoding RNA that mediates physiologic X-chromosome inactivation.",
+        "source_page_refs": [
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "number": 7,
+      "question_id": "ch1-q07",
+      "type": "single_choice",
+      "question": "A researcher introduces a short synthetic RNA into cultured cells to knock down expression of a chosen mRNA.\n\nWhat molecule is being used?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "siRNA"
+        },
+        {
+          "key": "B",
+          "text": "lncRNA"
+        },
+        {
+          "key": "C",
+          "text": "rRNA"
+        },
+        {
+          "key": "D",
+          "text": "tRNA"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "siRNA works through the Dicer and RISC pathway to cleave target mRNA or repress its translation.",
+        "source_page_refs": [
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "number": 8,
+      "question_id": "ch1-q08",
+      "type": "single_choice",
+      "question": "A pathogenic mutation is corrected experimentally by CRISPR/Cas9 in the presence of donor DNA carrying the desired normal sequence.\n\nWhich DNA repair pathway is required for this precise correction?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Base excision repair"
+        },
+        {
+          "key": "B",
+          "text": "Homology-directed repair"
+        },
+        {
+          "key": "C",
+          "text": "Mismatch repair"
+        },
+        {
+          "key": "D",
+          "text": "Nonhomologous end joining"
+        },
+        {
+          "key": "E",
+          "text": "Nucleotide excision repair"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Precise CRISPR correction needs homology-directed repair when donor DNA is provided; nonhomologous end joining is error-prone.",
+        "source_page_refs": [
+          5,
+          6
+        ]
+      }
+    },
+    {
+      "number": 9,
+      "question_id": "ch1-q09",
+      "type": "single_choice",
+      "question": "A cell undergoing apoptosis displays an 'eat me' signal on its external membrane leaflet, promoting phagocytic clearance.\n\nWhich membrane phospholipid has most likely become externalized?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Cholesterol"
+        },
+        {
+          "key": "B",
+          "text": "Phosphatidylinositol"
+        },
+        {
+          "key": "C",
+          "text": "Phosphatidylserine"
+        },
+        {
+          "key": "D",
+          "text": "Phosphatidylcholine"
+        },
+        {
+          "key": "E",
+          "text": "Sphingomyelin"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Phosphatidylserine normally remains on the inner leaflet and flips outward during apoptosis as an 'eat me' signal.",
+        "source_page_refs": [
+          8
+        ]
+      }
+    },
+    {
+      "number": 10,
+      "question_id": "ch1-q10",
+      "type": "single_choice",
+      "question": "A toxin causes severe ATP depletion in a cell. Soon after, the cell becomes swollen and eventually ruptures.\n\nWhat mechanism BEST explains the early swelling?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Failure of ion-exchanging ATPases with osmotic water influx"
+        },
+        {
+          "key": "B",
+          "text": "Immediate activation of lysosomal hydrolases at the plasma membrane"
+        },
+        {
+          "key": "C",
+          "text": "Increased collagen synthesis in the extracellular matrix"
+        },
+        {
+          "key": "D",
+          "text": "Loss of chromatin remodeling complexes"
+        },
+        {
+          "key": "E",
+          "text": "Overproduction of proteasomal ubiquitin ligases"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "ATP depletion disables ion pumps, so ions and water accumulate intracellularly and the cell swells osmotically.",
+        "source_page_refs": [
+          9
+        ]
+      }
+    },
+    {
+      "number": 11,
+      "question_id": "ch1-q11",
+      "type": "single_choice",
+      "question": "A patient with familial hypercholesterolemia has impaired uptake of LDL into cells.\n\nWhich cellular process is primarily defective?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Autophagy"
+        },
+        {
+          "key": "B",
+          "text": "Caveolae-mediated potocytosis"
+        },
+        {
+          "key": "C",
+          "text": "Clathrin-mediated receptor-mediated endocytosis"
+        },
+        {
+          "key": "D",
+          "text": "Gap junction transport"
+        },
+        {
+          "key": "E",
+          "text": "Phagocytosis"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "LDL uptake depends on clathrin-mediated receptor-mediated endocytosis, followed by endosomal release and receptor recycling.",
+        "source_page_refs": [
+          10,
+          11
+        ]
+      }
+    },
+    {
+      "number": 12,
+      "question_id": "ch1-q12",
+      "type": "single_choice",
+      "question": "A mutation disrupts claudin and occludin complexes in intestinal epithelium.\n\nWhat cellular function would be MOST directly impaired?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Electrical coupling between adjacent cardiomyocytes"
+        },
+        {
+          "key": "B",
+          "text": "Mechanical linkage of intermediate filaments to the basement membrane"
+        },
+        {
+          "key": "C",
+          "text": "Paracellular barrier formation and maintenance of epithelial polarity"
+        },
+        {
+          "key": "D",
+          "text": "Receptor-mediated uptake of LDL"
+        },
+        {
+          "key": "E",
+          "text": "Transcriptional silencing by heterochromatin"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Claudin and occludin are tight-junction proteins that create the paracellular barrier and preserve epithelial polarity.",
+        "source_page_refs": [
+          12
+        ]
+      }
+    },
+    {
+      "number": 13,
+      "question_id": "ch1-q13",
+      "type": "single_choice",
+      "question": "An undifferentiated malignant tumor stains strongly for cytokeratins.\n\nWhat is the MOST likely lineage of origin?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Epithelial"
+        },
+        {
+          "key": "B",
+          "text": "Glial"
+        },
+        {
+          "key": "C",
+          "text": "Mesenchymal"
+        },
+        {
+          "key": "D",
+          "text": "Muscle"
+        },
+        {
+          "key": "E",
+          "text": "Neuronal"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Cytokeratins are intermediate filaments characteristic of epithelial cells and help identify epithelial tumors.",
+        "source_page_refs": [
+          11
+        ]
+      }
+    },
+    {
+      "number": 14,
+      "question_id": "ch1-q14",
+      "type": "single_choice",
+      "question": "Cardiac muscle cells rapidly spread ions from one cell to another so the myocardium contracts as a coordinated syncytium.\n\nWhich junction is responsible for this?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Desmosome"
+        },
+        {
+          "key": "B",
+          "text": "Gap junction"
+        },
+        {
+          "key": "C",
+          "text": "Hemidesmosome"
+        },
+        {
+          "key": "D",
+          "text": "Tight junction"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Gap junctions allow ions and small molecules to pass directly between adjacent cells, coordinating cardiac contraction.",
+        "source_page_refs": [
+          12
+        ]
+      }
+    },
+    {
+      "number": 15,
+      "question_id": "ch1-q15",
+      "type": "single_choice",
+      "question": "The most common cystic fibrosis mutation causes CFTR to misfold and be retained within the cell rather than reaching the plasma membrane.\n\nIn which organelle does this quality-control failure primarily occur?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Early endosome"
+        },
+        {
+          "key": "B",
+          "text": "Golgi apparatus"
+        },
+        {
+          "key": "C",
+          "text": "Lysosome"
+        },
+        {
+          "key": "D",
+          "text": "Mitochondrion"
+        },
+        {
+          "key": "E",
+          "text": "Rough endoplasmic reticulum"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "E",
+        "reason": "Misfolded CFTR is retained during rough ER quality control instead of reaching the plasma membrane.",
+        "source_page_refs": [
+          12
+        ]
+      }
+    },
+    {
+      "number": 16,
+      "question_id": "ch1-q16",
+      "type": "single_choice",
+      "question": "A lysosomal hydrolase is synthesized normally but fails to receive its targeting signal in the Golgi apparatus.\n\nWhich signal is missing?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A GPI anchor"
+        },
+        {
+          "key": "B",
+          "text": "A mannose-6-phosphate tag"
+        },
+        {
+          "key": "C",
+          "text": "A phosphatidylserine residue"
+        },
+        {
+          "key": "D",
+          "text": "A polyubiquitin chain"
+        },
+        {
+          "key": "E",
+          "text": "A prenyl group"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Lysosomal hydrolases need mannose-6-phosphate tagging in the Golgi to be sorted to lysosomes.",
+        "source_page_refs": [
+          12,
+          13
+        ]
+      }
+    },
+    {
+      "number": 17,
+      "question_id": "ch1-q17",
+      "type": "single_choice",
+      "question": "A short-lived cytosolic transcription factor is polyubiquitinated and then degraded into peptide fragments.\n\nWhich intracellular structure mediates this degradation?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Golgi apparatus"
+        },
+        {
+          "key": "B",
+          "text": "Late endosome"
+        },
+        {
+          "key": "C",
+          "text": "Lysosome"
+        },
+        {
+          "key": "D",
+          "text": "Peroxisome"
+        },
+        {
+          "key": "E",
+          "text": "Proteasome"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "E",
+        "reason": "Proteasomes degrade ubiquitin-tagged cytosolic proteins, especially denatured proteins and short-lived regulatory proteins.",
+        "source_page_refs": [
+          13,
+          14
+        ]
+      }
+    },
+    {
+      "number": 18,
+      "question_id": "ch1-q18",
+      "type": "single_choice",
+      "question": "During nutrient deprivation, a cell surrounds senescent organelles with a double membrane and delivers them to lysosomes for degradation.\n\nWhat process is being described?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Autophagy"
+        },
+        {
+          "key": "B",
+          "text": "Exocytosis"
+        },
+        {
+          "key": "C",
+          "text": "Heterophagy"
+        },
+        {
+          "key": "D",
+          "text": "Phagocytosis"
+        },
+        {
+          "key": "E",
+          "text": "Transcytosis"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Autophagy encloses senescent organelles in a double-membrane autophagosome before lysosomal degradation.",
+        "source_page_refs": [
+          13,
+          14
+        ]
+      }
+    },
+    {
+      "number": 19,
+      "question_id": "ch1-q19",
+      "type": "single_choice",
+      "question": "A pedigree shows transmission of a mitochondrial disorder only through affected mothers.\n\nWhat is the BEST explanation for this pattern?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Mitochondrial proteins are encoded only by the Y chromosome"
+        },
+        {
+          "key": "B",
+          "text": "Mitochondrial DNA is inherited almost entirely from the ovum"
+        },
+        {
+          "key": "C",
+          "text": "Mitochondrial genomes are replicated only during meiosis I"
+        },
+        {
+          "key": "D",
+          "text": "Mitochondria cannot undergo fission or fusion"
+        },
+        {
+          "key": "E",
+          "text": "Paternal mitochondria dominate after fertilization"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Mitochondrial DNA is inherited almost entirely from the ovum, so transmission is maternal.",
+        "source_page_refs": [
+          13,
+          14
+        ]
+      }
+    },
+    {
+      "number": 20,
+      "question_id": "ch1-q20",
+      "type": "single_choice",
+      "question": "A rapidly proliferating malignant cell increases glucose and glutamine uptake, produces lactate despite adequate oxygen, and diverts intermediates into macromolecule synthesis.\n\nWhat metabolic adaptation is this?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Anaerobic threshold failure"
+        },
+        {
+          "key": "B",
+          "text": "Beta-oxidation shutdown"
+        },
+        {
+          "key": "C",
+          "text": "Oxidative burst"
+        },
+        {
+          "key": "D",
+          "text": "Warburg effect"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "The Warburg effect is the shift toward glycolysis and biosynthetic intermediate production despite adequate oxygen.",
+        "source_page_refs": [
+          15
+        ]
+      }
+    },
+    {
+      "number": 21,
+      "question_id": "ch1-q21",
+      "type": "single_choice",
+      "question": "Endothelial cells release nitric oxide, which diffuses into adjacent vascular smooth muscle and causes relaxation.\n\nWhat intracellular second messenger is generated in the target smooth muscle cell?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "cAMP"
+        },
+        {
+          "key": "B",
+          "text": "cGMP"
+        },
+        {
+          "key": "C",
+          "text": "Diacylglycerol"
+        },
+        {
+          "key": "D",
+          "text": "IP3"
+        },
+        {
+          "key": "E",
+          "text": "Tyrosine phosphate"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Nitric oxide activates guanylyl cyclase in vascular smooth muscle, generating cGMP.",
+        "source_page_refs": [
+          16
+        ]
+      }
+    },
+    {
+      "number": 22,
+      "question_id": "ch1-q22",
+      "type": "single_choice",
+      "question": "A mutation in RAS markedly delays hydrolysis of bound GTP.\n\nWhat is the MOST likely consequence of this mutation?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Failure of receptor dimerization"
+        },
+        {
+          "key": "B",
+          "text": "Loss of MAPK signaling with reduced proliferation"
+        },
+        {
+          "key": "C",
+          "text": "Persistent proliferative signaling downstream of growth factor receptors"
+        },
+        {
+          "key": "D",
+          "text": "Selective inhibition of PI3K only"
+        },
+        {
+          "key": "E",
+          "text": "Termination of signal transduction at the adaptor protein level"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "RAS stays active when GTP hydrolysis is delayed, prolonging downstream proliferative signaling.",
+        "source_page_refs": [
+          17
+        ]
+      }
+    },
+    {
+      "number": 23,
+      "question_id": "ch1-q23",
+      "type": "single_choice",
+      "question": "A developmental signaling pathway is activated when a ligand on one cell binds a receptor on an adjacent cell, causing proteolytic cleavage of the receptor and nuclear translocation of the released intracellular fragment.\n\nWhich pathway is being described?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "G-protein coupled receptor signaling"
+        },
+        {
+          "key": "B",
+          "text": "Notch signaling"
+        },
+        {
+          "key": "C",
+          "text": "Nuclear hormone receptor signaling"
+        },
+        {
+          "key": "D",
+          "text": "Receptor tyrosine kinase signaling"
+        },
+        {
+          "key": "E",
+          "text": "Wnt/Frizzled signaling"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Notch signaling involves cell-to-cell ligand binding, receptor cleavage, and nuclear entry of the released intracellular fragment.",
+        "source_page_refs": [
+          17,
+          18
+        ]
+      }
+    },
+    {
+      "number": 24,
+      "question_id": "ch1-q24",
+      "type": "single_choice",
+      "question": "A healing wound shows capillary sprouting and increased vascular permeability in the surrounding tissue.\n\nWhich growth factor is MOST directly responsible for these changes?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Epidermal growth factor"
+        },
+        {
+          "key": "B",
+          "text": "Fibroblast growth factor"
+        },
+        {
+          "key": "C",
+          "text": "Platelet-derived growth factor"
+        },
+        {
+          "key": "D",
+          "text": "Transforming growth factor-beta"
+        },
+        {
+          "key": "E",
+          "text": "Vascular endothelial growth factor"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "E",
+        "reason": "VEGF is the major driver of angiogenesis and also increases vascular permeability.",
+        "source_page_refs": [
+          20
+        ]
+      }
+    },
+    {
+      "number": 25,
+      "question_id": "ch1-q25",
+      "type": "single_choice",
+      "question": "A patient forms dense scar tissue after chronic injury. The dominant cytokine signal promotes extracellular matrix synthesis and suppresses acute inflammation through Smad-dependent signaling.\n\nWhich mediator BEST fits this description?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Hepatocyte growth factor"
+        },
+        {
+          "key": "B",
+          "text": "Platelet-derived growth factor"
+        },
+        {
+          "key": "C",
+          "text": "Transforming growth factor-alpha"
+        },
+        {
+          "key": "D",
+          "text": "Transforming growth factor-beta"
+        },
+        {
+          "key": "E",
+          "text": "Vascular endothelial growth factor"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "TGF-beta signals through Smads to promote extracellular matrix production and suppress acute inflammation.",
+        "source_page_refs": [
+          20,
+          21
+        ]
+      }
+    },
+    {
+      "number": 26,
+      "question_id": "ch1-q26",
+      "type": "single_choice",
+      "question": "A researcher wants to assess the integrity of the basement membrane beneath an epithelium.\n\nWhich extracellular matrix component is the MOST characteristic adhesive glycoprotein of basement membrane?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Elastin"
+        },
+        {
+          "key": "B",
+          "text": "Fibronectin"
+        },
+        {
+          "key": "C",
+          "text": "Fibrillin"
+        },
+        {
+          "key": "D",
+          "text": "Laminin"
+        },
+        {
+          "key": "E",
+          "text": "Type I collagen"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "Laminin is the dominant adhesive glycoprotein of basement membrane and links cells to the basement membrane matrix.",
+        "source_page_refs": [
+          24
+        ]
+      }
+    },
+    {
+      "number": 27,
+      "question_id": "ch1-q27",
+      "type": "single_choice",
+      "question": "A tall young adult with lens dislocation and aortic root disease is found to have Marfan syndrome.\n\nDeficiency of which extracellular matrix component BEST explains this disorder?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Elastase"
+        },
+        {
+          "key": "B",
+          "text": "Fibrillin"
+        },
+        {
+          "key": "C",
+          "text": "Fibronectin"
+        },
+        {
+          "key": "D",
+          "text": "Heparan sulfate"
+        },
+        {
+          "key": "E",
+          "text": "Laminin"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Marfan syndrome results from a fibrillin defect that disrupts elastic tissue architecture.",
+        "source_page_refs": [
+          23
+        ]
+      }
+    },
+    {
+      "number": 28,
+      "question_id": "ch1-q28",
+      "type": "single_choice",
+      "question": "Integrins attach cells to extracellular matrix proteins such as fibronectin.\n\nWhat peptide motif on the matrix protein is classically recognized by many integrins?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "AUG"
+        },
+        {
+          "key": "B",
+          "text": "GTP"
+        },
+        {
+          "key": "C",
+          "text": "M6P"
+        },
+        {
+          "key": "D",
+          "text": "RGD"
+        },
+        {
+          "key": "E",
+          "text": "TATA"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "Many integrins recognize the RGD motif on extracellular matrix proteins such as fibronectin.",
+        "source_page_refs": [
+          24
+        ]
+      }
+    },
+    {
+      "number": 29,
+      "question_id": "ch1-q29",
+      "type": "single_choice",
+      "question": "A proliferating cell receives growth factor stimulation and passes from G1 into S phase.\n\nWhich event is MOST important for this transition?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Activation of cyclin B-CDK1"
+        },
+        {
+          "key": "B",
+          "text": "Dephosphorylation of Rb by p21"
+        },
+        {
+          "key": "C",
+          "text": "Phosphorylation of Rb by cyclin D/E-dependent CDKs"
+        },
+        {
+          "key": "D",
+          "text": "Proteasomal degradation of all cyclins"
+        },
+        {
+          "key": "E",
+          "text": "Stabilization of the G2/M checkpoint"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Passage from G1 to S depends on cyclin D and cyclin E dependent CDKs phosphorylating Rb.",
+        "source_page_refs": [
+          25,
+          26
+        ]
+      }
+    },
+    {
+      "number": 30,
+      "question_id": "ch1-q30",
+      "type": "single_choice",
+      "question": "Fibroblasts from a patient are reprogrammed by introducing genes that restore stem-cell properties, after which the cells can be differentiated into multiple lineages in culture.\n\nWhat has been generated?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Embryonal carcinoma cells"
+        },
+        {
+          "key": "B",
+          "text": "Hematopoietic stem cells"
+        },
+        {
+          "key": "C",
+          "text": "Induced pluripotent stem cells"
+        },
+        {
+          "key": "D",
+          "text": "Mesenchymal stromal cells"
+        },
+        {
+          "key": "E",
+          "text": "Terminally differentiated progenitor cells"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Induced pluripotent stem cells are reprogrammed somatic cells with restored pluripotent, embryonic stem cell-like properties.",
+        "source_page_refs": [
+          28
+        ]
+      }
+    }
+  ]
+}

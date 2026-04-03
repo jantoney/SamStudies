@@ -1,0 +1,606 @@
+{
+  "schema_version": "1.3",
+  "index_type": "study_content_catalog",
+  "collection_title": "Generated Study Notes",
+  "collection_slug": "generated-study-notes",
+  "description": "Website-ready index of generated pathology study assets. Chapter 1 currently has complete third-party generated study notes, exam-prep questions with keyed answers and brief source-grounded rationales, and flashcards for spaced-repetition revision. Later chapters can be added to this same index as new assets are created, including additional flashcard resources.",
+  "supported_asset_types": [
+    "study_notes_markdown",
+    "exam_prep_questions_json",
+    "flashcards_json",
+    "flashcards_markdown",
+    "flashcards_anki_tsv"
+  ],
+  "disclaimer": {
+    "summary": "Third-party generated study materials.",
+    "endorsement_notice": "The notes, questions, and flashcards listed in this index are third-party generated study aids. They are not produced by, reviewed by, approved by, endorsed by, or affiliated with the textbook authors, Elsevier, the Royal College of Pathologists of Australasia, or any other authority, institution, publisher, or examining body.",
+    "use_note": "Use these materials as revision support alongside the original source material."
+  },
+  "content_status": {
+    "chapter_count_total": 24,
+    "chapter_count_complete": 1,
+    "chapter_count_planned": 23
+  },
+  "source_registry": [
+    {
+      "source_id": "robbins-basic-pathology-10e",
+      "source_type": "textbook",
+      "source_title": "Robbins Basic Pathology, 10th Edition",
+      "publisher": "Elsevier"
+    },
+    {
+      "source_id": "robbins-cotran-pathologic-basis-of-disease-10e",
+      "source_type": "textbook_reference_cited_by_syllabus",
+      "source_title": "Robbins and Cotran Pathologic Basis of Disease",
+      "editors": [
+        "Vinay Kumar",
+        "Abul K. Abbas",
+        "Jon C. Aster"
+      ],
+      "edition": "10th Edition",
+      "publication_year": 2020,
+      "publisher": "Elsevier"
+    },
+    {
+      "source_id": "rcpa-bps-syllabus-2026-oct-2025",
+      "source_type": "course_syllabus",
+      "source_title": "RCPA - Basic Pathological Sciences Syllabus 2026 - October 2025",
+      "organization": "Royal College of Pathologists of Australasia"
+    },
+    {
+      "source_id": "bps-2026-mock-exam-question-set",
+      "source_type": "mock_exam_style_reference",
+      "source_title": "BPS 2026 Mock Exam Question Set",
+      "organization": "Royal College of Pathologists of Australasia"
+    }
+  ],
+  "chapters": [
+    {
+      "chapter_number": 1,
+      "chapter_code": "01",
+      "title": "The Cell as a Unit of Health and Disease",
+      "slug": "01-the-cell-as-a-unit-of-health-and-disease",
+      "status": "complete",
+      "website": {
+        "nav_label": "Chapter 1",
+        "card_title": "The Cell as a Unit of Health and Disease",
+        "card_description": "Genome, epigenome, cellular housekeeping, signaling, extracellular matrix, cell cycle, and stem cells."
+      },
+      "description": "Third-party generated Chapter 1 revision assets based primarily on Robbins Basic Pathology, 10th Edition, Chapter 1, with RCPA syllabus framing and mock-exam style alignment.",
+      "topics": [
+        "Genome and epigenome",
+        "Noncoding DNA",
+        "Histone organization",
+        "Micro-RNA and long noncoding RNA",
+        "Cellular housekeeping",
+        "Plasma membrane and transport",
+        "Cytoskeleton and cell junctions",
+        "ER, Golgi, lysosomes, and proteasomes",
+        "Mitochondrial function",
+        "Cell signaling and growth factors",
+        "Extracellular matrix",
+        "Cell cycle",
+        "Stem cells and regenerative medicine"
+      ],
+      "sources_used": [
+        "robbins-basic-pathology-10e",
+        "robbins-cotran-pathologic-basis-of-disease-10e",
+        "rcpa-bps-syllabus-2026-oct-2025",
+        "bps-2026-mock-exam-question-set"
+      ],
+      "recommended_asset_types": [
+        "study_notes_markdown",
+        "exam_prep_questions_json",
+        "flashcards_json",
+        "flashcards_markdown",
+        "flashcards_anki_tsv"
+      ],
+      "assets": [
+        {
+          "asset_type": "study_notes_markdown",
+          "title": "01 - The Cell as a Unit of Health and Disease - Study Notes",
+          "path": "Generated Study Notes/01 - The Cell as a Unit of Health and Disease - Study Notes.md",
+          "status": "complete"
+        },
+        {
+          "asset_type": "exam_prep_questions_json",
+          "title": "01 - The Cell as a Unit of Health and Disease - Exam Prep Questions",
+          "path": "Generated Study Notes/01 - The Cell as a Unit of Health and Disease - Exam Prep Questions.json",
+          "status": "complete",
+          "question_count": 30,
+          "answer_key_included": true,
+          "description": "Single-choice JSON question set with keyed choices, keyed answers, and brief source-grounded rationales.",
+          "answer_key_format": "correct_choice_key_with_reason",
+          "choice_key_format": "uppercase_letters",
+          "choice_order_randomizable": true,
+          "page_reference_style": "printed_book_page_numbers"
+        },
+        {
+          "asset_type": "flashcards_json",
+          "title": "01 - The Cell as a Unit of Health and Disease - Flashcards",
+          "path": "Generated Study Notes/01 - The Cell as a Unit of Health and Disease - Flashcards.json",
+          "status": "complete",
+          "description": "Structured Chapter 1 flashcard deck with bucket metadata, tags, and printed-page references for app ingestion.",
+          "card_count": 54,
+          "deck_name": "Pathology::Chapter 01 - The Cell as a Unit of Health and Disease",
+          "flashcard_format": "basic",
+          "tags": [
+            "pathology",
+            "chapter-01",
+            "active-recall",
+            "spaced-repetition"
+          ]
+        },
+        {
+          "asset_type": "flashcards_markdown",
+          "title": "01 - The Cell as a Unit of Health and Disease - Flashcards (Markdown)",
+          "path": "Generated Study Notes/01 - The Cell as a Unit of Health and Disease - Flashcards.md",
+          "status": "complete",
+          "description": "Readable Chapter 1 flashcard deck grouped by the five syllabus buckets.",
+          "card_count": 54,
+          "deck_name": "Pathology::Chapter 01 - The Cell as a Unit of Health and Disease",
+          "tags": [
+            "pathology",
+            "chapter-01",
+            "active-recall",
+            "spaced-repetition"
+          ]
+        },
+        {
+          "asset_type": "flashcards_anki_tsv",
+          "title": "01 - The Cell as a Unit of Health and Disease - Flashcards (Anki TSV)",
+          "path": "Generated Study Notes/01 - The Cell as a Unit of Health and Disease - Flashcards - Anki.tsv",
+          "status": "complete",
+          "description": "Tab-separated Chapter 1 flashcards for import into Anki or similar spaced-repetition tools.",
+          "card_count": 54,
+          "deck_name": "Pathology::Chapter 01 - The Cell as a Unit of Health and Disease",
+          "export_format": "anki_tsv",
+          "flashcard_format": "basic",
+          "tags": [
+            "pathology",
+            "chapter-01",
+            "anki",
+            "spaced-repetition"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_number": 2,
+      "chapter_code": "02",
+      "title": "Cell Injury, Cell Death, and Adaptations",
+      "slug": "02-cell-injury-cell-death-and-adaptations",
+      "status": "planned",
+      "sources_used": [
+        "robbins-basic-pathology-10e",
+        "rcpa-bps-syllabus-2026-oct-2025"
+      ],
+      "recommended_asset_types": [
+        "study_notes_markdown",
+        "exam_prep_questions_json",
+        "flashcards_json",
+        "flashcards_markdown",
+        "flashcards_anki_tsv"
+      ],
+      "assets": []
+    },
+    {
+      "chapter_number": 3,
+      "chapter_code": "03",
+      "title": "Inflammation and Repair",
+      "slug": "03-inflammation-and-repair",
+      "status": "planned",
+      "sources_used": [
+        "robbins-basic-pathology-10e",
+        "rcpa-bps-syllabus-2026-oct-2025"
+      ],
+      "recommended_asset_types": [
+        "study_notes_markdown",
+        "exam_prep_questions_json",
+        "flashcards_json",
+        "flashcards_markdown",
+        "flashcards_anki_tsv"
+      ],
+      "assets": []
+    },
+    {
+      "chapter_number": 4,
+      "chapter_code": "04",
+      "title": "Hemodynamic Disorders, Thromboembolism, and Shock",
+      "slug": "04-hemodynamic-disorders-thromboembolism-and-shock",
+      "status": "planned",
+      "sources_used": [
+        "robbins-basic-pathology-10e",
+        "rcpa-bps-syllabus-2026-oct-2025"
+      ],
+      "recommended_asset_types": [
+        "study_notes_markdown",
+        "exam_prep_questions_json",
+        "flashcards_json",
+        "flashcards_markdown",
+        "flashcards_anki_tsv"
+      ],
+      "assets": []
+    },
+    {
+      "chapter_number": 5,
+      "chapter_code": "05",
+      "title": "Diseases of the Immune System",
+      "slug": "05-diseases-of-the-immune-system",
+      "status": "planned",
+      "sources_used": [
+        "robbins-basic-pathology-10e",
+        "rcpa-bps-syllabus-2026-oct-2025"
+      ],
+      "recommended_asset_types": [
+        "study_notes_markdown",
+        "exam_prep_questions_json",
+        "flashcards_json",
+        "flashcards_markdown",
+        "flashcards_anki_tsv"
+      ],
+      "assets": []
+    },
+    {
+      "chapter_number": 6,
+      "chapter_code": "06",
+      "title": "Neoplasia",
+      "slug": "06-neoplasia",
+      "status": "planned",
+      "sources_used": [
+        "robbins-basic-pathology-10e",
+        "rcpa-bps-syllabus-2026-oct-2025"
+      ],
+      "recommended_asset_types": [
+        "study_notes_markdown",
+        "exam_prep_questions_json",
+        "flashcards_json",
+        "flashcards_markdown",
+        "flashcards_anki_tsv"
+      ],
+      "assets": []
+    },
+    {
+      "chapter_number": 7,
+      "chapter_code": "07",
+      "title": "Genetic and Pediatric Diseases",
+      "slug": "07-genetic-and-pediatric-diseases",
+      "status": "planned",
+      "sources_used": [
+        "robbins-basic-pathology-10e",
+        "rcpa-bps-syllabus-2026-oct-2025"
+      ],
+      "recommended_asset_types": [
+        "study_notes_markdown",
+        "exam_prep_questions_json",
+        "flashcards_json",
+        "flashcards_markdown",
+        "flashcards_anki_tsv"
+      ],
+      "assets": []
+    },
+    {
+      "chapter_number": 8,
+      "chapter_code": "08",
+      "title": "Environmental and Nutritional Diseases",
+      "slug": "08-environmental-and-nutritional-diseases",
+      "status": "planned",
+      "sources_used": [
+        "robbins-basic-pathology-10e",
+        "rcpa-bps-syllabus-2026-oct-2025"
+      ],
+      "recommended_asset_types": [
+        "study_notes_markdown",
+        "exam_prep_questions_json",
+        "flashcards_json",
+        "flashcards_markdown",
+        "flashcards_anki_tsv"
+      ],
+      "assets": []
+    },
+    {
+      "chapter_number": 9,
+      "chapter_code": "09",
+      "title": "General Pathology of Infectious Diseases",
+      "slug": "09-general-pathology-of-infectious-diseases",
+      "status": "planned",
+      "sources_used": [
+        "robbins-basic-pathology-10e",
+        "rcpa-bps-syllabus-2026-oct-2025"
+      ],
+      "recommended_asset_types": [
+        "study_notes_markdown",
+        "exam_prep_questions_json",
+        "flashcards_json",
+        "flashcards_markdown",
+        "flashcards_anki_tsv"
+      ],
+      "assets": []
+    },
+    {
+      "chapter_number": 10,
+      "chapter_code": "10",
+      "title": "Blood Vessels",
+      "slug": "10-blood-vessels",
+      "status": "planned",
+      "sources_used": [
+        "robbins-basic-pathology-10e",
+        "rcpa-bps-syllabus-2026-oct-2025"
+      ],
+      "recommended_asset_types": [
+        "study_notes_markdown",
+        "exam_prep_questions_json",
+        "flashcards_json",
+        "flashcards_markdown",
+        "flashcards_anki_tsv"
+      ],
+      "assets": []
+    },
+    {
+      "chapter_number": 11,
+      "chapter_code": "11",
+      "title": "Heart",
+      "slug": "11-heart",
+      "status": "planned",
+      "sources_used": [
+        "robbins-basic-pathology-10e",
+        "rcpa-bps-syllabus-2026-oct-2025"
+      ],
+      "recommended_asset_types": [
+        "study_notes_markdown",
+        "exam_prep_questions_json",
+        "flashcards_json",
+        "flashcards_markdown",
+        "flashcards_anki_tsv"
+      ],
+      "assets": []
+    },
+    {
+      "chapter_number": 12,
+      "chapter_code": "12",
+      "title": "Hematopoietic and Lymphoid Systems",
+      "slug": "12-hematopoietic-and-lymphoid-systems",
+      "status": "planned",
+      "sources_used": [
+        "robbins-basic-pathology-10e",
+        "rcpa-bps-syllabus-2026-oct-2025"
+      ],
+      "recommended_asset_types": [
+        "study_notes_markdown",
+        "exam_prep_questions_json",
+        "flashcards_json",
+        "flashcards_markdown",
+        "flashcards_anki_tsv"
+      ],
+      "assets": []
+    },
+    {
+      "chapter_number": 13,
+      "chapter_code": "13",
+      "title": "Lung",
+      "slug": "13-lung",
+      "status": "planned",
+      "sources_used": [
+        "robbins-basic-pathology-10e",
+        "rcpa-bps-syllabus-2026-oct-2025"
+      ],
+      "recommended_asset_types": [
+        "study_notes_markdown",
+        "exam_prep_questions_json",
+        "flashcards_json",
+        "flashcards_markdown",
+        "flashcards_anki_tsv"
+      ],
+      "assets": []
+    },
+    {
+      "chapter_number": 14,
+      "chapter_code": "14",
+      "title": "Kidney and Its Collecting System",
+      "slug": "14-kidney-and-its-collecting-system",
+      "status": "planned",
+      "sources_used": [
+        "robbins-basic-pathology-10e",
+        "rcpa-bps-syllabus-2026-oct-2025"
+      ],
+      "recommended_asset_types": [
+        "study_notes_markdown",
+        "exam_prep_questions_json",
+        "flashcards_json",
+        "flashcards_markdown",
+        "flashcards_anki_tsv"
+      ],
+      "assets": []
+    },
+    {
+      "chapter_number": 15,
+      "chapter_code": "15",
+      "title": "Oral Cavities and Gastrointestinal Tract",
+      "slug": "15-oral-cavities-and-gastrointestinal-tract",
+      "status": "planned",
+      "sources_used": [
+        "robbins-basic-pathology-10e",
+        "rcpa-bps-syllabus-2026-oct-2025"
+      ],
+      "recommended_asset_types": [
+        "study_notes_markdown",
+        "exam_prep_questions_json",
+        "flashcards_json",
+        "flashcards_markdown",
+        "flashcards_anki_tsv"
+      ],
+      "assets": []
+    },
+    {
+      "chapter_number": 16,
+      "chapter_code": "16",
+      "title": "Liver and Gallbladder",
+      "slug": "16-liver-and-gallbladder",
+      "status": "planned",
+      "sources_used": [
+        "robbins-basic-pathology-10e",
+        "rcpa-bps-syllabus-2026-oct-2025"
+      ],
+      "recommended_asset_types": [
+        "study_notes_markdown",
+        "exam_prep_questions_json",
+        "flashcards_json",
+        "flashcards_markdown",
+        "flashcards_anki_tsv"
+      ],
+      "assets": []
+    },
+    {
+      "chapter_number": 17,
+      "chapter_code": "17",
+      "title": "Pancreas",
+      "slug": "17-pancreas",
+      "status": "planned",
+      "sources_used": [
+        "robbins-basic-pathology-10e",
+        "rcpa-bps-syllabus-2026-oct-2025"
+      ],
+      "recommended_asset_types": [
+        "study_notes_markdown",
+        "exam_prep_questions_json",
+        "flashcards_json",
+        "flashcards_markdown",
+        "flashcards_anki_tsv"
+      ],
+      "assets": []
+    },
+    {
+      "chapter_number": 18,
+      "chapter_code": "18",
+      "title": "Male Genital System and Lower Urinary Tract",
+      "slug": "18-male-genital-system-and-lower-urinary-tract",
+      "status": "planned",
+      "sources_used": [
+        "robbins-basic-pathology-10e",
+        "rcpa-bps-syllabus-2026-oct-2025"
+      ],
+      "recommended_asset_types": [
+        "study_notes_markdown",
+        "exam_prep_questions_json",
+        "flashcards_json",
+        "flashcards_markdown",
+        "flashcards_anki_tsv"
+      ],
+      "assets": []
+    },
+    {
+      "chapter_number": 19,
+      "chapter_code": "19",
+      "title": "Female Genital System and Breast",
+      "slug": "19-female-genital-system-and-breast",
+      "status": "planned",
+      "sources_used": [
+        "robbins-basic-pathology-10e",
+        "rcpa-bps-syllabus-2026-oct-2025"
+      ],
+      "recommended_asset_types": [
+        "study_notes_markdown",
+        "exam_prep_questions_json",
+        "flashcards_json",
+        "flashcards_markdown",
+        "flashcards_anki_tsv"
+      ],
+      "assets": []
+    },
+    {
+      "chapter_number": 20,
+      "chapter_code": "20",
+      "title": "Endocrine System",
+      "slug": "20-endocrine-system",
+      "status": "planned",
+      "sources_used": [
+        "robbins-basic-pathology-10e",
+        "rcpa-bps-syllabus-2026-oct-2025"
+      ],
+      "recommended_asset_types": [
+        "study_notes_markdown",
+        "exam_prep_questions_json",
+        "flashcards_json",
+        "flashcards_markdown",
+        "flashcards_anki_tsv"
+      ],
+      "assets": []
+    },
+    {
+      "chapter_number": 21,
+      "chapter_code": "21",
+      "title": "Bones, Joints, and Soft Tissue Tumors",
+      "slug": "21-bones-joints-and-soft-tissue-tumors",
+      "status": "planned",
+      "sources_used": [
+        "robbins-basic-pathology-10e",
+        "rcpa-bps-syllabus-2026-oct-2025"
+      ],
+      "recommended_asset_types": [
+        "study_notes_markdown",
+        "exam_prep_questions_json",
+        "flashcards_json",
+        "flashcards_markdown",
+        "flashcards_anki_tsv"
+      ],
+      "assets": []
+    },
+    {
+      "chapter_number": 22,
+      "chapter_code": "22",
+      "title": "Peripheral Nerves and Muscles",
+      "slug": "22-peripheral-nerves-and-muscles",
+      "status": "planned",
+      "sources_used": [
+        "robbins-basic-pathology-10e",
+        "rcpa-bps-syllabus-2026-oct-2025"
+      ],
+      "recommended_asset_types": [
+        "study_notes_markdown",
+        "exam_prep_questions_json",
+        "flashcards_json",
+        "flashcards_markdown",
+        "flashcards_anki_tsv"
+      ],
+      "assets": []
+    },
+    {
+      "chapter_number": 23,
+      "chapter_code": "23",
+      "title": "Central Nervous System",
+      "slug": "23-central-nervous-system",
+      "status": "planned",
+      "sources_used": [
+        "robbins-basic-pathology-10e",
+        "rcpa-bps-syllabus-2026-oct-2025"
+      ],
+      "recommended_asset_types": [
+        "study_notes_markdown",
+        "exam_prep_questions_json",
+        "flashcards_json",
+        "flashcards_markdown",
+        "flashcards_anki_tsv"
+      ],
+      "assets": []
+    },
+    {
+      "chapter_number": 24,
+      "chapter_code": "24",
+      "title": "Skin",
+      "slug": "24-skin",
+      "status": "planned",
+      "sources_used": [
+        "robbins-basic-pathology-10e",
+        "rcpa-bps-syllabus-2026-oct-2025"
+      ],
+      "recommended_asset_types": [
+        "study_notes_markdown",
+        "exam_prep_questions_json",
+        "flashcards_json",
+        "flashcards_markdown",
+        "flashcards_anki_tsv"
+      ],
+      "assets": []
+    }
+  ]
+}
