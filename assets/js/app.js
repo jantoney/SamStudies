@@ -1,7 +1,7 @@
 const VIEW_ASSET_TYPES = {
   notes: "study_notes_markdown",
   questions: "exam_prep_questions_json",
-  flashcards: "flashcards_json"
+  flashcards: "flashcards_json",
 };
 
 const state = {
@@ -10,20 +10,20 @@ const state = {
   view: null,
   cache: new Map(),
   quiz: null,
-  flashcards: null
+  flashcards: null,
 };
 
 const elements = {};
 let resizeFrame = 0;
 let lastViewportSize = {
   width: 0,
-  height: 0
+  height: 0,
 };
 const HIDDEN_NOTE_SECTION_TITLES = new Set([
   "description",
   "source notes",
   "page reference convention",
-  "disclaimer"
+  "disclaimer",
 ]);
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -48,9 +48,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   elements.immersiveBack.addEventListener("click", () => {
     const chapter = getChapterBySlug(state.selectedChapterSlug);
-    const backHash = chapter && hasViewAsset(chapter, "notes")
-      ? buildHash(chapter.slug, "notes")
-      : buildHash(state.selectedChapterSlug, null);
+    const backHash =
+      chapter && hasViewAsset(chapter, "notes")
+        ? buildHash(chapter.slug, "notes")
+        : buildHash(state.selectedChapterSlug, null);
     window.location.hash = backHash;
   });
 
@@ -79,16 +80,20 @@ async function initializeApp() {
         primaryBorderColor: "#2c6a62",
         lineColor: "#2c6a62",
         secondaryColor: "#fffaf3",
-        tertiaryColor: "#e6f0ef"
-      }
+        tertiaryColor: "#e6f0ef",
+      },
     });
   }
 
-  state.index = await loadJson("Generated Study Notes/study-content-index.json");
+  state.index = await loadJson(
+    "Generated Study Notes/study-content-index.json",
+  );
   populateGlobalMeta();
   window.addEventListener("hashchange", () => applyRoute(window.location.hash));
   window.addEventListener("resize", scheduleViewportRefresh, { passive: true });
-  window.addEventListener("orientationchange", scheduleViewportRefresh, { passive: true });
+  window.addEventListener("orientationchange", scheduleViewportRefresh, {
+    passive: true,
+  });
   applyRoute(window.location.hash);
 }
 
@@ -101,7 +106,11 @@ function getChapters() {
 }
 
 function getDefaultChapter() {
-  return getChapters().find((chapter) => chapter.status === "complete") ?? getChapters()[0] ?? null;
+  return (
+    getChapters().find((chapter) => chapter.status === "complete") ??
+    getChapters()[0] ??
+    null
+  );
 }
 
 function getChapterBySlug(slug) {
@@ -109,7 +118,9 @@ function getChapterBySlug(slug) {
 }
 
 function getAsset(chapter, assetType) {
-  return chapter?.assets?.find((asset) => asset.asset_type === assetType) ?? null;
+  return (
+    chapter?.assets?.find((asset) => asset.asset_type === assetType) ?? null
+  );
 }
 
 function hasViewAsset(chapter, view) {
@@ -123,13 +134,13 @@ function parseHash(hash) {
   if (parts[0] === "chapter" && parts[1]) {
     return {
       slug: decodeURIComponent(parts[1]),
-      view: parts[2] ?? null
+      view: parts[2] ?? null,
     };
   }
 
   return {
     slug: getDefaultChapter()?.slug ?? null,
-    view: null
+    view: null,
   };
 }
 
@@ -153,9 +164,16 @@ function applyRoute(hash) {
     return;
   }
 
-  const firstAvailable = Object.keys(VIEW_ASSET_TYPES).find(v => hasViewAsset(chapter, v)) ?? null;
-  const requestedView = (parsed.view && Object.hasOwn(VIEW_ASSET_TYPES, parsed.view)) ? parsed.view : null;
-  const safeView = (requestedView && hasViewAsset(chapter, requestedView)) ? requestedView : firstAvailable;
+  const firstAvailable =
+    Object.keys(VIEW_ASSET_TYPES).find((v) => hasViewAsset(chapter, v)) ?? null;
+  const requestedView =
+    parsed.view && Object.hasOwn(VIEW_ASSET_TYPES, parsed.view)
+      ? parsed.view
+      : null;
+  const safeView =
+    requestedView && hasViewAsset(chapter, requestedView)
+      ? requestedView
+      : firstAvailable;
   const nextHash = buildHash(chapter.slug, safeView);
 
   if (window.location.hash !== nextHash) {
@@ -168,7 +186,10 @@ function applyRoute(hash) {
   state.selectedChapterSlug = chapter.slug;
   state.view = safeView;
 
-  if (chapterChanged || (previousView === "questions" && safeView !== "questions")) {
+  if (
+    chapterChanged ||
+    (previousView === "questions" && safeView !== "questions")
+  ) {
     state.quiz = null;
   }
 
@@ -215,7 +236,7 @@ function renderModeNav(chapter) {
   const modeButtons = [
     ["notes", "Study Notes"],
     ["questions", "Exam Questions"],
-    ["flashcards", "Flash Cards"]
+    ["flashcards", "Flash Cards"],
   ];
 
   elements.modeNav.innerHTML = modeButtons
@@ -271,7 +292,10 @@ async function renderNotesView(chapter) {
   const notesAsset = getAsset(chapter, VIEW_ASSET_TYPES.notes);
 
   if (!notesAsset) {
-    renderMissingView("Study Notes", "No markdown notes are listed for this chapter yet.");
+    renderMissingView(
+      "Study Notes",
+      "No markdown notes are listed for this chapter yet.",
+    );
     return;
   }
 
@@ -306,7 +330,7 @@ async function renderNotesView(chapter) {
     gfm: true,
     breaks: false,
     headerIds: true,
-    mangle: false
+    mangle: false,
   });
 
   hydrateRenderedNotes(notesContent);
@@ -335,13 +359,17 @@ function hydrateRenderedNotes(root) {
   });
 
   root.querySelectorAll("p, li, td, th, blockquote").forEach((node) => {
-    node.innerHTML = node.innerHTML.replace(/\[(\d+)\]/g, '<span class="page-ref" title="Source page reference">p$1</span>');
+    node.innerHTML = node.innerHTML.replace(
+      /\[(\d+)\]/g,
+      '<span class="page-ref" title="Source page reference">p$1</span>',
+    );
   });
 }
 
 function removeHiddenNoteSections(root) {
-  const headings = [...root.querySelectorAll("h2")]
-    .filter((heading) => HIDDEN_NOTE_SECTION_TITLES.has(heading.textContent.trim().toLowerCase()));
+  const headings = [...root.querySelectorAll("h2")].filter((heading) =>
+    HIDDEN_NOTE_SECTION_TITLES.has(heading.textContent.trim().toLowerCase()),
+  );
 
   headings.forEach((heading) => {
     let current = heading;
@@ -364,13 +392,15 @@ function renderNotesToc(root) {
   const headings = [...root.querySelectorAll("h2, h3")];
 
   if (!headings.length) {
-    tocList.innerHTML = "<p class=\"helper-text\">The notes did not contain section headings.</p>";
+    tocList.innerHTML =
+      '<p class="helper-text">The notes did not contain section headings.</p>';
     return;
   }
 
   tocList.innerHTML = headings
     .map((heading) => {
-      const indent = heading.tagName === "H3" ? " style=\"padding-left: 12px\"" : "";
+      const indent =
+        heading.tagName === "H3" ? ' style="padding-left: 12px"' : "";
       return `<button class="toc-link" type="button" data-heading-id="${escapeHtml(heading.id)}"${indent}>${escapeHtml(heading.textContent)}</button>`;
     })
     .join("");
@@ -379,7 +409,7 @@ function renderNotesToc(root) {
     button.addEventListener("click", () => {
       document.getElementById(button.dataset.headingId)?.scrollIntoView({
         behavior: "smooth",
-        block: "start"
+        block: "start",
       });
     });
   });
@@ -392,7 +422,7 @@ async function renderMermaidBlocks(root) {
   }
 
   await window.mermaid.run({
-    querySelector: ".mermaid"
+    querySelector: ".mermaid",
   });
 }
 
@@ -400,12 +430,16 @@ async function renderQuestionsView(chapter) {
   const questionsAsset = getAsset(chapter, VIEW_ASSET_TYPES.questions);
 
   if (!questionsAsset) {
-    renderMissingView("Exam Questions", "No exam question set is listed for this chapter yet.");
+    renderMissingView(
+      "Exam Questions",
+      "No exam question set is listed for this chapter yet.",
+    );
     return;
   }
 
   const questionSet = await loadJson(questionsAsset.path);
-  const sameChapterSession = state.quiz && state.quiz.chapterSlug === chapter.slug;
+  const sameChapterSession =
+    state.quiz && state.quiz.chapterSlug === chapter.slug;
 
   if (!sameChapterSession) {
     state.quiz = null;
@@ -478,25 +512,31 @@ function renderQuizSetup(chapter, questionSet, questionsAsset) {
     </div>
   `;
 
-  document.getElementById("quiz-settings-form").addEventListener("submit", (event) => {
-    event.preventDefault();
-    const formData = new FormData(event.currentTarget);
-    const requestedCount = Number.parseInt(formData.get("questionCount"), 10);
-    const questionCount = clampNumber(requestedCount, 1, totalQuestions);
-    const feedbackMode = formData.get("feedbackMode") === "summary" ? "summary" : "immediate";
-    const selectedQuestions = shuffle([...questionSet.questions]).slice(0, questionCount);
+  document
+    .getElementById("quiz-settings-form")
+    .addEventListener("submit", (event) => {
+      event.preventDefault();
+      const formData = new FormData(event.currentTarget);
+      const requestedCount = Number.parseInt(formData.get("questionCount"), 10);
+      const questionCount = clampNumber(requestedCount, 1, totalQuestions);
+      const feedbackMode =
+        formData.get("feedbackMode") === "summary" ? "summary" : "immediate";
+      const selectedQuestions = shuffle([...questionSet.questions]).slice(
+        0,
+        questionCount,
+      );
 
-    state.quiz = {
-      chapterSlug: chapter.slug,
-      feedbackMode,
-      questions: selectedQuestions,
-      currentIndex: 0,
-      answers: {},
-      completed: false
-    };
+      state.quiz = {
+        chapterSlug: chapter.slug,
+        feedbackMode,
+        questions: selectedQuestions,
+        currentIndex: 0,
+        answers: {},
+        completed: false,
+      };
 
-    renderQuizQuestion(questionSet);
-  });
+      renderQuizQuestion(questionSet);
+    });
 }
 
 function renderQuizQuestion(questionSet) {
@@ -505,8 +545,11 @@ function renderQuizQuestion(questionSet) {
   const savedAnswer = session.answers[question.question_id] ?? null;
   const isAnswered = Boolean(savedAnswer);
   const isImmediate = session.feedbackMode === "immediate";
-  const progressValue = ((session.currentIndex + 1) / session.questions.length) * 100;
-  updateImmersiveTitle(`Q: ${session.currentIndex + 1} of ${session.questions.length}`);
+  const progressValue =
+    ((session.currentIndex + 1) / session.questions.length) * 100;
+  updateImmersiveTitle(
+    `Q: ${session.currentIndex + 1} of ${session.questions.length}`,
+  );
 
   elements.viewRoot.innerHTML = `
     <div class="section-stack quiz-screen quiz-screen--question">
@@ -558,7 +601,7 @@ function renderQuizQuestion(questionSet) {
 
     session.answers[question.question_id] = {
       selectedChoiceKey,
-      isCorrect: selectedChoiceKey === question.answer.correct_choice_key
+      isCorrect: selectedChoiceKey === question.answer.correct_choice_key,
     };
 
     if (session.feedbackMode === "immediate") {
@@ -569,11 +612,17 @@ function renderQuizQuestion(questionSet) {
     goToNextQuizStep(questionSet);
   });
 
-  document.getElementById("restart-quiz-button").addEventListener("click", () => {
-    const selectedChapter = getChapterBySlug(state.selectedChapterSlug);
-    state.quiz = null;
-    renderQuizSetup(selectedChapter, questionSet, getAsset(selectedChapter, VIEW_ASSET_TYPES.questions));
-  });
+  document
+    .getElementById("restart-quiz-button")
+    .addEventListener("click", () => {
+      const selectedChapter = getChapterBySlug(state.selectedChapterSlug);
+      state.quiz = null;
+      renderQuizSetup(
+        selectedChapter,
+        questionSet,
+        getAsset(selectedChapter, VIEW_ASSET_TYPES.questions),
+      );
+    });
 
   const nextButton = document.getElementById("next-question-button");
   if (nextButton) {
@@ -662,7 +711,11 @@ function renderQuizSummary(questionSet) {
   document.getElementById("retry-quiz-button").addEventListener("click", () => {
     const selectedChapter = getChapterBySlug(state.selectedChapterSlug);
     state.quiz = null;
-    renderQuizSetup(selectedChapter, questionSet, getAsset(selectedChapter, VIEW_ASSET_TYPES.questions));
+    renderQuizSetup(
+      selectedChapter,
+      questionSet,
+      getAsset(selectedChapter, VIEW_ASSET_TYPES.questions),
+    );
   });
 }
 
@@ -696,26 +749,37 @@ async function renderFlashcardsView(chapter) {
   const flashcardsAsset = getAsset(chapter, VIEW_ASSET_TYPES.flashcards);
 
   if (!flashcardsAsset) {
-    renderMissingView("Flash Cards", "No flashcard deck is listed for this chapter yet.");
+    renderMissingView(
+      "Flash Cards",
+      "No flashcard deck is listed for this chapter yet.",
+    );
     return;
   }
 
   const flashcardSet = await loadJson(flashcardsAsset.path);
 
   if (!state.flashcards || state.flashcards.chapterSlug !== chapter.slug) {
-    state.flashcards = createFlashcardSession(chapter.slug, flashcardSet.cards.length);
+    state.flashcards = createFlashcardSession(
+      chapter.slug,
+      flashcardSet.cards.length,
+    );
   }
 
   const session = state.flashcards;
   const currentCard = flashcardSet.cards[session.order[session.currentIndex]];
-  updateImmersiveTitle(`Card ${session.currentIndex + 1} of ${flashcardSet.cards.length}`);
+  updateImmersiveTitle(
+    `Card ${session.currentIndex + 1} of ${flashcardSet.cards.length}`,
+  );
   updateImmersiveAction({
     label: "Shuffle",
     ariaLabel: "Shuffle flashcards",
     onClick: () => {
-      state.flashcards = createFlashcardSession(chapter.slug, flashcardSet.cards.length);
+      state.flashcards = createFlashcardSession(
+        chapter.slug,
+        flashcardSet.cards.length,
+      );
       renderFlashcardsView(chapter);
-    }
+    },
   });
 
   elements.viewRoot.innerHTML = `
@@ -755,29 +819,40 @@ async function renderFlashcardsView(chapter) {
     renderFlashcardsView(chapter);
   };
 
-  document.getElementById("flashcard-surface").addEventListener("click", toggleFlip);
-  document.getElementById("flashcard-surface").addEventListener("keydown", (event) => {
-    if (event.key === "Enter" || event.key === " ") {
-      event.preventDefault();
-      toggleFlip();
-    }
-  });
+  document
+    .getElementById("flashcard-surface")
+    .addEventListener("click", toggleFlip);
+  document
+    .getElementById("flashcard-surface")
+    .addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        toggleFlip();
+      }
+    });
 
-  document.getElementById("flashcard-prev-button").addEventListener("click", () => {
-    session.currentIndex = Math.max(0, session.currentIndex - 1);
-    session.showingBack = false;
-    renderFlashcardsView(chapter);
-  });
-  document.getElementById("flashcard-primary-button").addEventListener("click", () => {
-    if (!session.showingBack) {
-      toggleFlip();
-      return;
-    }
+  document
+    .getElementById("flashcard-prev-button")
+    .addEventListener("click", () => {
+      session.currentIndex = Math.max(0, session.currentIndex - 1);
+      session.showingBack = false;
+      renderFlashcardsView(chapter);
+    });
+  document
+    .getElementById("flashcard-primary-button")
+    .addEventListener("click", () => {
+      if (!session.showingBack) {
+        toggleFlip();
+        return;
+      }
 
-    session.currentIndex = Math.min(flashcardSet.cards.length - 1, session.currentIndex + 1);
-    session.showingBack = false;
-    renderFlashcardsView(chapter);
-  });
+      session.currentIndex = Math.min(
+        flashcardSet.cards.length - 1,
+        session.currentIndex + 1,
+      );
+      session.showingBack = false;
+      renderFlashcardsView(chapter);
+    });
 }
 
 function createFlashcardSession(chapterSlug, cardCount) {
@@ -785,7 +860,7 @@ function createFlashcardSession(chapterSlug, cardCount) {
     chapterSlug,
     order: shuffle([...Array(cardCount).keys()]),
     currentIndex: 0,
-    showingBack: false
+    showingBack: false,
   };
 }
 
@@ -841,7 +916,9 @@ function renderPageRefList(pageRefs) {
 }
 
 function getChoiceLabel(question, choiceKey) {
-  return question.choices.find((choice) => choice.key === choiceKey)?.text ?? "";
+  return (
+    question.choices.find((choice) => choice.key === choiceKey)?.text ?? ""
+  );
 }
 
 function slugify(value) {
@@ -887,7 +964,10 @@ function encodeAttribute(value) {
 }
 
 function toTitleCase(str) {
-  return str.split(" ").map((word) => word.charAt(0).toUpperCase() + word.slice(1)).join(" ");
+  return str
+    .split(" ")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
 }
 
 function initTheme() {
@@ -916,7 +996,10 @@ function updateThemeIcon() {
   const moonSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>`;
   document.querySelectorAll(".theme-toggle").forEach((btn) => {
     btn.innerHTML = isDark ? sunSvg : moonSvg;
-    btn.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
+    btn.setAttribute(
+      "aria-label",
+      isDark ? "Switch to light mode" : "Switch to dark mode",
+    );
   });
 }
 
@@ -944,7 +1027,9 @@ function updateImmersiveAction(config) {
     return;
   }
 
-  elements.immersiveAction.replaceWith(elements.immersiveAction.cloneNode(false));
+  elements.immersiveAction.replaceWith(
+    elements.immersiveAction.cloneNode(false),
+  );
   elements.immersiveAction = document.getElementById("immersive-action");
 
   if (!config) {
@@ -956,7 +1041,10 @@ function updateImmersiveAction(config) {
 
   elements.immersiveAction.hidden = false;
   elements.immersiveAction.textContent = config.label;
-  elements.immersiveAction.setAttribute("aria-label", config.ariaLabel ?? config.label);
+  elements.immersiveAction.setAttribute(
+    "aria-label",
+    config.ariaLabel ?? config.label,
+  );
   elements.immersiveAction.addEventListener("click", config.onClick);
 }
 
@@ -988,9 +1076,13 @@ function scheduleViewportRefresh() {
 function syncViewportMetrics() {
   const width = window.innerWidth;
   const height = window.innerHeight;
-  document.documentElement.style.setProperty("--viewport-height", `${height}px`);
+  document.documentElement.style.setProperty(
+    "--viewport-height",
+    `${height}px`,
+  );
 
-  const changed = width !== lastViewportSize.width || height !== lastViewportSize.height;
+  const changed =
+    width !== lastViewportSize.width || height !== lastViewportSize.height;
   lastViewportSize = { width, height };
   return changed;
 }
