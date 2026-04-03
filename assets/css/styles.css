@@ -16,6 +16,7 @@
   --radius-sm: 12px;
   --font-display: "Fraunces", Georgia, serif;
   --font-body: "Manrope", "Segoe UI", sans-serif;
+  --immersive-bar-h: 48px;
 }
 
 [data-theme="dark"] {
@@ -309,17 +310,28 @@ button {
   gap: 18px;
 }
 
-.chapter-summary__top {
+.chapter-summary__header {
   display: flex;
   align-items: start;
   justify-content: space-between;
-  gap: 20px;
+  gap: 16px;
 }
 
-.chapter-summary__copy p {
-  margin: 12px 0 0;
+.chapter-summary__label {
+  display: block;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 800;
   color: var(--muted);
-  line-height: 1.7;
+  margin-bottom: 3px;
+}
+
+.chapter-summary__title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-family: var(--font-display);
+  line-height: 1.2;
 }
 
 .chapter-summary__meta,
@@ -364,30 +376,31 @@ button {
 }
 
 .mode-button {
-  border: 1px solid transparent;
+  border: 1px solid var(--border);
   border-radius: 12px;
-  background: transparent;
+  background: var(--hover-bg);
   color: var(--muted);
   padding: 8px 14px;
   font-weight: 700;
   font-size: 0.88rem;
   flex: 1;
   text-align: center;
-  transition: color 140ms ease, background 140ms ease;
+  transition: color 140ms ease, background 140ms ease, border-color 140ms ease;
 }
 
 .mode-button:hover,
 .mode-button:focus-visible {
   outline: none;
   color: var(--text);
-  background: var(--hover-bg);
+  background: var(--secondary-soft);
+  border-color: rgba(44, 106, 98, 0.3);
 }
 
 .mode-button.is-active {
-  background: var(--surface-strong);
-  color: var(--text);
-  border-color: var(--border);
-  box-shadow: 0 1px 4px rgba(17, 35, 61, 0.1);
+  background: var(--secondary);
+  color: #fff;
+  border-color: var(--secondary);
+  box-shadow: 0 1px 6px rgba(44, 106, 98, 0.3);
 }
 
 .mode-button.is-disabled {
@@ -395,19 +408,42 @@ button {
   cursor: not-allowed;
 }
 
-/* Immersive mode — Exam Questions and Flash Cards fill the whole screen */
+/* ─── Immersive mode — viewport-locked layout for Questions and Flash Cards ─── */
+
 .immersive-bar {
   display: none;
+}
+
+.is-immersive body {
+  overflow: hidden;
+}
+
+.is-immersive #site-hero,
+.is-immersive #chapter-summary,
+.is-immersive #mode-nav,
+.is-immersive .site-footer {
+  display: none;
+}
+
+.is-immersive .site-shell {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100svh;
+  overflow: hidden;
 }
 
 .is-immersive .immersive-bar {
   display: flex;
   align-items: center;
-  padding: 10px 16px;
+  justify-content: space-between;
+  flex-shrink: 0;
+  height: var(--immersive-bar-h);
+  padding: 0 16px;
   background: var(--surface-strong);
   border-bottom: 1px solid var(--border);
-  position: sticky;
-  top: 0;
   z-index: 100;
 }
 
@@ -425,27 +461,178 @@ button {
   text-decoration: underline;
 }
 
-.is-immersive #site-hero,
-.is-immersive #chapter-summary,
-.is-immersive #mode-nav,
-.is-immersive .site-footer {
-  display: none;
-}
-
-.is-immersive .site-shell {
-  width: 100%;
-  max-width: 100%;
-  padding: 0;
-}
-
 .is-immersive .workspace {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
   gap: 0;
+  display: flex;
+}
+
+.is-immersive .main-content {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.is-immersive .view-panel {
+  min-height: 0;
 }
 
 .is-immersive #view-root {
+  flex: 1;
+  min-height: 0;
   border-radius: 0;
-  min-height: 100svh;
   box-shadow: none;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Allow scrolling on setup and results screens */
+.is-immersive #view-root:has(.quiz-settings),
+.is-immersive #view-root:has(.summary-card) {
+  overflow-y: auto;
+}
+
+/* Section stack — flex column filling the view */
+.is-immersive #view-root .section-stack {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  gap: 10px;
+  padding: 14px 16px max(14px, env(safe-area-inset-bottom)) 16px;
+  overflow: hidden;
+}
+
+/* Allow scroll on setup/summary stacks */
+.is-immersive #view-root:has(.quiz-settings) .section-stack,
+.is-immersive #view-root:has(.summary-card) .section-stack {
+  overflow-y: auto;
+  height: auto;
+}
+
+/* Compact status header — eyebrow out, h2 small, description hidden */
+.is-immersive #view-root .section-stack > div:first-child {
+  flex-shrink: 0;
+}
+
+.is-immersive #view-root .section-stack > div:first-child .panel__eyebrow {
+  display: none;
+}
+
+.is-immersive #view-root .section-stack > div:first-child h2 {
+  font-size: clamp(0.9rem, 2.2svh, 1.1rem);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.is-immersive #view-root .section-stack > div:first-child > p:not(.quiz-card__meta) {
+  display: none;
+}
+
+.is-immersive .progress-bar {
+  margin-top: 6px;
+  height: 5px;
+}
+
+/* Quiz: question card is the flex filler */
+.is-immersive .question-card {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  gap: 8px;
+}
+
+.is-immersive .question-prompt {
+  flex-shrink: 0;
+  margin-top: 0;
+  font-size: clamp(0.86rem, 2.3svh, 1.05rem);
+  line-height: 1.5;
+}
+
+/* Choices scroll internally — no page scroll */
+.is-immersive .question-choices {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+  gap: 7px;
+}
+
+.is-immersive .question-choice {
+  padding: 10px 13px;
+  font-size: clamp(0.8rem, 1.9svh, 0.93rem);
+  border-radius: 14px;
+}
+
+.is-immersive .result-banner {
+  flex-shrink: 0;
+  margin-top: 0;
+  padding: 12px 14px;
+  font-size: clamp(0.8rem, 1.9svh, 0.9rem);
+}
+
+.is-immersive .inline-actions {
+  flex-shrink: 0;
+}
+
+/* Flashcard: card is the flex filler */
+.is-immersive .flashcard-controls {
+  flex-shrink: 0;
+  gap: 6px;
+}
+
+.is-immersive .flashcard-card {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.is-immersive .flashcard-inner {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 18px 20px;
+  gap: 0;
+}
+
+.is-immersive .flashcard-face {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  gap: 10px;
+  min-height: 0;
+}
+
+.is-immersive .flashcard-face__text {
+  font-size: clamp(1rem, 3.8svh, 2rem);
+  line-height: 1.4;
+}
+
+.is-immersive .flashcard-footer {
+  flex-shrink: 0;
+  margin-top: 12px;
+}
+
+.is-immersive .flashcard-meta {
+  display: none;
+}
+
+/* Shuffle button at bottom of stack */
+.is-immersive #view-root .inline-actions:last-of-type {
+  flex-shrink: 0;
 }
 
 .view-panel {
@@ -849,15 +1036,15 @@ button {
   color: var(--muted);
 }
 
-.references-details {
+.desc-disclaimer-details {
   border-top: 1px solid var(--border);
-  padding-top: 12px;
+  padding-top: 10px;
 }
 
-.references-summary {
+.desc-disclaimer-summary {
   cursor: pointer;
   list-style: none;
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.12em;
@@ -865,18 +1052,48 @@ button {
   user-select: none;
 }
 
-.references-summary::-webkit-details-marker {
+.desc-disclaimer-summary::-webkit-details-marker {
   display: none;
 }
 
-.references-summary::after {
+.desc-disclaimer-summary::after {
   content: " ›";
   font-weight: 400;
   letter-spacing: 0;
 }
 
-details[open] .references-summary::after {
+details[open] .desc-disclaimer-summary::after {
   content: " ‹";
+}
+
+.desc-disclaimer-body {
+  margin-top: 12px;
+  display: grid;
+  gap: 10px;
+}
+
+.desc-disclaimer-body p {
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.desc-disclaimer-body h4 {
+  margin: 4px 0 4px;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.disclaimer-note {
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: var(--accent-soft);
+  font-size: 0.82rem !important;
+  color: var(--text) !important;
 }
 
 .references-list {
@@ -915,20 +1132,36 @@ details[open] .references-summary::after {
 }
 
 @media (max-width: 720px) {
+  /* Hero goes edge-to-edge on mobile */
   .site-shell {
-    width: min(100% - 20px, 1400px);
-    padding-top: 10px;
+    width: 100%;
+    padding: 0 0 32px;
   }
 
-  .hero__inner,
-  .panel,
-  .panel--sidebar {
-    padding: 20px;
-    border-radius: 24px;
+  .hero {
+    margin: 0 0 16px;
+  }
+
+  .hero__inner {
+    border-radius: 0 0 20px 20px;
+    padding: 10px 16px;
+  }
+
+  .workspace {
+    padding: 0 14px;
+    gap: 16px;
+  }
+
+  .site-footer {
+    padding: 0 14px;
   }
 
   .chapter-summary__top,
-  .result-card__header,
+  .result-card__header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
   .flashcard-footer {
     flex-direction: column;
     align-items: stretch;
@@ -945,6 +1178,12 @@ details[open] .references-summary::after {
   }
 
   .flashcard-inner {
-    padding: 22px;
+    padding: 18px;
+  }
+
+  .chapter-select {
+    max-width: 180px;
+    min-width: 120px;
+    font-size: 0.78rem;
   }
 }
