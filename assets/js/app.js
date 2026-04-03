@@ -488,9 +488,7 @@ function extractMarkdownSection(markdown, heading) {
     return "";
   }
 
-  return match[1]
-    .replace(/^\s+|\s+$/g, "")
-    .replace(/\n{2,}/g, "\n\n");
+  return match[1].replace(/^\s+|\s+$/g, "").replace(/\n{2,}/g, "\n\n");
 }
 
 function renderNotesToc(root) {
@@ -542,41 +540,59 @@ function syncMermaidTheme(root = document) {
   const edgeLabelFill = isDark ? "#223247" : "#fffaf3";
   const edgeLabelBackdrop = isDark ? "#162032" : "#fffaf3";
 
-  root.querySelectorAll(".mermaid .node rect, .mermaid .node polygon, .mermaid .node circle, .mermaid .node ellipse, .mermaid .node path").forEach((shape) => {
-    shape.style.fill = nodeFill;
-    shape.style.stroke = nodeStroke;
-  });
+  root
+    .querySelectorAll(
+      ".mermaid .node rect, .mermaid .node polygon, .mermaid .node circle, .mermaid .node ellipse, .mermaid .node path",
+    )
+    .forEach((shape) => {
+      shape.style.fill = nodeFill;
+      shape.style.stroke = nodeStroke;
+    });
 
-  root.querySelectorAll(".mermaid .nodeLabel, .mermaid .label, .mermaid .label text, .mermaid .nodeLabel p, .mermaid foreignObject div, .mermaid foreignObject span").forEach((label) => {
-    label.style.color = textColor;
-    label.style.fill = textColor;
-  });
+  root
+    .querySelectorAll(
+      ".mermaid .nodeLabel, .mermaid .label, .mermaid .label text, .mermaid .nodeLabel p, .mermaid foreignObject div, .mermaid foreignObject span",
+    )
+    .forEach((label) => {
+      label.style.color = textColor;
+      label.style.fill = textColor;
+    });
 
-  root.querySelectorAll(".mermaid .edge-thickness-normal, .mermaid .edge-thickness-thick, .mermaid .arrowMarkerPath").forEach((edge) => {
-    edge.style.stroke = nodeStroke;
-    edge.style.fill = edge.classList.contains("arrowMarkerPath")
-      ? nodeStroke
-      : "none";
-  });
+  root
+    .querySelectorAll(
+      ".mermaid .edge-thickness-normal, .mermaid .edge-thickness-thick, .mermaid .arrowMarkerPath",
+    )
+    .forEach((edge) => {
+      edge.style.stroke = nodeStroke;
+      edge.style.fill = edge.classList.contains("arrowMarkerPath")
+        ? nodeStroke
+        : "none";
+    });
 
   root.querySelectorAll(".mermaid .labelBkg").forEach((labelBg) => {
     labelBg.style.fill = edgeLabelBackdrop;
     labelBg.style.backgroundColor = edgeLabelBackdrop;
   });
 
-  root.querySelectorAll(".mermaid span.edgeLabel, .mermaid span.edgeLabel p, .mermaid .edgeLabel .labelBkg, .mermaid .edgeLabel foreignObject, .mermaid .edgeLabel div").forEach((edgeLabel) => {
-    edgeLabel.style.backgroundColor = edgeLabelFill;
-    edgeLabel.style.color = textColor;
-    edgeLabel.style.fill = textColor;
-    edgeLabel.style.borderColor = nodeStroke;
-  });
+  root
+    .querySelectorAll(
+      ".mermaid span.edgeLabel, .mermaid span.edgeLabel p, .mermaid .edgeLabel .labelBkg, .mermaid .edgeLabel foreignObject, .mermaid .edgeLabel div",
+    )
+    .forEach((edgeLabel) => {
+      edgeLabel.style.backgroundColor = edgeLabelFill;
+      edgeLabel.style.color = textColor;
+      edgeLabel.style.fill = textColor;
+      edgeLabel.style.borderColor = nodeStroke;
+    });
 
-  root.querySelectorAll(".mermaid span.edgeLabel p").forEach((edgeParagraph) => {
-    edgeParagraph.style.padding = "2px 6px";
-    edgeParagraph.style.borderWidth = "1px";
-    edgeParagraph.style.borderStyle = "solid";
-    edgeParagraph.style.borderRadius = "6px";
-  });
+  root
+    .querySelectorAll(".mermaid span.edgeLabel p")
+    .forEach((edgeParagraph) => {
+      edgeParagraph.style.padding = "2px 6px";
+      edgeParagraph.style.borderWidth = "1px";
+      edgeParagraph.style.borderStyle = "solid";
+      edgeParagraph.style.borderRadius = "6px";
+    });
 }
 
 async function renderQuestionsView(chapter) {
