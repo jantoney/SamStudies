@@ -10,11 +10,44 @@
   --secondary-soft: rgba(44, 106, 98, 0.14);
   --border: rgba(23, 37, 61, 0.12);
   --shadow: 0 24px 55px rgba(17, 35, 61, 0.14);
+  --hover-bg: rgba(17, 35, 61, 0.06);
   --radius-lg: 28px;
   --radius-md: 18px;
   --radius-sm: 12px;
   --font-display: "Fraunces", Georgia, serif;
   --font-body: "Manrope", "Segoe UI", sans-serif;
+}
+
+[data-theme="dark"] {
+  --bg: #0d1825;
+  --surface: rgba(255, 255, 255, 0.04);
+  --surface-strong: #162032;
+  --text: #e6edf5;
+  --muted: #8a9bb0;
+  --border: rgba(255, 255, 255, 0.1);
+  --shadow: 0 24px 55px rgba(0, 0, 0, 0.5);
+  --hover-bg: rgba(255, 255, 255, 0.06);
+}
+
+[data-theme="dark"] body {
+  background: linear-gradient(180deg, #0d1825 0%, #0f1e2e 100%);
+}
+
+[data-theme="dark"] .radio-card,
+[data-theme="dark"] .question-choice {
+  background: var(--surface-strong);
+  border-color: var(--border);
+  color: var(--text);
+}
+
+[data-theme="dark"] .text-input {
+  background: var(--surface-strong);
+  color: var(--text);
+  border-color: var(--border);
+}
+
+[data-theme="dark"] .notes-content :not(pre) > code {
+  background: rgba(255, 255, 255, 0.1);
 }
 
 * {
@@ -60,11 +93,67 @@ button {
 .hero__inner {
   position: relative;
   overflow: hidden;
-  padding: 14px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 10px 20px;
   border-radius: 28px;
   color: #f7f2eb;
   background: linear-gradient(130deg, rgba(17, 35, 61, 0.96), rgba(40, 67, 104, 0.94));
   box-shadow: var(--shadow);
+}
+
+.hero__controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #f7f2eb;
+  flex-shrink: 0;
+  transition: background 140ms ease;
+}
+
+.theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.chapter-select {
+  appearance: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpolyline points='2,4 6,8 10,4' fill='none' stroke='%23f7f2eb' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  color: #f7f2eb;
+  padding: 6px 30px 6px 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  max-width: 300px;
+  min-width: 160px;
+}
+
+.chapter-select:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.chapter-select option {
+  background: #17253d;
+  color: #f7f2eb;
 }
 
 .panel__eyebrow {
@@ -95,7 +184,6 @@ button {
 .workspace {
   display: grid;
   gap: 22px;
-  grid-template-columns: minmax(250px, 280px) minmax(0, 1fr);
   align-items: start;
 }
 
@@ -235,9 +323,7 @@ button {
 }
 
 .chapter-summary__meta,
-.chapter-summary__topics,
 .meta-grid,
-.mode-nav,
 .card-grid,
 .download-links,
 .flashcard-controls,
@@ -263,47 +349,103 @@ button {
   text-decoration: underline;
 }
 
+.chapter-summary__topics {
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
 .mode-nav {
-  padding: 16px;
-  align-items: center;
+  padding: 6px;
+  display: flex;
+  gap: 4px;
+  align-items: stretch;
 }
 
 .mode-button {
   border: 1px solid transparent;
-  border-radius: 16px;
-  background: rgba(17, 35, 61, 0.06);
-  color: var(--text);
-  padding: 12px 16px;
-  min-width: 150px;
-  text-align: left;
-}
-
-.mode-button strong {
-  display: block;
-  margin-bottom: 4px;
-}
-
-.mode-button span {
-  display: block;
-  font-size: 0.88rem;
-  line-height: 1.4;
+  border-radius: 12px;
+  background: transparent;
   color: var(--muted);
+  padding: 8px 14px;
+  font-weight: 700;
+  font-size: 0.88rem;
+  flex: 1;
+  text-align: center;
+  transition: color 140ms ease, background 140ms ease;
 }
 
 .mode-button:hover,
 .mode-button:focus-visible {
   outline: none;
-  border-color: rgba(44, 106, 98, 0.38);
+  color: var(--text);
+  background: var(--hover-bg);
 }
 
 .mode-button.is-active {
-  background: linear-gradient(180deg, rgba(44, 106, 98, 0.16), rgba(44, 106, 98, 0.08));
-  border-color: rgba(44, 106, 98, 0.38);
+  background: var(--surface-strong);
+  color: var(--text);
+  border-color: var(--border);
+  box-shadow: 0 1px 4px rgba(17, 35, 61, 0.1);
 }
 
 .mode-button.is-disabled {
-  opacity: 0.52;
+  opacity: 0.4;
   cursor: not-allowed;
+}
+
+/* Immersive mode — Exam Questions and Flash Cards fill the whole screen */
+.immersive-bar {
+  display: none;
+}
+
+.is-immersive .immersive-bar {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  background: var(--surface-strong);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.immersive-back {
+  border: 0;
+  background: transparent;
+  color: var(--secondary);
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 4px 0;
+  cursor: pointer;
+}
+
+.immersive-back:hover {
+  text-decoration: underline;
+}
+
+.is-immersive #site-hero,
+.is-immersive #chapter-summary,
+.is-immersive #mode-nav,
+.is-immersive .site-footer {
+  display: none;
+}
+
+.is-immersive .site-shell {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+}
+
+.is-immersive .workspace {
+  gap: 0;
+}
+
+.is-immersive #view-root {
+  border-radius: 0;
+  min-height: 100svh;
+  box-shadow: none;
 }
 
 .view-panel {
@@ -762,19 +904,13 @@ details[open] .references-summary::after {
 }
 
 @media (max-width: 1080px) {
-  .hero__copy,
   .workspace,
   .notes-layout {
     grid-template-columns: 1fr;
   }
 
-  .sidebar,
   .toc-card {
     position: static;
-  }
-
-  .chapter-list {
-    max-height: none;
   }
 }
 

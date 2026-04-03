@@ -7,7 +7,7 @@ const VIEW_ASSET_TYPES = {
 const state = {
   index: null,
   selectedChapterSlug: null,
-  view: "overview",
+  view: null,
   cache: new Map(),
   quiz: null,
   flashcards: null
@@ -16,11 +16,30 @@ const state = {
 const elements = {};
 
 document.addEventListener("DOMContentLoaded", () => {
-  elements.chapterList = document.getElementById("chapter-list");
+  elements.chapterSelect = document.getElementById("chapter-select");
+  elements.themeToggle = document.getElementById("theme-toggle");
+  elements.immersiveBack = document.getElementById("immersive-back");
   elements.chapterSummary = document.getElementById("chapter-summary");
   elements.modeNav = document.getElementById("mode-nav");
   elements.viewRoot = document.getElementById("view-root");
   elements.disclaimerSummary = document.getElementById("disclaimer-summary");
+
+  elements.themeToggle.addEventListener("click", toggleTheme);
+
+  elements.chapterSelect.addEventListener("change", () => {
+    const slug = elements.chapterSelect.value;
+    if (slug) {
+      window.location.hash = buildHash(slug, null);
+    }
+  });
+
+  elements.immersiveBack.addEventListener("click", () => {
+    const chapter = getChapterBySlug(state.selectedChapterSlug);
+    const backHash = chapter && hasViewAsset(chapter, "notes")
+      ? buildHash(chapter.slug, "notes")
+      : buildHash(state.selectedChapterSlug, null);
+    window.location.hash = backHash;
+  });
 
   initializeApp().catch((error) => {
     console.error(error);
@@ -34,6 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 async function initializeApp() {
+  initTheme();
   if (window.mermaid) {
     window.mermaid.initialize({
       startOnLoad: false,
@@ -109,7 +129,6 @@ function applyRoute(hash) {
   const chapter = getChapterBySlug(parsed.slug) ?? fallbackChapter;
 
   if (!chapter) {
-    elements.chapterList.innerHTML = "";
     elements.chapterSummary.innerHTML = `
       <div class="error-state">
         <h2>No chapters were found</h2>
@@ -138,7 +157,8 @@ function applyRoute(hash) {
     state.flashcards = null;
   }
 
-  renderChapterList();
+  updateImmersiveState();
+  renderChapterSelect();
   renderChapterSummary(chapter);
   renderModeNav(chapter);
   renderView(chapter).catch((error) => {
@@ -152,40 +172,18 @@ function applyRoute(hash) {
   });
 }
 
-function renderChapterList() {
-  elements.chapterList.innerHTML = getChapters()
+function renderChapterSelect() {
+  elements.chapterSelect.innerHTML = getChapters()
     .map((chapter) => {
-      const description = chapter.website?.card_description ?? chapter.description ?? "Study assets pending.";
-      const isActive = chapter.slug === state.selectedChapterSlug;
-      const isComplete = chapter.status === "complete";
-
-      return `
-        <button
-          class="chapter-button ${isActive ? "is-active" : ""} ${isComplete ? "" : "is-disabled"}"
-          type="button"
-          data-target-hash="${escapeHtml(buildHash(chapter.slug, "overview"))}"
-        >
-          <span class="chapter-button__top">
-            <span class="chapter-button__code">Chapter ${escapeHtml(chapter.chapter_code)}</span>
-            <span class="badge ${isComplete ? "" : "badge--planned"}">${isComplete ? "Ready" : "Planned"}</span>
-          </span>
-          <span class="chapter-button__title">${escapeHtml(chapter.title)}</span>
-          <span class="chapter-button__desc">${escapeHtml(description)}</span>
-        </button>
-      `;
+      const label = `Chapter ${chapter.chapter_code} — ${chapter.title}`;
+      return `<option value="${escapeHtml(chapter.slug)}" ${chapter.slug === state.selectedChapterSlug ? "selected" : ""}>${escapeHtml(label)}</option>`;
     })
     .join("");
-
-  elements.chapterList.querySelectorAll("[data-target-hash]").forEach((button) => {
-    button.addEventListener("click", () => {
-      window.location.hash = button.dataset.targetHash;
-    });
-  });
 }
 
 function renderChapterSummary(chapter) {
-  const chapterTopics = chapter.topics?.length
-    ? chapter.topics.map((topic) => `<span class="chip">${escapeHtml(topic)}</span>`).join("")
+  const topicsText = chapter.topics?.length
+    ? chapter.topics.map(toTitleCase).join(", ")
     : "";
 
   elements.chapterSummary.innerHTML = `
@@ -199,7 +197,7 @@ function renderChapterSummary(chapter) {
         ${chapter.status === "complete" ? "Complete" : "Planned"}
       </span>
     </div>
-    ${chapterTopics ? `<div class="chapter-summary__topics">${chapterTopics}</div>` : ""}
+    ${topicsText ? `<p class="chapter-summary__topics">${escapeHtml(topicsText)}</p>` : ""}
     ${renderChapterReferences(chapter)}
   `;
 }
@@ -230,13 +228,13 @@ function renderChapterReferences(chapter) {
 
 function renderModeNav(chapter) {
   const modeButtons = [
-    ["notes", "Study Notes", "Read the notes with page references highlighted."],
-    ["questions", "Exam Questions", "Choose how many questions and when to see answers."],
-    ["flashcards", "Flash Cards", "Tap to reveal, go back or forward, then reshuffle."]
+    ["notes", "Study Notes"],
+    ["questions", "Exam Questions"],
+    ["flashcards", "Flash Cards"]
   ];
 
   elements.modeNav.innerHTML = modeButtons
-    .map(([view, title, description]) => {
+    .map(([view, title]) => {
       const disabled = !hasViewAsset(chapter, view);
       return `
         <button
@@ -244,10 +242,7 @@ function renderModeNav(chapter) {
           type="button"
           data-target-hash="${escapeHtml(buildHash(chapter.slug, view))}"
           ${disabled ? "disabled" : ""}
-        >
-          <strong>${escapeHtml(title)}</strong>
-          <span>${escapeHtml(description)}</span>
-        </button>
+        >${escapeHtml(title)}</button>
       `;
     })
     .join("");
@@ -883,4 +878,42 @@ function escapeHtml(value) {
 
 function encodeAttribute(value) {
   return encodeURI(value).replaceAll('"', "%22");
+}
+
+function toTitleCase(str) {
+  return str.split(" ").map((word) => word.charAt(0).toUpperCase() + word.slice(1)).join(" ");
+}
+
+function initTheme() {
+  const saved = localStorage.getItem("theme");
+  if (saved === "dark") {
+    document.documentElement.setAttribute("data-theme", "dark");
+  }
+  updateThemeIcon();
+}
+
+function toggleTheme() {
+  const isDark = document.documentElement.getAttribute("data-theme") === "dark";
+  if (isDark) {
+    document.documentElement.removeAttribute("data-theme");
+    localStorage.setItem("theme", "light");
+  } else {
+    document.documentElement.setAttribute("data-theme", "dark");
+    localStorage.setItem("theme", "dark");
+  }
+  updateThemeIcon();
+}
+
+function updateThemeIcon() {
+  if (!elements.themeToggle) return;
+  const isDark = document.documentElement.getAttribute("data-theme") === "dark";
+  const sunSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>`;
+  const moonSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>`;
+  elements.themeToggle.innerHTML = isDark ? sunSvg : moonSvg;
+  elements.themeToggle.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
+}
+
+function updateImmersiveState() {
+  const isImmersive = state.view === "questions" || state.view === "flashcards";
+  document.body.classList.toggle("is-immersive", isImmersive);
 }
