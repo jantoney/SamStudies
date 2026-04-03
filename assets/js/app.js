@@ -325,6 +325,7 @@ async function renderNotesView(chapter) {
         <div class="toc-list" id="toc-list"></div>
       </aside>
     </div>
+    <button class="notes-top-button" type="button" id="notes-top-button" aria-label="Return to the top of the page">TOP ^</button>
   `;
 
   const notesContent = document.getElementById("notes-content");
@@ -338,6 +339,13 @@ async function renderNotesView(chapter) {
   hydrateRenderedNotes(notesContent);
   renderNotesToc(notesContent);
   await renderMermaidBlocks(notesContent);
+
+  document.getElementById("notes-top-button")?.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
 }
 
 function hydrateRenderedNotes(root) {
@@ -463,6 +471,7 @@ async function renderQuestionsView(chapter) {
 function renderQuizSetup(chapter, questionSet, questionsAsset) {
   const totalQuestions = questionSet.questions.length;
   const defaultCount = Math.min(10, totalQuestions);
+  setViewRootScrollable(true);
   updateImmersiveTitle("Exam questions");
   updateImmersiveAction(null);
 
@@ -545,6 +554,7 @@ function renderQuizQuestion(questionSet) {
   const isAnswered = Boolean(savedAnswer);
   const isImmediate = session.feedbackMode === "immediate";
   const isSummaryMode = session.feedbackMode === "summary";
+  const hasSelectedChoice = Boolean(savedAnswer?.selectedChoiceKey);
   const progressValue =
     ((session.currentIndex + 1) / session.questions.length) * 100;
   const primaryButtonLabel = isImmediate
@@ -552,6 +562,7 @@ function renderQuizQuestion(questionSet) {
     : session.currentIndex === session.questions.length - 1
       ? "View Results"
       : "Next Question";
+  setViewRootScrollable(isSummaryMode);
   updateImmersiveTitle(
     `Q: ${session.currentIndex + 1} of ${session.questions.length}`,
   );
@@ -586,7 +597,7 @@ function renderQuizQuestion(questionSet) {
         <div class="inline-actions question-actions">
           ${
             !(isImmediate && isAnswered)
-              ? `<button class="button" type="submit">${primaryButtonLabel}</button>`
+              ? `<button class="button" type="submit" id="question-submit-button" ${hasSelectedChoice ? "" : "disabled"}>${primaryButtonLabel}</button>`
               : ""
           }
           ${
@@ -600,11 +611,18 @@ function renderQuizQuestion(questionSet) {
   `;
 
   const questionForm = document.getElementById("question-form");
+  const submitButton = document.getElementById("question-submit-button");
   questionForm.addEventListener("change", () => {
     questionForm.querySelectorAll(".question-choice").forEach((node) => {
       const input = node.querySelector("input");
       node.classList.toggle("is-selected", input.checked);
     });
+
+    if (submitButton) {
+      submitButton.disabled = !questionForm.querySelector(
+        'input[name="selectedChoice"]:checked',
+      );
+    }
   });
 
   questionForm.addEventListener("submit", (event) => {
@@ -706,6 +724,7 @@ function renderQuizSummary(questionSet) {
   const score = session.questions.reduce((total, question) => {
     return total + (session.answers[question.question_id]?.isCorrect ? 1 : 0);
   }, 0);
+  setViewRootScrollable(true);
   updateImmersiveTitle(`${score} / ${session.questions.length} correct`);
   updateImmersiveAction(null);
 
@@ -762,6 +781,7 @@ function renderResultCard(question, index) {
 
 async function renderFlashcardsView(chapter) {
   const flashcardsAsset = getAsset(chapter, VIEW_ASSET_TYPES.flashcards);
+  setViewRootScrollable(false);
 
   if (!flashcardsAsset) {
     renderMissingView(
@@ -796,7 +816,6 @@ async function renderFlashcardsView(chapter) {
     <div class="section-stack">
       <div class="flashcard-controls">
         <span class="chip chip--secondary">Card ${session.currentIndex + 1} of ${flashcardSet.cards.length}</span>
-        <span class="chip">${escapeHtml(currentCard.topic)}</span>
       </div>
 
       <article class="flashcard-card">
@@ -856,6 +875,7 @@ async function renderFlashcardsView(chapter) {
 
 function renderFlashcardSummary(chapter) {
   const session = state.flashcards;
+  setViewRootScrollable(false);
   updateImmersiveTitle("Deck complete");
   updateImmersiveAction(null);
 
@@ -942,6 +962,7 @@ function createFlashcardSession(chapterSlug, cardCount) {
 }
 
 function renderMissingView(title, message) {
+  setViewRootScrollable(false);
   elements.viewRoot.innerHTML = `
     <div class="empty-state">
       <h2>${escapeHtml(title)}</h2>
@@ -1036,6 +1057,12 @@ function escapeHtml(value) {
     .replaceAll("'", "&#39;");
 }
 
+function setViewRootScrollable(isScrollable) {
+  if (elements.viewRoot) {
+    elements.viewRoot.classList.toggle("view-root--scrollable", isScrollable);
+  }
+}
+
 function encodeAttribute(value) {
   return encodeURI(value).replaceAll('"', "%22");
 }
@@ -1084,6 +1111,7 @@ function updateImmersiveState() {
   const isImmersive = state.view === "questions" || state.view === "flashcards";
   document.body.classList.toggle("is-immersive", isImmersive);
   if (!isImmersive) {
+    setViewRootScrollable(false);
     updateImmersiveTitle("");
     updateImmersiveAction(null);
   }
