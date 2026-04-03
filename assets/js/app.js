@@ -706,23 +706,18 @@ function renderQuizSummary(questionSet) {
   const score = session.questions.reduce((total, question) => {
     return total + (session.answers[question.question_id]?.isCorrect ? 1 : 0);
   }, 0);
-  updateImmersiveTitle("Results");
+  updateImmersiveTitle(`${score} / ${session.questions.length} correct`);
   updateImmersiveAction(null);
 
   elements.viewRoot.innerHTML = `
     <div class="section-stack quiz-screen quiz-screen--summary">
       <div class="summary-card">
-        <p class="panel__eyebrow">Quiz complete</p>
-        <h2>Results</h2>
-        <p class="summary-card__score">${score} / ${session.questions.length}</p>
-        <p>${session.feedbackMode === "summary" ? "Answers and rationales are listed below." : "You can review the questions again below."}</p>
-        <div class="inline-actions">
+        <div class="summary-card__row">
+          <p class="summary-card__score">${score} / ${session.questions.length} correct</p>
           <button class="button" type="button" id="retry-quiz-button">Try another set</button>
         </div>
       </div>
-      <div class="section-stack">
-        ${session.questions.map((question, index) => renderResultCard(question, index)).join("")}
-      </div>
+      ${session.questions.map((question, index) => renderResultCard(question, index)).join("")}
     </div>
   `;
 
@@ -751,7 +746,7 @@ function renderResultCard(question, index) {
         <div>
           <h3>Question ${index + 1}</h3>
         </div>
-        <span class="badge result-status ${passed ? "" : "badge--planned"}">
+        <span class="badge result-status ${passed ? "" : "badge--fail"}">
           <span class="result-status__icon" aria-hidden="true">${passed ? "✓" : "✕"}</span>
           ${passed ? "Pass" : "Fail"}
         </span>
