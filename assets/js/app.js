@@ -9,6 +9,7 @@ const state = {
   selectedChapterSlug: null,
   view: null,
   cache: new Map(),
+  noteMeta: new Map(),
   quiz: null,
   flashcards: null,
 };
@@ -229,11 +230,58 @@ function renderChapterSummary(chapter) {
   elements.chapterSummary.innerHTML = `
     <div class="chapter-summary__header">
       <div>
-        <span class="chapter-summary__label">Chapter</span>
         <h2 class="chapter-summary__title">${escapeHtml(chapter.title)}</h2>
       </div>
     </div>
+    ${renderDescriptionDisclaimer(chapter)}
   `;
+}
+
+function renderDescriptionDisclaimer(chapter) {
+  const noteMeta = state.noteMeta.get(chapter.slug) ?? null;
+  const registry = state.index?.source_registry ?? [];
+  const disclaimer =
+    noteMeta?.disclaimer ?? state.index?.disclaimer?.use_note ?? "";
+  const description = noteMeta?.description ?? chapter.description ?? "";
+  const verificationNote =
+    "Some of this content may be AI generated. Check your work against the original course material.";
+
+  const sources = (chapter.sources_used ?? [])
+    .map((id) => registry.find((source) => source.source_id === id))
+    .filter(Boolean);
+
+  const sourceItems = sources
+    .map((source) => {
+      const meta = [
+        source.edition,
+        source.publication_year,
+        source.publisher ?? source.organization,
+      ]
+        .filter(Boolean)
+        .join(" · ");
+
+      return `
+        <li class="references-item">
+          <span class="references-item__title">${escapeHtml(source.source_title)}</span>
+          ${meta ? `<span class="references-item__meta">${escapeHtml(meta)}</span>` : ""}
+        </li>`;
+    })
+    .join("");
+
+  if (!description && !disclaimer && !sourceItems) {
+    return "";
+  }
+
+  return `
+    <details class="desc-disclaimer-details">
+      <summary class="desc-disclaimer-summary">Description &amp; Disclaimer</summary>
+      <div class="desc-disclaimer-body">
+        ${description ? `<p>${escapeHtml(description)}</p>` : ""}
+        ${sourceItems ? `<h4>Sources</h4><ul class="references-list">${sourceItems}</ul>` : ""}
+        ${disclaimer ? `<p class="disclaimer-note">${escapeHtml(disclaimer)}</p>` : ""}
+        <p class="review-note">${escapeHtml(verificationNote)}</p>
+      </div>
+    </details>`;
 }
 
 function renderModeNav(chapter) {
@@ -312,6 +360,17 @@ async function renderNotesView(chapter) {
 
   const markdown = await loadText(notesAsset.path);
 
+  const noteMeta = extractStudyNoteMeta(markdown);
+  const previousMeta = state.noteMeta.get(chapter.slug);
+  if (
+    !previousMeta ||
+    previousMeta.description !== noteMeta.description ||
+    previousMeta.disclaimer !== noteMeta.disclaimer
+  ) {
+    state.noteMeta.set(chapter.slug, noteMeta);
+    renderChapterSummary(chapter);
+  }
+
   if (!window.marked) {
     throw new Error("The markdown renderer was not loaded.");
   }
@@ -370,6 +429,17 @@ function hydrateRenderedNotes(root) {
     codeBlock.parentElement.replaceWith(wrapper);
   });
 
+  root.querySelectorAll("table").forEach((table) => {
+    if (table.parentElement?.classList.contains("table-scroll")) {
+      return;
+    }
+
+    const wrapper = document.createElement("div");
+    wrapper.className = "table-scroll";
+    table.parentElement.insertBefore(wrapper, table);
+    wrapper.appendChild(table);
+  });
+
   root.querySelectorAll("p, li, td, th, blockquote").forEach((node) => {
     node.innerHTML = node.innerHTML.replace(
       /\[(\d+)\]/g,
@@ -397,6 +467,30 @@ function removeHiddenNoteSections(root) {
       current = next;
     }
   });
+}
+
+function extractStudyNoteMeta(markdown) {
+  return {
+    description: extractMarkdownSection(markdown, "Description"),
+    disclaimer: extractMarkdownSection(markdown, "Disclaimer"),
+  };
+}
+
+function extractMarkdownSection(markdown, heading) {
+  const escapedHeading = heading.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const pattern = new RegExp(
+    `^##\\s+${escapedHeading}\\s*$([\\s\\S]*?)(?=^##\\s+|\\Z)`,
+    "im",
+  );
+  const match = markdown.match(pattern);
+
+  if (!match) {
+    return "";
+  }
+
+  return match[1]
+    .replace(/^\s+|\s+$/g, "")
+    .replace(/\n{2,}/g, "\n\n");
 }
 
 function renderNotesToc(root) {
@@ -435,6 +529,53 @@ async function renderMermaidBlocks(root) {
 
   await window.mermaid.run({
     querySelector: ".mermaid",
+  });
+
+  syncMermaidTheme(root);
+}
+
+function syncMermaidTheme(root = document) {
+  const isDark = document.documentElement.getAttribute("data-theme") === "dark";
+  const nodeFill = isDark ? "#223247" : "#f2e6d4";
+  const nodeStroke = isDark ? "#88b8a8" : "#2c6a62";
+  const textColor = isDark ? "#e6edf5" : "#17253d";
+  const edgeLabelFill = isDark ? "#223247" : "#fffaf3";
+  const edgeLabelBackdrop = isDark ? "#162032" : "#fffaf3";
+
+  root.querySelectorAll(".mermaid .node rect, .mermaid .node polygon, .mermaid .node circle, .mermaid .node ellipse, .mermaid .node path").forEach((shape) => {
+    shape.style.fill = nodeFill;
+    shape.style.stroke = nodeStroke;
+  });
+
+  root.querySelectorAll(".mermaid .nodeLabel, .mermaid .label, .mermaid .label text, .mermaid .nodeLabel p, .mermaid foreignObject div, .mermaid foreignObject span").forEach((label) => {
+    label.style.color = textColor;
+    label.style.fill = textColor;
+  });
+
+  root.querySelectorAll(".mermaid .edge-thickness-normal, .mermaid .edge-thickness-thick, .mermaid .arrowMarkerPath").forEach((edge) => {
+    edge.style.stroke = nodeStroke;
+    edge.style.fill = edge.classList.contains("arrowMarkerPath")
+      ? nodeStroke
+      : "none";
+  });
+
+  root.querySelectorAll(".mermaid .labelBkg").forEach((labelBg) => {
+    labelBg.style.fill = edgeLabelBackdrop;
+    labelBg.style.backgroundColor = edgeLabelBackdrop;
+  });
+
+  root.querySelectorAll(".mermaid span.edgeLabel, .mermaid span.edgeLabel p, .mermaid .edgeLabel .labelBkg, .mermaid .edgeLabel foreignObject, .mermaid .edgeLabel div").forEach((edgeLabel) => {
+    edgeLabel.style.backgroundColor = edgeLabelFill;
+    edgeLabel.style.color = textColor;
+    edgeLabel.style.fill = textColor;
+    edgeLabel.style.borderColor = nodeStroke;
+  });
+
+  root.querySelectorAll(".mermaid span.edgeLabel p").forEach((edgeParagraph) => {
+    edgeParagraph.style.padding = "2px 6px";
+    edgeParagraph.style.borderWidth = "1px";
+    edgeParagraph.style.borderStyle = "solid";
+    edgeParagraph.style.borderRadius = "6px";
   });
 }
 
@@ -1099,6 +1240,7 @@ function toggleTheme() {
     localStorage.setItem("theme", "dark");
   }
   updateThemeIcon();
+  syncMermaidTheme();
 }
 
 function updateThemeIcon() {
