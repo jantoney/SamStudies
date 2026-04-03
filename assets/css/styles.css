@@ -131,6 +131,17 @@ button {
   background: rgba(255, 255, 255, 0.18);
 }
 
+.is-immersive .theme-toggle {
+  border-color: rgba(17, 35, 61, 0.16);
+  background: #17253d;
+  color: #f7f2eb;
+}
+
+.is-immersive .theme-toggle:hover,
+.is-immersive .theme-toggle:focus-visible {
+  background: #213552;
+}
+
 .chapter-select {
   appearance: none;
   background-color: rgba(255, 255, 255, 0.1);
@@ -539,7 +550,8 @@ button {
 
 /* Allow scrolling on setup and results screens */
 .is-immersive #view-root:has(.quiz-settings),
-.is-immersive #view-root:has(.summary-card) {
+.is-immersive #view-root:has(.summary-card),
+.is-immersive #view-root:has(.quiz-screen--scroll) {
   overflow-y: auto;
 }
 
@@ -565,7 +577,8 @@ button {
 
 /* Allow scroll on setup/summary stacks */
 .is-immersive #view-root:has(.quiz-settings) .section-stack,
-.is-immersive #view-root:has(.summary-card) .section-stack {
+.is-immersive #view-root:has(.summary-card) .section-stack,
+.is-immersive #view-root:has(.quiz-screen--scroll) .section-stack {
   overflow-y: auto;
   height: auto;
 }
@@ -612,6 +625,13 @@ button {
   box-shadow: none;
 }
 
+.is-immersive .question-card--scroll {
+  flex: none;
+  min-height: auto;
+  overflow: visible;
+  grid-template-rows: auto auto auto;
+}
+
 .question-actions {
   justify-content: flex-end;
 }
@@ -632,6 +652,10 @@ button {
   scrollbar-color: var(--border) transparent;
   gap: 7px;
   align-content: start;
+}
+
+.is-immersive .question-card--scroll .question-choices {
+  overflow: visible;
 }
 
 .is-immersive .question-choice {
@@ -917,6 +941,15 @@ button {
   font-size: 0.8rem;
   font-weight: 800;
   white-space: nowrap;
+}
+
+.result-status {
+  gap: 6px;
+}
+
+.result-status__icon {
+  font-size: 0.86rem;
+  line-height: 1;
 }
 
 .button,

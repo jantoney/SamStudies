@@ -45,36 +45,36 @@ The app currently consumes `flashcards_json` only.
 
 ```json
 {
-    "schema_version": "1.0",
-    "resource_type": "flashcard_set",
-    "title": "01 - Example Chapter - Flashcards",
-    "slug": "01-example-chapter-flashcards",
-    "chapter": {
-        "number": 1,
-        "code": "01",
-        "title": "Example Chapter",
-        "status": "complete"
-    },
-    "description": "Short description of the deck.",
-    "disclaimer": {
-        "summary": "Third-party generated study aid.",
-        "endorsement_notice": "Required disclaimer text.",
-        "use_note": "Use these flashcards as revision support alongside the original source material."
-    },
-    "source_notes": [],
-    "deck": {
-        "deck_name": "Pathology::Chapter 01 - Example Chapter",
-        "deck_slug": "pathology-chapter-01-example-chapter",
-        "flashcard_format": "basic",
-        "card_count": 0,
-        "primary_method": "active_recall_and_spaced_repetition",
-        "recommended_review_schedule": ["Day 1", "Day 2", "Day 4", "Day 7"],
-        "topic_buckets": [],
-        "design_note": "Cards are kept mostly single-fact and under one question per card for rapid recall.",
-        "page_reference_style": "printed_book_page_numbers",
-        "page_reference_note": "Use printed book page numbers, not PDF page positions."
-    },
-    "cards": []
+  "schema_version": "1.0",
+  "resource_type": "flashcard_set",
+  "title": "01 - Example Chapter - Flashcards",
+  "slug": "01-example-chapter-flashcards",
+  "chapter": {
+    "number": 1,
+    "code": "01",
+    "title": "Example Chapter",
+    "status": "complete"
+  },
+  "description": "Short description of the deck.",
+  "disclaimer": {
+    "summary": "Third-party generated study aid.",
+    "endorsement_notice": "Required disclaimer text.",
+    "use_note": "Use these flashcards as revision support alongside the original source material."
+  },
+  "source_notes": [],
+  "deck": {
+    "deck_name": "Pathology::Chapter 01 - Example Chapter",
+    "deck_slug": "pathology-chapter-01-example-chapter",
+    "flashcard_format": "basic",
+    "card_count": 0,
+    "primary_method": "active_recall_and_spaced_repetition",
+    "recommended_review_schedule": ["Day 1", "Day 2", "Day 4", "Day 7"],
+    "topic_buckets": [],
+    "design_note": "Cards are kept mostly single-fact and under one question per card for rapid recall.",
+    "page_reference_style": "printed_book_page_numbers",
+    "page_reference_note": "Use printed book page numbers, not PDF page positions."
+  },
+  "cards": []
 }
 ```
 
@@ -82,15 +82,15 @@ The app currently consumes `flashcards_json` only.
 
 ```json
 {
-    "number": 1,
-    "card_id": "ch1-fc001",
-    "type": "basic",
-    "bucket": "Genome and epigenome",
-    "topic": "Coding fraction of the genome",
-    "front": "What proportion of the human genome encodes proteins?",
-    "back": "About 1.5%. [1][2]",
-    "source_page_refs": [1, 2],
-    "tags": ["pathology", "chapter-01", "genome-and-epigenome"]
+  "number": 1,
+  "card_id": "ch1-fc001",
+  "type": "basic",
+  "bucket": "Genome and epigenome",
+  "topic": "Coding fraction of the genome",
+  "front": "What proportion of the human genome encodes proteins?",
+  "back": "About 1.5%. [1][2]",
+  "source_page_refs": [1, 2],
+  "tags": ["pathology", "chapter-01", "genome-and-epigenome"]
 }
 ```
 
@@ -156,6 +156,7 @@ When creating multiple cards from a chapter, produce one JSON deck with stable m
 ## Cards
 
 ### Card 1
+
 **card_id:** [chapter-card-id]
 **front:** [Question/Prompt]
 **back:** [Answer/Information with inline page refs]
@@ -163,6 +164,7 @@ When creating multiple cards from a chapter, produce one JSON deck with stable m
 **tags:** [tag1, tag2]
 
 ### Card 2
+
 **card_id:** [chapter-card-id]
 **front:** [Question/Prompt]
 **back:** [Answer/Information with inline page refs]

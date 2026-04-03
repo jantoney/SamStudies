@@ -363,7 +363,7 @@ function hydrateRenderedNotes(root) {
   root.querySelectorAll("p, li, td, th, blockquote").forEach((node) => {
     node.innerHTML = node.innerHTML.replace(
       /\[(\d+)\]/g,
-      '<span class="page-ref" title="Source page reference">p$1</span>',
+      '<span class="page-ref" title="Source page reference">Page $1</span>',
     );
   });
 }
@@ -468,11 +468,6 @@ function renderQuizSetup(chapter, questionSet, questionsAsset) {
 
   elements.viewRoot.innerHTML = `
     <div class="section-stack quiz-screen quiz-screen--setup">
-      <div>
-        <p class="panel__eyebrow">Exam questions</p>
-        <h2>${escapeHtml(chapter.title)}</h2>
-        <p>${escapeHtml(questionSet.description)}</p>
-      </div>
       <form class="quiz-settings" id="quiz-settings-form">
         <p class="quiz-settings__summary">Questions will be randomized from (${totalQuestions}) total available questions.</p>
         <div class="quiz-settings__grid">
@@ -536,6 +531,11 @@ function renderQuizSetup(chapter, questionSet, questionsAsset) {
 
       renderQuizQuestion(questionSet);
     });
+
+  const questionCountInput = document.getElementById("question-count");
+  questionCountInput.addEventListener("focus", () => {
+    questionCountInput.select();
+  });
 }
 
 function renderQuizQuestion(questionSet) {
@@ -544,6 +544,7 @@ function renderQuizQuestion(questionSet) {
   const savedAnswer = session.answers[question.question_id] ?? null;
   const isAnswered = Boolean(savedAnswer);
   const isImmediate = session.feedbackMode === "immediate";
+  const isSummaryMode = session.feedbackMode === "summary";
   const progressValue =
     ((session.currentIndex + 1) / session.questions.length) * 100;
   const primaryButtonLabel = isImmediate
@@ -569,17 +570,17 @@ function renderQuizQuestion(questionSet) {
   });
 
   elements.viewRoot.innerHTML = `
-    <div class="section-stack quiz-screen quiz-screen--question">
+    <div class="section-stack quiz-screen quiz-screen--question ${isSummaryMode ? "quiz-screen--scroll" : ""}">
       <div class="quiz-progress-row">
         <div class="progress-bar" aria-hidden="true">
           <div class="progress-bar__fill" style="width: ${progressValue.toFixed(2)}%"></div>
         </div>
       </div>
 
-      <form class="question-card" id="question-form">
+      <form class="question-card ${isSummaryMode ? "question-card--scroll" : ""}" id="question-form">
         <div class="question-prompt">${escapeHtml(question.question)}</div>
         <div class="question-choices">
-          ${question.choices.map((choice) => renderChoice(question, choice, savedAnswer)).join("")}
+          ${getVisibleChoices(question, savedAnswer, isImmediate).map((choice) => renderChoice(question, choice, savedAnswer)).join("")}
         </div>
         ${isImmediate && isAnswered ? renderImmediateFeedback(question, savedAnswer) : ""}
         <div class="inline-actions question-actions">
@@ -665,10 +666,23 @@ function renderChoice(question, choice, savedAnswer) {
   `;
 }
 
+function getVisibleChoices(question, savedAnswer, isImmediate) {
+  if (!savedAnswer || !isImmediate) {
+    return question.choices;
+  }
+
+  const visibleKeys = new Set([question.answer.correct_choice_key]);
+  if (!savedAnswer.isCorrect) {
+    visibleKeys.add(savedAnswer.selectedChoiceKey);
+  }
+
+  return question.choices.filter((choice) => visibleKeys.has(choice.key));
+}
+
 function renderImmediateFeedback(question, savedAnswer) {
   return `
     <div class="result-banner ${savedAnswer.isCorrect ? "" : "is-incorrect"}">
-      <strong>${savedAnswer.isCorrect ? "Correct" : `Incorrect. Correct answer: ${escapeHtml(question.answer.correct_choice_key)}`}</strong>
+      <strong>${savedAnswer.isCorrect ? `Correct answer: ${escapeHtml(question.answer.correct_choice_key)}` : `Incorrect. Correct answer: ${escapeHtml(question.answer.correct_choice_key)}`}</strong>
       <div class="result-banner__reason">${escapeHtml(question.answer.reason)}</div>
       ${renderPageRefList(question.answer.source_page_refs)}
     </div>
@@ -729,6 +743,7 @@ function renderResultCard(question, index) {
     ? `${answer.selectedChoiceKey} - ${getChoiceLabel(question, answer.selectedChoiceKey)}`
     : "No answer";
   const correctLabel = `${question.answer.correct_choice_key} - ${getChoiceLabel(question, question.answer.correct_choice_key)}`;
+  const passed = Boolean(answer?.isCorrect);
 
   return `
     <article class="result-card">
@@ -736,8 +751,9 @@ function renderResultCard(question, index) {
         <div>
           <h3>Question ${index + 1}</h3>
         </div>
-        <span class="badge ${answer?.isCorrect ? "" : "badge--planned"}">
-          ${answer?.isCorrect ? "Correct" : "Needs review"}
+        <span class="badge result-status ${passed ? "" : "badge--planned"}">
+          <span class="result-status__icon" aria-hidden="true">${passed ? "✓" : "✕"}</span>
+          ${passed ? "Pass" : "Fail"}
         </span>
       </div>
       <div class="question-prompt">${escapeHtml(question.question)}</div>
@@ -783,12 +799,6 @@ async function renderFlashcardsView(chapter) {
 
   elements.viewRoot.innerHTML = `
     <div class="section-stack">
-      <div>
-        <p class="panel__eyebrow">Flash cards</p>
-        <h2>${escapeHtml(flashcardSet.deck.deck_name)}</h2>
-        <p>${escapeHtml(flashcardSet.description)}</p>
-      </div>
-
       <div class="flashcard-controls">
         <span class="chip chip--secondary">Card ${session.currentIndex + 1} of ${flashcardSet.cards.length}</span>
         <span class="chip">${escapeHtml(currentCard.topic)}</span>
@@ -982,7 +992,7 @@ function renderPageRefList(pageRefs) {
 
   return `
     <div class="page-ref-list">
-      ${pageRefs.map((page) => `<span class="page-ref" title="Source page reference">p${escapeHtml(String(page))}</span>`).join("")}
+      ${pageRefs.map((page) => `<span class="page-ref" title="Source page reference">Page ${escapeHtml(String(page))}</span>`).join("")}
     </div>
   `;
 }
@@ -1128,6 +1138,11 @@ function scheduleViewportRefresh() {
   resizeFrame = requestAnimationFrame(() => {
     resizeFrame = 0;
 
+    if (shouldPreserveFocusedInput()) {
+      syncViewportMetrics();
+      return;
+    }
+
     const viewportChanged = syncViewportMetrics();
     if (!viewportChanged) {
       return;
@@ -1143,6 +1158,20 @@ function scheduleViewportRefresh() {
       console.error(error);
     });
   });
+}
+
+function shouldPreserveFocusedInput() {
+  const activeElement = document.activeElement;
+  if (!activeElement) {
+    return false;
+  }
+
+  if (!(activeElement instanceof HTMLElement)) {
+    return false;
+  }
+
+  const tagName = activeElement.tagName;
+  return tagName === "INPUT" || tagName === "TEXTAREA" || tagName === "SELECT";
 }
 
 function syncViewportMetrics() {
