@@ -683,10 +683,9 @@ function renderQuizSetup(chapter, questionSet, questionsAsset) {
       const questionCount = clampNumber(requestedCount, 1, totalQuestions);
       const feedbackMode =
         formData.get("feedbackMode") === "summary" ? "summary" : "immediate";
-      const selectedQuestions = shuffle([...questionSet.questions]).slice(
-        0,
-        questionCount,
-      );
+      const selectedQuestions = shuffle([...questionSet.questions])
+        .slice(0, questionCount)
+        .map(randomizeQuestionChoices);
 
       state.quiz = {
         chapterSlug: chapter.slug,
@@ -1181,6 +1180,39 @@ function getChoiceLabel(question, choiceKey) {
   return (
     question.choices.find((choice) => choice.key === choiceKey)?.text ?? ""
   );
+}
+
+function randomizeQuestionChoices(question) {
+  const choicePool = shuffle([...question.choices]);
+  const keyByOriginalKey = new Map();
+  const normalizedChoices = choicePool.map((choice, index) => {
+    const newKey = String.fromCharCode(65 + index);
+    keyByOriginalKey.set(choice.key, newKey);
+    return {
+      ...choice,
+      key: newKey,
+    };
+  });
+
+  const randomizedCorrectKey = keyByOriginalKey.get(
+    question.answer.correct_choice_key,
+  );
+
+  if (!randomizedCorrectKey) {
+    return {
+      ...question,
+      choices: normalizedChoices,
+    };
+  }
+
+  return {
+    ...question,
+    choices: normalizedChoices,
+    answer: {
+      ...question.answer,
+      correct_choice_key: randomizedCorrectKey,
+    },
+  };
 }
 
 function slugify(value) {
