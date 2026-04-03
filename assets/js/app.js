@@ -14,21 +14,30 @@ const state = {
 };
 
 const elements = {};
+let resizeFrame = 0;
+let lastViewportSize = {
+  width: 0,
+  height: 0
+};
+const HIDDEN_NOTE_SECTION_TITLES = new Set([
+  "description",
+  "source notes",
+  "page reference convention",
+  "disclaimer"
+]);
 
 document.addEventListener("DOMContentLoaded", () => {
   elements.chapterSelect = document.getElementById("chapter-select");
   elements.themeToggle = document.getElementById("theme-toggle");
-  elements.immersiveThemeToggle = document.getElementById("immersive-theme-toggle");
   elements.immersiveBack = document.getElementById("immersive-back");
+  elements.immersiveTitle = document.getElementById("immersive-title");
+  elements.immersiveAction = document.getElementById("immersive-action");
   elements.chapterSummary = document.getElementById("chapter-summary");
   elements.modeNav = document.getElementById("mode-nav");
   elements.viewRoot = document.getElementById("view-root");
   elements.disclaimerSummary = document.getElementById("disclaimer-summary");
 
   elements.themeToggle.addEventListener("click", toggleTheme);
-  if (elements.immersiveThemeToggle) {
-    elements.immersiveThemeToggle.addEventListener("click", toggleTheme);
-  }
 
   elements.chapterSelect.addEventListener("change", () => {
     const slug = elements.chapterSelect.value;
@@ -58,6 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 async function initializeApp() {
   initTheme();
+  syncViewportMetrics();
   if (window.mermaid) {
     window.mermaid.initialize({
       startOnLoad: false,
@@ -77,6 +87,8 @@ async function initializeApp() {
   state.index = await loadJson("Generated Study Notes/study-content-index.json");
   populateGlobalMeta();
   window.addEventListener("hashchange", () => applyRoute(window.location.hash));
+  window.addEventListener("resize", scheduleViewportRefresh, { passive: true });
+  window.addEventListener("orientationchange", scheduleViewportRefresh, { passive: true });
   applyRoute(window.location.hash);
 }
 
@@ -151,12 +163,16 @@ function applyRoute(hash) {
     return;
   }
 
+  const previousView = state.view;
   const chapterChanged = state.selectedChapterSlug !== chapter.slug;
   state.selectedChapterSlug = chapter.slug;
   state.view = safeView;
 
-  if (chapterChanged) {
+  if (chapterChanged || (previousView === "questions" && safeView !== "questions")) {
     state.quiz = null;
+  }
+
+  if (chapterChanged) {
     state.flashcards = null;
   }
 
@@ -185,52 +201,14 @@ function renderChapterSelect() {
 }
 
 function renderChapterSummary(chapter) {
-  const topicsText = chapter.topics?.length
-    ? chapter.topics.map(toTitleCase).join(", ")
-    : "";
-
   elements.chapterSummary.innerHTML = `
     <div class="chapter-summary__header">
       <div>
         <span class="chapter-summary__label">Chapter</span>
         <h2 class="chapter-summary__title">${escapeHtml(chapter.title)}</h2>
       </div>
-      <span class="badge ${chapter.status === "complete" ? "" : "badge--planned"}">
-        ${chapter.status === "complete" ? "Complete" : "Planned"}
-      </span>
     </div>
-    ${topicsText ? `<p class="chapter-summary__topics">${escapeHtml(topicsText)}</p>` : ""}
-    ${renderDescriptionDisclaimer(chapter)}
   `;
-}
-
-function renderDescriptionDisclaimer(chapter) {
-  const registry = state.index?.source_registry ?? [];
-  const disclaimer = state.index?.disclaimer?.use_note ?? "";
-  const description = chapter.description ?? "";
-
-  const sources = (chapter.sources_used ?? [])
-    .map((id) => registry.find((s) => s.source_id === id))
-    .filter(Boolean);
-
-  const sourceItems = sources.map((s) => {
-    const meta = [s.edition, s.publication_year, s.publisher ?? s.organization].filter(Boolean).join(" · ");
-    return `
-      <li class="references-item">
-        <span class="references-item__title">${escapeHtml(s.source_title)}</span>
-        ${meta ? `<span class="references-item__meta">${escapeHtml(meta)}</span>` : ""}
-      </li>`;
-  }).join("");
-
-  return `
-    <details class="desc-disclaimer-details">
-      <summary class="desc-disclaimer-summary">Description &amp; Disclaimer</summary>
-      <div class="desc-disclaimer-body">
-        ${description ? `<p>${escapeHtml(description)}</p>` : ""}
-        ${sourceItems ? `<h4>Sources</h4><ul class="references-list">${sourceItems}</ul>` : ""}
-        ${disclaimer ? `<p class="disclaimer-note">${escapeHtml(disclaimer)}</p>` : ""}
-      </div>
-    </details>`;
 }
 
 function renderModeNav(chapter) {
@@ -341,6 +319,8 @@ function hydrateRenderedNotes(root) {
   const firstH1 = root.querySelector("h1");
   if (firstH1) firstH1.remove();
 
+  removeHiddenNoteSections(root);
+
   root.querySelectorAll("h1, h2, h3, h4").forEach((heading) => {
     if (!heading.id) {
       heading.id = slugify(heading.textContent);
@@ -356,6 +336,26 @@ function hydrateRenderedNotes(root) {
 
   root.querySelectorAll("p, li, td, th, blockquote").forEach((node) => {
     node.innerHTML = node.innerHTML.replace(/\[(\d+)\]/g, '<span class="page-ref" title="Source page reference">p$1</span>');
+  });
+}
+
+function removeHiddenNoteSections(root) {
+  const headings = [...root.querySelectorAll("h2")]
+    .filter((heading) => HIDDEN_NOTE_SECTION_TITLES.has(heading.textContent.trim().toLowerCase()));
+
+  headings.forEach((heading) => {
+    let current = heading;
+
+    while (current) {
+      const next = current.nextElementSibling;
+      current.remove();
+
+      if (!next || next.tagName === "H2") {
+        break;
+      }
+
+      current = next;
+    }
   });
 }
 
@@ -427,9 +427,10 @@ async function renderQuestionsView(chapter) {
 function renderQuizSetup(chapter, questionSet, questionsAsset) {
   const totalQuestions = questionSet.questions.length;
   const defaultCount = Math.min(10, totalQuestions);
+  updateImmersiveTitle("Exam questions");
 
   elements.viewRoot.innerHTML = `
-    <div class="section-stack">
+    <div class="section-stack quiz-screen quiz-screen--setup">
       <div>
         <p class="panel__eyebrow">Exam questions</p>
         <h2>${escapeHtml(chapter.title)}</h2>
@@ -505,15 +506,11 @@ function renderQuizQuestion(questionSet) {
   const isAnswered = Boolean(savedAnswer);
   const isImmediate = session.feedbackMode === "immediate";
   const progressValue = ((session.currentIndex + 1) / session.questions.length) * 100;
+  updateImmersiveTitle(`Q: ${session.currentIndex + 1} of ${session.questions.length}`);
 
   elements.viewRoot.innerHTML = `
-    <div class="section-stack">
-      <div>
-        <p class="panel__eyebrow">Exam questions</p>
-        <h2>Question ${session.currentIndex + 1} of ${session.questions.length}</h2>
-        <p class="quiz-card__meta">
-          ${isImmediate ? "Answers are shown after each question." : "Answers will be shown in the final summary."}
-        </p>
+    <div class="section-stack quiz-screen quiz-screen--question">
+      <div class="quiz-progress-row">
         <div class="progress-bar" aria-hidden="true">
           <div class="progress-bar__fill" style="width: ${progressValue.toFixed(2)}%"></div>
         </div>
@@ -643,9 +640,10 @@ function renderQuizSummary(questionSet) {
   const score = session.questions.reduce((total, question) => {
     return total + (session.answers[question.question_id]?.isCorrect ? 1 : 0);
   }, 0);
+  updateImmersiveTitle("Results");
 
   elements.viewRoot.innerHTML = `
-    <div class="section-stack">
+    <div class="section-stack quiz-screen quiz-screen--summary">
       <div class="summary-card">
         <p class="panel__eyebrow">Quiz complete</p>
         <h2>Results</h2>
@@ -710,6 +708,15 @@ async function renderFlashcardsView(chapter) {
 
   const session = state.flashcards;
   const currentCard = flashcardSet.cards[session.order[session.currentIndex]];
+  updateImmersiveTitle(`Card ${session.currentIndex + 1} of ${flashcardSet.cards.length}`);
+  updateImmersiveAction({
+    label: "Shuffle",
+    ariaLabel: "Shuffle flashcards",
+    onClick: () => {
+      state.flashcards = createFlashcardSession(chapter.slug, flashcardSet.cards.length);
+      renderFlashcardsView(chapter);
+    }
+  });
 
   elements.viewRoot.innerHTML = `
     <div class="section-stack">
@@ -733,18 +740,13 @@ async function renderFlashcardsView(chapter) {
           </div>
           <div class="flashcard-footer">
             <div class="flashcard-meta">Tap the card or use the button to flip between question and answer.</div>
-            <div class="inline-actions">
+            <div class="inline-actions flashcard-actions">
               <button class="ghost-button" type="button" id="flashcard-prev-button" ${session.currentIndex === 0 ? "disabled" : ""}>Previous</button>
-              <button class="button" type="button" id="flashcard-flip-button">${session.showingBack ? "Show question" : "Show answer"}</button>
-              <button class="ghost-button" type="button" id="flashcard-next-button" ${session.currentIndex === flashcardSet.cards.length - 1 ? "disabled" : ""}>Next</button>
+              <button class="button" type="button" id="flashcard-primary-button" ${session.showingBack && session.currentIndex === flashcardSet.cards.length - 1 ? "disabled" : ""}>${session.showingBack ? "Next" : "Show answer"}</button>
             </div>
           </div>
         </div>
       </article>
-
-      <div class="inline-actions">
-        <button class="ghost-button" type="button" id="flashcard-shuffle-button">Shuffle deck</button>
-      </div>
     </div>
   `;
 
@@ -761,19 +763,19 @@ async function renderFlashcardsView(chapter) {
     }
   });
 
-  document.getElementById("flashcard-flip-button").addEventListener("click", toggleFlip);
   document.getElementById("flashcard-prev-button").addEventListener("click", () => {
     session.currentIndex = Math.max(0, session.currentIndex - 1);
     session.showingBack = false;
     renderFlashcardsView(chapter);
   });
-  document.getElementById("flashcard-next-button").addEventListener("click", () => {
+  document.getElementById("flashcard-primary-button").addEventListener("click", () => {
+    if (!session.showingBack) {
+      toggleFlip();
+      return;
+    }
+
     session.currentIndex = Math.min(flashcardSet.cards.length - 1, session.currentIndex + 1);
     session.showingBack = false;
-    renderFlashcardsView(chapter);
-  });
-  document.getElementById("flashcard-shuffle-button").addEventListener("click", () => {
-    state.flashcards = createFlashcardSession(chapter.slug, flashcardSet.cards.length);
     renderFlashcardsView(chapter);
   });
 }
@@ -921,4 +923,74 @@ function updateThemeIcon() {
 function updateImmersiveState() {
   const isImmersive = state.view === "questions" || state.view === "flashcards";
   document.body.classList.toggle("is-immersive", isImmersive);
+  if (!isImmersive) {
+    updateImmersiveTitle("");
+    updateImmersiveAction(null);
+  }
+
+  if (state.view !== "flashcards") {
+    updateImmersiveAction(null);
+  }
+}
+
+function updateImmersiveTitle(title) {
+  if (elements.immersiveTitle) {
+    elements.immersiveTitle.textContent = title;
+  }
+}
+
+function updateImmersiveAction(config) {
+  if (!elements.immersiveAction) {
+    return;
+  }
+
+  elements.immersiveAction.replaceWith(elements.immersiveAction.cloneNode(false));
+  elements.immersiveAction = document.getElementById("immersive-action");
+
+  if (!config) {
+    elements.immersiveAction.hidden = true;
+    elements.immersiveAction.textContent = "";
+    elements.immersiveAction.removeAttribute("aria-label");
+    return;
+  }
+
+  elements.immersiveAction.hidden = false;
+  elements.immersiveAction.textContent = config.label;
+  elements.immersiveAction.setAttribute("aria-label", config.ariaLabel ?? config.label);
+  elements.immersiveAction.addEventListener("click", config.onClick);
+}
+
+function scheduleViewportRefresh() {
+  if (resizeFrame) {
+    cancelAnimationFrame(resizeFrame);
+  }
+
+  resizeFrame = requestAnimationFrame(() => {
+    resizeFrame = 0;
+
+    const viewportChanged = syncViewportMetrics();
+    if (!viewportChanged) {
+      return;
+    }
+
+    const chapter = getChapterBySlug(state.selectedChapterSlug);
+    if (!chapter || !state.view) {
+      return;
+    }
+
+    updateImmersiveState();
+    renderView(chapter).catch((error) => {
+      console.error(error);
+    });
+  });
+}
+
+function syncViewportMetrics() {
+  const width = window.innerWidth;
+  const height = window.innerHeight;
+  document.documentElement.style.setProperty("--viewport-height", `${height}px`);
+
+  const changed = width !== lastViewportSize.width || height !== lastViewportSize.height;
+  lastViewportSize = { width, height };
+  return changed;
 }
