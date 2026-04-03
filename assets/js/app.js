@@ -29,7 +29,9 @@ const HIDDEN_NOTE_SECTION_TITLES = new Set([
 document.addEventListener("DOMContentLoaded", () => {
   elements.chapterSelect = document.getElementById("chapter-select");
   elements.themeToggle = document.getElementById("theme-toggle");
-  elements.immersiveThemeToggle = document.getElementById("immersive-theme-toggle");
+  elements.immersiveThemeToggle = document.getElementById(
+    "immersive-theme-toggle",
+  );
   elements.immersiveBack = document.getElementById("immersive-back");
   elements.immersiveTitle = document.getElementById("immersive-title");
   elements.immersiveAction = document.getElementById("immersive-action");
@@ -591,7 +593,9 @@ function renderQuizQuestion(questionSet) {
       <form class="question-card ${isSummaryMode ? "question-card--scroll" : ""}" id="question-form">
         <div class="question-prompt">${escapeHtml(question.question)}</div>
         <div class="question-choices">
-          ${getVisibleChoices(question, savedAnswer, isImmediate).map((choice) => renderChoice(question, choice, savedAnswer)).join("")}
+          ${getVisibleChoices(question, savedAnswer, isImmediate)
+            .map((choice) => renderChoice(question, choice, savedAnswer))
+            .join("")}
         </div>
         ${isImmediate && isAnswered ? renderImmediateFeedback(question, savedAnswer) : ""}
         <div class="inline-actions question-actions">
@@ -898,7 +902,10 @@ function renderFlashcardSummary(chapter) {
   document
     .getElementById("flashcard-summary-reshuffle")
     .addEventListener("click", () => {
-      state.flashcards = createFlashcardSession(chapter.slug, session.cardCount);
+      state.flashcards = createFlashcardSession(
+        chapter.slug,
+        session.cardCount,
+      );
       renderFlashcardsView(chapter);
     });
 
@@ -936,7 +943,7 @@ function goToNextFlashcard(chapter, cardCount) {
   const [nextCardIndex] = session.remaining.splice(nextPosition, 1);
   session.order.push(nextCardIndex);
   session.currentIndex = session.order.length - 1;
-      session.showingBack = false;
+  session.showingBack = false;
   if (session.order.length >= cardCount && !session.remaining.length) {
     renderFlashcardsView(chapter);
     return;
