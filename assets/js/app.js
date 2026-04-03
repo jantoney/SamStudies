@@ -29,6 +29,7 @@ const HIDDEN_NOTE_SECTION_TITLES = new Set([
 document.addEventListener("DOMContentLoaded", () => {
   elements.chapterSelect = document.getElementById("chapter-select");
   elements.themeToggle = document.getElementById("theme-toggle");
+  elements.immersiveThemeToggle = document.getElementById("immersive-theme-toggle");
   elements.immersiveBack = document.getElementById("immersive-back");
   elements.immersiveTitle = document.getElementById("immersive-title");
   elements.immersiveAction = document.getElementById("immersive-action");
@@ -38,6 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
   elements.disclaimerSummary = document.getElementById("disclaimer-summary");
 
   elements.themeToggle.addEventListener("click", toggleTheme);
+  elements.immersiveThemeToggle.addEventListener("click", toggleTheme);
 
   elements.chapterSelect.addEventListener("change", () => {
     const slug = elements.chapterSelect.value;
@@ -462,6 +464,7 @@ function renderQuizSetup(chapter, questionSet, questionsAsset) {
   const totalQuestions = questionSet.questions.length;
   const defaultCount = Math.min(10, totalQuestions);
   updateImmersiveTitle("Exam questions");
+  updateImmersiveAction(null);
 
   elements.viewRoot.innerHTML = `
     <div class="section-stack quiz-screen quiz-screen--setup">
@@ -471,11 +474,7 @@ function renderQuizSetup(chapter, questionSet, questionsAsset) {
         <p>${escapeHtml(questionSet.description)}</p>
       </div>
       <form class="quiz-settings" id="quiz-settings-form">
-        <div class="chapter-summary__meta">
-          <span class="chip chip--secondary">${totalQuestions} available questions</span>
-          <span class="chip">Randomized selection</span>
-          <span class="chip">Page references included in answers</span>
-        </div>
+        <p class="quiz-settings__summary">Questions will be randomized from (${totalQuestions}) total available questions.</p>
         <div class="quiz-settings__grid">
           <div>
             <label class="field-label" for="question-count">How many questions do you want to do?</label>
@@ -547,9 +546,27 @@ function renderQuizQuestion(questionSet) {
   const isImmediate = session.feedbackMode === "immediate";
   const progressValue =
     ((session.currentIndex + 1) / session.questions.length) * 100;
+  const primaryButtonLabel = isImmediate
+    ? "Check Answer"
+    : session.currentIndex === session.questions.length - 1
+      ? "View Results"
+      : "Next Question";
   updateImmersiveTitle(
     `Q: ${session.currentIndex + 1} of ${session.questions.length}`,
   );
+  updateImmersiveAction({
+    label: "Start Over",
+    ariaLabel: "Start exam over",
+    onClick: () => {
+      const selectedChapter = getChapterBySlug(state.selectedChapterSlug);
+      state.quiz = null;
+      renderQuizSetup(
+        selectedChapter,
+        questionSet,
+        getAsset(selectedChapter, VIEW_ASSET_TYPES.questions),
+      );
+    },
+  });
 
   elements.viewRoot.innerHTML = `
     <div class="section-stack quiz-screen quiz-screen--question">
@@ -565,18 +582,17 @@ function renderQuizQuestion(questionSet) {
           ${question.choices.map((choice) => renderChoice(question, choice, savedAnswer)).join("")}
         </div>
         ${isImmediate && isAnswered ? renderImmediateFeedback(question, savedAnswer) : ""}
-        <div class="inline-actions">
+        <div class="inline-actions question-actions">
           ${
             !(isImmediate && isAnswered)
-              ? `<button class="button" type="submit">${isImmediate ? "Lock answer" : session.currentIndex === session.questions.length - 1 ? "Finish quiz" : "Save and continue"}</button>`
+              ? `<button class="button" type="submit">${primaryButtonLabel}</button>`
               : ""
           }
           ${
             isImmediate && isAnswered
-              ? `<button class="button" type="button" id="next-question-button">${session.currentIndex === session.questions.length - 1 ? "View results" : "Next question"}</button>`
+              ? `<button class="button" type="button" id="next-question-button">${session.currentIndex === session.questions.length - 1 ? "View Results" : "Next Question"}</button>`
               : ""
           }
-          <button class="ghost-button" type="button" id="restart-quiz-button">Start over</button>
         </div>
       </form>
     </div>
@@ -611,19 +627,6 @@ function renderQuizQuestion(questionSet) {
 
     goToNextQuizStep(questionSet);
   });
-
-  document
-    .getElementById("restart-quiz-button")
-    .addEventListener("click", () => {
-      const selectedChapter = getChapterBySlug(state.selectedChapterSlug);
-      state.quiz = null;
-      renderQuizSetup(
-        selectedChapter,
-        questionSet,
-        getAsset(selectedChapter, VIEW_ASSET_TYPES.questions),
-      );
-    });
-
   const nextButton = document.getElementById("next-question-button");
   if (nextButton) {
     nextButton.addEventListener("click", () => {
@@ -690,6 +693,7 @@ function renderQuizSummary(questionSet) {
     return total + (session.answers[question.question_id]?.isCorrect ? 1 : 0);
   }, 0);
   updateImmersiveTitle("Results");
+  updateImmersiveAction(null);
 
   elements.viewRoot.innerHTML = `
     <div class="section-stack quiz-screen quiz-screen--summary">
@@ -766,21 +770,16 @@ async function renderFlashcardsView(chapter) {
   }
 
   const session = state.flashcards;
+  if (session.completed) {
+    renderFlashcardSummary(chapter);
+    return;
+  }
+
   const currentCard = flashcardSet.cards[session.order[session.currentIndex]];
   updateImmersiveTitle(
     `Card ${session.currentIndex + 1} of ${flashcardSet.cards.length}`,
   );
-  updateImmersiveAction({
-    label: "Shuffle",
-    ariaLabel: "Shuffle flashcards",
-    onClick: () => {
-      state.flashcards = createFlashcardSession(
-        chapter.slug,
-        flashcardSet.cards.length,
-      );
-      renderFlashcardsView(chapter);
-    },
-  });
+  updateImmersiveAction(null);
 
   elements.viewRoot.innerHTML = `
     <div class="section-stack">
@@ -846,21 +845,94 @@ async function renderFlashcardsView(chapter) {
         return;
       }
 
-      session.currentIndex = Math.min(
-        flashcardSet.cards.length - 1,
-        session.currentIndex + 1,
-      );
-      session.showingBack = false;
-      renderFlashcardsView(chapter);
+      goToNextFlashcard(chapter, flashcardSet.cards.length);
     });
 }
 
+function renderFlashcardSummary(chapter) {
+  const session = state.flashcards;
+  updateImmersiveTitle("Deck complete");
+  updateImmersiveAction(null);
+
+  elements.viewRoot.innerHTML = `
+    <div class="section-stack flashcard-summary-screen">
+      <div class="summary-card">
+        <p class="panel__eyebrow">Flash cards</p>
+        <h2>Deck complete</h2>
+        <p class="summary-card__score">${session.order.length} / ${session.order.length}</p>
+        <p>You have seen every card in this randomized run. Choose what to do next.</p>
+        <div class="inline-actions flashcard-summary-actions">
+          <button class="ghost-button" type="button" id="flashcard-summary-notes">Study Notes</button>
+          <button class="ghost-button" type="button" id="flashcard-summary-questions">Exam Questions</button>
+          <button class="button" type="button" id="flashcard-summary-reshuffle">Reshuffle Deck</button>
+        </div>
+      </div>
+    </div>
+  `;
+
+  document
+    .getElementById("flashcard-summary-reshuffle")
+    .addEventListener("click", () => {
+      state.flashcards = createFlashcardSession(chapter.slug, session.cardCount);
+      renderFlashcardsView(chapter);
+    });
+
+  document
+    .getElementById("flashcard-summary-notes")
+    .addEventListener("click", () => {
+      window.location.hash = buildHash(chapter.slug, "notes");
+    });
+
+  document
+    .getElementById("flashcard-summary-questions")
+    .addEventListener("click", () => {
+      window.location.hash = buildHash(chapter.slug, "questions");
+    });
+}
+
+function goToNextFlashcard(chapter, cardCount) {
+  const session = state.flashcards;
+  const hasFutureHistory = session.currentIndex < session.order.length - 1;
+
+  if (hasFutureHistory) {
+    session.currentIndex += 1;
+    session.showingBack = false;
+    renderFlashcardsView(chapter);
+    return;
+  }
+
+  if (!session.remaining.length) {
+    session.completed = true;
+    renderFlashcardSummary(chapter);
+    return;
+  }
+
+  const nextPosition = Math.floor(Math.random() * session.remaining.length);
+  const [nextCardIndex] = session.remaining.splice(nextPosition, 1);
+  session.order.push(nextCardIndex);
+  session.currentIndex = session.order.length - 1;
+      session.showingBack = false;
+  if (session.order.length >= cardCount && !session.remaining.length) {
+    renderFlashcardsView(chapter);
+    return;
+  }
+
+  renderFlashcardsView(chapter);
+}
+
 function createFlashcardSession(chapterSlug, cardCount) {
+  const allIndexes = [...Array(cardCount).keys()];
+  const firstPosition = Math.floor(Math.random() * allIndexes.length);
+  const [firstCardIndex] = allIndexes.splice(firstPosition, 1);
+
   return {
     chapterSlug,
-    order: shuffle([...Array(cardCount).keys()]),
+    cardCount,
+    order: [firstCardIndex],
+    remaining: allIndexes,
     currentIndex: 0,
     showingBack: false,
+    completed: false,
   };
 }
 
