@@ -3,7 +3,7 @@
   "index_type": "study_content_catalog",
   "collection_title": "Generated Study Notes",
   "collection_slug": "generated-study-notes",
-  "description": "Website-ready index of generated pathology study assets. Chapter 1 currently has complete third-party generated study notes, exam-prep questions with keyed answers and brief source-grounded rationales, and flashcards for spaced-repetition revision. Later chapters can be added to this same index as new assets are created, including additional flashcard resources.",
+  "description": "Website-ready index of generated pathology study assets. Chapters 1 and 2 currently have complete third-party generated study notes, exam-prep questions with keyed answers and brief source-grounded rationales, and flashcards for spaced-repetition revision. Later chapters can be added to this same index as new assets are created, including additional flashcard resources.",
   "supported_asset_types": [
     "study_notes_markdown",
     "exam_prep_questions_json",
@@ -16,8 +16,8 @@
   },
   "content_status": {
     "chapter_count_total": 24,
-    "chapter_count_complete": 1,
-    "chapter_count_planned": 23
+    "chapter_count_complete": 2,
+    "chapter_count_planned": 22
   },
   "source_registry": [
     {
@@ -134,17 +134,77 @@
       "chapter_code": "02",
       "title": "Cell Injury, Cell Death, and Adaptations",
       "slug": "02-cell-injury-cell-death-and-adaptations",
-      "status": "planned",
+      "status": "complete",
+      "website": {
+        "nav_label": "Chapter 2",
+        "card_title": "Cell Injury, Cell Death, and Adaptations",
+        "card_description": "Stress responses, reversible and irreversible injury, cell death pathways, adaptations, accumulations, calcification, and aging."
+      },
+      "description": "Third-party generated Chapter 2 revision assets based primarily on Robbins Basic Pathology, 10th Edition, Chapter 2, with RCPA syllabus framing and mock-exam style alignment.",
+      "topics": [
+        "Etiology and pathogenesis",
+        "Adaptation and homeostasis",
+        "Causes of cell injury",
+        "Reversible cell injury",
+        "Necrosis",
+        "Apoptosis",
+        "Necroptosis, pyroptosis, and autophagy",
+        "Hypoxia and ischemia",
+        "Ischemia-reperfusion injury and oxidative stress",
+        "Toxic injury and ER stress",
+        "Hypertrophy, hyperplasia, atrophy, and metaplasia",
+        "Intracellular accumulations",
+        "Pathologic calcification",
+        "Cellular aging"
+      ],
       "sources_used": [
         "robbins-basic-pathology-10e",
-        "rcpa-bps-syllabus-2026-oct-2025"
+        "robbins-cotran-pathologic-basis-of-disease-10e",
+        "rcpa-bps-syllabus-2026-oct-2025",
+        "bps-2026-mock-exam-question-set"
       ],
       "recommended_asset_types": [
         "study_notes_markdown",
         "exam_prep_questions_json",
         "flashcards_json"
       ],
-      "assets": []
+      "assets": [
+        {
+          "asset_type": "study_notes_markdown",
+          "title": "02 - Cell Injury, Cell Death, and Adaptations - Study Notes",
+          "path": "Generated Study Notes/02 - Cell Injury, Cell Death, and Adaptations - Study Notes.md",
+          "status": "complete"
+        },
+        {
+          "asset_type": "exam_prep_questions_json",
+          "title": "02 - Cell Injury, Cell Death, and Adaptations - Exam Prep Questions",
+          "path": "Generated Study Notes/02 - Cell Injury, Cell Death, and Adaptations - Exam Prep Questions.json",
+          "status": "complete",
+          "question_count": 30,
+          "answer_key_included": true,
+          "description": "Single-choice JSON question set with keyed choices, keyed answers, and brief source-grounded rationales.",
+          "answer_key_format": "correct_choice_key_with_reason",
+          "choice_key_format": "uppercase_letters",
+          "choice_order_randomizable": true,
+          "page_reference_style": "printed_book_page_numbers"
+        },
+        {
+          "asset_type": "flashcards_json",
+          "title": "02 - Cell Injury, Cell Death, and Adaptations - Flashcards",
+          "path": "Generated Study Notes/02 - Cell Injury, Cell Death, and Adaptations - Flashcards.json",
+          "status": "complete",
+          "description": "Structured Chapter 2 flashcard deck with bucket metadata, tags, and printed-page references for app ingestion.",
+          "card_count": 56,
+          "deck_name": "Pathology::Chapter 02 - Cell Injury, Cell Death, and Adaptations",
+          "flashcard_format": "basic",
+          "tags": [
+            "pathology",
+            "chapter-02",
+            "active-recall",
+            "spaced-repetition"
+          ]
+        }
+      ]
     },
     {
       "chapter_number": 3,

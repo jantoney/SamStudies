@@ -1,0 +1,681 @@
+{
+  "schema_version": "1.0",
+  "resource_type": "flashcard_set",
+  "title": "02 - Cell Injury, Cell Death, and Adaptations - Flashcards",
+  "slug": "02-cell-injury-cell-death-and-adaptations-flashcards",
+  "chapter": {
+    "number": 2,
+    "code": "02",
+    "title": "Cell Injury, Cell Death, and Adaptations",
+    "status": "complete"
+  },
+  "description": "Third-party generated Chapter 2 flashcards optimized for active recall, spaced repetition, and exam revision. The deck follows the Chapter 2 syllabus buckets and prioritizes high-yield mechanisms, distinctions, morphologic patterns, and aging concepts from Robbins Basic Pathology, 10th Edition, Chapter 2.",
+  "disclaimer": {
+    "summary": "Third-party generated study aid.",
+    "endorsement_notice": "These flashcards are third-party generated study materials. They are not produced by, reviewed by, approved by, endorsed by, or affiliated with the textbook authors, Elsevier, the Royal College of Pathologists of Australasia, or any other authority, institution, publisher, or examining body.",
+    "use_note": "Use these flashcards as revision support alongside the original source material."
+  },
+  "source_notes": [
+    {
+      "source_type": "primary_textbook_chapter",
+      "source_title": "Robbins Basic Pathology, 10th Edition, Chapter 2: Cell Injury, Cell Death, and Adaptations",
+      "publisher": "Elsevier",
+      "edition": "10th Edition"
+    },
+    {
+      "source_type": "course_alignment_reference",
+      "source_title": "RCPA - Basic Pathological Sciences Syllabus 2026 - October 2025",
+      "organization": "Royal College of Pathologists of Australasia",
+      "reference_note": "Used for topic emphasis, exam framing, and the eight-bucket revision structure."
+    },
+    {
+      "source_type": "derived_revision_sources",
+      "source_title": "Chapter 2 Study Notes and Exam Prep Questions created from the approved Chapter 2 source set",
+      "reference_note": "Used to compress Chapter 2 into single-fact active-recall prompts."
+    }
+  ],
+  "deck": {
+    "deck_name": "Pathology::Chapter 02 - Cell Injury, Cell Death, and Adaptations",
+    "deck_slug": "pathology-chapter-02-cell-injury-cell-death-and-adaptations",
+    "flashcard_format": "basic",
+    "card_count": 56,
+    "primary_method": "active_recall_and_spaced_repetition",
+    "recommended_review_schedule": [
+      "Day 1",
+      "Day 2",
+      "Day 4",
+      "Day 7"
+    ],
+    "topic_buckets": [
+      "Causes of cell injury",
+      "How cells respond to injury",
+      "Mechanisms of cell injury",
+      "Types of cell injury and death",
+      "Adaptations of cellular growth and differentiation",
+      "Intracellular accumulations",
+      "Pathologic calcification",
+      "Cellular aging"
+    ],
+    "design_note": "Cards are kept mostly single-fact and under one question per card for rapid recall.",
+    "page_reference_style": "printed_book_page_numbers",
+    "page_reference_note": "The [n] citations in card backs and the source_page_refs arrays use the printed book page number from Robbins Basic Pathology 10th Edition, not the sequential PDF page position. Chapter 2 occupies book pages 31-56."
+  },
+  "cards": [
+    {
+      "number": 1,
+      "card_id": "ch2-fc001",
+      "type": "basic",
+      "bucket": "Causes of cell injury",
+      "topic": "Most common cause of hypoxic injury",
+      "front": "What is the most common cause of clinically important hypoxic injury?",
+      "back": "Ischemia due to reduced blood supply, most often from arterial obstruction. [32]",
+      "source_page_refs": [32],
+      "tags": ["pathology", "chapter-02", "causes-of-cell-injury", "ischemia"]
+    },
+    {
+      "number": 2,
+      "card_id": "ch2-fc002",
+      "type": "basic",
+      "bucket": "Causes of cell injury",
+      "topic": "Hypoxia versus ischemia",
+      "front": "How does ischemia differ from simple hypoxia?",
+      "back": "Ischemia also reduces nutrient delivery and causes toxic metabolite buildup, not just oxygen deficiency. [32][42]",
+      "source_page_refs": [32, 42],
+      "tags": ["pathology", "chapter-02", "causes-of-cell-injury", "hypoxia-vs-ischemia"]
+    },
+    {
+      "number": 3,
+      "card_id": "ch2-fc003",
+      "type": "basic",
+      "bucket": "Causes of cell injury",
+      "topic": "Immune-mediated injury",
+      "front": "Which category of cell injury includes autoimmunity and allergy?",
+      "back": "Immunologic reactions. They often injure host tissues through inflammation. [32]",
+      "source_page_refs": [32],
+      "tags": ["pathology", "chapter-02", "causes-of-cell-injury", "immunologic-reactions"]
+    },
+    {
+      "number": 4,
+      "card_id": "ch2-fc004",
+      "type": "basic",
+      "bucket": "Causes of cell injury",
+      "topic": "Common-disease causation",
+      "front": "What two broad factors commonly interact to cause diseases such as hypertension, diabetes, and cancer?",
+      "back": "Inherited genetic susceptibility plus environmental triggers. [31]",
+      "source_page_refs": [31],
+      "tags": ["pathology", "chapter-02", "causes-of-cell-injury", "etiology"]
+    },
+    {
+      "number": 5,
+      "card_id": "ch2-fc005",
+      "type": "basic",
+      "bucket": "Causes of cell injury",
+      "topic": "Latent toxins",
+      "front": "What kind of toxin requires metabolic activation before becoming injurious?",
+      "back": "A latent toxin, often activated by cytochrome P-450 in smooth ER. [45]",
+      "source_page_refs": [45],
+      "tags": ["pathology", "chapter-02", "causes-of-cell-injury", "latent-toxin"]
+    },
+    {
+      "number": 6,
+      "card_id": "ch2-fc006",
+      "type": "basic",
+      "bucket": "Causes of cell injury",
+      "topic": "Carbon monoxide",
+      "front": "Which environmental gas can cause hypoxic injury by reducing the oxygen-carrying capacity of blood?",
+      "back": "Carbon monoxide. [32]",
+      "source_page_refs": [32],
+      "tags": ["pathology", "chapter-02", "causes-of-cell-injury", "carbon-monoxide"]
+    },
+    {
+      "number": 7,
+      "card_id": "ch2-fc007",
+      "type": "basic",
+      "bucket": "Causes of cell injury",
+      "topic": "Physical agents",
+      "front": "Which broad cause of cell injury includes trauma, temperature extremes, radiation, electric shock, and pressure change?",
+      "back": "Physical agents. [32]",
+      "source_page_refs": [32],
+      "tags": ["pathology", "chapter-02", "causes-of-cell-injury", "physical-agents"]
+    },
+    {
+      "number": 8,
+      "card_id": "ch2-fc008",
+      "type": "basic",
+      "bucket": "How cells respond to injury",
+      "topic": "Adaptation",
+      "front": "What term describes a reversible new steady state that lets a cell survive stress?",
+      "back": "Adaptation. [31]",
+      "source_page_refs": [31],
+      "tags": ["pathology", "chapter-02", "how-cells-respond-to-injury", "adaptation"]
+    },
+    {
+      "number": 9,
+      "card_id": "ch2-fc009",
+      "type": "basic",
+      "bucket": "How cells respond to injury",
+      "topic": "Main reversible-injury correlate",
+      "front": "What is the most common morphologic correlate of reversible cell injury?",
+      "back": "Cellular swelling. [33]",
+      "source_page_refs": [33],
+      "tags": ["pathology", "chapter-02", "how-cells-respond-to-injury", "cellular-swelling"]
+    },
+    {
+      "number": 10,
+      "card_id": "ch2-fc010",
+      "type": "basic",
+      "bucket": "How cells respond to injury",
+      "topic": "Fatty change",
+      "front": "What lipid-related morphologic change is the other main correlate of reversible injury?",
+      "back": "Fatty change. [33]",
+      "source_page_refs": [33],
+      "tags": ["pathology", "chapter-02", "how-cells-respond-to-injury", "fatty-change"]
+    },
+    {
+      "number": 11,
+      "card_id": "ch2-fc011",
+      "type": "basic",
+      "bucket": "How cells respond to injury",
+      "topic": "Hydropic change",
+      "front": "What term is used for vacuolar reversible injury caused by swelling of ER-derived spaces?",
+      "back": "Hydropic change, also called vacuolar degeneration. [33]",
+      "source_page_refs": [33],
+      "tags": ["pathology", "chapter-02", "how-cells-respond-to-injury", "hydropic-change"]
+    },
+    {
+      "number": 12,
+      "card_id": "ch2-fc012",
+      "type": "basic",
+      "bucket": "How cells respond to injury",
+      "topic": "Membrane blebbing",
+      "front": "What plasma membrane feature commonly appears in reversible cell injury?",
+      "back": "Membrane blebbing with blunting or loss of microvilli. [33]",
+      "source_page_refs": [33],
+      "tags": ["pathology", "chapter-02", "how-cells-respond-to-injury", "membrane-blebbing"]
+    },
+    {
+      "number": 13,
+      "card_id": "ch2-fc013",
+      "type": "basic",
+      "bucket": "How cells respond to injury",
+      "topic": "Irreversibility marker",
+      "front": "What single functional failure most strongly marks irreversible cell injury?",
+      "back": "Inability to restore mitochondrial oxidative phosphorylation. [34]",
+      "source_page_refs": [34],
+      "tags": ["pathology", "chapter-02", "how-cells-respond-to-injury", "irreversible-injury"]
+    },
+    {
+      "number": 14,
+      "card_id": "ch2-fc014",
+      "type": "basic",
+      "bucket": "How cells respond to injury",
+      "topic": "Nuclear sequence in necrosis",
+      "front": "What is the usual sequence of necrotic nuclear changes?",
+      "back": "Pyknosis, then karyorrhexis, then karyolysis. [35]",
+      "source_page_refs": [35],
+      "tags": ["pathology", "chapter-02", "how-cells-respond-to-injury", "nuclear-changes"]
+    },
+    {
+      "number": 15,
+      "card_id": "ch2-fc015",
+      "type": "basic",
+      "bucket": "Mechanisms of cell injury",
+      "topic": "Na-K pump failure",
+      "front": "What pump failure causes early cell swelling in hypoxic injury?",
+      "back": "Failure of ATP-dependent sodium pumps, often described as Na+/K+ ATPase failure. [42]",
+      "source_page_refs": [42],
+      "tags": ["pathology", "chapter-02", "mechanisms-of-cell-injury", "atp-depletion"]
+    },
+    {
+      "number": 16,
+      "card_id": "ch2-fc016",
+      "type": "basic",
+      "bucket": "Mechanisms of cell injury",
+      "topic": "Anaerobic glycolysis",
+      "front": "What metabolic pathway increases when oxidative phosphorylation fails?",
+      "back": "Anaerobic glycolysis. [42]",
+      "source_page_refs": [42],
+      "tags": ["pathology", "chapter-02", "mechanisms-of-cell-injury", "anaerobic-glycolysis"]
+    },
+    {
+      "number": 17,
+      "card_id": "ch2-fc017",
+      "type": "basic",
+      "bucket": "Mechanisms of cell injury",
+      "topic": "Lactic acidosis",
+      "front": "What acid accumulates during prolonged ATP depletion?",
+      "back": "Lactic acid. [42]",
+      "source_page_refs": [42],
+      "tags": ["pathology", "chapter-02", "mechanisms-of-cell-injury", "lactic-acid"]
+    },
+    {
+      "number": 18,
+      "card_id": "ch2-fc018",
+      "type": "basic",
+      "bucket": "Mechanisms of cell injury",
+      "topic": "Reperfusion injury",
+      "front": "What paradoxical process can worsen tissue damage after blood flow returns to an ischemic organ?",
+      "back": "Ischemia-reperfusion injury. [43]",
+      "source_page_refs": [43],
+      "tags": ["pathology", "chapter-02", "mechanisms-of-cell-injury", "reperfusion"]
+    },
+    {
+      "number": 19,
+      "card_id": "ch2-fc019",
+      "type": "basic",
+      "bucket": "Mechanisms of cell injury",
+      "topic": "Hydroxyl radical",
+      "front": "Which reactive oxygen species is formed from hydrogen peroxide in the presence of iron?",
+      "back": "The hydroxyl radical. [44]",
+      "source_page_refs": [44],
+      "tags": ["pathology", "chapter-02", "mechanisms-of-cell-injury", "hydroxyl-radical"]
+    },
+    {
+      "number": 20,
+      "card_id": "ch2-fc020",
+      "type": "basic",
+      "bucket": "Mechanisms of cell injury",
+      "topic": "Superoxide dismutase",
+      "front": "Which enzyme converts superoxide to hydrogen peroxide?",
+      "back": "Superoxide dismutase. [44]",
+      "source_page_refs": [44],
+      "tags": ["pathology", "chapter-02", "mechanisms-of-cell-injury", "superoxide-dismutase"]
+    },
+    {
+      "number": 21,
+      "card_id": "ch2-fc021",
+      "type": "basic",
+      "bucket": "Mechanisms of cell injury",
+      "topic": "Unfolded protein response",
+      "front": "What is the main initial goal of the unfolded protein response?",
+      "back": "To reduce the load of misfolded proteins in the ER so the cell can restore protein homeostasis. [45][46]",
+      "source_page_refs": [45, 46],
+      "tags": ["pathology", "chapter-02", "mechanisms-of-cell-injury", "unfolded-protein-response"]
+    },
+    {
+      "number": 22,
+      "card_id": "ch2-fc022",
+      "type": "basic",
+      "bucket": "Types of cell injury and death",
+      "topic": "Necrosis",
+      "front": "What type of cell death is always pathologic and typically inflammatory?",
+      "back": "Necrosis. [34][35]",
+      "source_page_refs": [34, 35],
+      "tags": ["pathology", "chapter-02", "types-of-cell-injury-and-death", "necrosis"]
+    },
+    {
+      "number": 23,
+      "card_id": "ch2-fc023",
+      "type": "basic",
+      "bucket": "Types of cell injury and death",
+      "topic": "Apoptosis",
+      "front": "What type of cell death clears cells without significant inflammation?",
+      "back": "Apoptosis. [37]",
+      "source_page_refs": [37],
+      "tags": ["pathology", "chapter-02", "types-of-cell-injury-and-death", "apoptosis"]
+    },
+    {
+      "number": 24,
+      "card_id": "ch2-fc024",
+      "type": "basic",
+      "bucket": "Types of cell injury and death",
+      "topic": "Coagulative necrosis",
+      "front": "Which necrosis pattern characterizes solid-organ infarcts outside the brain?",
+      "back": "Coagulative necrosis. [36]",
+      "source_page_refs": [36],
+      "tags": ["pathology", "chapter-02", "types-of-cell-injury-and-death", "coagulative-necrosis"]
+    },
+    {
+      "number": 25,
+      "card_id": "ch2-fc025",
+      "type": "basic",
+      "bucket": "Types of cell injury and death",
+      "topic": "Liquefactive necrosis",
+      "front": "Which necrosis pattern is typical of bacterial abscesses and brain infarcts?",
+      "back": "Liquefactive necrosis. [36]",
+      "source_page_refs": [36],
+      "tags": ["pathology", "chapter-02", "types-of-cell-injury-and-death", "liquefactive-necrosis"]
+    },
+    {
+      "number": 26,
+      "card_id": "ch2-fc026",
+      "type": "basic",
+      "bucket": "Types of cell injury and death",
+      "topic": "Caseous necrosis",
+      "front": "Which necrosis pattern is classically associated with tuberculosis?",
+      "back": "Caseous necrosis. [36][37]",
+      "source_page_refs": [36, 37],
+      "tags": ["pathology", "chapter-02", "types-of-cell-injury-and-death", "caseous-necrosis"]
+    },
+    {
+      "number": 27,
+      "card_id": "ch2-fc027",
+      "type": "basic",
+      "bucket": "Types of cell injury and death",
+      "topic": "Necroptosis mediators",
+      "front": "Which kinases are central to necroptosis?",
+      "back": "Receptor-interacting protein, or RIP, kinases. [40]",
+      "source_page_refs": [40],
+      "tags": ["pathology", "chapter-02", "types-of-cell-injury-and-death", "necroptosis"]
+    },
+    {
+      "number": 28,
+      "card_id": "ch2-fc028",
+      "type": "basic",
+      "bucket": "Types of cell injury and death",
+      "topic": "Autophagy purpose",
+      "front": "What is the main purpose of autophagy during starvation?",
+      "back": "Recycling cellular components to provide nutrients and energy. [40][41]",
+      "source_page_refs": [40, 41],
+      "tags": ["pathology", "chapter-02", "types-of-cell-injury-and-death", "autophagy"]
+    },
+    {
+      "number": 29,
+      "card_id": "ch2-fc029",
+      "type": "basic",
+      "bucket": "Adaptations of cellular growth and differentiation",
+      "topic": "Hypertrophy definition",
+      "front": "What does hypertrophy mean?",
+      "back": "An increase in cell size. [48]",
+      "source_page_refs": [48],
+      "tags": ["pathology", "chapter-02", "adaptations-of-cellular-growth-and-differentiation", "hypertrophy"]
+    },
+    {
+      "number": 30,
+      "card_id": "ch2-fc030",
+      "type": "basic",
+      "bucket": "Adaptations of cellular growth and differentiation",
+      "topic": "Hyperplasia definition",
+      "front": "What does hyperplasia mean?",
+      "back": "An increase in cell number. [49]",
+      "source_page_refs": [49],
+      "tags": ["pathology", "chapter-02", "adaptations-of-cellular-growth-and-differentiation", "hyperplasia"]
+    },
+    {
+      "number": 31,
+      "card_id": "ch2-fc031",
+      "type": "basic",
+      "bucket": "Adaptations of cellular growth and differentiation",
+      "topic": "Cardiac hypertrophy",
+      "front": "What is the classic pathologic cardiac example of hypertrophy?",
+      "back": "Left ventricular hypertrophy caused by hypertension or aortic valve disease. [48][49]",
+      "source_page_refs": [48, 49],
+      "tags": ["pathology", "chapter-02", "adaptations-of-cellular-growth-and-differentiation", "cardiac-hypertrophy"]
+    },
+    {
+      "number": 32,
+      "card_id": "ch2-fc032",
+      "type": "basic",
+      "bucket": "Adaptations of cellular growth and differentiation",
+      "topic": "Compensatory hyperplasia",
+      "front": "What is the classic example of compensatory hyperplasia?",
+      "back": "Liver regeneration after partial resection. [49][50]",
+      "source_page_refs": [49, 50],
+      "tags": ["pathology", "chapter-02", "adaptations-of-cellular-growth-and-differentiation", "compensatory-hyperplasia"]
+    },
+    {
+      "number": 33,
+      "card_id": "ch2-fc033",
+      "type": "basic",
+      "bucket": "Adaptations of cellular growth and differentiation",
+      "topic": "Atrophy definition",
+      "front": "What does atrophy mean?",
+      "back": "Shrinkage of cells due to loss of cell substance. [50]",
+      "source_page_refs": [50],
+      "tags": ["pathology", "chapter-02", "adaptations-of-cellular-growth-and-differentiation", "atrophy"]
+    },
+    {
+      "number": 34,
+      "card_id": "ch2-fc034",
+      "type": "basic",
+      "bucket": "Adaptations of cellular growth and differentiation",
+      "topic": "Protein degradation in atrophy",
+      "front": "Which pathway mediates much of the protein breakdown in atrophy?",
+      "back": "The ubiquitin-proteasome pathway. [50]",
+      "source_page_refs": [50],
+      "tags": ["pathology", "chapter-02", "adaptations-of-cellular-growth-and-differentiation", "ubiquitin-proteasome"]
+    },
+    {
+      "number": 35,
+      "card_id": "ch2-fc035",
+      "type": "basic",
+      "bucket": "Adaptations of cellular growth and differentiation",
+      "topic": "Bronchial metaplasia",
+      "front": "What epithelial change occurs in the bronchi of smokers?",
+      "back": "Ciliated columnar epithelium is replaced by stratified squamous epithelium. [50][51]",
+      "source_page_refs": [50, 51],
+      "tags": ["pathology", "chapter-02", "adaptations-of-cellular-growth-and-differentiation", "metaplasia"]
+    },
+    {
+      "number": 36,
+      "card_id": "ch2-fc036",
+      "type": "basic",
+      "bucket": "Intracellular accumulations",
+      "topic": "Steatosis definition",
+      "front": "What is steatosis?",
+      "back": "Accumulation of triglycerides within parenchymal cells. [51]",
+      "source_page_refs": [51],
+      "tags": ["pathology", "chapter-02", "intracellular-accumulations", "steatosis"]
+    },
+    {
+      "number": 37,
+      "card_id": "ch2-fc037",
+      "type": "basic",
+      "bucket": "Intracellular accumulations",
+      "topic": "Most common steatosis organ",
+      "front": "Which organ is most commonly affected by steatosis?",
+      "back": "The liver. [51]",
+      "source_page_refs": [51],
+      "tags": ["pathology", "chapter-02", "intracellular-accumulations", "fatty-liver"]
+    },
+    {
+      "number": 38,
+      "card_id": "ch2-fc038",
+      "type": "basic",
+      "bucket": "Intracellular accumulations",
+      "topic": "Protein droplets",
+      "front": "What do hyaline droplets in proximal tubules usually represent?",
+      "back": "Reabsorbed protein. [52]",
+      "source_page_refs": [52],
+      "tags": ["pathology", "chapter-02", "intracellular-accumulations", "protein-accumulation"]
+    },
+    {
+      "number": 39,
+      "card_id": "ch2-fc039",
+      "type": "basic",
+      "bucket": "Intracellular accumulations",
+      "topic": "Glycogen accumulation disease",
+      "front": "Which common disease can cause abnormal intracellular glycogen accumulation?",
+      "back": "Poorly controlled diabetes mellitus. [52]",
+      "source_page_refs": [52],
+      "tags": ["pathology", "chapter-02", "intracellular-accumulations", "glycogen"]
+    },
+    {
+      "number": 40,
+      "card_id": "ch2-fc040",
+      "type": "basic",
+      "bucket": "Intracellular accumulations",
+      "topic": "Anthracosis",
+      "front": "What is anthracosis?",
+      "back": "Carbon pigment accumulation in the lungs and draining tracheobronchial lymph nodes. [52]",
+      "source_page_refs": [52],
+      "tags": ["pathology", "chapter-02", "intracellular-accumulations", "anthracosis"]
+    },
+    {
+      "number": 41,
+      "card_id": "ch2-fc041",
+      "type": "basic",
+      "bucket": "Intracellular accumulations",
+      "topic": "Lipofuscin",
+      "front": "What is lipofuscin?",
+      "back": "A wear-and-tear pigment formed by free-radical peroxidation of lipids and proteins. [52]",
+      "source_page_refs": [52],
+      "tags": ["pathology", "chapter-02", "intracellular-accumulations", "lipofuscin"]
+    },
+    {
+      "number": 42,
+      "card_id": "ch2-fc042",
+      "type": "basic",
+      "bucket": "Intracellular accumulations",
+      "topic": "Hemosiderin stain",
+      "front": "Which stain identifies hemosiderin?",
+      "back": "Prussian blue. [52][53]",
+      "source_page_refs": [52, 53],
+      "tags": ["pathology", "chapter-02", "intracellular-accumulations", "hemosiderin"]
+    },
+    {
+      "number": 43,
+      "card_id": "ch2-fc043",
+      "type": "basic",
+      "bucket": "Pathologic calcification",
+      "topic": "Dystrophic calcification definition",
+      "front": "What is dystrophic calcification?",
+      "back": "Calcium deposition in injured or dead tissue despite normal serum calcium levels. [53]",
+      "source_page_refs": [53],
+      "tags": ["pathology", "chapter-02", "pathologic-calcification", "dystrophic-calcification"]
+    },
+    {
+      "number": 44,
+      "card_id": "ch2-fc044",
+      "type": "basic",
+      "bucket": "Pathologic calcification",
+      "topic": "Metastatic calcification definition",
+      "front": "What is metastatic calcification?",
+      "back": "Calcium deposition in normal tissues because of hypercalcemia. [53][54]",
+      "source_page_refs": [53, 54],
+      "tags": ["pathology", "chapter-02", "pathologic-calcification", "metastatic-calcification"]
+    },
+    {
+      "number": 45,
+      "card_id": "ch2-fc045",
+      "type": "basic",
+      "bucket": "Pathologic calcification",
+      "topic": "Calcific aortic stenosis",
+      "front": "Which valve lesion is a classic example of dystrophic calcification?",
+      "back": "Calcific aortic stenosis of an aging or damaged aortic valve. [53]",
+      "source_page_refs": [53],
+      "tags": ["pathology", "chapter-02", "pathologic-calcification", "aortic-stenosis"]
+    },
+    {
+      "number": 46,
+      "card_id": "ch2-fc046",
+      "type": "basic",
+      "bucket": "Pathologic calcification",
+      "topic": "Hyperparathyroid state",
+      "front": "What endocrine disturbance most classically causes metastatic calcification?",
+      "back": "Excess parathyroid hormone, or PTHrP acting similarly in malignancy. [53]",
+      "source_page_refs": [53],
+      "tags": ["pathology", "chapter-02", "pathologic-calcification", "hypercalcemia"]
+    },
+    {
+      "number": 47,
+      "card_id": "ch2-fc047",
+      "type": "basic",
+      "bucket": "Pathologic calcification",
+      "topic": "Initiation site",
+      "front": "Where does dystrophic calcification often begin ultrastructurally?",
+      "back": "In membrane-bound vesicles or in the mitochondria of dying cells. [53]",
+      "source_page_refs": [53],
+      "tags": ["pathology", "chapter-02", "pathologic-calcification", "calcium-phosphate-crystals"]
+    },
+    {
+      "number": 48,
+      "card_id": "ch2-fc048",
+      "type": "basic",
+      "bucket": "Pathologic calcification",
+      "topic": "Sites of metastatic calcification",
+      "front": "Which organs are commonly affected by metastatic calcification?",
+      "back": "Kidneys, lungs, gastric mucosa, and systemic vasculature. [54]",
+      "source_page_refs": [54],
+      "tags": ["pathology", "chapter-02", "pathologic-calcification", "metastatic-sites"]
+    },
+    {
+      "number": 49,
+      "card_id": "ch2-fc049",
+      "type": "basic",
+      "bucket": "Pathologic calcification",
+      "topic": "Nephrocalcinosis",
+      "front": "What term describes massive calcium deposition in the kidney?",
+      "back": "Nephrocalcinosis. [54]",
+      "source_page_refs": [54],
+      "tags": ["pathology", "chapter-02", "pathologic-calcification", "nephrocalcinosis"]
+    },
+    {
+      "number": 50,
+      "card_id": "ch2-fc050",
+      "type": "basic",
+      "bucket": "Cellular aging",
+      "topic": "Telomeres",
+      "front": "What are telomeres?",
+      "back": "Short repeated DNA sequences at chromosome ends that protect chromosome integrity and support complete replication. [54][55]",
+      "source_page_refs": [54, 55],
+      "tags": ["pathology", "chapter-02", "cellular-aging", "telomeres"]
+    },
+    {
+      "number": 51,
+      "card_id": "ch2-fc051",
+      "type": "basic",
+      "bucket": "Cellular aging",
+      "topic": "Replicative senescence",
+      "front": "What causes replicative senescence in most somatic cells?",
+      "back": "Progressive telomere shortening. [54][55]",
+      "source_page_refs": [54, 55],
+      "tags": ["pathology", "chapter-02", "cellular-aging", "replicative-senescence"]
+    },
+    {
+      "number": 52,
+      "card_id": "ch2-fc052",
+      "type": "basic",
+      "bucket": "Cellular aging",
+      "topic": "Telomerase",
+      "front": "Which enzyme maintains telomere length?",
+      "back": "Telomerase. [54][55]",
+      "source_page_refs": [54, 55],
+      "tags": ["pathology", "chapter-02", "cellular-aging", "telomerase"]
+    },
+    {
+      "number": 53,
+      "card_id": "ch2-fc053",
+      "type": "basic",
+      "bucket": "Cellular aging",
+      "topic": "Telomerase in cancer",
+      "front": "Why do many cancer cells reactivate telomerase?",
+      "back": "To stabilize telomeres and permit indefinite proliferation. [55]",
+      "source_page_refs": [55],
+      "tags": ["pathology", "chapter-02", "cellular-aging", "cancer-cells"]
+    },
+    {
+      "number": 54,
+      "card_id": "ch2-fc054",
+      "type": "basic",
+      "bucket": "Cellular aging",
+      "topic": "Protein homeostasis",
+      "front": "What does defective protein homeostasis cause in aging cells?",
+      "back": "Loss of normal proteins together with accumulation of misfolded proteins. [55]",
+      "source_page_refs": [55],
+      "tags": ["pathology", "chapter-02", "cellular-aging", "protein-homeostasis"]
+    },
+    {
+      "number": 55,
+      "card_id": "ch2-fc055",
+      "type": "basic",
+      "bucket": "Cellular aging",
+      "topic": "Calorie restriction",
+      "front": "How does calorie restriction affect aging pathways?",
+      "back": "It slows aging-associated pathways, partly by reducing insulin/IGF signaling and improving repair and protein homeostasis. [55][56]",
+      "source_page_refs": [55, 56],
+      "tags": ["pathology", "chapter-02", "cellular-aging", "calorie-restriction"]
+    },
+    {
+      "number": 56,
+      "card_id": "ch2-fc056",
+      "type": "basic",
+      "bucket": "Cellular aging",
+      "topic": "Persistent inflammation",
+      "front": "What chronic process accelerates aging and promotes diseases such as atherosclerosis and type 2 diabetes?",
+      "back": "Persistent low-level inflammation. [56]",
+      "source_page_refs": [56],
+      "tags": ["pathology", "chapter-02", "cellular-aging", "persistent-inflammation"]
+    }
+  ]
+}

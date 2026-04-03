@@ -1,0 +1,1094 @@
+{
+  "schema_version": "1.2",
+  "resource_type": "exam_prep_question_set",
+  "title": "02 - Cell Injury, Cell Death, and Adaptations - Exam Prep Questions",
+  "slug": "02-cell-injury-cell-death-and-adaptations-exam-prep-questions",
+  "chapter": {
+    "number": 2,
+    "code": "02",
+    "title": "Cell Injury, Cell Death, and Adaptations",
+    "status": "complete"
+  },
+  "description": "Third-party generated single-choice exam-prep questions for Chapter 2. The set is aligned primarily to the Chapter 2 textbook content and shaped to reflect the style, tone, and difficulty distribution of the RCPA Basic Pathological Sciences mock exam format. Choices are keyed so answers remain stable if an application randomizes display order.",
+  "disclaimer": {
+    "summary": "Third-party generated study aid.",
+    "endorsement_notice": "These questions are third-party generated study materials. They are not produced by, reviewed by, approved by, endorsed by, or affiliated with the textbook authors, Elsevier, the Royal College of Pathologists of Australasia, or any other authority, institution, publisher, or examining body.",
+    "answer_key_note": "Answers are included as stable choice keys with brief source-grounded rationales for study and review purposes."
+  },
+  "source_notes": [
+    {
+      "source_type": "primary_textbook_chapter",
+      "source_title": "Robbins Basic Pathology, 10th Edition, Chapter 2: Cell Injury, Cell Death, and Adaptations",
+      "publisher": "Elsevier",
+      "edition": "10th Edition"
+    },
+    {
+      "source_type": "course_alignment_reference",
+      "source_title": "RCPA - Basic Pathological Sciences Syllabus 2026 - October 2025",
+      "organization": "Royal College of Pathologists of Australasia",
+      "reference_note": "Used for topic emphasis and exam framing."
+    },
+    {
+      "source_type": "style_reference",
+      "source_title": "BPS 2026 Mock Exam Question Set",
+      "organization": "Royal College of Pathologists of Australasia",
+      "reference_note": "Used as a style, structure, and difficulty reference."
+    }
+  ],
+  "format": {
+    "question_count": 30,
+    "question_type": "single_choice",
+    "choices_distribution": {
+      "4": 5,
+      "5": 25
+    },
+    "answer_key_included": true,
+    "answer_format": "correct_choice_key_with_reason",
+    "choice_keys_included": true,
+    "choice_key_format": "uppercase_letters",
+    "choice_order_randomizable": true,
+    "page_reference_style": "printed_book_page_numbers"
+  },
+  "questions": [
+    {
+      "number": 1,
+      "question_id": "ch2-q01",
+      "type": "single_choice",
+      "question": "A pathology lecturer explains that gallstones are the underlying cause of disease, whereas retained bile salts and membrane injury explain how the lesion develops. Which term refers to the mechanism by which the lesion develops?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Etiology"
+        },
+        {
+          "key": "B",
+          "text": "Pathogenesis"
+        },
+        {
+          "key": "C",
+          "text": "Morphology"
+        },
+        {
+          "key": "D",
+          "text": "Epidemiology"
+        },
+        {
+          "key": "E",
+          "text": "Prognosis"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Pathogenesis describes the mechanism by which disease develops and progresses, whereas etiology refers to the underlying cause.",
+        "source_page_refs": [
+          31
+        ]
+      }
+    },
+    {
+      "number": 2,
+      "question_id": "ch2-q02",
+      "type": "single_choice",
+      "question": "A young adult who begins resistance training develops increased skeletal muscle bulk without an increase in myocyte number. Which cellular adaptation best explains this change?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Atrophy"
+        },
+        {
+          "key": "B",
+          "text": "Hyperplasia"
+        },
+        {
+          "key": "C",
+          "text": "Hypertrophy"
+        },
+        {
+          "key": "D",
+          "text": "Metaplasia"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Skeletal muscle adapts to increased workload mainly by hypertrophy, because adult myocytes have limited proliferative capacity.",
+        "source_page_refs": [
+          48
+        ]
+      }
+    },
+    {
+      "number": 3,
+      "question_id": "ch2-q03",
+      "type": "single_choice",
+      "question": "An embolus acutely obstructs an artery supplying the small bowel. Why is ischemia generally more damaging than simple hypoxia?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "It always induces apoptosis instead of necrosis"
+        },
+        {
+          "key": "B",
+          "text": "It deprives tissue of oxygen while also reducing nutrients and preventing metabolite removal"
+        },
+        {
+          "key": "C",
+          "text": "It occurs only in tissues that cannot regenerate"
+        },
+        {
+          "key": "D",
+          "text": "It immediately causes fibrinoid necrosis"
+        },
+        {
+          "key": "E",
+          "text": "It activates telomerase in affected cells"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Ischemia causes oxygen deprivation and also reduces nutrient delivery while impairing clearance of toxic metabolites, so it is generally more damaging than simple hypoxia.",
+        "source_page_refs": [
+          32,
+          42
+        ]
+      }
+    },
+    {
+      "number": 4,
+      "question_id": "ch2-q04",
+      "type": "single_choice",
+      "question": "A renal tubular epithelial cell is exposed to brief ischemia and then recovers fully. Which morphologic change is most characteristic of reversible cell injury?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Cellular swelling"
+        },
+        {
+          "key": "B",
+          "text": "Karyolysis"
+        },
+        {
+          "key": "C",
+          "text": "Plasma membrane rupture"
+        },
+        {
+          "key": "D",
+          "text": "Dystrophic calcification"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "The main morphologic correlates of reversible injury are cellular swelling and fatty change; karyolysis and membrane rupture indicate necrosis.",
+        "source_page_refs": [
+          33
+        ]
+      }
+    },
+    {
+      "number": 5,
+      "question_id": "ch2-q05",
+      "type": "single_choice",
+      "question": "A pathologist is trying to decide whether a damaged cell has crossed the threshold from reversible to irreversible injury. Which finding most strongly supports irreversible injury?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Chromatin clumping"
+        },
+        {
+          "key": "B",
+          "text": "Membrane blebbing"
+        },
+        {
+          "key": "C",
+          "text": "Inability to restore mitochondrial oxidative phosphorylation"
+        },
+        {
+          "key": "D",
+          "text": "Hydropic change"
+        },
+        {
+          "key": "E",
+          "text": "Fatty change"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Irreversible injury is consistently characterized by failure to restore mitochondrial function, membrane damage, and loss of DNA/chromatin integrity.",
+        "source_page_refs": [
+          34
+        ]
+      }
+    },
+    {
+      "number": 6,
+      "question_id": "ch2-q06",
+      "type": "single_choice",
+      "question": "Biopsy of colonic mucosa shows shrunken eosinophilic cell fragments that are rapidly phagocytosed, with no surrounding inflammatory response. What is the most likely form of cell death?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Apoptosis"
+        },
+        {
+          "key": "B",
+          "text": "Coagulative necrosis"
+        },
+        {
+          "key": "C",
+          "text": "Liquefactive necrosis"
+        },
+        {
+          "key": "D",
+          "text": "Gangrenous necrosis"
+        },
+        {
+          "key": "E",
+          "text": "Autophagic cell death"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Apoptotic cells shrink, fragment into membrane-bound bodies, and are cleared without provoking significant inflammation.",
+        "source_page_refs": [
+          34,
+          37
+        ]
+      }
+    },
+    {
+      "number": 7,
+      "question_id": "ch2-q07",
+      "type": "single_choice",
+      "question": "A patient develops a pale wedge-shaped infarct in the kidney after thromboembolic occlusion. What pattern of necrosis is most likely present?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Coagulative"
+        },
+        {
+          "key": "B",
+          "text": "Liquefactive"
+        },
+        {
+          "key": "C",
+          "text": "Caseous"
+        },
+        {
+          "key": "D",
+          "text": "Fat"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Ischemic infarcts in solid organs other than the brain characteristically produce coagulative necrosis.",
+        "source_page_refs": [
+          36
+        ]
+      }
+    },
+    {
+      "number": 8,
+      "question_id": "ch2-q08",
+      "type": "single_choice",
+      "question": "An elderly patient sustains a large ischemic infarct in the brain. Which pattern of necrosis is most likely to develop?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Coagulative"
+        },
+        {
+          "key": "B",
+          "text": "Gangrenous"
+        },
+        {
+          "key": "C",
+          "text": "Liquefactive"
+        },
+        {
+          "key": "D",
+          "text": "Fibrinoid"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Hypoxic death in the central nervous system typically leads to liquefactive necrosis rather than coagulative necrosis.",
+        "source_page_refs": [
+          36
+        ]
+      }
+    },
+    {
+      "number": 9,
+      "question_id": "ch2-q09",
+      "type": "single_choice",
+      "question": "A cavitary lung lesion contains friable yellow-white 'cheesy' material and is surrounded by granulomatous inflammation. What pattern of necrosis is this?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Caseous"
+        },
+        {
+          "key": "B",
+          "text": "Coagulative"
+        },
+        {
+          "key": "C",
+          "text": "Fat"
+        },
+        {
+          "key": "D",
+          "text": "Fibrinoid"
+        },
+        {
+          "key": "E",
+          "text": "Gangrenous"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Caseous necrosis is classically seen in tuberculosis and appears as cheesy yellow-white necrotic debris with surrounding granulomatous inflammation.",
+        "source_page_refs": [
+          36,
+          37
+        ]
+      }
+    },
+    {
+      "number": 10,
+      "question_id": "ch2-q10",
+      "type": "single_choice",
+      "question": "A patient with acute pancreatitis is found at surgery to have chalky white deposits in peripancreatic fat. Which type of necrosis best explains this finding?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Coagulative"
+        },
+        {
+          "key": "B",
+          "text": "Fat"
+        },
+        {
+          "key": "C",
+          "text": "Liquefactive"
+        },
+        {
+          "key": "D",
+          "text": "Caseous"
+        },
+        {
+          "key": "E",
+          "text": "Gangrenous"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Activated pancreatic lipases digest fat and release fatty acids that combine with calcium to create chalky foci of fat necrosis and saponification.",
+        "source_page_refs": [
+          37
+        ]
+      }
+    },
+    {
+      "number": 11,
+      "question_id": "ch2-q11",
+      "type": "single_choice",
+      "question": "A biopsy from a medium-sized artery in a patient with polyarteritis nodosa shows a bright pink amorphous band in the vessel wall. What type of necrosis is most likely present?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Fibrinoid"
+        },
+        {
+          "key": "B",
+          "text": "Coagulative"
+        },
+        {
+          "key": "C",
+          "text": "Liquefactive"
+        },
+        {
+          "key": "D",
+          "text": "Caseous"
+        },
+        {
+          "key": "E",
+          "text": "Gangrenous"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Immune complex deposition and plasma protein leakage into vessel walls create the bright pink appearance of fibrinoid necrosis.",
+        "source_page_refs": [
+          37
+        ]
+      }
+    },
+    {
+      "number": 12,
+      "question_id": "ch2-q12",
+      "type": "single_choice",
+      "question": "A developing lymphocyte in the thymus strongly recognizes a self antigen and is eliminated before entering the peripheral circulation. Which mechanism most directly accounts for this deletion?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Activation of apoptosis by mitochondrial and death-receptor pathways"
+        },
+        {
+          "key": "B",
+          "text": "Receptor-interacting protein kinase-mediated necroptosis"
+        },
+        {
+          "key": "C",
+          "text": "Lysosomal rupture with accidental necrosis"
+        },
+        {
+          "key": "D",
+          "text": "Lipid peroxidation from hydroxyl radicals"
+        },
+        {
+          "key": "E",
+          "text": "Metaplastic replacement of the lymphocyte"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Elimination of self-reactive lymphocytes is a physiologic apoptotic process that can involve both mitochondrial and death-receptor pathways.",
+        "source_page_refs": [
+          38
+        ]
+      }
+    },
+    {
+      "number": 13,
+      "question_id": "ch2-q13",
+      "type": "single_choice",
+      "question": "A cell exposed to ionizing radiation accumulates severe DNA damage, releases cytochrome c from mitochondria, and activates caspases. Which apoptotic pathway has been activated?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Extrinsic death-receptor pathway"
+        },
+        {
+          "key": "B",
+          "text": "Intrinsic mitochondrial pathway"
+        },
+        {
+          "key": "C",
+          "text": "Pyroptotic pathway"
+        },
+        {
+          "key": "D",
+          "text": "Necroptotic pathway"
+        },
+        {
+          "key": "E",
+          "text": "Lysosomal pathway"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "DNA damage and cytochrome c release identify the intrinsic mitochondrial pathway of apoptosis.",
+        "source_page_refs": [
+          38,
+          39
+        ]
+      }
+    },
+    {
+      "number": 14,
+      "question_id": "ch2-q14",
+      "type": "single_choice",
+      "question": "A cytokine-rich inflammatory environment activates TNF receptors on injured cells, and the dominant downstream mediators are RIP kinases rather than Fas-associated caspases. Which form of cell death is most likely occurring?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Apoptosis"
+        },
+        {
+          "key": "B",
+          "text": "Autophagy"
+        },
+        {
+          "key": "C",
+          "text": "Necroptosis"
+        },
+        {
+          "key": "D",
+          "text": "Coagulative necrosis"
+        },
+        {
+          "key": "E",
+          "text": "Senescence"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Necroptosis is a regulated cell death pathway downstream of TNF receptor signaling that depends on RIP kinases.",
+        "source_page_refs": [
+          40
+        ]
+      }
+    },
+    {
+      "number": 15,
+      "question_id": "ch2-q15",
+      "type": "single_choice",
+      "question": "A starved hepatocyte begins enclosing organelles in ER-derived vacuoles that later fuse with lysosomes. What is the main immediate purpose of this process?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Recycling intracellular components to provide nutrients and energy"
+        },
+        {
+          "key": "B",
+          "text": "Activating complement to prevent infection"
+        },
+        {
+          "key": "C",
+          "text": "Driving metastatic calcification"
+        },
+        {
+          "key": "D",
+          "text": "Generating mitochondrial superoxide for signaling"
+        },
+        {
+          "key": "E",
+          "text": "Triggering fibrinoid necrosis of nearby vessels"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Autophagy is a survival response to nutrient deprivation that recycles cellular components to provide substrates and energy.",
+        "source_page_refs": [
+          40,
+          41
+        ]
+      }
+    },
+    {
+      "number": 16,
+      "question_id": "ch2-q16",
+      "type": "single_choice",
+      "question": "Following abrupt coronary occlusion, a myocardial cell rapidly develops sodium and water accumulation. What is the earliest biochemical defect that best explains this change?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Activation of telomerase"
+        },
+        {
+          "key": "B",
+          "text": "Failure of ATP-dependent plasma membrane ion pumps"
+        },
+        {
+          "key": "C",
+          "text": "Increased collagen synthesis"
+        },
+        {
+          "key": "D",
+          "text": "Excess phospholipid synthesis"
+        },
+        {
+          "key": "E",
+          "text": "Activation of death receptors"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "ATP depletion disables membrane ion pumps, leading to sodium and water influx, potassium loss, and cellular swelling.",
+        "source_page_refs": [
+          42
+        ]
+      }
+    },
+    {
+      "number": 17,
+      "question_id": "ch2-q17",
+      "type": "single_choice",
+      "question": "A patient undergoes reperfusion therapy after an acute myocardial infarction, but the salvaged myocardium sustains additional injury. Which mechanism best explains ischemia-reperfusion injury?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Reduced leukocyte entry into the tissue"
+        },
+        {
+          "key": "B",
+          "text": "Lower ROS production after oxygen is restored"
+        },
+        {
+          "key": "C",
+          "text": "Increased ROS generation together with leukocyte and complement-mediated injury"
+        },
+        {
+          "key": "D",
+          "text": "Immediate correction of mitochondrial damage"
+        },
+        {
+          "key": "E",
+          "text": "Exclusive activation of physiologic apoptosis"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Reperfusion can exacerbate damage through ROS generation, increased leukocyte influx, and complement activation in previously ischemic tissue.",
+        "source_page_refs": [
+          43
+        ]
+      }
+    },
+    {
+      "number": 18,
+      "question_id": "ch2-q18",
+      "type": "single_choice",
+      "question": "In a cell undergoing oxidative stress, hydrogen peroxide interacts with ferrous iron and produces the most reactive oxygen species for membrane damage. Which species is formed?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Superoxide"
+        },
+        {
+          "key": "B",
+          "text": "Hydrogen peroxide"
+        },
+        {
+          "key": "C",
+          "text": "Nitric oxide"
+        },
+        {
+          "key": "D",
+          "text": "Hydroxyl radical"
+        },
+        {
+          "key": "E",
+          "text": "Hypochlorite"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "Hydrogen peroxide is converted to the highly reactive hydroxyl radical in the presence of iron through the Fenton reaction.",
+        "source_page_refs": [
+          44
+        ]
+      }
+    },
+    {
+      "number": 19,
+      "question_id": "ch2-q19",
+      "type": "single_choice",
+      "question": "Which enzyme converts superoxide to hydrogen peroxide as part of the cell's antioxidant defenses?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Catalase"
+        },
+        {
+          "key": "B",
+          "text": "Superoxide dismutase"
+        },
+        {
+          "key": "C",
+          "text": "Glutathione peroxidase"
+        },
+        {
+          "key": "D",
+          "text": "Myeloperoxidase"
+        },
+        {
+          "key": "E",
+          "text": "Telomerase"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Superoxide dismutase accelerates conversion of superoxide to hydrogen peroxide and oxygen.",
+        "source_page_refs": [
+          44
+        ]
+      }
+    },
+    {
+      "number": 20,
+      "question_id": "ch2-q20",
+      "type": "single_choice",
+      "question": "A toxic solvent itself is relatively harmless until hepatocyte cytochrome P-450 enzymes convert it into a reactive metabolite. How is this toxin best classified?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Direct-acting toxin"
+        },
+        {
+          "key": "B",
+          "text": "Latent toxin"
+        },
+        {
+          "key": "C",
+          "text": "Immunologic injury"
+        },
+        {
+          "key": "D",
+          "text": "Physical agent"
+        },
+        {
+          "key": "E",
+          "text": "Nutritional imbalance"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Latent toxins require metabolic activation, commonly by cytochrome P-450 enzymes in smooth endoplasmic reticulum, before they can injure cells.",
+        "source_page_refs": [
+          45
+        ]
+      }
+    },
+    {
+      "number": 21,
+      "question_id": "ch2-q21",
+      "type": "single_choice",
+      "question": "Carbon tetrachloride poisoning produces fatty change in hepatocytes. What mechanism most directly explains the triglyceride accumulation?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Increased insulin secretion"
+        },
+        {
+          "key": "B",
+          "text": "Decreased apoprotein synthesis that impairs triglyceride export"
+        },
+        {
+          "key": "C",
+          "text": "Direct activation of lysosomal lipases"
+        },
+        {
+          "key": "D",
+          "text": "Excess glycogen storage in rough ER"
+        },
+        {
+          "key": "E",
+          "text": "Increased uptake of dietary fat by bile ducts"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Carbon tetrachloride decreases apoprotein synthesis, impairing triglyceride export and leading to fatty change in hepatocytes.",
+        "source_page_refs": [
+          45
+        ]
+      }
+    },
+    {
+      "number": 22,
+      "question_id": "ch2-q22",
+      "type": "single_choice",
+      "question": "A plasma cell accumulates excess misfolded immunoglobulin in the endoplasmic reticulum but initially survives by mounting an unfolded protein response. Which change is most characteristic of this adaptive response?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Increased chaperone synthesis with reduced overall protein translation"
+        },
+        {
+          "key": "B",
+          "text": "Immediate mitochondrial cytochrome c release"
+        },
+        {
+          "key": "C",
+          "text": "Activation of RIP kinases"
+        },
+        {
+          "key": "D",
+          "text": "Increased telomere shortening"
+        },
+        {
+          "key": "E",
+          "text": "Plasma membrane rupture"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "The unfolded protein response aims to lower the burden of misfolded proteins by increasing chaperones, increasing degradation, and reducing translation.",
+        "source_page_refs": [
+          45,
+          46
+        ]
+      }
+    },
+    {
+      "number": 23,
+      "question_id": "ch2-q23",
+      "type": "single_choice",
+      "question": "A cell exposed to radiation accumulates DNA damage. p53 levels rise, the cell cycle arrests in G1, and repair fails. What is the most likely next event?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Hyperplasia"
+        },
+        {
+          "key": "B",
+          "text": "Metaplasia"
+        },
+        {
+          "key": "C",
+          "text": "Apoptosis mediated through BH3-only proteins and Bax/Bak"
+        },
+        {
+          "key": "D",
+          "text": "Dystrophic calcification"
+        },
+        {
+          "key": "E",
+          "text": "Liquefactive necrosis"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "If p53-mediated cell-cycle arrest does not permit successful repair, p53 promotes apoptosis through BH3-only proteins and the Bax/Bak arm of the Bcl-2 family.",
+        "source_page_refs": [
+          47
+        ]
+      }
+    },
+    {
+      "number": 24,
+      "question_id": "ch2-q24",
+      "type": "single_choice",
+      "question": "A patient with long-standing hypertension develops concentric left ventricular thickening. Why does the myocardium enlarge primarily by hypertrophy rather than hyperplasia?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Cardiac myocytes are terminally differentiated and have limited capacity to divide"
+        },
+        {
+          "key": "B",
+          "text": "Cardiac myocytes lack mitochondria"
+        },
+        {
+          "key": "C",
+          "text": "Cardiac myocytes cannot synthesize structural proteins"
+        },
+        {
+          "key": "D",
+          "text": "Hyperplasia occurs only in endocrine organs"
+        },
+        {
+          "key": "E",
+          "text": "Hypertrophy requires no growth factor signaling"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Adult cardiac myocytes respond to increased workload by hypertrophy because their capacity for cell division is very limited.",
+        "source_page_refs": [
+          48,
+          49
+        ]
+      }
+    },
+    {
+      "number": 25,
+      "question_id": "ch2-q25",
+      "type": "single_choice",
+      "question": "After surgical removal of part of the liver, the remaining hepatocytes proliferate and restore organ mass. What is this response called?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Atrophy"
+        },
+        {
+          "key": "B",
+          "text": "Compensatory hyperplasia"
+        },
+        {
+          "key": "C",
+          "text": "Metaplasia"
+        },
+        {
+          "key": "D",
+          "text": "Hypertrophy"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Regrowth of the remaining liver after partial resection is the classic example of compensatory hyperplasia.",
+        "source_page_refs": [
+          49,
+          50
+        ]
+      }
+    },
+    {
+      "number": 26,
+      "question_id": "ch2-q26",
+      "type": "single_choice",
+      "question": "An immobilized limb becomes smaller, and muscle fibers show increased ubiquitin-proteasome mediated protein breakdown with autophagic vacuoles. Which adaptation best explains this change?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Hyperplasia"
+        },
+        {
+          "key": "B",
+          "text": "Hypertrophy"
+        },
+        {
+          "key": "C",
+          "text": "Atrophy"
+        },
+        {
+          "key": "D",
+          "text": "Metaplasia"
+        },
+        {
+          "key": "E",
+          "text": "Dysplasia"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Atrophy results from decreased protein synthesis together with increased proteasomal degradation and often increased autophagy.",
+        "source_page_refs": [
+          50
+        ]
+      }
+    },
+    {
+      "number": 27,
+      "question_id": "ch2-q27",
+      "type": "single_choice",
+      "question": "A chronic smoker develops replacement of ciliated columnar bronchial epithelium by stratified squamous epithelium. What is the best description of this change?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Dysplasia due to p53 loss"
+        },
+        {
+          "key": "B",
+          "text": "Metaplasia caused by stem-cell reprogramming"
+        },
+        {
+          "key": "C",
+          "text": "Hyperplasia of bronchial glands"
+        },
+        {
+          "key": "D",
+          "text": "Physiologic hypertrophy"
+        },
+        {
+          "key": "E",
+          "text": "Coagulative necrosis"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Smoking induces metaplasia by reprogramming tissue stem cells so that a more stress-resistant squamous epithelium replaces the normal columnar epithelium.",
+        "source_page_refs": [
+          50,
+          51
+        ]
+      }
+    },
+    {
+      "number": 28,
+      "question_id": "ch2-q28",
+      "type": "single_choice",
+      "question": "A patient with nephrotic syndrome has proximal tubular cells filled with pink hyaline droplets. What is the most likely explanation for these droplets?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Intracellular accumulation of reabsorbed protein"
+        },
+        {
+          "key": "B",
+          "text": "Dystrophic calcification"
+        },
+        {
+          "key": "C",
+          "text": "Glycogen storage from uncontrolled diabetes"
+        },
+        {
+          "key": "D",
+          "text": "Carbon pigment deposition"
+        },
+        {
+          "key": "E",
+          "text": "Hemosiderin accumulation from hemolysis"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Heavy protein leakage through the glomerulus leads proximal tubules to reabsorb excess protein, which accumulates as hyaline cytoplasmic droplets.",
+        "source_page_refs": [
+          52
+        ]
+      }
+    },
+    {
+      "number": 29,
+      "question_id": "ch2-q29",
+      "type": "single_choice",
+      "question": "An elderly patient has heavily calcified aortic valve cusps causing severe stenosis, but serum calcium levels are normal. What type of calcification is present?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Metastatic calcification"
+        },
+        {
+          "key": "B",
+          "text": "Dystrophic calcification"
+        },
+        {
+          "key": "C",
+          "text": "Calciphylaxis"
+        },
+        {
+          "key": "D",
+          "text": "Ossification"
+        },
+        {
+          "key": "E",
+          "text": "Hemosiderosis"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Dystrophic calcification occurs in dead or injured tissues despite normal serum calcium levels and is a classic feature of damaged aging heart valves.",
+        "source_page_refs": [
+          53
+        ]
+      }
+    },
+    {
+      "number": 30,
+      "question_id": "ch2-q30",
+      "type": "single_choice",
+      "question": "Which change most directly explains replicative senescence of most somatic cells during aging?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Progressive telomere shortening due to insufficient telomerase activity"
+        },
+        {
+          "key": "B",
+          "text": "Increased Fas signaling in all tissues"
+        },
+        {
+          "key": "C",
+          "text": "Accumulation of glycogen in lysosomes"
+        },
+        {
+          "key": "D",
+          "text": "Decreased superoxide dismutase causing wet gangrene"
+        },
+        {
+          "key": "E",
+          "text": "Activation of myeloperoxidase in mitochondria"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Most somatic cells lack enough telomerase to prevent progressive telomere shortening, and critically short telomeres trigger cell-cycle arrest and replicative senescence.",
+        "source_page_refs": [
+          54,
+          55
+        ]
+      }
+    }
+  ]
+}
