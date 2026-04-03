@@ -18,11 +18,11 @@ Each chapter is stored as a separate PDF file. The PDF viewer always shows page 
 
 Examples from Robbins Basic Pathology, 10th Edition:
 
-| Chapter | PDF page 1 = book page |
-|---------|----------------------|
+| Chapter   | PDF page 1 = book page   |
+| --------- | ------------------------ |
 | Chapter 1 | 1 (they happen to match) |
-| Chapter 2 | 31 |
-| Chapter 3 | 57 |
+| Chapter 2 | 31                       |
+| Chapter 3 | 57                       |
 
 If you use PDF page position for Chapter 2, you will write `[1]` when you mean book page `[31]`.
 
@@ -34,17 +34,18 @@ If you use PDF page position for Chapter 2, you will write `[1]` when you mean b
 
 ## Required Format in Each File Type
 
-| File type | Required citation format |
-|-----------|-------------------------|
-| Markdown study notes `.md` | `[n]` inline, e.g. `[31]` |
-| JSON flashcards `.json` | `"source_page_refs": [31]` and `[31]` in back text |
-| Markdown flashcards `.md` | `- Printed book pages: [31]` and `[31]` in back text |
-| Anki TSV `.tsv` | `[31]` in the answer column |
+| File type                   | Required citation format                                                             |
+| --------------------------- | ------------------------------------------------------------------------------------ |
+| Markdown study notes `.md`  | `[n]` inline, e.g. `[31]`                                                            |
+| JSON flashcards `.json`     | `"source_page_refs": [31]` and `[31]` in back text                                   |
+| Markdown flashcards `.md`   | `- Printed book pages: [31]` and `[31]` in back text                                 |
+| Anki TSV `.tsv`             | `[31]` in the answer column                                                          |
 | Exam prep questions `.json` | `"source_page_refs": [31]` and `"page_reference_style": "printed_book_page_numbers"` |
 
 ## Document-Level Declaration
 
 Every generated document that contains page references MUST include a section or field that:
+
 - States that citations are **printed book page numbers**
 - States which book pages the chapter occupies (e.g., "Chapter 2 occupies book pages 31–56")
 
