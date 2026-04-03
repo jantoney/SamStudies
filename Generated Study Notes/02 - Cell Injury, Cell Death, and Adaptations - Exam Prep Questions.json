@@ -80,9 +80,7 @@
       "answer": {
         "correct_choice_key": "B",
         "reason": "Pathogenesis describes the mechanism by which disease develops and progresses, whereas etiology refers to the underlying cause.",
-        "source_page_refs": [
-          31
-        ]
+        "source_page_refs": [31]
       }
     },
     {
@@ -111,9 +109,7 @@
       "answer": {
         "correct_choice_key": "C",
         "reason": "Skeletal muscle adapts to increased workload mainly by hypertrophy, because adult myocytes have limited proliferative capacity.",
-        "source_page_refs": [
-          48
-        ]
+        "source_page_refs": [48]
       }
     },
     {
@@ -146,10 +142,7 @@
       "answer": {
         "correct_choice_key": "B",
         "reason": "Ischemia causes oxygen deprivation and also reduces nutrient delivery while impairing clearance of toxic metabolites, so it is generally more damaging than simple hypoxia.",
-        "source_page_refs": [
-          32,
-          42
-        ]
+        "source_page_refs": [32, 42]
       }
     },
     {
@@ -178,9 +171,7 @@
       "answer": {
         "correct_choice_key": "A",
         "reason": "The main morphologic correlates of reversible injury are cellular swelling and fatty change; karyolysis and membrane rupture indicate necrosis.",
-        "source_page_refs": [
-          33
-        ]
+        "source_page_refs": [33]
       }
     },
     {
@@ -213,9 +204,7 @@
       "answer": {
         "correct_choice_key": "C",
         "reason": "Irreversible injury is consistently characterized by failure to restore mitochondrial function, membrane damage, and loss of DNA/chromatin integrity.",
-        "source_page_refs": [
-          34
-        ]
+        "source_page_refs": [34]
       }
     },
     {
@@ -248,10 +237,7 @@
       "answer": {
         "correct_choice_key": "A",
         "reason": "Apoptotic cells shrink, fragment into membrane-bound bodies, and are cleared without provoking significant inflammation.",
-        "source_page_refs": [
-          34,
-          37
-        ]
+        "source_page_refs": [34, 37]
       }
     },
     {
@@ -280,9 +266,7 @@
       "answer": {
         "correct_choice_key": "A",
         "reason": "Ischemic infarcts in solid organs other than the brain characteristically produce coagulative necrosis.",
-        "source_page_refs": [
-          36
-        ]
+        "source_page_refs": [36]
       }
     },
     {
@@ -311,9 +295,7 @@
       "answer": {
         "correct_choice_key": "C",
         "reason": "Hypoxic death in the central nervous system typically leads to liquefactive necrosis rather than coagulative necrosis.",
-        "source_page_refs": [
-          36
-        ]
+        "source_page_refs": [36]
       }
     },
     {
@@ -346,10 +328,7 @@
       "answer": {
         "correct_choice_key": "A",
         "reason": "Caseous necrosis is classically seen in tuberculosis and appears as cheesy yellow-white necrotic debris with surrounding granulomatous inflammation.",
-        "source_page_refs": [
-          36,
-          37
-        ]
+        "source_page_refs": [36, 37]
       }
     },
     {
@@ -382,9 +361,7 @@
       "answer": {
         "correct_choice_key": "B",
         "reason": "Activated pancreatic lipases digest fat and release fatty acids that combine with calcium to create chalky foci of fat necrosis and saponification.",
-        "source_page_refs": [
-          37
-        ]
+        "source_page_refs": [37]
       }
     },
     {
@@ -417,9 +394,7 @@
       "answer": {
         "correct_choice_key": "A",
         "reason": "Immune complex deposition and plasma protein leakage into vessel walls create the bright pink appearance of fibrinoid necrosis.",
-        "source_page_refs": [
-          37
-        ]
+        "source_page_refs": [37]
       }
     },
     {
@@ -452,9 +427,7 @@
       "answer": {
         "correct_choice_key": "A",
         "reason": "Elimination of self-reactive lymphocytes is a physiologic apoptotic process that can involve both mitochondrial and death-receptor pathways.",
-        "source_page_refs": [
-          38
-        ]
+        "source_page_refs": [38]
       }
     },
     {
@@ -487,10 +460,7 @@
       "answer": {
         "correct_choice_key": "B",
         "reason": "DNA damage and cytochrome c release identify the intrinsic mitochondrial pathway of apoptosis.",
-        "source_page_refs": [
-          38,
-          39
-        ]
+        "source_page_refs": [38, 39]
       }
     },
     {
@@ -523,9 +493,7 @@
       "answer": {
         "correct_choice_key": "C",
         "reason": "Necroptosis is a regulated cell death pathway downstream of TNF receptor signaling that depends on RIP kinases.",
-        "source_page_refs": [
-          40
-        ]
+        "source_page_refs": [40]
       }
     },
     {
@@ -558,10 +526,7 @@
       "answer": {
         "correct_choice_key": "A",
         "reason": "Autophagy is a survival response to nutrient deprivation that recycles cellular components to provide substrates and energy.",
-        "source_page_refs": [
-          40,
-          41
-        ]
+        "source_page_refs": [40, 41]
       }
     },
     {
@@ -594,9 +559,7 @@
       "answer": {
         "correct_choice_key": "B",
         "reason": "ATP depletion disables membrane ion pumps, leading to sodium and water influx, potassium loss, and cellular swelling.",
-        "source_page_refs": [
-          42
-        ]
+        "source_page_refs": [42]
       }
     },
     {
@@ -629,9 +592,7 @@
       "answer": {
         "correct_choice_key": "C",
         "reason": "Reperfusion can exacerbate damage through ROS generation, increased leukocyte influx, and complement activation in previously ischemic tissue.",
-        "source_page_refs": [
-          43
-        ]
+        "source_page_refs": [43]
       }
     },
     {
@@ -664,9 +625,7 @@
       "answer": {
         "correct_choice_key": "D",
         "reason": "Hydrogen peroxide is converted to the highly reactive hydroxyl radical in the presence of iron through the Fenton reaction.",
-        "source_page_refs": [
-          44
-        ]
+        "source_page_refs": [44]
       }
     },
     {
@@ -699,9 +658,7 @@
       "answer": {
         "correct_choice_key": "B",
         "reason": "Superoxide dismutase accelerates conversion of superoxide to hydrogen peroxide and oxygen.",
-        "source_page_refs": [
-          44
-        ]
+        "source_page_refs": [44]
       }
     },
     {
@@ -734,9 +691,7 @@
       "answer": {
         "correct_choice_key": "B",
         "reason": "Latent toxins require metabolic activation, commonly by cytochrome P-450 enzymes in smooth endoplasmic reticulum, before they can injure cells.",
-        "source_page_refs": [
-          45
-        ]
+        "source_page_refs": [45]
       }
     },
     {
@@ -769,9 +724,7 @@
       "answer": {
         "correct_choice_key": "B",
         "reason": "Carbon tetrachloride decreases apoprotein synthesis, impairing triglyceride export and leading to fatty change in hepatocytes.",
-        "source_page_refs": [
-          45
-        ]
+        "source_page_refs": [45]
       }
     },
     {
@@ -804,10 +757,7 @@
       "answer": {
         "correct_choice_key": "A",
         "reason": "The unfolded protein response aims to lower the burden of misfolded proteins by increasing chaperones, increasing degradation, and reducing translation.",
-        "source_page_refs": [
-          45,
-          46
-        ]
+        "source_page_refs": [45, 46]
       }
     },
     {
@@ -840,9 +790,7 @@
       "answer": {
         "correct_choice_key": "C",
         "reason": "If p53-mediated cell-cycle arrest does not permit successful repair, p53 promotes apoptosis through BH3-only proteins and the Bax/Bak arm of the Bcl-2 family.",
-        "source_page_refs": [
-          47
-        ]
+        "source_page_refs": [47]
       }
     },
     {
@@ -875,10 +823,7 @@
       "answer": {
         "correct_choice_key": "A",
         "reason": "Adult cardiac myocytes respond to increased workload by hypertrophy because their capacity for cell division is very limited.",
-        "source_page_refs": [
-          48,
-          49
-        ]
+        "source_page_refs": [48, 49]
       }
     },
     {
@@ -907,10 +852,7 @@
       "answer": {
         "correct_choice_key": "B",
         "reason": "Regrowth of the remaining liver after partial resection is the classic example of compensatory hyperplasia.",
-        "source_page_refs": [
-          49,
-          50
-        ]
+        "source_page_refs": [49, 50]
       }
     },
     {
@@ -943,9 +885,7 @@
       "answer": {
         "correct_choice_key": "C",
         "reason": "Atrophy results from decreased protein synthesis together with increased proteasomal degradation and often increased autophagy.",
-        "source_page_refs": [
-          50
-        ]
+        "source_page_refs": [50]
       }
     },
     {
@@ -978,10 +918,7 @@
       "answer": {
         "correct_choice_key": "B",
         "reason": "Smoking induces metaplasia by reprogramming tissue stem cells so that a more stress-resistant squamous epithelium replaces the normal columnar epithelium.",
-        "source_page_refs": [
-          50,
-          51
-        ]
+        "source_page_refs": [50, 51]
       }
     },
     {
@@ -1014,9 +951,7 @@
       "answer": {
         "correct_choice_key": "A",
         "reason": "Heavy protein leakage through the glomerulus leads proximal tubules to reabsorb excess protein, which accumulates as hyaline cytoplasmic droplets.",
-        "source_page_refs": [
-          52
-        ]
+        "source_page_refs": [52]
       }
     },
     {
@@ -1049,9 +984,7 @@
       "answer": {
         "correct_choice_key": "B",
         "reason": "Dystrophic calcification occurs in dead or injured tissues despite normal serum calcium levels and is a classic feature of damaged aging heart valves.",
-        "source_page_refs": [
-          53
-        ]
+        "source_page_refs": [53]
       }
     },
     {
@@ -1084,10 +1017,7 @@
       "answer": {
         "correct_choice_key": "A",
         "reason": "Most somatic cells lack enough telomerase to prevent progressive telomere shortening, and critically short telomeres trigger cell-cycle arrest and replicative senescence.",
-        "source_page_refs": [
-          54,
-          55
-        ]
+        "source_page_refs": [54, 55]
       }
     }
   ]
