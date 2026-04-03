@@ -1,5 +1,4 @@
 # Codex and local agent workspaces
-/.agents/
 /.codex-tmp/
 
 # Local source/reference material not needed for the Pages site

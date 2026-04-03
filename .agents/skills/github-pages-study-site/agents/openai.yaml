@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub Pages Study Site"
+  short_description: "Scope study sites for GitHub Pages"
+  default_prompt: "Use $github-pages-study-site to assess whether this study website fits GitHub Pages and choose between plain static files, Jekyll, or a custom Pages workflow."

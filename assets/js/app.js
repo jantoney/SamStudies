@@ -4,25 +4,6 @@ const VIEW_ASSET_TYPES = {
   flashcards: "flashcards_json"
 };
 
-const VIEW_META = {
-  overview: {
-    title: "Chapter Overview",
-    description: "Use the available assets for this chapter."
-  },
-  notes: {
-    title: "Study Notes",
-    description: "Rendered from the tracked markdown notes."
-  },
-  questions: {
-    title: "Exam Questions",
-    description: "Practice a random subset with immediate or end-of-quiz feedback."
-  },
-  flashcards: {
-    title: "Flash Cards",
-    description: "Review prompts in a shuffled deck with tap-to-reveal answers."
-  }
-};
-
 const state = {
   index: null,
   selectedChapterSlug: null,
@@ -35,8 +16,6 @@ const state = {
 const elements = {};
 
 document.addEventListener("DOMContentLoaded", () => {
-  elements.collectionTitle = document.getElementById("collection-title");
-  elements.chapterProgress = document.getElementById("chapter-progress");
   elements.chapterList = document.getElementById("chapter-list");
   elements.chapterSummary = document.getElementById("chapter-summary");
   elements.modeNav = document.getElementById("mode-nav");
@@ -78,9 +57,7 @@ async function initializeApp() {
 }
 
 function populateGlobalMeta() {
-  const { collection_title: collectionTitle, content_status: contentStatus, disclaimer } = state.index;
-  elements.collectionTitle.textContent = collectionTitle;
-  elements.chapterProgress.textContent = `${contentStatus.chapter_count_complete} / ${contentStatus.chapter_count_total}`;
+  const { disclaimer } = state.index;
   elements.disclaimerSummary.textContent = disclaimer.use_note;
 }
 
@@ -101,7 +78,7 @@ function getAsset(chapter, assetType) {
 }
 
 function hasViewAsset(chapter, view) {
-  return view === "overview" ? true : Boolean(getAsset(chapter, VIEW_ASSET_TYPES[view]));
+  return Boolean(getAsset(chapter, VIEW_ASSET_TYPES[view]));
 }
 
 function parseHash(hash) {
@@ -111,19 +88,19 @@ function parseHash(hash) {
   if (parts[0] === "chapter" && parts[1]) {
     return {
       slug: decodeURIComponent(parts[1]),
-      view: parts[2] ?? "overview"
+      view: parts[2] ?? null
     };
   }
 
   return {
     slug: getDefaultChapter()?.slug ?? null,
-    view: "overview"
+    view: null
   };
 }
 
 function buildHash(slug, view) {
   const encodedSlug = encodeURIComponent(slug);
-  return view === "overview" ? `#/chapter/${encodedSlug}` : `#/chapter/${encodedSlug}/${view}`;
+  return view ? `#/chapter/${encodedSlug}/${view}` : `#/chapter/${encodedSlug}`;
 }
 
 function applyRoute(hash) {
@@ -142,8 +119,9 @@ function applyRoute(hash) {
     return;
   }
 
-  const requestedView = Object.hasOwn(VIEW_META, parsed.view) ? parsed.view : "overview";
-  const safeView = hasViewAsset(chapter, requestedView) ? requestedView : "overview";
+  const firstAvailable = Object.keys(VIEW_ASSET_TYPES).find(v => hasViewAsset(chapter, v)) ?? null;
+  const requestedView = (parsed.view && Object.hasOwn(VIEW_ASSET_TYPES, parsed.view)) ? parsed.view : null;
+  const safeView = (requestedView && hasViewAsset(chapter, requestedView)) ? requestedView : firstAvailable;
   const nextHash = buildHash(chapter.slug, safeView);
 
   if (window.location.hash !== nextHash) {
@@ -208,22 +186,6 @@ function renderChapterList() {
 function renderChapterSummary(chapter) {
   const chapterTopics = chapter.topics?.length
     ? chapter.topics.map((topic) => `<span class="chip">${escapeHtml(topic)}</span>`).join("")
-    : `<span class="chip">No topic list available yet</span>`;
-
-  const availableAssets = [
-    getAsset(chapter, "study_notes_markdown") ? "Study Notes" : null,
-    getAsset(chapter, "exam_prep_questions_json") ? "Exam Questions" : null,
-    getAsset(chapter, "flashcards_json") ? "Flash Cards" : null
-  ].filter(Boolean);
-
-  const availability = availableAssets.length
-    ? availableAssets.map((label) => `<span class="chip chip--secondary">${label}</span>`).join("")
-    : `<span class="chip">Assets coming later</span>`;
-
-  const extraDownloads = chapter.assets?.length
-    ? chapter.assets
-        .map((asset) => `<a href="${encodeAttribute(asset.path)}">${escapeHtml(asset.title)}</a>`)
-        .join("")
     : "";
 
   elements.chapterSummary.innerHTML = `
@@ -231,33 +193,46 @@ function renderChapterSummary(chapter) {
       <div class="chapter-summary__copy">
         <p class="panel__eyebrow">Selected chapter</p>
         <h2>${escapeHtml(chapter.title)}</h2>
-        <p>${escapeHtml(chapter.description ?? "No chapter description available.")}</p>
+        <p>${escapeHtml(chapter.description ?? "No description available.")}</p>
       </div>
       <span class="badge ${chapter.status === "complete" ? "" : "badge--planned"}">
         ${chapter.status === "complete" ? "Complete" : "Planned"}
       </span>
     </div>
-    <div class="chapter-summary__meta">
-      <span class="chip chip--accent">Code ${escapeHtml(chapter.chapter_code)}</span>
-      ${availability}
-    </div>
-    <div>
-      <h3>Topics</h3>
-      <div class="chapter-summary__topics">${chapterTopics}</div>
-    </div>
-    <div class="download-links">
-      <a href="Generated%20Study%20Notes/study-content-index.json">Browse collection index</a>
-      ${extraDownloads}
-    </div>
+    ${chapterTopics ? `<div class="chapter-summary__topics">${chapterTopics}</div>` : ""}
+    ${renderChapterReferences(chapter)}
   `;
+}
+
+function renderChapterReferences(chapter) {
+  if (!chapter.sources_used?.length) return "";
+  const registry = state.index?.source_registry ?? [];
+  const sources = chapter.sources_used
+    .map((id) => registry.find((s) => s.source_id === id))
+    .filter(Boolean);
+  if (!sources.length) return "";
+
+  const items = sources.map((s) => {
+    const meta = [s.edition, s.publication_year, s.publisher ?? s.organization].filter(Boolean).join(" · ");
+    return `
+      <li class="references-item">
+        <span class="references-item__title">${escapeHtml(s.source_title)}</span>
+        ${meta ? `<span class="references-item__meta">${escapeHtml(meta)}</span>` : ""}
+      </li>`;
+  }).join("");
+
+  return `
+    <details class="references-details">
+      <summary class="references-summary">References</summary>
+      <ul class="references-list">${items}</ul>
+    </details>`;
 }
 
 function renderModeNav(chapter) {
   const modeButtons = [
-    ["overview", "Chapter Overview", "Check what is available before opening a study mode."],
-    ["notes", "Study Notes", "Readable notes with page references highlighted."],
-    ["questions", "Exam Questions", "Set question count and when answers are shown."],
-    ["flashcards", "Flash Cards", "Reveal answers, move backward or forward, then reshuffle."]
+    ["notes", "Study Notes", "Read the notes with page references highlighted."],
+    ["questions", "Exam Questions", "Choose how many questions and when to see answers."],
+    ["flashcards", "Flash Cards", "Tap to reveal, go back or forward, then reshuffle."]
   ];
 
   elements.modeNav.innerHTML = modeButtons
@@ -287,8 +262,13 @@ function renderModeNav(chapter) {
 }
 
 async function renderView(chapter) {
-  if (state.view === "overview") {
-    renderOverviewView(chapter);
+  if (!state.view) {
+    elements.viewRoot.innerHTML = `
+      <div class="empty-state">
+        <h2>Study materials coming soon</h2>
+        <p>Assets for this chapter are being prepared.</p>
+      </div>
+    `;
     return;
   }
 
@@ -305,75 +285,6 @@ async function renderView(chapter) {
   if (state.view === "flashcards") {
     await renderFlashcardsView(chapter);
   }
-}
-
-function renderOverviewView(chapter) {
-  const notesAsset = getAsset(chapter, "study_notes_markdown");
-  const questionsAsset = getAsset(chapter, "exam_prep_questions_json");
-  const flashcardsAsset = getAsset(chapter, "flashcards_json");
-  const ankiAsset = getAsset(chapter, "flashcards_anki_tsv");
-
-  elements.viewRoot.innerHTML = `
-    <div class="section-stack">
-      <div>
-        <p class="panel__eyebrow">Mode selection</p>
-        <h2>${escapeHtml(VIEW_META.overview.title)}</h2>
-        <p>${escapeHtml(VIEW_META.overview.description)}</p>
-      </div>
-      <div class="card-grid">
-        ${renderOverviewCard("Study Notes", "Open the markdown notes in a reader layout with a table of contents.", notesAsset, "notes")}
-        ${renderOverviewCard("Exam Questions", "Start a randomized practice run and choose when answers are revealed.", questionsAsset, "questions")}
-        ${renderOverviewCard("Flash Cards", "Use a shuffled deck with tap-to-reveal answers and previous/next controls.", flashcardsAsset, "flashcards")}
-      </div>
-      <div class="callout">
-        <h3>Raw assets</h3>
-        <p>All tracked generated assets remain available directly from the repository. Schema files stay synced alongside the site.</p>
-        <div class="download-links">
-          ${notesAsset ? `<a href="${encodeAttribute(notesAsset.path)}">Study notes markdown</a>` : ""}
-          ${questionsAsset ? `<a href="${encodeAttribute(questionsAsset.path)}">Question set JSON</a>` : ""}
-          ${flashcardsAsset ? `<a href="${encodeAttribute(flashcardsAsset.path)}">Flashcards JSON</a>` : ""}
-          ${ankiAsset ? `<a href="${encodeAttribute(ankiAsset.path)}">Anki TSV</a>` : ""}
-        </div>
-      </div>
-    </div>
-  `;
-
-  elements.viewRoot.querySelectorAll("[data-target-hash]").forEach((button) => {
-    button.addEventListener("click", () => {
-      window.location.hash = button.dataset.targetHash;
-    });
-  });
-}
-
-function renderOverviewCard(title, description, asset, view) {
-  if (!asset) {
-    return `
-      <article class="asset-card">
-        <h3>${escapeHtml(title)}</h3>
-        <p>${escapeHtml(description)}</p>
-        <div class="chapter-summary__meta">
-          <span class="badge badge--planned">Not available yet</span>
-        </div>
-      </article>
-    `;
-  }
-
-  return `
-    <article class="asset-card">
-      <h3>${escapeHtml(title)}</h3>
-      <p>${escapeHtml(description)}</p>
-      <div class="chapter-summary__meta">
-        <span class="chip chip--secondary">${escapeHtml(asset.status ?? "tracked")}</span>
-        ${typeof asset.question_count === "number" ? `<span class="chip">${asset.question_count} questions</span>` : ""}
-      </div>
-      <div class="inline-actions">
-        <button class="button" type="button" data-target-hash="${escapeHtml(buildHash(state.selectedChapterSlug, view))}">
-          Open ${escapeHtml(title)}
-        </button>
-        <a class="ghost-button" href="${encodeAttribute(asset.path)}">Open raw file</a>
-      </div>
-    </article>
-  `;
 }
 
 async function renderNotesView(chapter) {
@@ -406,15 +317,6 @@ async function renderNotesView(chapter) {
           <p class="notes-callout">
             Bracketed references from the markdown are shown as page pills where possible so source page references stay visible in the notes view.
           </p>
-        </div>
-        <div class="callout">
-          <div class="meta-grid">
-            <span class="chip chip--secondary">Markdown source</span>
-            <span class="chip">${escapeHtml(notesAsset.title)}</span>
-          </div>
-          <div class="download-links">
-            <a href="${encodeAttribute(notesAsset.path)}">Open raw markdown</a>
-          </div>
         </div>
         <article class="notes-content" id="notes-content"></article>
       </div>
@@ -571,7 +473,6 @@ function renderQuizSetup(chapter, questionSet, questionsAsset) {
         </div>
         <div class="inline-actions">
           <button class="button" type="submit">Start questions</button>
-          <a class="ghost-button" href="${encodeAttribute(questionsAsset.path)}">Open raw JSON</a>
         </div>
       </form>
     </div>
@@ -620,10 +521,6 @@ function renderQuizQuestion(questionSet) {
       </div>
 
       <form class="question-card" id="question-form">
-        <div class="chapter-summary__meta">
-          <span class="chip chip--secondary">${escapeHtml(question.question_id)}</span>
-          <span class="chip">${escapeHtml(question.type.replaceAll("_", " "))}</span>
-        </div>
         <div class="question-prompt">${escapeHtml(question.question)}</div>
         <div class="question-choices">
           ${question.choices.map((choice) => renderChoice(question, choice, savedAnswer)).join("")}
@@ -756,8 +653,7 @@ function renderQuizSummary(questionSet) {
         <p class="summary-card__score">${score} / ${session.questions.length}</p>
         <p>${session.feedbackMode === "summary" ? "Answers and rationales are listed below." : "You can review the questions again below."}</p>
         <div class="inline-actions">
-          <button class="button" type="button" id="retry-quiz-button">Try another random set</button>
-          <a class="ghost-button" href="${encodeAttribute(getAsset(getChapterBySlug(state.selectedChapterSlug), VIEW_ASSET_TYPES.questions).path)}">Open raw JSON</a>
+          <button class="button" type="button" id="retry-quiz-button">Try another set</button>
         </div>
       </div>
       <div class="section-stack">
@@ -784,8 +680,7 @@ function renderResultCard(question, index) {
     <article class="result-card">
       <div class="result-card__header">
         <div>
-          <p class="panel__eyebrow">Question ${index + 1}</p>
-          <h3>${escapeHtml(question.question_id)}</h3>
+          <h3>Question ${index + 1}</h3>
         </div>
         <span class="badge ${answer?.isCorrect ? "" : "badge--planned"}">
           ${answer?.isCorrect ? "Correct" : "Needs review"}
@@ -827,7 +722,6 @@ async function renderFlashcardsView(chapter) {
 
       <div class="flashcard-controls">
         <span class="chip chip--secondary">Card ${session.currentIndex + 1} of ${flashcardSet.cards.length}</span>
-        <span class="chip">${escapeHtml(currentCard.bucket)}</span>
         <span class="chip">${escapeHtml(currentCard.topic)}</span>
       </div>
 
@@ -850,8 +744,7 @@ async function renderFlashcardsView(chapter) {
       </article>
 
       <div class="inline-actions">
-        <button class="ghost-button" type="button" id="flashcard-shuffle-button">Shuffle order</button>
-        <a class="ghost-button" href="${encodeAttribute(flashcardsAsset.path)}">Open raw JSON</a>
+        <button class="ghost-button" type="button" id="flashcard-shuffle-button">Shuffle deck</button>
       </div>
     </div>
   `;
