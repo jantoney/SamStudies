@@ -38,8 +38,6 @@ If you use PDF page position for Chapter 2, you will write `[1]` when you mean b
 | --------------------------- | ------------------------------------------------------------------------------------ |
 | Markdown study notes `.md`  | `[n]` inline, e.g. `[31]`                                                            |
 | JSON flashcards `.json`     | `"source_page_refs": [31]` and `[31]` in back text                                   |
-| Markdown flashcards `.md`   | `- Printed book pages: [31]` and `[31]` in back text                                 |
-| Anki TSV `.tsv`             | `[31]` in the answer column                                                          |
 | Exam prep questions `.json` | `"source_page_refs": [31]` and `"page_reference_style": "printed_book_page_numbers"` |
 
 ## Document-Level Declaration

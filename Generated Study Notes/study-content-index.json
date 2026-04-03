@@ -7,9 +7,7 @@
   "supported_asset_types": [
     "study_notes_markdown",
     "exam_prep_questions_json",
-    "flashcards_json",
-    "flashcards_markdown",
-    "flashcards_anki_tsv"
+    "flashcards_json"
   ],
   "disclaimer": {
     "summary": "Third-party generated study materials.",
@@ -91,9 +89,7 @@
       "recommended_asset_types": [
         "study_notes_markdown",
         "exam_prep_questions_json",
-        "flashcards_json",
-        "flashcards_markdown",
-        "flashcards_anki_tsv"
+        "flashcards_json"
       ],
       "assets": [
         {
@@ -130,38 +126,6 @@
             "active-recall",
             "spaced-repetition"
           ]
-        },
-        {
-          "asset_type": "flashcards_markdown",
-          "title": "01 - The Cell as a Unit of Health and Disease - Flashcards (Markdown)",
-          "path": "Generated Study Notes/01 - The Cell as a Unit of Health and Disease - Flashcards.md",
-          "status": "complete",
-          "description": "Readable Chapter 1 flashcard deck grouped by the five syllabus buckets.",
-          "card_count": 54,
-          "deck_name": "Pathology::Chapter 01 - The Cell as a Unit of Health and Disease",
-          "tags": [
-            "pathology",
-            "chapter-01",
-            "active-recall",
-            "spaced-repetition"
-          ]
-        },
-        {
-          "asset_type": "flashcards_anki_tsv",
-          "title": "01 - The Cell as a Unit of Health and Disease - Flashcards (Anki TSV)",
-          "path": "Generated Study Notes/01 - The Cell as a Unit of Health and Disease - Flashcards - Anki.tsv",
-          "status": "complete",
-          "description": "Tab-separated Chapter 1 flashcards for import into Anki or similar spaced-repetition tools.",
-          "card_count": 54,
-          "deck_name": "Pathology::Chapter 01 - The Cell as a Unit of Health and Disease",
-          "export_format": "anki_tsv",
-          "flashcard_format": "basic",
-          "tags": [
-            "pathology",
-            "chapter-01",
-            "anki",
-            "spaced-repetition"
-          ]
         }
       ]
     },
@@ -178,9 +142,7 @@
       "recommended_asset_types": [
         "study_notes_markdown",
         "exam_prep_questions_json",
-        "flashcards_json",
-        "flashcards_markdown",
-        "flashcards_anki_tsv"
+        "flashcards_json"
       ],
       "assets": []
     },
@@ -197,9 +159,7 @@
       "recommended_asset_types": [
         "study_notes_markdown",
         "exam_prep_questions_json",
-        "flashcards_json",
-        "flashcards_markdown",
-        "flashcards_anki_tsv"
+        "flashcards_json"
       ],
       "assets": []
     },
@@ -216,9 +176,7 @@
       "recommended_asset_types": [
         "study_notes_markdown",
         "exam_prep_questions_json",
-        "flashcards_json",
-        "flashcards_markdown",
-        "flashcards_anki_tsv"
+        "flashcards_json"
       ],
       "assets": []
     },
@@ -235,9 +193,7 @@
       "recommended_asset_types": [
         "study_notes_markdown",
         "exam_prep_questions_json",
-        "flashcards_json",
-        "flashcards_markdown",
-        "flashcards_anki_tsv"
+        "flashcards_json"
       ],
       "assets": []
     },
@@ -254,9 +210,7 @@
       "recommended_asset_types": [
         "study_notes_markdown",
         "exam_prep_questions_json",
-        "flashcards_json",
-        "flashcards_markdown",
-        "flashcards_anki_tsv"
+        "flashcards_json"
       ],
       "assets": []
     },
@@ -273,9 +227,7 @@
       "recommended_asset_types": [
         "study_notes_markdown",
         "exam_prep_questions_json",
-        "flashcards_json",
-        "flashcards_markdown",
-        "flashcards_anki_tsv"
+        "flashcards_json"
       ],
       "assets": []
     },
@@ -292,9 +244,7 @@
       "recommended_asset_types": [
         "study_notes_markdown",
         "exam_prep_questions_json",
-        "flashcards_json",
-        "flashcards_markdown",
-        "flashcards_anki_tsv"
+        "flashcards_json"
       ],
       "assets": []
     },
@@ -311,9 +261,7 @@
       "recommended_asset_types": [
         "study_notes_markdown",
         "exam_prep_questions_json",
-        "flashcards_json",
-        "flashcards_markdown",
-        "flashcards_anki_tsv"
+        "flashcards_json"
       ],
       "assets": []
     },
@@ -330,9 +278,7 @@
       "recommended_asset_types": [
         "study_notes_markdown",
         "exam_prep_questions_json",
-        "flashcards_json",
-        "flashcards_markdown",
-        "flashcards_anki_tsv"
+        "flashcards_json"
       ],
       "assets": []
     },
@@ -349,9 +295,7 @@
       "recommended_asset_types": [
         "study_notes_markdown",
         "exam_prep_questions_json",
-        "flashcards_json",
-        "flashcards_markdown",
-        "flashcards_anki_tsv"
+        "flashcards_json"
       ],
       "assets": []
     },
@@ -368,9 +312,7 @@
       "recommended_asset_types": [
         "study_notes_markdown",
         "exam_prep_questions_json",
-        "flashcards_json",
-        "flashcards_markdown",
-        "flashcards_anki_tsv"
+        "flashcards_json"
       ],
       "assets": []
     },
@@ -387,9 +329,7 @@
       "recommended_asset_types": [
         "study_notes_markdown",
         "exam_prep_questions_json",
-        "flashcards_json",
-        "flashcards_markdown",
-        "flashcards_anki_tsv"
+        "flashcards_json"
       ],
       "assets": []
     },
@@ -406,9 +346,7 @@
       "recommended_asset_types": [
         "study_notes_markdown",
         "exam_prep_questions_json",
-        "flashcards_json",
-        "flashcards_markdown",
-        "flashcards_anki_tsv"
+        "flashcards_json"
       ],
       "assets": []
     },
@@ -425,9 +363,7 @@
       "recommended_asset_types": [
         "study_notes_markdown",
         "exam_prep_questions_json",
-        "flashcards_json",
-        "flashcards_markdown",
-        "flashcards_anki_tsv"
+        "flashcards_json"
       ],
       "assets": []
     },
@@ -444,9 +380,7 @@
       "recommended_asset_types": [
         "study_notes_markdown",
         "exam_prep_questions_json",
-        "flashcards_json",
-        "flashcards_markdown",
-        "flashcards_anki_tsv"
+        "flashcards_json"
       ],
       "assets": []
     },
@@ -463,9 +397,7 @@
       "recommended_asset_types": [
         "study_notes_markdown",
         "exam_prep_questions_json",
-        "flashcards_json",
-        "flashcards_markdown",
-        "flashcards_anki_tsv"
+        "flashcards_json"
       ],
       "assets": []
     },
@@ -482,9 +414,7 @@
       "recommended_asset_types": [
         "study_notes_markdown",
         "exam_prep_questions_json",
-        "flashcards_json",
-        "flashcards_markdown",
-        "flashcards_anki_tsv"
+        "flashcards_json"
       ],
       "assets": []
     },
@@ -501,9 +431,7 @@
       "recommended_asset_types": [
         "study_notes_markdown",
         "exam_prep_questions_json",
-        "flashcards_json",
-        "flashcards_markdown",
-        "flashcards_anki_tsv"
+        "flashcards_json"
       ],
       "assets": []
     },
@@ -520,9 +448,7 @@
       "recommended_asset_types": [
         "study_notes_markdown",
         "exam_prep_questions_json",
-        "flashcards_json",
-        "flashcards_markdown",
-        "flashcards_anki_tsv"
+        "flashcards_json"
       ],
       "assets": []
     },
@@ -539,9 +465,7 @@
       "recommended_asset_types": [
         "study_notes_markdown",
         "exam_prep_questions_json",
-        "flashcards_json",
-        "flashcards_markdown",
-        "flashcards_anki_tsv"
+        "flashcards_json"
       ],
       "assets": []
     },
@@ -558,9 +482,7 @@
       "recommended_asset_types": [
         "study_notes_markdown",
         "exam_prep_questions_json",
-        "flashcards_json",
-        "flashcards_markdown",
-        "flashcards_anki_tsv"
+        "flashcards_json"
       ],
       "assets": []
     },
@@ -577,9 +499,7 @@
       "recommended_asset_types": [
         "study_notes_markdown",
         "exam_prep_questions_json",
-        "flashcards_json",
-        "flashcards_markdown",
-        "flashcards_anki_tsv"
+        "flashcards_json"
       ],
       "assets": []
     },
@@ -596,9 +516,7 @@
       "recommended_asset_types": [
         "study_notes_markdown",
         "exam_prep_questions_json",
-        "flashcards_json",
-        "flashcards_markdown",
-        "flashcards_anki_tsv"
+        "flashcards_json"
       ],
       "assets": []
     }

@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://example.local/schemas/study-content-index.schema.json",
   "title": "Study Content Index",
-  "description": "JSON Schema for the generated study-content index. Covers chapter-level cataloging of notes, exam-question files, and flashcard outputs created for spaced-repetition workflows, including metadata for keyed answer sets that remain stable under answer-order randomization.",
+  "description": "JSON Schema for the generated study-content index. Covers chapter-level cataloging of notes, exam-question files, and the canonical flashcards JSON deck used by the study app, including metadata for keyed answer sets that remain stable under answer-order randomization.",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -91,9 +91,7 @@
       "enum": [
         "study_notes_markdown",
         "exam_prep_questions_json",
-        "flashcards_json",
-        "flashcards_markdown",
-        "flashcards_anki_tsv"
+        "flashcards_json"
       ]
     },
     "disclaimer": {
@@ -461,132 +459,6 @@
         }
       ]
     },
-    "flashcardsMarkdownAsset": {
-      "allOf": [
-        {
-          "$ref": "#/$defs/assetBase"
-        },
-        {
-          "type": "object",
-          "additionalProperties": false,
-          "required": [
-            "asset_type",
-            "title",
-            "path",
-            "status",
-            "card_count",
-            "deck_name"
-          ],
-          "properties": {
-            "asset_type": {
-              "const": "flashcards_markdown"
-            },
-            "title": {
-              "type": "string",
-              "minLength": 1
-            },
-            "path": {
-              "type": "string",
-              "minLength": 1
-            },
-            "status": {
-              "enum": [
-                "planned",
-                "in_progress",
-                "complete"
-              ]
-            },
-            "description": {
-              "type": "string"
-            },
-            "card_count": {
-              "type": "integer",
-              "minimum": 1
-            },
-            "deck_name": {
-              "type": "string",
-              "minLength": 1
-            },
-            "tags": {
-              "type": "array",
-              "items": {
-                "type": "string",
-                "minLength": 1
-              }
-            }
-          }
-        }
-      ]
-    },
-    "flashcardsAnkiAsset": {
-      "allOf": [
-        {
-          "$ref": "#/$defs/assetBase"
-        },
-        {
-          "type": "object",
-          "additionalProperties": false,
-          "required": [
-            "asset_type",
-            "title",
-            "path",
-            "status",
-            "card_count",
-            "deck_name",
-            "export_format"
-          ],
-          "properties": {
-            "asset_type": {
-              "const": "flashcards_anki_tsv"
-            },
-            "title": {
-              "type": "string",
-              "minLength": 1
-            },
-            "path": {
-              "type": "string",
-              "minLength": 1
-            },
-            "status": {
-              "enum": [
-                "planned",
-                "in_progress",
-                "complete"
-              ]
-            },
-            "description": {
-              "type": "string"
-            },
-            "card_count": {
-              "type": "integer",
-              "minimum": 1
-            },
-            "deck_name": {
-              "type": "string",
-              "minLength": 1
-            },
-            "export_format": {
-              "const": "anki_tsv"
-            },
-            "flashcard_format": {
-              "enum": [
-                "basic",
-                "reversed",
-                "cloze",
-                "mixed"
-              ]
-            },
-            "tags": {
-              "type": "array",
-              "items": {
-                "type": "string",
-                "minLength": 1
-              }
-            }
-          }
-        }
-      ]
-    },
     "asset": {
       "oneOf": [
         {
@@ -597,12 +469,6 @@
         },
         {
           "$ref": "#/$defs/flashcardsJsonAsset"
-        },
-        {
-          "$ref": "#/$defs/flashcardsMarkdownAsset"
-        },
-        {
-          "$ref": "#/$defs/flashcardsAnkiAsset"
         }
       ]
     }
