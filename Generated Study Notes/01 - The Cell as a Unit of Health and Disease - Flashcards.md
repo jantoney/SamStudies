@@ -18,6 +18,10 @@ Third-party generated Chapter 1 flashcards optimized for active recall, spaced r
 - Course-alignment source: `RCPA - Basic Pathological Sciences Syllabus 2026 - October 2025`.
 - Derived revision framing source: the Chapter 1 study notes and Chapter 1 exam-prep question set already generated from the approved Chapter 1 source set.
 
+## Page Reference Convention
+
+`[n]` citations in card backs refer to the **printed book page number** in Robbins Basic Pathology 10th Edition — not the sequential PDF page position within the chapter file. Chapter 1 occupies book pages 1–29. The printed page number appears in the running header or footer of each page in the chapter PDF.
+
 ## Disclaimer
 
 These flashcards are third-party generated study materials. They are not produced by, reviewed by, approved by, endorsed by, or affiliated with the textbook authors, Elsevier, the Royal College of Pathologists of Australasia, or any other authority, institution, publisher, or examining body.
@@ -236,9 +240,9 @@ These flashcards are third-party generated study materials. They are not produce
 
 - Card ID: `ch1-fc026`
 - Topic: Mitochondrial apoptosis
-- Back: Cytochrome c. Its release from mitochondria helps trigger apoptosis. [15][16]
+- Back: Cytochrome c. Its release from mitochondria helps trigger apoptosis. [15]
 - Tags: `pathology chapter-01 cellular-housekeeping mitochondria cytochrome-c`
-- Printed book pages: [15, 16]
+- Printed book pages: [15]
 
 ### 27. Which second messenger mediates nitric oxide signaling in vascular smooth muscle?
 

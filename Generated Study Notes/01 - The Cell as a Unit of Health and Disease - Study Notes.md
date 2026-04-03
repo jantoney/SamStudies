@@ -10,6 +10,10 @@ Third-party generated study notes for Chapter 1, "The Cell as a Unit of Health a
 - Course-alignment source: `RCPA - Basic Pathological Sciences Syllabus 2026 - October 2025.`
 - The syllabus reference for Section 1 cites: `Robbins and Cotran Pathologic Basis of Disease`, edited by Vinay Kumar, Abul K. Abbas, and Jon C. Aster, 10th Edition, 2020, Elsevier.
 
+## Page Reference Convention
+
+Inline citations in this document use the format `[n]`, where `n` is the **printed book page number** as it appears in the physical Robbins Basic Pathology 10th Edition textbook — not the sequential page position within the chapter PDF file. Chapter 1 occupies book pages 1–29; the printed page number is visible in the running header or footer of each page in the chapter PDF. Citations verified against the Chapter 1 source PDF.
+
 ## Disclaimer
 
 These notes are third-party generated study materials. They are not produced by, reviewed by, approved by, endorsed by, or affiliated with the textbook authors, Elsevier, the Royal College of Pathologists of Australasia, or any other authority, institution, publisher, or examining body.
@@ -189,7 +193,7 @@ Mitochondria generate ATP by oxidative phosphorylation, supply metabolic interme
 
 In rapidly growing cells, metabolism shifts toward increased glucose and glutamine uptake, increased glycolysis, and reduced reliance on oxidative phosphorylation for ATP production. This Warburg effect preserves carbon skeletons for biosynthesis rather than fully oxidizing them. [15]
 
-Mitochondria also regulate life-death decisions: mitochondrial outer membrane permeabilization allows cytochrome c release and apoptosis, while severe injury can open membrane permeability transition pores and contribute to necrotic cell death. [15][16]
+Mitochondria also regulate life-death decisions: mitochondrial outer membrane permeabilization allows cytochrome c release and apoptosis, while severe injury can open membrane permeability transition pores and contribute to necrotic cell death. [15]
 
 ## 3. Cellular Activation, Signaling, and Growth Factors
 

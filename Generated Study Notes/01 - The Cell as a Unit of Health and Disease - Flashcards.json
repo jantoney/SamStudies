@@ -53,7 +53,9 @@
       "Extracellular matrix",
       "Maintaining cell populations and regenerative medicine"
     ],
-    "design_note": "Cards are kept mostly single-fact and under one question per card for rapid recall."
+    "design_note": "Cards are kept mostly single-fact and under one question per card for rapid recall.",
+    "page_reference_style": "printed_book_page_numbers",
+    "page_reference_note": "The [n] citations in card backs and the source_page_refs arrays use the printed book page number from Robbins Basic Pathology 10th Edition, not the sequential PDF page position. Chapter 1 occupies book pages 1–29."
   },
   "cards": [
     {
@@ -546,10 +548,9 @@
       "bucket": "Cellular housekeeping, cellular metabolism, and mitochondrial function",
       "topic": "Mitochondrial apoptosis",
       "front": "Release of what mitochondrial protein promotes apoptosis?",
-      "back": "Cytochrome c. Its release from mitochondria helps trigger apoptosis. [15][16]",
+      "back": "Cytochrome c. Its release from mitochondria helps trigger apoptosis. [15]",
       "source_page_refs": [
-        15,
-        16
+        15
       ],
       "tags": [
         "pathology",
