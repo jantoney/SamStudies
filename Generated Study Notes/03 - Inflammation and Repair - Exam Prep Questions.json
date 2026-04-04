@@ -1,0 +1,1024 @@
+{
+  "schema_version": "1.2",
+  "resource_type": "exam_prep_question_set",
+  "title": "03 - Inflammation and Repair - Exam Prep Questions",
+  "slug": "03-inflammation-and-repair-exam-prep-questions",
+  "chapter": {
+    "number": 3,
+    "code": "03",
+    "title": "Inflammation and Repair",
+    "status": "complete"
+  },
+  "description": "Third-party generated single-choice exam-prep questions for Chapter 3. The set is aligned primarily to the Chapter 3 textbook content and shaped to reflect the style, tone, and difficulty distribution of the RCPA Basic Pathological Sciences mock exam format. Choices are keyed so answers remain stable if an application randomizes display order.",
+  "disclaimer": {
+    "summary": "Third-party generated study aid.",
+    "endorsement_notice": "These questions are third-party generated study materials. They are not produced by, reviewed by, approved by, endorsed by, or affiliated with the textbook authors, Elsevier, the Royal College of Pathologists of Australasia, or any other authority, institution, publisher, or examining body.",
+    "answer_key_note": "Answers are included as stable choice keys with brief source-grounded rationales for study and review purposes."
+  },
+  "source_notes": [
+    {
+      "source_type": "primary_textbook_chapter",
+      "source_title": "Robbins Basic Pathology, 10th Edition, Chapter 3: Inflammation and Repair",
+      "publisher": "Elsevier",
+      "edition": "10th Edition"
+    },
+    {
+      "source_type": "course_alignment_reference",
+      "source_title": "RCPA - Basic Pathological Sciences Syllabus 2026 - October 2025",
+      "organization": "Royal College of Pathologists of Australasia",
+      "reference_note": "Used for topic emphasis and exam framing."
+    },
+    {
+      "source_type": "style_reference",
+      "source_title": "BPS 2026 Mock Exam Question Set",
+      "organization": "Royal College of Pathologists of Australasia",
+      "reference_note": "Used as a style, structure, and difficulty reference."
+    }
+  ],
+  "format": {
+    "question_count": 30,
+    "question_type": "single_choice",
+    "choices_distribution": {
+      "4": 5,
+      "5": 25
+    },
+    "answer_key_included": true,
+    "answer_format": "correct_choice_key_with_reason",
+    "choice_keys_included": true,
+    "choice_key_format": "uppercase_letters",
+    "choice_order_randomizable": true,
+    "page_reference_style": "printed_book_page_numbers"
+  },
+  "questions": [
+    {
+      "number": 1,
+      "question_id": "ch3-q01",
+      "type": "single_choice",
+      "question": "A 54-year-old man with recurrent gout develops abrupt, intensely painful inflammation in the first metatarsophalangeal joint. No organisms are identified.\n\nWhat mechanism MOST directly explains leukocyte recruitment in this sterile inflammatory reaction?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Urate crystals activate the inflammasome, leading to IL-1 production"
+        },
+        {
+          "key": "B",
+          "text": "Immune complexes activate mast cells exclusively through IgE"
+        },
+        {
+          "key": "C",
+          "text": "Fibroblasts release TGF-beta to suppress neutrophil migration"
+        },
+        {
+          "key": "D",
+          "text": "Loss of platelets prevents complement activation"
+        },
+        {
+          "key": "E",
+          "text": "Reduced endothelial permeability allows plasma proteins to escape"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Damage-associated molecular patterns such as urate crystals activate the inflammasome and promote IL-1 production, which recruits leukocytes.",
+        "source_page_refs": [60]
+      }
+    },
+    {
+      "number": 2,
+      "question_id": "ch3-q02",
+      "type": "single_choice",
+      "question": "A patient with congestive heart failure develops ankle edema. Aspirated fluid shows very low protein content and few cells.\n\nHow should this fluid be classified?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Exudate"
+        },
+        {
+          "key": "B",
+          "text": "Granulation tissue"
+        },
+        {
+          "key": "C",
+          "text": "Pus"
+        },
+        {
+          "key": "D",
+          "text": "Transudate"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "A transudate has low protein, few cells, and results from hydrostatic or osmotic imbalance without increased vascular permeability.",
+        "source_page_refs": [60, 61]
+      }
+    },
+    {
+      "number": 3,
+      "question_id": "ch3-q03",
+      "type": "single_choice",
+      "question": "A teenager develops a skin blister after a minor burn. The blister cavity contains cell-poor fluid with few leukocytes.\n\nWhich morphologic pattern of acute inflammation is MOST likely?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Fibrinous inflammation"
+        },
+        {
+          "key": "B",
+          "text": "Granulomatous inflammation"
+        },
+        {
+          "key": "C",
+          "text": "Purulent inflammation"
+        },
+        {
+          "key": "D",
+          "text": "Serous inflammation"
+        },
+        {
+          "key": "E",
+          "text": "Ulceration"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "Serous inflammation is characterized by cell-poor fluid accumulation in spaces created by injury to surface epithelia or serous cavities.",
+        "source_page_refs": [78]
+      }
+    },
+    {
+      "number": 4,
+      "question_id": "ch3-q04",
+      "type": "single_choice",
+      "question": "A patient develops rapid swelling at the site of a bee sting within minutes. The vascular leak is mainly due to endothelial cell retraction in postcapillary venules.\n\nWhich mediator is MOST strongly associated with this immediate transient response?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "C3b"
+        },
+        {
+          "key": "B",
+          "text": "Histamine"
+        },
+        {
+          "key": "C",
+          "text": "Interferon-gamma"
+        },
+        {
+          "key": "D",
+          "text": "Transforming growth factor-beta"
+        },
+        {
+          "key": "E",
+          "text": "Vascular endothelial growth factor"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Histamine is the principal mediator of the immediate transient increase in vascular permeability caused by endothelial retraction.",
+        "source_page_refs": [61, 71]
+      }
+    },
+    {
+      "number": 5,
+      "question_id": "ch3-q05",
+      "type": "single_choice",
+      "question": "During leukocyte recruitment, which family of adhesion molecules is primarily responsible for the initial rolling interaction on activated endothelium?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Integrins"
+        },
+        {
+          "key": "B",
+          "text": "Matrix metalloproteinases"
+        },
+        {
+          "key": "C",
+          "text": "PECAM-1"
+        },
+        {
+          "key": "D",
+          "text": "Selectins"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "Selectins mediate the weak, reversible rolling interactions that slow leukocytes along activated endothelium.",
+        "source_page_refs": [63, 64]
+      }
+    },
+    {
+      "number": 6,
+      "question_id": "ch3-q06",
+      "type": "single_choice",
+      "question": "A neutrophil has already adhered firmly to activated endothelium and is about to squeeze between endothelial cells in a postcapillary venule.\n\nWhich molecule is MOST important for this transmigration step?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "CD31 (PECAM-1)"
+        },
+        {
+          "key": "B",
+          "text": "CD40 ligand"
+        },
+        {
+          "key": "C",
+          "text": "C-reactive protein"
+        },
+        {
+          "key": "D",
+          "text": "P-selectin"
+        },
+        {
+          "key": "E",
+          "text": "Tissue factor"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "PECAM-1 mediates the binding events needed for leukocytes to traverse endothelium during transmigration.",
+        "source_page_refs": [65]
+      }
+    },
+    {
+      "number": 7,
+      "question_id": "ch3-q07",
+      "type": "single_choice",
+      "question": "A patient with bacterial peritonitis is forming a strong chemotactic gradient for neutrophils.\n\nWhich of the following is a well-established leukocyte chemoattractant in this setting?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "C3b"
+        },
+        {
+          "key": "B",
+          "text": "Fibrinogen"
+        },
+        {
+          "key": "C",
+          "text": "IL-4"
+        },
+        {
+          "key": "D",
+          "text": "Leukotriene B4"
+        },
+        {
+          "key": "E",
+          "text": "Prostacyclin"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "Leukotriene B4 is a potent chemoattractant for neutrophils and also activates leukocyte adhesion and effector responses.",
+        "source_page_refs": [65, 73]
+      }
+    },
+    {
+      "number": 8,
+      "question_id": "ch3-q08",
+      "type": "single_choice",
+      "question": "A lung biopsy taken 12 hours after acute bacterial infection shows a dense neutrophilic infiltrate. A second biopsy 48 hours later shows mainly monocyte-derived macrophages.\n\nWhat BEST explains this shift?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Macrophages are more numerous than neutrophils in blood"
+        },
+        {
+          "key": "B",
+          "text": "Macrophages survive longer in tissues and may proliferate locally"
+        },
+        {
+          "key": "C",
+          "text": "Neutrophils require antibody to leave vessels"
+        },
+        {
+          "key": "D",
+          "text": "Neutrophils convert directly into macrophages in tissue"
+        },
+        {
+          "key": "E",
+          "text": "Platelets replace neutrophils during chronic inflammation"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Neutrophils dominate early because they respond rapidly and are numerous, but macrophages become dominant later because they survive longer and may proliferate in tissues.",
+        "source_page_refs": [65]
+      }
+    },
+    {
+      "number": 9,
+      "question_id": "ch3-q09",
+      "type": "single_choice",
+      "question": "A patient with recurrent bacterial infection has defective opsonization. Which molecule normally enhances microbial recognition and attachment during phagocytosis?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "C3b"
+        },
+        {
+          "key": "B",
+          "text": "Factor XII"
+        },
+        {
+          "key": "C",
+          "text": "Histamine"
+        },
+        {
+          "key": "D",
+          "text": "IL-10"
+        },
+        {
+          "key": "E",
+          "text": "Serotonin"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "C3b is a major opsonin that binds microbial surfaces and facilitates recognition and attachment by phagocytes.",
+        "source_page_refs": [67, 76]
+      }
+    },
+    {
+      "number": 10,
+      "question_id": "ch3-q10",
+      "type": "single_choice",
+      "question": "Within an activated neutrophil phagolysosome, which enzyme converts hydrogen peroxide into hypochlorite for efficient microbial killing?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Catalase"
+        },
+        {
+          "key": "B",
+          "text": "Myeloperoxidase"
+        },
+        {
+          "key": "C",
+          "text": "Nitric oxide synthase"
+        },
+        {
+          "key": "D",
+          "text": "Superoxide dismutase"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Myeloperoxidase uses hydrogen peroxide and halide ions to generate hypochlorite, one of the most effective neutrophil microbicidal products.",
+        "source_page_refs": [67, 68]
+      }
+    },
+    {
+      "number": 11,
+      "question_id": "ch3-q11",
+      "type": "single_choice",
+      "question": "A patient with systemic lupus erythematosus has high titers of antibodies against nuclear material. Which neutrophil response can directly expose chromatin and histones to the immune system?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Alternative macrophage activation"
+        },
+        {
+          "key": "B",
+          "text": "Degranulation of eosinophils"
+        },
+        {
+          "key": "C",
+          "text": "Formation of neutrophil extracellular traps"
+        },
+        {
+          "key": "D",
+          "text": "Prostacyclin synthesis"
+        },
+        {
+          "key": "E",
+          "text": "Smooth muscle contraction"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "NET formation releases chromatin and associated proteins into extracellular spaces, creating a potential source of autoantigens.",
+        "source_page_refs": [69]
+      }
+    },
+    {
+      "number": 12,
+      "question_id": "ch3-q12",
+      "type": "single_choice",
+      "question": "A patient with acute inflammation has marked pain and increased vascular permeability mediated by a plasma-derived peptide generated from high-molecular-weight kininogen.\n\nWhich mediator is MOST likely responsible?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Bradykinin"
+        },
+        {
+          "key": "B",
+          "text": "C3b"
+        },
+        {
+          "key": "C",
+          "text": "Histamine"
+        },
+        {
+          "key": "D",
+          "text": "PGI2"
+        },
+        {
+          "key": "E",
+          "text": "Serotonin"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Bradykinin is derived from kininogens and increases vascular permeability, causes vasodilation, and contributes to pain.",
+        "source_page_refs": [77]
+      }
+    },
+    {
+      "number": 13,
+      "question_id": "ch3-q13",
+      "type": "single_choice",
+      "question": "A patient starts a selective COX-2 inhibitor and later suffers an arterial thrombotic event.\n\nWhich imbalance BEST explains this complication?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Decreased bradykinin with increased C5a"
+        },
+        {
+          "key": "B",
+          "text": "Decreased IL-1 with increased TNF"
+        },
+        {
+          "key": "C",
+          "text": "Decreased PGI2 with relatively preserved TXA2"
+        },
+        {
+          "key": "D",
+          "text": "Decreased TXA2 with relatively preserved PGI2"
+        },
+        {
+          "key": "E",
+          "text": "Increased lipoxin with decreased leukotriene B4"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Selective COX-2 inhibition may reduce endothelial prostacyclin while leaving platelet TXA2 production relatively intact, favoring thrombosis.",
+        "source_page_refs": [72, 73]
+      }
+    },
+    {
+      "number": 14,
+      "question_id": "ch3-q14",
+      "type": "single_choice",
+      "question": "A patient with asthma improves on montelukast therapy.\n\nWhich inflammatory mediators are MOST directly blocked by this drug class?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "C3a and C5a"
+        },
+        {
+          "key": "B",
+          "text": "Histamine and serotonin"
+        },
+        {
+          "key": "C",
+          "text": "LTC4, LTD4, and LTE4"
+        },
+        {
+          "key": "D",
+          "text": "PGE2 and PGI2"
+        },
+        {
+          "key": "E",
+          "text": "TNF and IL-1"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Leukotriene receptor antagonists such as montelukast block the cysteinyl leukotrienes that cause bronchospasm and increased vascular permeability.",
+        "source_page_refs": [73]
+      }
+    },
+    {
+      "number": 15,
+      "question_id": "ch3-q15",
+      "type": "single_choice",
+      "question": "A woman with rheumatoid arthritis is treated with a TNF antagonist and later develops reactivated tuberculosis.\n\nWhat is the MOST likely immunologic basis for this complication?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Excessive eosinophil degranulation"
+        },
+        {
+          "key": "B",
+          "text": "Failure to maintain effective macrophage-mediated containment of intracellular microbes"
+        },
+        {
+          "key": "C",
+          "text": "Loss of platelet aggregation in granulomas"
+        },
+        {
+          "key": "D",
+          "text": "Overproduction of prostacyclin in macrophages"
+        },
+        {
+          "key": "E",
+          "text": "Reduced bradykinin degradation"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "TNF is important for macrophage activation and the containment of intracellular pathogens such as mycobacteria, so antagonism increases tuberculosis risk.",
+        "source_page_refs": [74, 75, 85]
+      }
+    },
+    {
+      "number": 16,
+      "question_id": "ch3-q16",
+      "type": "single_choice",
+      "question": "Which infection is classically associated with deficiency of the terminal complement components because of impaired membrane attack complex formation?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Candidemia"
+        },
+        {
+          "key": "B",
+          "text": "Gonococcal infection"
+        },
+        {
+          "key": "C",
+          "text": "Pneumocystis pneumonia"
+        },
+        {
+          "key": "D",
+          "text": "Staphylococcal abscess"
+        },
+        {
+          "key": "E",
+          "text": "Toxoplasmosis"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "The membrane attack complex is especially important for killing Neisseria, so terminal complement deficiency predisposes to gonococcal and meningococcal infection.",
+        "source_page_refs": [76]
+      }
+    },
+    {
+      "number": 17,
+      "question_id": "ch3-q17",
+      "type": "single_choice",
+      "question": "A circulating host protein binds microbial mannose residues and directly activates complement without antibody.\n\nWhich pathway is involved?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Alternative pathway"
+        },
+        {
+          "key": "B",
+          "text": "Classical pathway"
+        },
+        {
+          "key": "C",
+          "text": "Intrinsic coagulation pathway"
+        },
+        {
+          "key": "D",
+          "text": "Lectin pathway"
+        },
+        {
+          "key": "E",
+          "text": "Lipoxygenase pathway"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "The lectin pathway is activated when mannose-binding lectin binds microbial carbohydrates and directly triggers complement activation.",
+        "source_page_refs": [60, 76]
+      }
+    },
+    {
+      "number": 18,
+      "question_id": "ch3-q18",
+      "type": "single_choice",
+      "question": "A patient with acute appendicitis undergoes surgery. The specimen shows liquefied necrotic debris, edema fluid, and large numbers of neutrophils.\n\nWhich morphologic pattern is MOST likely present?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Fibrinous inflammation"
+        },
+        {
+          "key": "B",
+          "text": "Granulomatous inflammation"
+        },
+        {
+          "key": "C",
+          "text": "Purulent inflammation"
+        },
+        {
+          "key": "D",
+          "text": "Serous inflammation"
+        },
+        {
+          "key": "E",
+          "text": "Villous hyperplasia"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Purulent inflammation is defined by pus composed of neutrophils, liquefied necrotic debris, and edema fluid.",
+        "source_page_refs": [78, 79]
+      }
+    },
+    {
+      "number": 19,
+      "question_id": "ch3-q19",
+      "type": "single_choice",
+      "question": "A healthy adult donates part of the liver for transplantation. Over the next several weeks, the remaining liver increases in mass.\n\nWhat is the PRIMARY mechanism of this restoration in humans after partial hepatectomy?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Caseous necrosis with fibrosis"
+        },
+        {
+          "key": "B",
+          "text": "Hypertrophy without any cell proliferation"
+        },
+        {
+          "key": "C",
+          "text": "Proliferation of residual hepatocytes driven by cytokines and growth factors"
+        },
+        {
+          "key": "D",
+          "text": "Replacement by permanent scar tissue only"
+        },
+        {
+          "key": "E",
+          "text": "Transdifferentiation of erythrocytes into hepatocytes"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "After partial hepatectomy, liver restoration occurs mainly by proliferation of residual hepatocytes under the influence of cytokines such as IL-6 and growth factors such as HGF.",
+        "source_page_refs": [89]
+      }
+    },
+    {
+      "number": 20,
+      "question_id": "ch3-q20",
+      "type": "single_choice",
+      "question": "A fibrinous pleural exudate persists because it cannot be cleared adequately.\n\nWhat is the MOST likely long-term outcome?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Complete resolution without structural change"
+        },
+        {
+          "key": "B",
+          "text": "Organization with ingrowth of fibroblasts and scar formation"
+        },
+        {
+          "key": "C",
+          "text": "Replacement by serous effusion only"
+        },
+        {
+          "key": "D",
+          "text": "Transformation into a foreign body granuloma"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "When fibrinous exudate is not removed, fibroblasts and vessels grow into it, producing organization and scar formation.",
+        "source_page_refs": [78, 80]
+      }
+    },
+    {
+      "number": 21,
+      "question_id": "ch3-q21",
+      "type": "single_choice",
+      "question": "A biopsy from chronically inflamed tissue shows macrophages, lymphocytes, and plasma cells, together with tissue destruction and fibrosis.\n\nWhich term BEST describes this process?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Acute inflammation"
+        },
+        {
+          "key": "B",
+          "text": "Chronic inflammation"
+        },
+        {
+          "key": "C",
+          "text": "Serous inflammation"
+        },
+        {
+          "key": "D",
+          "text": "Suppurative inflammation"
+        },
+        {
+          "key": "E",
+          "text": "Ulceration"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Chronic inflammation is defined by mononuclear infiltrates, tissue destruction, and ongoing repair with fibrosis and angiogenesis.",
+        "source_page_refs": [81]
+      }
+    },
+    {
+      "number": 22,
+      "question_id": "ch3-q22",
+      "type": "single_choice",
+      "question": "A macrophage population activated mainly by IL-4 and IL-13 is identified in a healing wound.\n\nWhat is the MOST characteristic function of these cells?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Generation of the strongest respiratory burst for bacterial killing"
+        },
+        {
+          "key": "B",
+          "text": "Promotion of tissue repair, angiogenesis, and collagen deposition"
+        },
+        {
+          "key": "C",
+          "text": "Release of histamine from cytoplasmic granules"
+        },
+        {
+          "key": "D",
+          "text": "Selectin-mediated leukocyte rolling"
+        },
+        {
+          "key": "E",
+          "text": "Terminal complement activation"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "IL-4 and IL-13 drive alternative macrophage activation, whose major functions are tissue repair, fibroblast activation, angiogenesis, and collagen synthesis.",
+        "source_page_refs": [83, 91]
+      }
+    },
+    {
+      "number": 23,
+      "question_id": "ch3-q23",
+      "type": "single_choice",
+      "question": "A patient with a chronic inflammatory disorder has increased activity of TH17 cells.\n\nWhat effect is MOST directly associated with this T-cell subset?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Activation of mast-cell histamine release only"
+        },
+        {
+          "key": "B",
+          "text": "Induction of chemokines that recruit neutrophils and monocytes"
+        },
+        {
+          "key": "C",
+          "text": "Production of type I interferons to block viral replication"
+        },
+        {
+          "key": "D",
+          "text": "Promotion of platelet aggregation by TXA2"
+        },
+        {
+          "key": "E",
+          "text": "Suppression of endothelial adhesion molecule expression"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "TH17 cells promote recruitment of neutrophils and monocytes by inducing chemokine secretion.",
+        "source_page_refs": [75, 83, 84]
+      }
+    },
+    {
+      "number": 24,
+      "question_id": "ch3-q24",
+      "type": "single_choice",
+      "question": "A child with helminth infection has marked eosinophilia. Which eosinophil granule protein is especially important for parasite toxicity but can also injure host epithelium?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Alpha-1-antitrypsin"
+        },
+        {
+          "key": "B",
+          "text": "C-reactive protein"
+        },
+        {
+          "key": "C",
+          "text": "Major basic protein"
+        },
+        {
+          "key": "D",
+          "text": "Myeloperoxidase"
+        },
+        {
+          "key": "E",
+          "text": "Prostacyclin"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Eosinophil granules contain major basic protein, which is toxic to parasites but can also damage host epithelial cells.",
+        "source_page_refs": [84]
+      }
+    },
+    {
+      "number": 25,
+      "question_id": "ch3-q25",
+      "type": "single_choice",
+      "question": "A pathologist sees multinucleated giant cells and epithelioid macrophages surrounding suture material, without evidence of a strong T-cell-driven immune response.\n\nWhat type of granuloma is this?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Foreign body granuloma"
+        },
+        {
+          "key": "B",
+          "text": "Immune granuloma"
+        },
+        {
+          "key": "C",
+          "text": "Pyogenic granuloma"
+        },
+        {
+          "key": "D",
+          "text": "Serous granuloma"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Foreign body granulomas form around relatively inert material that cannot be phagocytosed and do not require a strong T-cell-mediated response.",
+        "source_page_refs": [85]
+      }
+    },
+    {
+      "number": 26,
+      "question_id": "ch3-q26",
+      "type": "single_choice",
+      "question": "A lung biopsy shows granulomas with central caseous necrosis.\n\nWhich diagnosis must always be excluded first when this pattern is identified?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Asthma"
+        },
+        {
+          "key": "B",
+          "text": "Crohn disease"
+        },
+        {
+          "key": "C",
+          "text": "Sarcoidosis"
+        },
+        {
+          "key": "D",
+          "text": "Tuberculosis"
+        },
+        {
+          "key": "E",
+          "text": "Viral pneumonia"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "Tuberculosis is the prototype granulomatous disease caused by infection and must be excluded whenever granulomas are identified, especially if caseating.",
+        "source_page_refs": [85, 86]
+      }
+    },
+    {
+      "number": 27,
+      "question_id": "ch3-q27",
+      "type": "single_choice",
+      "question": "A patient with influenza develops fever during the systemic acute-phase response.\n\nWhich mechanism BEST explains the rise in body temperature?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Bradykinin directly resets the hypothalamic set point"
+        },
+        {
+          "key": "B",
+          "text": "C3b deposits on erythrocytes and triggers shivering"
+        },
+        {
+          "key": "C",
+          "text": "Cytokine-induced PGE2 production in hypothalamic vascular and perivascular cells raises the set point"
+        },
+        {
+          "key": "D",
+          "text": "IL-4 suppresses heat loss through sweat glands"
+        },
+        {
+          "key": "E",
+          "text": "Leukotriene B4 activates skeletal muscle to generate heat"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Fever in the acute-phase response is driven by cytokine-induced hypothalamic prostaglandin synthesis, especially PGE2.",
+        "source_page_refs": [86]
+      }
+    },
+    {
+      "number": 28,
+      "question_id": "ch3-q28",
+      "type": "single_choice",
+      "question": "A patient with bacterial pneumonia has a markedly elevated erythrocyte sedimentation rate.\n\nWhich acute-phase protein MOST directly promotes rouleaux formation and faster sedimentation of red cells?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "C-reactive protein"
+        },
+        {
+          "key": "B",
+          "text": "Fibrinogen"
+        },
+        {
+          "key": "C",
+          "text": "Histamine"
+        },
+        {
+          "key": "D",
+          "text": "Serum amyloid A"
+        },
+        {
+          "key": "E",
+          "text": "TNF"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Fibrinogen promotes rouleaux formation, which increases erythrocyte sedimentation rate during the acute-phase response.",
+        "source_page_refs": [86, 87]
+      }
+    },
+    {
+      "number": 29,
+      "question_id": "ch3-q29",
+      "type": "single_choice",
+      "question": "A healing skin wound is generating new capillary sprouts from preexisting vessels.\n\nWhich factor is the key driver of endothelial migration, proliferation, and increased permeability in this process?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "IL-10"
+        },
+        {
+          "key": "B",
+          "text": "Myeloperoxidase"
+        },
+        {
+          "key": "C",
+          "text": "TGF-beta"
+        },
+        {
+          "key": "D",
+          "text": "VEGF"
+        },
+        {
+          "key": "E",
+          "text": "VLA-4"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "VEGF is the key driver of angiogenesis in repair, stimulating endothelial migration, proliferation, vasodilation, and permeability.",
+        "source_page_refs": [90, 91]
+      }
+    },
+    {
+      "number": 30,
+      "question_id": "ch3-q30",
+      "type": "single_choice",
+      "question": "A patient with long-standing chronic liver injury develops progressive fibrosis and architectural distortion.\n\nWhich mediator is MOST important in driving fibroblast activation, collagen synthesis, and reduced extracellular matrix degradation in this setting?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Histamine"
+        },
+        {
+          "key": "B",
+          "text": "IL-8"
+        },
+        {
+          "key": "C",
+          "text": "PGE2"
+        },
+        {
+          "key": "D",
+          "text": "TGF-beta"
+        },
+        {
+          "key": "E",
+          "text": "TNF"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "TGF-beta is the major fibrogenic cytokine and stimulates fibroblast migration, collagen deposition, and decreased matrix degradation in fibrosis.",
+        "source_page_refs": [91, 94, 95]
+      }
+    }
+  ]
+}

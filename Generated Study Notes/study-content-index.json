@@ -3,7 +3,7 @@
   "index_type": "study_content_catalog",
   "collection_title": "Generated Study Notes",
   "collection_slug": "generated-study-notes",
-  "description": "Website-ready index of generated pathology study assets. Chapters 1 and 2 currently have complete third-party generated study notes, exam-prep questions with keyed answers and brief source-grounded rationales, and flashcards for spaced-repetition revision. Later chapters can be added to this same index as new assets are created, including additional flashcard resources.",
+  "description": "Website-ready index of generated pathology study assets. Chapters 1 through 6 currently have complete third-party generated study notes, exam-prep questions with keyed answers and brief source-grounded rationales, and flashcards for spaced-repetition revision. Later chapters can be added to this same index as new assets are created, including additional flashcard resources.",
   "supported_asset_types": [
     "study_notes_markdown",
     "exam_prep_questions_json",
@@ -16,8 +16,8 @@
   },
   "content_status": {
     "chapter_count_total": 24,
-    "chapter_count_complete": 2,
-    "chapter_count_planned": 22
+    "chapter_count_complete": 6,
+    "chapter_count_planned": 18
   },
   "source_registry": [
     {
@@ -207,68 +207,311 @@
       "chapter_code": "03",
       "title": "Inflammation and Repair",
       "slug": "03-inflammation-and-repair",
-      "status": "planned",
+      "status": "complete",
+      "website": {
+        "nav_label": "Chapter 3",
+        "card_title": "Inflammation and Repair",
+        "card_description": "Acute and chronic inflammation, mediator biology, systemic effects, wound healing, and fibrosis."
+      },
+      "description": "Third-party generated Chapter 3 revision assets based primarily on Robbins Basic Pathology, 10th Edition, Chapter 3, with RCPA syllabus framing and mock-exam style alignment.",
+      "topics": [
+        "Overview of inflammation",
+        "Recognition of microbes and damaged cells",
+        "Vascular changes and permeability",
+        "Leukocyte recruitment and chemotaxis",
+        "Phagocytosis and microbial killing",
+        "Inflammatory mediators",
+        "Morphologic patterns of acute inflammation",
+        "Outcomes of acute inflammation",
+        "Chronic inflammation",
+        "Granulomatous inflammation",
+        "Systemic effects of inflammation",
+        "Regeneration and scarring",
+        "Angiogenesis",
+        "Fibrosis and abnormal wound healing"
+      ],
       "sources_used": [
         "robbins-basic-pathology-10e",
-        "rcpa-bps-syllabus-2026-oct-2025"
+        "robbins-cotran-pathologic-basis-of-disease-10e",
+        "rcpa-bps-syllabus-2026-oct-2025",
+        "bps-2026-mock-exam-question-set"
       ],
       "recommended_asset_types": [
         "study_notes_markdown",
         "exam_prep_questions_json",
         "flashcards_json"
       ],
-      "assets": []
+      "assets": [
+        {
+          "asset_type": "study_notes_markdown",
+          "title": "03 - Inflammation and Repair - Study Notes",
+          "path": "Generated Study Notes/03 - Inflammation and Repair - Study Notes.md",
+          "status": "complete",
+          "description": "Exam-focused Chapter 3 study notes with printed-page citations, summary tables, and mechanism-driven revision structure."
+        },
+        {
+          "asset_type": "exam_prep_questions_json",
+          "title": "03 - Inflammation and Repair - Exam Prep Questions",
+          "path": "Generated Study Notes/03 - Inflammation and Repair - Exam Prep Questions.json",
+          "status": "complete",
+          "question_count": 30,
+          "answer_key_included": true,
+          "description": "Single-choice JSON question set with keyed choices, keyed answers, and brief source-grounded rationales.",
+          "answer_key_format": "correct_choice_key_with_reason",
+          "choice_key_format": "uppercase_letters",
+          "choice_order_randomizable": true,
+          "page_reference_style": "printed_book_page_numbers"
+        },
+        {
+          "asset_type": "flashcards_json",
+          "title": "03 - Inflammation and Repair - Flashcards",
+          "path": "Generated Study Notes/03 - Inflammation and Repair - Flashcards.json",
+          "status": "complete",
+          "description": "Structured Chapter 3 flashcard deck with bucket metadata, tags, and printed-page references for app ingestion.",
+          "card_count": 50,
+          "deck_name": "Pathology::Chapter 03 - Inflammation and Repair",
+          "flashcard_format": "basic",
+          "tags": [
+            "pathology",
+            "chapter-03",
+            "active-recall",
+            "spaced-repetition"
+          ]
+        }
+      ]
     },
     {
       "chapter_number": 4,
       "chapter_code": "04",
       "title": "Hemodynamic Disorders, Thromboembolism, and Shock",
       "slug": "04-hemodynamic-disorders-thromboembolism-and-shock",
-      "status": "planned",
+      "status": "complete",
+      "website": {
+        "nav_label": "Chapter 4",
+        "card_title": "Hemodynamic Disorders, Thromboembolism, and Shock",
+        "card_description": "Edema, hemorrhage, hemostasis, thrombosis, embolism, infarction, and shock."
+      },
+      "description": "Third-party generated Chapter 4 revision assets based primarily on Robbins Basic Pathology, 10th Edition, Chapter 4, with RCPA syllabus framing and mock-exam style alignment.",
+      "topics": [
+        "Hyperemia and congestion",
+        "Edema and effusions",
+        "Hemorrhage",
+        "Normal hemostasis",
+        "Platelets and coagulation cascade",
+        "Endothelial antithrombotic function",
+        "Virchow triad",
+        "Hypercoagulable states",
+        "Disseminated intravascular coagulation",
+        "Pulmonary and systemic embolism",
+        "Fat, amniotic fluid, and air embolism",
+        "Infarction",
+        "Shock",
+        "Pathogenesis of septic shock",
+        "Laboratory correlation in thromboembolic disease and shock"
+      ],
       "sources_used": [
         "robbins-basic-pathology-10e",
-        "rcpa-bps-syllabus-2026-oct-2025"
+        "robbins-cotran-pathologic-basis-of-disease-10e",
+        "rcpa-bps-syllabus-2026-oct-2025",
+        "bps-2026-mock-exam-question-set"
       ],
       "recommended_asset_types": [
         "study_notes_markdown",
         "exam_prep_questions_json",
         "flashcards_json"
       ],
-      "assets": []
+      "assets": [
+        {
+          "asset_type": "study_notes_markdown",
+          "title": "04 - Hemodynamic Disorders, Thromboembolism, and Shock - Study Notes",
+          "path": "Generated Study Notes/04 - Hemodynamic Disorders, Thromboembolism, and Shock - Study Notes.md",
+          "status": "complete"
+        },
+        {
+          "asset_type": "exam_prep_questions_json",
+          "title": "04 - Hemodynamic Disorders, Thromboembolism, and Shock - Exam Prep Questions",
+          "path": "Generated Study Notes/04 - Hemodynamic Disorders, Thromboembolism, and Shock - Exam Prep Questions.json",
+          "status": "complete",
+          "question_count": 30,
+          "answer_key_included": true,
+          "description": "Single-choice JSON question set with keyed choices, keyed answers, and brief source-grounded rationales.",
+          "answer_key_format": "correct_choice_key_with_reason",
+          "choice_key_format": "uppercase_letters",
+          "choice_order_randomizable": true,
+          "page_reference_style": "printed_book_page_numbers"
+        },
+        {
+          "asset_type": "flashcards_json",
+          "title": "04 - Hemodynamic Disorders, Thromboembolism, and Shock - Flashcards",
+          "path": "Generated Study Notes/04 - Hemodynamic Disorders, Thromboembolism, and Shock - Flashcards.json",
+          "status": "complete",
+          "description": "Structured Chapter 4 flashcard deck with bucket metadata, tags, and printed-page references for app ingestion.",
+          "card_count": 68,
+          "deck_name": "Pathology::Chapter 04 - Hemodynamic Disorders, Thromboembolism, and Shock",
+          "flashcard_format": "basic",
+          "tags": [
+            "pathology",
+            "chapter-04",
+            "active-recall",
+            "spaced-repetition"
+          ]
+        }
+      ]
     },
     {
       "chapter_number": 5,
       "chapter_code": "05",
       "title": "Diseases of the Immune System",
       "slug": "05-diseases-of-the-immune-system",
-      "status": "planned",
+      "status": "complete",
+      "website": {
+        "nav_label": "Chapter 5",
+        "card_title": "Diseases of the Immune System",
+        "card_description": "Innate and adaptive immunity, hypersensitivity, autoimmunity, transplant rejection, immunodeficiency, HIV/AIDS, and amyloidosis."
+      },
+      "description": "Third-party generated Chapter 5 revision assets based primarily on Robbins Basic Pathology, 10th Edition, Chapter 5, with RCPA syllabus framing and mock-exam style alignment.",
+      "topics": [
+        "Innate immunity",
+        "Adaptive immunity",
+        "Pattern-recognition receptors and inflammasome",
+        "MHC and antigen presentation",
+        "Hypersensitivity reactions",
+        "Immunologic tolerance",
+        "Systemic lupus erythematosus",
+        "Sjogren syndrome",
+        "Systemic sclerosis",
+        "Transplant rejection",
+        "Primary immunodeficiency syndromes",
+        "HIV/AIDS",
+        "AIDS-related opportunistic infections and tumors",
+        "Amyloidosis"
+      ],
       "sources_used": [
         "robbins-basic-pathology-10e",
-        "rcpa-bps-syllabus-2026-oct-2025"
+        "robbins-cotran-pathologic-basis-of-disease-10e",
+        "rcpa-bps-syllabus-2026-oct-2025",
+        "bps-2026-mock-exam-question-set"
       ],
       "recommended_asset_types": [
         "study_notes_markdown",
         "exam_prep_questions_json",
         "flashcards_json"
       ],
-      "assets": []
+      "assets": [
+        {
+          "asset_type": "study_notes_markdown",
+          "title": "05 - Diseases of the Immune System - Study Notes",
+          "path": "Generated Study Notes/05 - Diseases of the Immune System - Study Notes.md",
+          "status": "complete"
+        },
+        {
+          "asset_type": "exam_prep_questions_json",
+          "title": "05 - Diseases of the Immune System - Exam Prep Questions",
+          "path": "Generated Study Notes/05 - Diseases of the Immune System - Exam Prep Questions.json",
+          "status": "complete",
+          "question_count": 30,
+          "answer_key_included": true,
+          "description": "Single-choice JSON question set with keyed choices, keyed answers, and brief source-grounded rationales.",
+          "answer_key_format": "correct_choice_key_with_reason",
+          "choice_key_format": "uppercase_letters",
+          "choice_order_randomizable": true,
+          "page_reference_style": "printed_book_page_numbers"
+        },
+        {
+          "asset_type": "flashcards_json",
+          "title": "05 - Diseases of the Immune System - Flashcards",
+          "path": "Generated Study Notes/05 - Diseases of the Immune System - Flashcards.json",
+          "status": "complete",
+          "description": "Structured Chapter 5 flashcard deck with bucket metadata, tags, and printed-page references for app ingestion.",
+          "card_count": 56,
+          "deck_name": "Pathology::Chapter 05 - Diseases of the Immune System",
+          "flashcard_format": "basic",
+          "tags": [
+            "pathology",
+            "chapter-05",
+            "active-recall",
+            "spaced-repetition"
+          ]
+        }
+      ]
     },
     {
       "chapter_number": 6,
       "chapter_code": "06",
       "title": "Neoplasia",
       "slug": "06-neoplasia",
-      "status": "planned",
+      "status": "complete",
+      "website": {
+        "nav_label": "Chapter 6",
+        "card_title": "Neoplasia",
+        "card_description": "Tumor nomenclature, hallmarks of cancer, carcinogens, immune escape, metastasis, and laboratory diagnosis."
+      },
+      "description": "Third-party generated Chapter 6 revision assets based primarily on Robbins Basic Pathology, 10th Edition, Chapter 6, with RCPA syllabus framing and mock-exam style alignment.",
+      "topics": [
+        "Nomenclature",
+        "Benign and malignant neoplasms",
+        "Differentiation and anaplasia",
+        "Dysplasia and carcinoma in situ",
+        "Epidemiology of cancer",
+        "Cancer genes",
+        "Oncogenes and tumor suppressor genes",
+        "Warburg effect and oncometabolism",
+        "Apoptosis and telomerase",
+        "Angiogenesis, invasion, and metastasis",
+        "Immune surveillance and immune evasion",
+        "Genomic instability and tumor-promoting inflammation",
+        "Chemical, radiation, and microbial carcinogenesis",
+        "Paraneoplastic syndromes",
+        "Grading, staging, and laboratory diagnosis"
+      ],
       "sources_used": [
         "robbins-basic-pathology-10e",
-        "rcpa-bps-syllabus-2026-oct-2025"
+        "robbins-cotran-pathologic-basis-of-disease-10e",
+        "rcpa-bps-syllabus-2026-oct-2025",
+        "bps-2026-mock-exam-question-set"
       ],
       "recommended_asset_types": [
         "study_notes_markdown",
         "exam_prep_questions_json",
         "flashcards_json"
       ],
-      "assets": []
+      "assets": [
+        {
+          "asset_type": "study_notes_markdown",
+          "title": "06 - Neoplasia - Study Notes",
+          "path": "Generated Study Notes/06 - Neoplasia - Study Notes.md",
+          "status": "complete"
+        },
+        {
+          "asset_type": "exam_prep_questions_json",
+          "title": "06 - Neoplasia - Exam Prep Questions",
+          "path": "Generated Study Notes/06 - Neoplasia - Exam Prep Questions.json",
+          "status": "complete",
+          "question_count": 30,
+          "answer_key_included": true,
+          "description": "Single-choice JSON question set with keyed choices, keyed answers, and brief source-grounded rationales.",
+          "answer_key_format": "correct_choice_key_with_reason",
+          "choice_key_format": "uppercase_letters",
+          "choice_order_randomizable": true,
+          "page_reference_style": "printed_book_page_numbers"
+        },
+        {
+          "asset_type": "flashcards_json",
+          "title": "06 - Neoplasia - Flashcards",
+          "path": "Generated Study Notes/06 - Neoplasia - Flashcards.json",
+          "status": "complete",
+          "description": "Structured Chapter 6 flashcard deck with bucket metadata, tags, and printed-page references for app ingestion.",
+          "card_count": 50,
+          "deck_name": "Pathology::Chapter 06 - Neoplasia",
+          "flashcard_format": "basic",
+          "tags": [
+            "pathology",
+            "chapter-06",
+            "active-recall",
+            "spaced-repetition"
+          ]
+        }
+      ]
     },
     {
       "chapter_number": 7,

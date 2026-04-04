@@ -1,0 +1,615 @@
+{
+  "schema_version": "1.0",
+  "resource_type": "flashcard_set",
+  "title": "03 - Inflammation and Repair - Flashcards",
+  "slug": "03-inflammation-and-repair-flashcards",
+  "chapter": {
+    "number": 3,
+    "code": "03",
+    "title": "Inflammation and Repair",
+    "status": "complete"
+  },
+  "description": "Third-party generated Chapter 3 flashcards optimized for active recall, spaced repetition, and exam revision. The deck prioritizes inflammatory mechanisms, mediator discriminators, chronic inflammatory patterns, and wound-healing principles from Robbins Basic Pathology, 10th Edition, Chapter 3.",
+  "disclaimer": {
+    "summary": "Third-party generated study aid.",
+    "endorsement_notice": "These flashcards are third-party generated study materials. They are not produced by, reviewed by, approved by, endorsed by, or affiliated with the textbook authors, Elsevier, the Royal College of Pathologists of Australasia, or any other authority, institution, publisher, or examining body.",
+    "use_note": "Use these flashcards as revision support alongside the original source material."
+  },
+  "source_notes": [
+    {
+      "source_type": "primary_textbook_chapter",
+      "source_title": "Robbins Basic Pathology, 10th Edition, Chapter 3: Inflammation and Repair",
+      "publisher": "Elsevier",
+      "edition": "10th Edition"
+    },
+    {
+      "source_type": "course_alignment_reference",
+      "source_title": "RCPA - Basic Pathological Sciences Syllabus 2026 - October 2025",
+      "organization": "Royal College of Pathologists of Australasia",
+      "reference_note": "Used for topic emphasis, exam framing, and section coverage."
+    },
+    {
+      "source_type": "derived_revision_sources",
+      "source_title": "Chapter 3 Study Notes and Exam Prep Questions created from the approved Chapter 3 source set",
+      "reference_note": "Used to compress Chapter 3 into single-fact active-recall prompts."
+    }
+  ],
+  "deck": {
+    "deck_name": "Pathology::Chapter 03 - Inflammation and Repair",
+    "deck_slug": "pathology-chapter-03-inflammation-and-repair",
+    "flashcard_format": "basic",
+    "card_count": 50,
+    "primary_method": "active_recall_and_spaced_repetition",
+    "recommended_review_schedule": [
+      "Day 1",
+      "Day 2",
+      "Day 4",
+      "Day 7"
+    ],
+    "topic_buckets": [
+      "Overview, causes, and recognition",
+      "Acute inflammation: vascular reactions",
+      "Acute inflammation: leukocyte recruitment and clearance",
+      "Mediators of inflammation",
+      "Morphologic patterns and outcomes",
+      "Chronic inflammation",
+      "Systemic effects of inflammation",
+      "Tissue repair and fibrosis"
+    ],
+    "design_note": "Cards are kept mostly single-fact and under one question per card for rapid recall.",
+    "page_reference_style": "printed_book_page_numbers",
+    "page_reference_note": "The source_page_refs arrays use the printed book page number from Robbins Basic Pathology 10th Edition, not the sequential PDF page position. Chapter 3 occupies book pages 57-96."
+  },
+  "cards": [
+    {
+      "number": 1,
+      "card_id": "ch3-fc001",
+      "type": "basic",
+      "bucket": "Overview, causes, and recognition",
+      "topic": "Five Rs",
+      "front": "What are the five sequential steps of an inflammatory reaction?",
+      "back": "Recognition, recruitment, removal, regulation, and repair.",
+      "source_page_refs": [57, 58],
+      "tags": ["pathology", "chapter-03", "overview-and-recognition", "five-rs"]
+    },
+    {
+      "number": 2,
+      "card_id": "ch3-fc002",
+      "type": "basic",
+      "bucket": "Overview, causes, and recognition",
+      "topic": "Major causes",
+      "front": "What are the four major trigger categories for inflammation in this chapter?",
+      "back": "Infections, tissue necrosis, foreign bodies, and immune reactions.",
+      "source_page_refs": [59],
+      "tags": ["pathology", "chapter-03", "overview-and-recognition", "causes-of-inflammation"]
+    },
+    {
+      "number": 3,
+      "card_id": "ch3-fc003",
+      "type": "basic",
+      "bucket": "Overview, causes, and recognition",
+      "topic": "Acute versus chronic cells",
+      "front": "Which leukocyte population dominates acute inflammation, and which dominates chronic inflammation?",
+      "back": "Neutrophils dominate acute inflammation, whereas macrophages with lymphocytes and plasma cells dominate chronic inflammation.",
+      "source_page_refs": [57, 58, 81],
+      "tags": ["pathology", "chapter-03", "overview-and-recognition", "acute-vs-chronic"]
+    },
+    {
+      "number": 4,
+      "card_id": "ch3-fc004",
+      "type": "basic",
+      "bucket": "Overview, causes, and recognition",
+      "topic": "TLRs",
+      "front": "What do Toll-like receptors recognize?",
+      "back": "They recognize pathogen-associated molecular patterns shared by many microbes.",
+      "source_page_refs": [59],
+      "tags": ["pathology", "chapter-03", "overview-and-recognition", "tlr"]
+    },
+    {
+      "number": 5,
+      "card_id": "ch3-fc005",
+      "type": "basic",
+      "bucket": "Overview, causes, and recognition",
+      "topic": "Inflammasome trigger",
+      "front": "What is the key inflammatory consequence of inflammasome activation by DAMPs?",
+      "back": "It drives IL-1 production and leukocyte recruitment.",
+      "source_page_refs": [60],
+      "tags": ["pathology", "chapter-03", "overview-and-recognition", "inflammasome"]
+    },
+    {
+      "number": 6,
+      "card_id": "ch3-fc006",
+      "type": "basic",
+      "bucket": "Acute inflammation: vascular reactions",
+      "topic": "Major components",
+      "front": "What are the three major components of acute inflammation?",
+      "back": "Vasodilation, increased microvascular permeability, and leukocyte emigration with activation at the site of injury.",
+      "source_page_refs": [60],
+      "tags": ["pathology", "chapter-03", "vascular-reactions", "acute-inflammation"]
+    },
+    {
+      "number": 7,
+      "card_id": "ch3-fc007",
+      "type": "basic",
+      "bucket": "Acute inflammation: vascular reactions",
+      "topic": "Exudate versus transudate",
+      "front": "What is the key difference between an exudate and a transudate?",
+      "back": "An exudate is protein-rich and inflammation-driven, whereas a transudate is protein-poor and results from hydrostatic or osmotic imbalance without increased permeability.",
+      "source_page_refs": [60, 61],
+      "tags": ["pathology", "chapter-03", "vascular-reactions", "exudate-transudate"]
+    },
+    {
+      "number": 8,
+      "card_id": "ch3-fc008",
+      "type": "basic",
+      "bucket": "Acute inflammation: vascular reactions",
+      "topic": "Immediate transient response",
+      "front": "What is the most common mechanism of increased vascular permeability in acute inflammation?",
+      "back": "Endothelial cell retraction creating interendothelial gaps in postcapillary venules.",
+      "source_page_refs": [61],
+      "tags": ["pathology", "chapter-03", "vascular-reactions", "vascular-permeability"]
+    },
+    {
+      "number": 9,
+      "card_id": "ch3-fc009",
+      "type": "basic",
+      "bucket": "Acute inflammation: vascular reactions",
+      "topic": "Lymphatic involvement",
+      "front": "What do lymphangitis and lymphadenitis indicate during acute inflammation?",
+      "back": "They indicate secondary inflammation of lymphatic vessels and draining lymph nodes as they handle increased edema fluid, debris, and microbes.",
+      "source_page_refs": [62],
+      "tags": ["pathology", "chapter-03", "vascular-reactions", "lymphatics"]
+    },
+    {
+      "number": 10,
+      "card_id": "ch3-fc010",
+      "type": "basic",
+      "bucket": "Acute inflammation: leukocyte recruitment and clearance",
+      "topic": "Margination",
+      "front": "What is margination?",
+      "back": "It is the redistribution of leukocytes from the central blood column toward the endothelial surface as stasis develops.",
+      "source_page_refs": [62],
+      "tags": ["pathology", "chapter-03", "leukocyte-recruitment", "margination"]
+    },
+    {
+      "number": 11,
+      "card_id": "ch3-fc011",
+      "type": "basic",
+      "bucket": "Acute inflammation: leukocyte recruitment and clearance",
+      "topic": "Rolling",
+      "front": "Which adhesion-molecule family mediates leukocyte rolling?",
+      "back": "Selectins mediate the initial weak rolling interactions between leukocytes and activated endothelium.",
+      "source_page_refs": [63, 64],
+      "tags": ["pathology", "chapter-03", "leukocyte-recruitment", "selectins"]
+    },
+    {
+      "number": 12,
+      "card_id": "ch3-fc012",
+      "type": "basic",
+      "bucket": "Acute inflammation: leukocyte recruitment and clearance",
+      "topic": "Firm adhesion",
+      "front": "Which receptor family mediates firm leukocyte adhesion after chemokine activation?",
+      "back": "Integrins mediate firm adhesion once chemokines convert them into a high-affinity state.",
+      "source_page_refs": [63, 64],
+      "tags": ["pathology", "chapter-03", "leukocyte-recruitment", "integrins"]
+    },
+    {
+      "number": 13,
+      "card_id": "ch3-fc013",
+      "type": "basic",
+      "bucket": "Acute inflammation: leukocyte recruitment and clearance",
+      "topic": "Transmigration",
+      "front": "What is the main role of PECAM-1 (CD31) in inflammation?",
+      "back": "It mediates leukocyte passage between endothelial cells during transmigration.",
+      "source_page_refs": [65],
+      "tags": ["pathology", "chapter-03", "leukocyte-recruitment", "pecam-1"]
+    },
+    {
+      "number": 14,
+      "card_id": "ch3-fc014",
+      "type": "basic",
+      "bucket": "Acute inflammation: leukocyte recruitment and clearance",
+      "topic": "Early infiltrate",
+      "front": "Which leukocyte type predominates in the first 6-24 hours of most acute inflammatory reactions?",
+      "back": "Neutrophils.",
+      "source_page_refs": [65],
+      "tags": ["pathology", "chapter-03", "leukocyte-recruitment", "neutrophils"]
+    },
+    {
+      "number": 15,
+      "card_id": "ch3-fc015",
+      "type": "basic",
+      "bucket": "Acute inflammation: leukocyte recruitment and clearance",
+      "topic": "Late infiltrate",
+      "front": "Which cells usually dominate the inflammatory infiltrate after 24-48 hours?",
+      "back": "Monocyte-derived macrophages.",
+      "source_page_refs": [65],
+      "tags": ["pathology", "chapter-03", "leukocyte-recruitment", "macrophages"]
+    },
+    {
+      "number": 16,
+      "card_id": "ch3-fc016",
+      "type": "basic",
+      "bucket": "Acute inflammation: leukocyte recruitment and clearance",
+      "topic": "Phagocytosis sequence",
+      "front": "What are the three major steps of phagocytosis?",
+      "back": "Recognition and attachment, engulfment into a phagosome, and killing plus degradation in a phagolysosome.",
+      "source_page_refs": [67],
+      "tags": ["pathology", "chapter-03", "leukocyte-recruitment", "phagocytosis"]
+    },
+    {
+      "number": 17,
+      "card_id": "ch3-fc017",
+      "type": "basic",
+      "bucket": "Mediators of inflammation",
+      "topic": "Myeloperoxidase",
+      "front": "What is the key microbicidal role of myeloperoxidase in neutrophils?",
+      "back": "It converts hydrogen peroxide into hypochlorite inside the phagolysosome.",
+      "source_page_refs": [67, 68],
+      "tags": ["pathology", "chapter-03", "mediators", "myeloperoxidase"]
+    },
+    {
+      "number": 18,
+      "card_id": "ch3-fc018",
+      "type": "basic",
+      "bucket": "Mediators of inflammation",
+      "topic": "NETs",
+      "front": "What are neutrophil extracellular traps (NETs)?",
+      "back": "They are extracellular chromatin meshes that trap microbes and concentrate antimicrobial proteins, but their formation kills the neutrophil.",
+      "source_page_refs": [69],
+      "tags": ["pathology", "chapter-03", "mediators", "nets"]
+    },
+    {
+      "number": 19,
+      "card_id": "ch3-fc019",
+      "type": "basic",
+      "bucket": "Mediators of inflammation",
+      "topic": "Histamine",
+      "front": "What is the major early vascular action of histamine in inflammation?",
+      "back": "It dilates arterioles and increases venular permeability, making it the principal mediator of the immediate transient phase of vascular leakage.",
+      "source_page_refs": [71],
+      "tags": ["pathology", "chapter-03", "mediators", "histamine"]
+    },
+    {
+      "number": 20,
+      "card_id": "ch3-fc020",
+      "type": "basic",
+      "bucket": "Mediators of inflammation",
+      "topic": "PGE2",
+      "front": "What two classic systemic symptoms of inflammation are strongly linked to PGE2?",
+      "back": "Pain and fever.",
+      "source_page_refs": [72, 73],
+      "tags": ["pathology", "chapter-03", "mediators", "pge2"]
+    },
+    {
+      "number": 21,
+      "card_id": "ch3-fc021",
+      "type": "basic",
+      "bucket": "Mediators of inflammation",
+      "topic": "TXA2 versus PGI2",
+      "front": "How does TXA2 differ functionally from PGI2?",
+      "back": "TXA2 promotes vasoconstriction and platelet aggregation, whereas PGI2 promotes vasodilation and inhibits platelet aggregation.",
+      "source_page_refs": [72, 73],
+      "tags": ["pathology", "chapter-03", "mediators", "thromboxane-prostacyclin"]
+    },
+    {
+      "number": 22,
+      "card_id": "ch3-fc022",
+      "type": "basic",
+      "bucket": "Mediators of inflammation",
+      "topic": "LTB4",
+      "front": "What is the main inflammatory action of leukotriene B4?",
+      "back": "It is a potent chemotactic and activating signal for neutrophils.",
+      "source_page_refs": [73],
+      "tags": ["pathology", "chapter-03", "mediators", "ltb4"]
+    },
+    {
+      "number": 23,
+      "card_id": "ch3-fc023",
+      "type": "basic",
+      "bucket": "Mediators of inflammation",
+      "topic": "Cysteinyl leukotrienes",
+      "front": "What do LTC4, LTD4, and LTE4 mainly do?",
+      "back": "They cause vasoconstriction, bronchospasm, and increased vascular permeability.",
+      "source_page_refs": [73],
+      "tags": ["pathology", "chapter-03", "mediators", "cysteinyl-leukotrienes"]
+    },
+    {
+      "number": 24,
+      "card_id": "ch3-fc024",
+      "type": "basic",
+      "bucket": "Mediators of inflammation",
+      "topic": "Lipoxins",
+      "front": "What is the main effect of lipoxins on inflammation?",
+      "back": "They suppress inflammation by inhibiting neutrophil chemotaxis and adhesion.",
+      "source_page_refs": [73],
+      "tags": ["pathology", "chapter-03", "mediators", "lipoxins"]
+    },
+    {
+      "number": 25,
+      "card_id": "ch3-fc025",
+      "type": "basic",
+      "bucket": "Mediators of inflammation",
+      "topic": "TNF and IL-1",
+      "front": "What is the key local action of TNF and IL-1 in acute inflammation?",
+      "back": "They activate endothelium to increase adhesion-molecule expression and promote leukocyte recruitment.",
+      "source_page_refs": [73, 74],
+      "tags": ["pathology", "chapter-03", "mediators", "tnf-il1"]
+    },
+    {
+      "number": 26,
+      "card_id": "ch3-fc026",
+      "type": "basic",
+      "bucket": "Mediators of inflammation",
+      "topic": "C3b",
+      "front": "What is the main immune function of C3b in inflammation?",
+      "back": "It acts as an opsonin that promotes phagocytosis.",
+      "source_page_refs": [76],
+      "tags": ["pathology", "chapter-03", "mediators", "c3b"]
+    },
+    {
+      "number": 27,
+      "card_id": "ch3-fc027",
+      "type": "basic",
+      "bucket": "Mediators of inflammation",
+      "topic": "C5a",
+      "front": "What is the most testable inflammatory action of C5a?",
+      "back": "It is a powerful chemotactic and activating factor for leukocytes and also functions as an anaphylatoxin.",
+      "source_page_refs": [75, 76],
+      "tags": ["pathology", "chapter-03", "mediators", "c5a"]
+    },
+    {
+      "number": 28,
+      "card_id": "ch3-fc028",
+      "type": "basic",
+      "bucket": "Mediators of inflammation",
+      "topic": "Bradykinin",
+      "front": "What are the signature inflammatory actions of bradykinin?",
+      "back": "It increases vascular permeability, causes vasodilation, and contributes to pain.",
+      "source_page_refs": [77],
+      "tags": ["pathology", "chapter-03", "mediators", "bradykinin"]
+    },
+    {
+      "number": 29,
+      "card_id": "ch3-fc029",
+      "type": "basic",
+      "bucket": "Morphologic patterns and outcomes",
+      "topic": "Serous inflammation",
+      "front": "Which morphologic pattern of inflammation typically produces a blister with cell-poor fluid?",
+      "back": "Serous inflammation.",
+      "source_page_refs": [78],
+      "tags": ["pathology", "chapter-03", "patterns-and-outcomes", "serous-inflammation"]
+    },
+    {
+      "number": 30,
+      "card_id": "ch3-fc030",
+      "type": "basic",
+      "bucket": "Morphologic patterns and outcomes",
+      "topic": "Fibrinous inflammation",
+      "front": "What defines fibrinous inflammation?",
+      "back": "Large vascular leaks or local procoagulant stimuli allow fibrinogen to escape and form extracellular fibrin-rich exudate.",
+      "source_page_refs": [78],
+      "tags": ["pathology", "chapter-03", "patterns-and-outcomes", "fibrinous-inflammation"]
+    },
+    {
+      "number": 31,
+      "card_id": "ch3-fc031",
+      "type": "basic",
+      "bucket": "Morphologic patterns and outcomes",
+      "topic": "Purulent inflammation",
+      "front": "What defines purulent inflammation?",
+      "back": "It is the production of pus consisting of neutrophils, liquefied necrotic debris, and edema fluid.",
+      "source_page_refs": [78, 79],
+      "tags": ["pathology", "chapter-03", "patterns-and-outcomes", "purulent-inflammation"]
+    },
+    {
+      "number": 32,
+      "card_id": "ch3-fc032",
+      "type": "basic",
+      "bucket": "Morphologic patterns and outcomes",
+      "topic": "Outcomes of acute inflammation",
+      "front": "What are the three broad outcomes of acute inflammation?",
+      "back": "Complete resolution, healing by fibrosis, or progression to chronic inflammation.",
+      "source_page_refs": [79, 80],
+      "tags": ["pathology", "chapter-03", "patterns-and-outcomes", "outcomes"]
+    },
+    {
+      "number": 33,
+      "card_id": "ch3-fc033",
+      "type": "basic",
+      "bucket": "Chronic inflammation",
+      "topic": "Hallmarks",
+      "front": "What are the three morphologic hallmarks of chronic inflammation?",
+      "back": "Mononuclear cell infiltration, tissue destruction, and attempts at healing by angiogenesis and fibrosis.",
+      "source_page_refs": [81],
+      "tags": ["pathology", "chapter-03", "chronic-inflammation", "hallmarks"]
+    },
+    {
+      "number": 34,
+      "card_id": "ch3-fc034",
+      "type": "basic",
+      "bucket": "Chronic inflammation",
+      "topic": "Major causes",
+      "front": "What are the major causes of chronic inflammation listed in this chapter?",
+      "back": "Persistent infections, hypersensitivity diseases, and prolonged exposure to toxic exogenous or endogenous substances.",
+      "source_page_refs": [81],
+      "tags": ["pathology", "chapter-03", "chronic-inflammation", "causes"]
+    },
+    {
+      "number": 35,
+      "card_id": "ch3-fc035",
+      "type": "basic",
+      "bucket": "Chronic inflammation",
+      "topic": "M1 macrophages",
+      "front": "What is the core function of classically activated M1 macrophages?",
+      "back": "They kill microbes and drive inflammation through ROS, NO, lysosomal enzymes, and proinflammatory cytokines.",
+      "source_page_refs": [82, 83],
+      "tags": ["pathology", "chapter-03", "chronic-inflammation", "m1-macrophage"]
+    },
+    {
+      "number": 36,
+      "card_id": "ch3-fc036",
+      "type": "basic",
+      "bucket": "Chronic inflammation",
+      "topic": "M2 macrophages",
+      "front": "What is the core function of alternatively activated M2 macrophages?",
+      "back": "They promote tissue repair by stimulating angiogenesis, fibroblast activation, and collagen synthesis.",
+      "source_page_refs": [83],
+      "tags": ["pathology", "chapter-03", "chronic-inflammation", "m2-macrophage"]
+    },
+    {
+      "number": 37,
+      "card_id": "ch3-fc037",
+      "type": "basic",
+      "bucket": "Chronic inflammation",
+      "topic": "TH17 cells",
+      "front": "What is the key inflammatory effect of TH17 cells?",
+      "back": "They induce chemokines that recruit neutrophils and monocytes.",
+      "source_page_refs": [75, 83, 84],
+      "tags": ["pathology", "chapter-03", "chronic-inflammation", "th17"]
+    },
+    {
+      "number": 38,
+      "card_id": "ch3-fc038",
+      "type": "basic",
+      "bucket": "Chronic inflammation",
+      "topic": "Eosinophils",
+      "front": "Which eosinophil granule product is toxic to parasites but can also damage host epithelium?",
+      "back": "Major basic protein.",
+      "source_page_refs": [84],
+      "tags": ["pathology", "chapter-03", "chronic-inflammation", "eosinophils"]
+    },
+    {
+      "number": 39,
+      "card_id": "ch3-fc039",
+      "type": "basic",
+      "bucket": "Chronic inflammation",
+      "topic": "Foreign body granuloma",
+      "front": "What type of granuloma typically forms around inert material such as suture or talc?",
+      "back": "A foreign body granuloma.",
+      "source_page_refs": [85],
+      "tags": ["pathology", "chapter-03", "chronic-inflammation", "foreign-body-granuloma"]
+    },
+    {
+      "number": 40,
+      "card_id": "ch3-fc040",
+      "type": "basic",
+      "bucket": "Chronic inflammation",
+      "topic": "Granuloma warning",
+      "front": "Which disease should always be excluded when granulomas are identified?",
+      "back": "Tuberculosis.",
+      "source_page_refs": [85, 86],
+      "tags": ["pathology", "chapter-03", "chronic-inflammation", "tuberculosis"]
+    },
+    {
+      "number": 41,
+      "card_id": "ch3-fc041",
+      "type": "basic",
+      "bucket": "Systemic effects of inflammation",
+      "topic": "Fever",
+      "front": "What is the immediate biochemical mechanism of fever in the acute-phase response?",
+      "back": "Cytokines induce hypothalamic prostaglandin synthesis, especially PGE2, which raises the temperature set point.",
+      "source_page_refs": [86],
+      "tags": ["pathology", "chapter-03", "systemic-effects", "fever"]
+    },
+    {
+      "number": 42,
+      "card_id": "ch3-fc042",
+      "type": "basic",
+      "bucket": "Systemic effects of inflammation",
+      "topic": "ESR",
+      "front": "Which acute-phase protein most directly increases erythrocyte sedimentation rate?",
+      "back": "Fibrinogen, because it promotes rouleaux formation.",
+      "source_page_refs": [86, 87],
+      "tags": ["pathology", "chapter-03", "systemic-effects", "esr"]
+    },
+    {
+      "number": 43,
+      "card_id": "ch3-fc043",
+      "type": "basic",
+      "bucket": "Systemic effects of inflammation",
+      "topic": "Left shift",
+      "front": "What does a left shift mean in the context of inflammatory leukocytosis?",
+      "back": "It means there are increased immature neutrophil forms in the blood.",
+      "source_page_refs": [87],
+      "tags": ["pathology", "chapter-03", "systemic-effects", "left-shift"]
+    },
+    {
+      "number": 44,
+      "card_id": "ch3-fc044",
+      "type": "basic",
+      "bucket": "Systemic effects of inflammation",
+      "topic": "Septic shock",
+      "front": "What drives septic shock in severe bacterial infection according to this chapter?",
+      "back": "Very high circulating levels of cytokines, especially TNF and IL-1, producing hypotension, coagulation abnormalities, and metabolic disturbances.",
+      "source_page_refs": [87],
+      "tags": ["pathology", "chapter-03", "systemic-effects", "septic-shock"]
+    },
+    {
+      "number": 45,
+      "card_id": "ch3-fc045",
+      "type": "basic",
+      "bucket": "Tissue repair and fibrosis",
+      "topic": "Two repair mechanisms",
+      "front": "What are the two main mechanisms of tissue repair?",
+      "back": "Regeneration and scar formation by connective tissue deposition.",
+      "source_page_refs": [87, 88],
+      "tags": ["pathology", "chapter-03", "tissue-repair", "repair-mechanisms"]
+    },
+    {
+      "number": 46,
+      "card_id": "ch3-fc046",
+      "type": "basic",
+      "bucket": "Tissue repair and fibrosis",
+      "topic": "Permanent tissues",
+      "front": "Which cell types are classic permanent tissues that heal mainly by scar formation?",
+      "back": "Neurons and cardiac muscle cells.",
+      "source_page_refs": [88],
+      "tags": ["pathology", "chapter-03", "tissue-repair", "permanent-tissues"]
+    },
+    {
+      "number": 47,
+      "card_id": "ch3-fc047",
+      "type": "basic",
+      "bucket": "Tissue repair and fibrosis",
+      "topic": "Liver regeneration",
+      "front": "How is liver mass mainly restored after partial hepatectomy?",
+      "back": "By proliferation of residual hepatocytes driven by cytokines and growth factors such as IL-6 and HGF.",
+      "source_page_refs": [89],
+      "tags": ["pathology", "chapter-03", "tissue-repair", "liver-regeneration"]
+    },
+    {
+      "number": 48,
+      "card_id": "ch3-fc048",
+      "type": "basic",
+      "bucket": "Tissue repair and fibrosis",
+      "topic": "Angiogenesis",
+      "front": "What is the key growth factor that drives angiogenesis in wound healing?",
+      "back": "VEGF.",
+      "source_page_refs": [90, 91],
+      "tags": ["pathology", "chapter-03", "tissue-repair", "vegf"]
+    },
+    {
+      "number": 49,
+      "card_id": "ch3-fc049",
+      "type": "basic",
+      "bucket": "Tissue repair and fibrosis",
+      "topic": "TGF-beta",
+      "front": "What is the most important fibrogenic cytokine in tissue repair and fibrosis?",
+      "back": "TGF-beta.",
+      "source_page_refs": [91, 94],
+      "tags": ["pathology", "chapter-03", "tissue-repair", "tgf-beta"]
+    },
+    {
+      "number": 50,
+      "card_id": "ch3-fc050",
+      "type": "basic",
+      "bucket": "Tissue repair and fibrosis",
+      "topic": "Keloid versus hypertrophic scar",
+      "front": "How does a keloid differ from a hypertrophic scar?",
+      "back": "A keloid extends beyond the boundaries of the original wound and does not regress, whereas a hypertrophic scar stays within the wound and often regresses over time.",
+      "source_page_refs": [93, 94],
+      "tags": ["pathology", "chapter-03", "tissue-repair", "keloid"]
+    }
+  ]
+}

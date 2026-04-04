@@ -1,0 +1,1024 @@
+{
+  "schema_version": "1.2",
+  "resource_type": "exam_prep_question_set",
+  "title": "06 - Neoplasia - Exam Prep Questions",
+  "slug": "06-neoplasia-exam-prep-questions",
+  "chapter": {
+    "number": 6,
+    "code": "06",
+    "title": "Neoplasia",
+    "status": "complete"
+  },
+  "description": "Third-party generated single-choice exam-prep questions for Chapter 6. The set is aligned primarily to the Chapter 6 textbook content and shaped to reflect the style, structure, and difficulty distribution of the RCPA Basic Pathological Sciences mock exam format. Choices are keyed so answers remain stable if an application randomizes display order.",
+  "disclaimer": {
+    "summary": "Third-party generated study aid.",
+    "endorsement_notice": "These questions are third-party generated study materials. They are not produced by, reviewed by, approved by, endorsed by, or affiliated with the textbook authors, Elsevier, the Royal College of Pathologists of Australasia, or any other authority, institution, publisher, or examining body.",
+    "answer_key_note": "Answers are included as stable choice keys with brief source-grounded rationales for study and review purposes."
+  },
+  "source_notes": [
+    {
+      "source_type": "primary_textbook_chapter",
+      "source_title": "Robbins Basic Pathology, 10th Edition, Chapter 6: Neoplasia",
+      "publisher": "Elsevier",
+      "edition": "10th Edition"
+    },
+    {
+      "source_type": "course_alignment_reference",
+      "source_title": "RCPA - Basic Pathological Sciences Syllabus 2026 - October 2025",
+      "organization": "Royal College of Pathologists of Australasia",
+      "reference_note": "Used for topic emphasis and exam framing."
+    },
+    {
+      "source_type": "style_reference",
+      "source_title": "BPS 2026 Mock Exam Question Set",
+      "organization": "Royal College of Pathologists of Australasia",
+      "reference_note": "Used as a style, structure, and difficulty reference."
+    }
+  ],
+  "format": {
+    "question_count": 30,
+    "question_type": "single_choice",
+    "choices_distribution": {
+      "4": 5,
+      "5": 25
+    },
+    "answer_key_included": true,
+    "answer_format": "correct_choice_key_with_reason",
+    "choice_keys_included": true,
+    "choice_key_format": "uppercase_letters",
+    "choice_order_randomizable": true,
+    "page_reference_style": "printed_book_page_numbers"
+  },
+  "questions": [
+    {
+      "number": 1,
+      "question_id": "ch6-q01",
+      "type": "single_choice",
+      "question": "A malignant neoplasm is composed of cells showing adipocytic differentiation and invasive growth.\n\nWhat is the MOST appropriate name for this tumor?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Adenocarcinoma"
+        },
+        {
+          "key": "B",
+          "text": "Chondrosarcoma"
+        },
+        {
+          "key": "C",
+          "text": "Fibroma"
+        },
+        {
+          "key": "D",
+          "text": "Liposarcoma"
+        },
+        {
+          "key": "E",
+          "text": "Papilloma"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "Malignant mesenchymal tumors are named as sarcomas according to the line of differentiation; a malignant adipocytic tumor is a liposarcoma.",
+        "source_page_refs": [190]
+      }
+    },
+    {
+      "number": 2,
+      "question_id": "ch6-q02",
+      "type": "single_choice",
+      "question": "A small nodule of histologically normal pancreatic tissue is found in the wall of the duodenum.\n\nWhat term BEST describes this lesion?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Choristoma"
+        },
+        {
+          "key": "B",
+          "text": "Hamartoma"
+        },
+        {
+          "key": "C",
+          "text": "Papilloma"
+        },
+        {
+          "key": "D",
+          "text": "Teratoma"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "A choristoma is a congenital heterotopic rest of otherwise normal tissue located at an abnormal site.",
+        "source_page_refs": [191]
+      }
+    },
+    {
+      "number": 3,
+      "question_id": "ch6-q03",
+      "type": "single_choice",
+      "question": "A cervical biopsy shows full-thickness epithelial atypia and loss of maturation, but the basement membrane remains intact.\n\nWhat is the MOST accurate diagnosis?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Carcinoma in situ"
+        },
+        {
+          "key": "B",
+          "text": "Hamartoma"
+        },
+        {
+          "key": "C",
+          "text": "Invasive carcinoma"
+        },
+        {
+          "key": "D",
+          "text": "Metaplasia"
+        },
+        {
+          "key": "E",
+          "text": "Reactive atypia"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Full-thickness dysplasia confined above an intact basement membrane is carcinoma in situ; invasion requires breach of the basement membrane.",
+        "source_page_refs": [194]
+      }
+    },
+    {
+      "number": 4,
+      "question_id": "ch6-q04",
+      "type": "single_choice",
+      "question": "Which of the following is the MOST reliable indicator that a neoplasm is malignant rather than benign?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Encapsulation"
+        },
+        {
+          "key": "B",
+          "text": "Metastasis"
+        },
+        {
+          "key": "C",
+          "text": "Slow growth"
+        },
+        {
+          "key": "D",
+          "text": "Uniform nuclei"
+        },
+        {
+          "key": "E",
+          "text": "Well-circumscribed borders"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Metastasis is a defining property of malignant tumors and does not occur in benign neoplasms.",
+        "source_page_refs": [192, 196]
+      }
+    },
+    {
+      "number": 5,
+      "question_id": "ch6-q05",
+      "type": "single_choice",
+      "question": "Breast cancer mortality is much higher in the United States and Europe than in Japan, but rates move toward the host country after migration.\n\nWhat is the BEST interpretation of this observation?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Cancer incidence is determined mainly by immutable racial genetics"
+        },
+        {
+          "key": "B",
+          "text": "Environmental exposures are major determinants of many common cancers"
+        },
+        {
+          "key": "C",
+          "text": "All breast cancers are caused by inherited BRCA mutations"
+        },
+        {
+          "key": "D",
+          "text": "Cancer registries systematically overcount cases in Western countries"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Geographic variation and migration studies strongly support environmental exposure as a dominant determinant of many common cancers.",
+        "source_page_refs": [197]
+      }
+    },
+    {
+      "number": 6,
+      "question_id": "ch6-q06",
+      "type": "single_choice",
+      "question": "Why does cancer incidence generally rise with advancing age?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Aging eliminates all growth suppressor pathways"
+        },
+        {
+          "key": "B",
+          "text": "Most cancers are congenital and only become detectable late in life"
+        },
+        {
+          "key": "C",
+          "text": "Somatic mutations accumulate over time and immune competence declines"
+        },
+        {
+          "key": "D",
+          "text": "Older patients are universally exposed to oncogenic viruses"
+        },
+        {
+          "key": "E",
+          "text": "Cell division ceases completely in youth and resumes in old age"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Increasing age raises cancer risk mainly through mutation accumulation and, secondarily, reduced immune competence.",
+        "source_page_refs": [199, 200]
+      }
+    },
+    {
+      "number": 7,
+      "question_id": "ch6-q07",
+      "type": "single_choice",
+      "question": "Which of the following is an example of a precursor lesion associated with increased carcinoma risk?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Bronchial squamous metaplasia and dysplasia in a smoker"
+        },
+        {
+          "key": "B",
+          "text": "Simple scar tissue after wound healing"
+        },
+        {
+          "key": "C",
+          "text": "Normal intestinal crypt hyperplasia in childhood"
+        },
+        {
+          "key": "D",
+          "text": "Physiologic endometrial proliferation during the menstrual cycle"
+        },
+        {
+          "key": "E",
+          "text": "Reactive lymph node follicular hyperplasia"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Bronchial squamous metaplasia and dysplasia in habitual smokers are classic precursor lesions for lung carcinoma.",
+        "source_page_refs": [199, 200]
+      }
+    },
+    {
+      "number": 8,
+      "question_id": "ch6-q08",
+      "type": "single_choice",
+      "question": "What distinguishes a driver mutation from a passenger mutation in a cancer genome?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A driver mutation alters a cancer gene in a way that confers selective advantage"
+        },
+        {
+          "key": "B",
+          "text": "A driver mutation is always inherited in the germ line"
+        },
+        {
+          "key": "C",
+          "text": "A passenger mutation always prevents metastasis"
+        },
+        {
+          "key": "D",
+          "text": "A passenger mutation always occurs before the initiating mutation"
+        },
+        {
+          "key": "E",
+          "text": "A driver mutation affects only mitochondrial DNA"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Driver mutations directly contribute to the malignant phenotype by conferring growth or survival advantage, unlike passenger mutations.",
+        "source_page_refs": [201]
+      }
+    },
+    {
+      "number": 9,
+      "question_id": "ch6-q09",
+      "type": "single_choice",
+      "question": "A patient with chronic myeloid leukemia is found to carry the Philadelphia chromosome.\n\nWhat is the key molecular consequence of this abnormality?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Constitutive activation of a fusion tyrosine kinase"
+        },
+        {
+          "key": "B",
+          "text": "Loss of all telomerase activity"
+        },
+        {
+          "key": "C",
+          "text": "Overexpression of E-cadherin"
+        },
+        {
+          "key": "D",
+          "text": "Silencing of the APC gene by promoter methylation"
+        },
+        {
+          "key": "E",
+          "text": "Activation of p53-dependent senescence"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "The Philadelphia chromosome creates the BCR-ABL fusion gene, which encodes a constitutively active tyrosine kinase.",
+        "source_page_refs": [202]
+      }
+    },
+    {
+      "number": 10,
+      "question_id": "ch6-q10",
+      "type": "single_choice",
+      "question": "In Burkitt lymphoma, translocation of MYC most directly produces which of the following?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Biallelic RB deletion"
+        },
+        {
+          "key": "B",
+          "text": "Constitutive overexpression of a growth-promoting transcription factor"
+        },
+        {
+          "key": "C",
+          "text": "Loss of nucleotide excision repair"
+        },
+        {
+          "key": "D",
+          "text": "Mismatch repair deficiency with microsatellite instability"
+        },
+        {
+          "key": "E",
+          "text": "Overexpression of the TGF-beta receptor"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "MYC translocation places the gene under active immunoglobulin regulatory elements, causing sustained expression of a growth-promoting transcription factor.",
+        "source_page_refs": [202]
+      }
+    },
+    {
+      "number": 11,
+      "question_id": "ch6-q11",
+      "type": "single_choice",
+      "question": "A breast carcinoma shows HER2 amplification.\n\nWhat is the most direct biologic consequence of this alteration?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Constitutive or exaggerated growth factor receptor signaling"
+        },
+        {
+          "key": "B",
+          "text": "Loss of mismatch repair"
+        },
+        {
+          "key": "C",
+          "text": "Suppression of cyclin D expression"
+        },
+        {
+          "key": "D",
+          "text": "Telomere shortening with crisis"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "HER2 amplification increases expression of a growth factor receptor family member, making tumor cells highly responsive to proliferative signaling.",
+        "source_page_refs": [206]
+      }
+    },
+    {
+      "number": 12,
+      "question_id": "ch6-q12",
+      "type": "single_choice",
+      "question": "A RAS mutation blocks hydrolysis of bound GTP.\n\nWhat is the immediate effect of this mutation on signaling?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "RAS remains locked in an active signal-transmitting state"
+        },
+        {
+          "key": "B",
+          "text": "RAS becomes unable to bind any guanine nucleotide"
+        },
+        {
+          "key": "C",
+          "text": "RAS is shuttled into lysosomes for degradation"
+        },
+        {
+          "key": "D",
+          "text": "RAS stimulates p53-mediated apoptosis immediately"
+        },
+        {
+          "key": "E",
+          "text": "RAS prevents transcription factor activation downstream"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Mutated RAS cannot efficiently hydrolyze GTP to GDP, so it remains constitutively active and continues transmitting proliferative signals.",
+        "source_page_refs": [206]
+      }
+    },
+    {
+      "number": 13,
+      "question_id": "ch6-q13",
+      "type": "single_choice",
+      "question": "What is the principal normal function of RB protein?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Driving cells from G2 into mitosis"
+        },
+        {
+          "key": "B",
+          "text": "Maintaining the G1/S checkpoint by restraining E2F-dependent transcription"
+        },
+        {
+          "key": "C",
+          "text": "Mediating death receptor signaling through FAS"
+        },
+        {
+          "key": "D",
+          "text": "Repairing pyrimidine dimers caused by UV light"
+        },
+        {
+          "key": "E",
+          "text": "Tagging proteins for proteasomal degradation"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "RB is the key governor of the G1/S checkpoint and restrains E2F until pro-growth signaling leads to RB phosphorylation and release of the brake.",
+        "source_page_refs": [209, 210]
+      }
+    },
+    {
+      "number": 14,
+      "question_id": "ch6-q14",
+      "type": "single_choice",
+      "question": "Loss of APC function most directly promotes neoplasia through which pathway?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Accumulation of beta-catenin with activation of growth-promoting transcription"
+        },
+        {
+          "key": "B",
+          "text": "Constitutive BCL2 overexpression"
+        },
+        {
+          "key": "C",
+          "text": "Direct activation of caspase-9"
+        },
+        {
+          "key": "D",
+          "text": "Suppression of VEGF secretion"
+        },
+        {
+          "key": "E",
+          "text": "Enhanced repair of double-strand DNA breaks"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "APC normally helps degrade beta-catenin; loss of APC permits beta-catenin accumulation and inappropriate transcription of proliferative genes.",
+        "source_page_refs": [213, 214]
+      }
+    },
+    {
+      "number": 15,
+      "question_id": "ch6-q15",
+      "type": "single_choice",
+      "question": "A cancer is intensely PET-positive despite adequate oxygen delivery.\n\nWhat metabolic program BEST explains this finding?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Exclusive reliance on fatty acid oxidation"
+        },
+        {
+          "key": "B",
+          "text": "High glucose uptake with aerobic glycolysis to generate biosynthetic intermediates"
+        },
+        {
+          "key": "C",
+          "text": "Complete shutdown of mitochondrial metabolism"
+        },
+        {
+          "key": "D",
+          "text": "Absence of lactate production"
+        },
+        {
+          "key": "E",
+          "text": "Failure of all anabolic pathways"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "The Warburg effect features avid glucose uptake and aerobic glycolysis, which supports synthesis of cellular building blocks as well as energy production.",
+        "source_page_refs": [214, 215]
+      }
+    },
+    {
+      "number": 16,
+      "question_id": "ch6-q16",
+      "type": "single_choice",
+      "question": "Follicular lymphoma commonly survives because of overexpression of which anti-apoptotic protein?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "APC"
+        },
+        {
+          "key": "B",
+          "text": "BCL2"
+        },
+        {
+          "key": "C",
+          "text": "E-cadherin"
+        },
+        {
+          "key": "D",
+          "text": "RAS"
+        },
+        {
+          "key": "E",
+          "text": "SMAD4"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Follicular lymphoma classically carries a t(14;18) that drives BCL2 overexpression and blocks intrinsic apoptosis.",
+        "source_page_refs": [217, 218]
+      }
+    },
+    {
+      "number": 17,
+      "question_id": "ch6-q17",
+      "type": "single_choice",
+      "question": "Which event most commonly allows cancer cells to achieve limitless replicative potential?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Complete loss of ATP production"
+        },
+        {
+          "key": "B",
+          "text": "Permanent maintenance of hypophosphorylated RB"
+        },
+        {
+          "key": "C",
+          "text": "Reactivation of telomerase"
+        },
+        {
+          "key": "D",
+          "text": "Suppression of all DNA repair"
+        },
+        {
+          "key": "E",
+          "text": "Universal induction of autophagy"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Most cancers avoid telomere-driven crisis and senescence by reactivating telomerase, thereby maintaining telomere length.",
+        "source_page_refs": [218, 219]
+      }
+    },
+    {
+      "number": 18,
+      "question_id": "ch6-q18",
+      "type": "single_choice",
+      "question": "A solid tumor remains clinically occult until it acquires the capacity to grow beyond 2 mm in diameter.\n\nWhich new capability is MOST necessary for this transition?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Alternative splicing of RB"
+        },
+        {
+          "key": "B",
+          "text": "Induction of angiogenesis"
+        },
+        {
+          "key": "C",
+          "text": "Loss of all cell-surface antigens"
+        },
+        {
+          "key": "D",
+          "text": "Mitochondrial DNA deletion"
+        },
+        {
+          "key": "E",
+          "text": "Nuclear hormone receptor activation"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Solid tumors generally cannot enlarge beyond 1 to 2 mm without inducing angiogenesis to supply oxygen and nutrients.",
+        "source_page_refs": [219]
+      }
+    },
+    {
+      "number": 19,
+      "question_id": "ch6-q19",
+      "type": "single_choice",
+      "question": "What is the FIRST major step in the local invasion of a carcinoma?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Attachment to novel extracellular matrix components"
+        },
+        {
+          "key": "B",
+          "text": "Degradation of the basement membrane by proteases"
+        },
+        {
+          "key": "C",
+          "text": "Loosening of tumor-cell contacts, often through reduced E-cadherin function"
+        },
+        {
+          "key": "D",
+          "text": "Lymphatic embolization"
+        },
+        {
+          "key": "E",
+          "text": "Telomerase activation"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Invasion begins with reduced intercellular adhesion, classically via loss of E-cadherin-mediated cell-cell contact.",
+        "source_page_refs": [220, 223]
+      }
+    },
+    {
+      "number": 20,
+      "question_id": "ch6-q20",
+      "type": "single_choice",
+      "question": "A tumor expresses high levels of PD-L1 on its surface.\n\nWhat is the MOST likely effect of this alteration?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Activation of cytotoxic T cells through costimulation"
+        },
+        {
+          "key": "B",
+          "text": "Enhanced assembly of MHC class I molecules"
+        },
+        {
+          "key": "C",
+          "text": "Inactivation of cytotoxic T cells through an immune checkpoint pathway"
+        },
+        {
+          "key": "D",
+          "text": "Immediate complement-mediated tumor lysis"
+        },
+        {
+          "key": "E",
+          "text": "Upregulation of beta-catenin degradation"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "PD-L1 engages PD-1 on cytotoxic T cells and suppresses their anti-tumor activity as part of immune checkpoint-mediated evasion.",
+        "source_page_refs": [225, 226]
+      }
+    },
+    {
+      "number": 21,
+      "question_id": "ch6-q21",
+      "type": "single_choice",
+      "question": "Hereditary nonpolyposis colorectal cancer syndrome is caused by inherited defects in which system?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "DNA mismatch repair"
+        },
+        {
+          "key": "B",
+          "text": "Homologous recombination only at telomeres"
+        },
+        {
+          "key": "C",
+          "text": "Mitochondrial oxidative phosphorylation"
+        },
+        {
+          "key": "D",
+          "text": "Proteasomal protein degradation"
+        },
+        {
+          "key": "E",
+          "text": "T-cell receptor gene recombination"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "HNPCC reflects inherited mismatch-repair defects, producing microsatellite instability and markedly increased colorectal cancer risk.",
+        "source_page_refs": [227, 228]
+      }
+    },
+    {
+      "number": 22,
+      "question_id": "ch6-q22",
+      "type": "single_choice",
+      "question": "Tumor-associated macrophages are thought to promote malignant progression primarily by doing which of the following?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Eliminating all angiogenic signals"
+        },
+        {
+          "key": "B",
+          "text": "Creating a microenvironment that supports angiogenesis, fibroblast activation, and immune suppression"
+        },
+        {
+          "key": "C",
+          "text": "Repairing mismatched DNA bases in tumor cells"
+        },
+        {
+          "key": "D",
+          "text": "Preventing tumor cells from contacting extracellular matrix"
+        },
+        {
+          "key": "E",
+          "text": "Forcing tumor cells into terminal differentiation"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Tumor-promoting inflammation supports growth, angiogenesis, invasion, and immune evasion; M2-type macrophages are strongly implicated in this supportive microenvironment.",
+        "source_page_refs": [228]
+      }
+    },
+    {
+      "number": 23,
+      "question_id": "ch6-q23",
+      "type": "single_choice",
+      "question": "Which statement about chemical carcinogens is MOST accurate?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Indirect-acting carcinogens do not require metabolic activation"
+        },
+        {
+          "key": "B",
+          "text": "Direct-acting carcinogens cannot be used therapeutically"
+        },
+        {
+          "key": "C",
+          "text": "Indirect-acting carcinogens become dangerous only after conversion to an ultimate carcinogen"
+        },
+        {
+          "key": "D",
+          "text": "Tumor promoters cause DNA mutation directly without affecting proliferation"
+        },
+        {
+          "key": "E",
+          "text": "Benzo[a]pyrene is an example of a direct-acting carcinogen"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Indirect-acting carcinogens require endogenous metabolic conversion, often by enzymes such as cytochrome P-450, to become ultimate carcinogens.",
+        "source_page_refs": [229, 231]
+      }
+    },
+    {
+      "number": 24,
+      "question_id": "ch6-q24",
+      "type": "single_choice",
+      "question": "What is the characteristic DNA lesion produced by ultraviolet radiation?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Double-strand break with BCR-ABL fusion"
+        },
+        {
+          "key": "B",
+          "text": "Microsatellite instability"
+        },
+        {
+          "key": "C",
+          "text": "Pyrimidine dimer formation"
+        },
+        {
+          "key": "D",
+          "text": "Telomere elongation"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "UV light induces pyrimidine dimers in DNA; failure of nucleotide excision repair increases skin cancer risk.",
+        "source_page_refs": [231, 232]
+      }
+    },
+    {
+      "number": 25,
+      "question_id": "ch6-q25",
+      "type": "single_choice",
+      "question": "Which viral protein is central to the transforming activity of HTLV-1?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "BCL2"
+        },
+        {
+          "key": "B",
+          "text": "CagA"
+        },
+        {
+          "key": "C",
+          "text": "E7"
+        },
+        {
+          "key": "D",
+          "text": "Tax"
+        },
+        {
+          "key": "E",
+          "text": "TERT"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "HTLV-1 Tax stimulates proliferation, enhances survival signaling, and promotes genomic instability in infected T cells.",
+        "source_page_refs": [232]
+      }
+    },
+    {
+      "number": 26,
+      "question_id": "ch6-q26",
+      "type": "single_choice",
+      "question": "High-risk HPV promotes carcinogenesis chiefly because E6 and E7 neutralize which pair of tumor suppressors?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "APC and NF2"
+        },
+        {
+          "key": "B",
+          "text": "BRCA1 and BRCA2"
+        },
+        {
+          "key": "C",
+          "text": "MDM2 and BCL2"
+        },
+        {
+          "key": "D",
+          "text": "p53 and RB"
+        },
+        {
+          "key": "E",
+          "text": "SMAD4 and PTEN"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "HPV E6 degrades p53 and increases TERT expression, while E7 binds RB and disables key CDK inhibitors, driving cell-cycle progression.",
+        "source_page_refs": [232, 233]
+      }
+    },
+    {
+      "number": 27,
+      "question_id": "ch6-q27",
+      "type": "single_choice",
+      "question": "What is the dominant mechanism by which chronic HBV and HCV infection promote hepatocellular carcinoma?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Direct replacement of all host tumor suppressor genes"
+        },
+        {
+          "key": "B",
+          "text": "Immunologically mediated chronic injury with regeneration and reactive oxygen species generation"
+        },
+        {
+          "key": "C",
+          "text": "Exclusive activation of mismatch repair genes"
+        },
+        {
+          "key": "D",
+          "text": "Permanent inactivation of E-cadherin by promoter fusion"
+        },
+        {
+          "key": "E",
+          "text": "Universal insertion of viral DNA beside MYC"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "HBV and HCV are linked to hepatocellular carcinoma mainly through chronic inflammatory injury, regenerative proliferation, and ROS-mediated DNA damage, with additional signaling contributions from viral proteins.",
+        "source_page_refs": [234, 235]
+      }
+    },
+    {
+      "number": 28,
+      "question_id": "ch6-q28",
+      "type": "single_choice",
+      "question": "A gastric MALT lymphoma regresses after antibiotic eradication therapy.\n\nWhat underlying mechanism BEST explains this response?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The lymphoma depends on H. pylori-driven immune stimulation for continued growth"
+        },
+        {
+          "key": "B",
+          "text": "The lymphoma cells require ultraviolet light-induced pyrimidine dimers"
+        },
+        {
+          "key": "C",
+          "text": "The tumor contains only direct-acting chemical carcinogens"
+        },
+        {
+          "key": "D",
+          "text": "The tumor is caused by constitutive HER2 amplification"
+        },
+        {
+          "key": "E",
+          "text": "The malignant cells cannot survive unless E-cadherin is overexpressed"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "H. pylori stimulates a polyclonal lymphoid response from which MALT lymphoma can emerge, and early tumors may remain dependent on that antigen-driven immune environment.",
+        "source_page_refs": [235]
+      }
+    },
+    {
+      "number": 29,
+      "question_id": "ch6-q29",
+      "type": "single_choice",
+      "question": "Which laboratory technique is MOST useful for classifying leukemias and lymphomas on the basis of cell-surface phenotype?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Flow cytometry"
+        },
+        {
+          "key": "B",
+          "text": "Frozen section alone"
+        },
+        {
+          "key": "C",
+          "text": "Routine serum PSA assay"
+        },
+        {
+          "key": "D",
+          "text": "Urine cytology"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Flow cytometry uses labeled antibodies to define cell-surface markers and is routinely used to classify leukemias and lymphomas.",
+        "source_page_refs": [238]
+      }
+    },
+    {
+      "number": 30,
+      "question_id": "ch6-q30",
+      "type": "single_choice",
+      "question": "When planning treatment for a newly diagnosed solid cancer, which statement is MOST accurate?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Histologic grade is consistently more clinically useful than stage"
+        },
+        {
+          "key": "B",
+          "text": "TNM staging assesses the primary tumor, regional nodes, and distant metastases"
+        },
+        {
+          "key": "C",
+          "text": "Stage ignores lymph node involvement because nodes are not prognostically relevant"
+        },
+        {
+          "key": "D",
+          "text": "Tumors are staged only after death or autopsy"
+        },
+        {
+          "key": "E",
+          "text": "Grading depends solely on tumor size"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "TNM staging describes the primary tumor, nodal spread, and distant metastases, and stage is generally more clinically useful than grade.",
+        "source_page_refs": [236, 237]
+      }
+    }
+  ]
+}

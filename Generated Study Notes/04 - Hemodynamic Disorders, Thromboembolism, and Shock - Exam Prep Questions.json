@@ -1,0 +1,661 @@
+{
+  "schema_version": "1.2",
+  "resource_type": "exam_prep_question_set",
+  "title": "04 - Hemodynamic Disorders, Thromboembolism, and Shock - Exam Prep Questions",
+  "slug": "04-hemodynamic-disorders-thromboembolism-and-shock-exam-prep-questions",
+  "chapter": {
+    "number": 4,
+    "code": "04",
+    "title": "Hemodynamic Disorders, Thromboembolism, and Shock",
+    "status": "complete"
+  },
+  "description": "Third-party generated single-choice exam-prep questions for Chapter 4. The set is aligned primarily to the Chapter 4 textbook content and shaped to reflect the style, tone, and difficulty distribution of the RCPA Basic Pathological Sciences mock exam format. Choices are keyed so answers remain stable if an application randomizes display order.",
+  "disclaimer": {
+    "summary": "Third-party generated study aid.",
+    "endorsement_notice": "These questions are third-party generated study materials. They are not produced by, reviewed by, approved by, endorsed by, or affiliated with the textbook authors, Elsevier, the Royal College of Pathologists of Australasia, or any other authority, institution, publisher, or examining body.",
+    "answer_key_note": "Answers are included as stable choice keys with brief source-grounded rationales for study and review purposes."
+  },
+  "source_notes": [
+    {
+      "source_type": "primary_textbook_chapter",
+      "source_title": "Robbins Basic Pathology, 10th Edition, Chapter 4: Hemodynamic Disorders, Thromboembolism, and Shock",
+      "publisher": "Elsevier",
+      "edition": "10th Edition"
+    },
+    {
+      "source_type": "course_alignment_reference",
+      "source_title": "RCPA - Basic Pathological Sciences Syllabus 2026 - October 2025",
+      "organization": "Royal College of Pathologists of Australasia",
+      "reference_note": "Used for topic emphasis, exam framing, and laboratory-test emphasis."
+    },
+    {
+      "source_type": "style_reference",
+      "source_title": "BPS 2026 Mock Exam Question Set",
+      "organization": "Royal College of Pathologists of Australasia",
+      "reference_note": "Used as a style, structure, and difficulty reference."
+    }
+  ],
+  "format": {
+    "question_count": 30,
+    "question_type": "single_choice",
+    "choices_distribution": {
+      "4": 5,
+      "5": 25
+    },
+    "answer_key_included": true,
+    "answer_format": "correct_choice_key_with_reason",
+    "choice_keys_included": true,
+    "choice_key_format": "uppercase_letters",
+    "choice_order_randomizable": true,
+    "page_reference_style": "printed_book_page_numbers"
+  },
+  "questions": [
+    {
+      "number": 1,
+      "question_id": "ch4-q01",
+      "type": "single_choice",
+      "question": "During exercise, a skeletal muscle group becomes red and warm because arterioles dilate and blood inflow increases.\n\nWhich term BEST describes this vascular change?",
+      "choices": [
+        { "key": "A", "text": "Congestion" },
+        { "key": "B", "text": "Cyanosis" },
+        { "key": "C", "text": "Hyperemia" },
+        { "key": "D", "text": "Hemorrhage" },
+        { "key": "E", "text": "Stasis" }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Hyperemia is an active process caused by arteriolar dilation and increased blood inflow, unlike congestion which reflects impaired venous outflow.",
+        "source_page_refs": [97]
+      }
+    },
+    {
+      "number": 2,
+      "question_id": "ch4-q02",
+      "type": "single_choice",
+      "question": "A patient with long-standing left-sided heart failure has alveolar macrophages packed with hemosiderin on lung biopsy.\n\nWhat are these cells called?",
+      "choices": [
+        { "key": "A", "text": "Foam cells" },
+        { "key": "B", "text": "Heart failure cells" },
+        { "key": "C", "text": "Langerhans cells" },
+        { "key": "D", "text": "Touton giant cells" }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Chronic pulmonary congestion produces hemosiderin-laden macrophages in alveolar spaces, classically called heart failure cells.",
+        "source_page_refs": [97]
+      }
+    },
+    {
+      "number": 3,
+      "question_id": "ch4-q03",
+      "type": "single_choice",
+      "question": "A patient with congestive heart failure develops generalized pitting edema that worsens despite reduced tissue perfusion.\n\nWhich additional mechanism MOST strongly amplifies the edema?",
+      "choices": [
+        { "key": "A", "text": "Decreased fibrin polymerization" },
+        {
+          "key": "B",
+          "text": "Renal hypoperfusion with secondary sodium and water retention"
+        },
+        { "key": "C", "text": "Increased plasma albumin synthesis" },
+        { "key": "D", "text": "Enhanced lymphatic drainage" },
+        { "key": "E", "text": "Reduced venous hydrostatic pressure" }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "In heart failure, renal hypoperfusion activates the renin-angiotensin-aldosterone system, leading to salt and water retention that worsens edema.",
+        "source_page_refs": [99]
+      }
+    },
+    {
+      "number": 4,
+      "question_id": "ch4-q04",
+      "type": "single_choice",
+      "question": "A child with nephrotic syndrome develops marked periorbital swelling.\n\nWhat is the PRIMARY hemodynamic mechanism for this edema?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Reduced plasma colloid osmotic pressure from albumin loss"
+        },
+        { "key": "B", "text": "Primary lymphatic obstruction" },
+        { "key": "C", "text": "Generalized arteriolar dilation" },
+        { "key": "D", "text": "Increased cardiac output" }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Nephrotic syndrome causes urinary albumin loss, lowering plasma oncotic pressure and favoring movement of fluid into tissues.",
+        "source_page_refs": [99, 100]
+      }
+    },
+    {
+      "number": 5,
+      "question_id": "ch4-q05",
+      "type": "single_choice",
+      "question": "A woman develops persistent ipsilateral arm swelling after axillary lymph node dissection and radiotherapy for breast carcinoma.\n\nWhat is the MOST likely mechanism?",
+      "choices": [
+        { "key": "A", "text": "Reduced plasma fibrinogen concentration" },
+        {
+          "key": "B",
+          "text": "Lymphatic obstruction with impaired interstitial fluid resorption"
+        },
+        { "key": "C", "text": "Generalized venous hyperemia" },
+        { "key": "D", "text": "Primary platelet dysfunction" },
+        { "key": "E", "text": "Arteriolar vasospasm" }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Disruption or obstruction of lymphatic drainage after node dissection or irradiation causes lymphedema.",
+        "source_page_refs": [99, 100]
+      }
+    },
+    {
+      "number": 6,
+      "question_id": "ch4-q06",
+      "type": "single_choice",
+      "question": "Pleural fluid collected from a patient with congestive heart failure is low in protein and forms because of increased hydrostatic pressure.\n\nHow should this fluid be classified?",
+      "choices": [
+        { "key": "A", "text": "Exudate" },
+        { "key": "B", "text": "Effusion caused by liquefactive necrosis" },
+        { "key": "C", "text": "Transudate" },
+        { "key": "D", "text": "Chylous leak" },
+        { "key": "E", "text": "Hemopericardium" }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Edema fluid caused by hydrostatic or oncotic imbalance is classically protein-poor and is termed a transudate.",
+        "source_page_refs": [98, 99]
+      }
+    },
+    {
+      "number": 7,
+      "question_id": "ch4-q07",
+      "type": "single_choice",
+      "question": "A thrombocytopenic patient develops multiple pinpoint hemorrhages on the oral mucosa.\n\nWhat is the correct term for these lesions?",
+      "choices": [
+        { "key": "A", "text": "Ecchymoses" },
+        { "key": "B", "text": "Hematomas" },
+        { "key": "C", "text": "Petechiae" },
+        { "key": "D", "text": "Varices" }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Petechiae are minute 1 to 2 mm hemorrhages that commonly reflect thrombocytopenia, platelet dysfunction, or vascular fragility.",
+        "source_page_refs": [101]
+      }
+    },
+    {
+      "number": 8,
+      "question_id": "ch4-q08",
+      "type": "single_choice",
+      "question": "A patient notices that a bruise changes from red-blue to blue-green and then golden-brown over several days.\n\nWhat process BEST explains this color change?",
+      "choices": [
+        { "key": "A", "text": "Oxidation of fibrin to methemoglobin" },
+        {
+          "key": "B",
+          "text": "Enzymatic conversion of hemoglobin to bilirubin and then hemosiderin"
+        },
+        { "key": "C", "text": "Lymphatic concentration of albumin" },
+        { "key": "D", "text": "Conversion of vWF to fibrin" },
+        { "key": "E", "text": "Breakdown of platelets into ferritin" }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Ecchymoses change color as hemoglobin is degraded first to bilirubin and later to hemosiderin within macrophages.",
+        "source_page_refs": [101]
+      }
+    },
+    {
+      "number": 9,
+      "question_id": "ch4-q09",
+      "type": "single_choice",
+      "question": "Which interaction is MOST important for the initial adhesion of platelets to an injured vessel wall?",
+      "choices": [
+        { "key": "A", "text": "GpIIb/IIIa binding directly to collagen" },
+        {
+          "key": "B",
+          "text": "vWF bridging platelet GpIb to exposed subendothelial collagen"
+        },
+        { "key": "C", "text": "Thrombin binding fibrinogen to factor XIII" },
+        { "key": "D", "text": "Protein C binding platelet phosphatidylserine" },
+        { "key": "E", "text": "t-PA binding ADP receptors" }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Initial platelet adhesion occurs mainly when vWF forms a bridge between exposed collagen and platelet GpIb.",
+        "source_page_refs": [102, 103]
+      }
+    },
+    {
+      "number": 10,
+      "question_id": "ch4-q10",
+      "type": "single_choice",
+      "question": "A patient taking aspirin develops a mild platelet-related bleeding tendency.\n\nWhich mediator is MOST directly reduced by aspirin?",
+      "choices": [
+        { "key": "A", "text": "Protein C" },
+        { "key": "B", "text": "Thromboxane A2" },
+        { "key": "C", "text": "Tissue factor" },
+        { "key": "D", "text": "von Willebrand factor" },
+        { "key": "E", "text": "Factor XIII" }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Aspirin inhibits platelet cyclooxygenase and therefore reduces thromboxane A2 synthesis, impairing aggregation.",
+        "source_page_refs": [103]
+      }
+    },
+    {
+      "number": 11,
+      "question_id": "ch4-q11",
+      "type": "single_choice",
+      "question": "A young adult with lifelong mucosal bleeding is found to have defective platelet aggregation due to inherited absence of platelet GpIIb/IIIa.\n\nWhat is the diagnosis?",
+      "choices": [
+        { "key": "A", "text": "Bernard-Soulier syndrome" },
+        { "key": "B", "text": "Glanzmann thrombasthenia" },
+        { "key": "C", "text": "Hemophilia A" },
+        { "key": "D", "text": "von Willebrand disease" }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Glanzmann thrombasthenia results from deficiency of platelet GpIIb/IIIa, causing defective fibrinogen-mediated aggregation.",
+        "source_page_refs": [103]
+      }
+    },
+    {
+      "number": 12,
+      "question_id": "ch4-q12",
+      "type": "single_choice",
+      "question": "In vivo, which event is the MOST important trigger for initiation of the coagulation cascade?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Contact activation of factor XII by glass surfaces"
+        },
+        {
+          "key": "B",
+          "text": "Binding of tissue factor to factor VIIa at the site of vascular injury"
+        },
+        { "key": "C", "text": "Direct activation of plasmin by fibrinogen" },
+        { "key": "D", "text": "Binding of antithrombin III to thrombin" },
+        { "key": "E", "text": "Platelet release of bilirubin" }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "The tissue factor-factor VIIa complex is the principal initiator of coagulation in vivo.",
+        "source_page_refs": [104, 105]
+      }
+    },
+    {
+      "number": 13,
+      "question_id": "ch4-q13",
+      "type": "single_choice",
+      "question": "A patient has an isolated deficiency of factor VII.\n\nWhich screening test is MOST likely to be prolonged?",
+      "choices": [
+        { "key": "A", "text": "Bleeding time only" },
+        { "key": "B", "text": "D-dimer only" },
+        { "key": "C", "text": "Partial thromboplastin time" },
+        { "key": "D", "text": "Prothrombin time" },
+        { "key": "E", "text": "Platelet count" }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "PT screens the extrinsic pathway, including factor VII.",
+        "source_page_refs": [104]
+      }
+    },
+    {
+      "number": 14,
+      "question_id": "ch4-q14",
+      "type": "single_choice",
+      "question": "A patient being evaluated for possible venous thromboembolism has an elevated D-dimer level.\n\nWhat does this MOST directly indicate?",
+      "choices": [
+        { "key": "A", "text": "Breakdown of cross-linked fibrin" },
+        { "key": "B", "text": "Deficiency of tissue plasminogen activator" },
+        { "key": "C", "text": "Platelet granule depletion" },
+        { "key": "D", "text": "Selective activation of factor XII" }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "D-dimers are fibrin degradation products and are useful markers of active thrombosis and fibrinolysis.",
+        "source_page_refs": [105, 106]
+      }
+    },
+    {
+      "number": 15,
+      "question_id": "ch4-q15",
+      "type": "single_choice",
+      "question": "Which endothelial surface molecule binds thrombin and converts it from a procoagulant enzyme into an activator of protein C?",
+      "choices": [
+        { "key": "A", "text": "Endothelin" },
+        { "key": "B", "text": "P-selectin" },
+        { "key": "C", "text": "Thrombomodulin" },
+        { "key": "D", "text": "von Willebrand factor" },
+        { "key": "E", "text": "Factor XIII" }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Thrombomodulin binds thrombin on intact endothelium and shifts its activity toward activation of protein C, limiting coagulation.",
+        "source_page_refs": [106, 107]
+      }
+    },
+    {
+      "number": 16,
+      "question_id": "ch4-q16",
+      "type": "single_choice",
+      "question": "A postoperative patient has been immobile in bed for several days and develops a femoral deep venous thrombosis.\n\nWhich element of Virchow triad is MOST directly illustrated by the immobility itself?",
+      "choices": [
+        { "key": "A", "text": "Endothelial denudation" },
+        { "key": "B", "text": "Hyperfibrinolysis" },
+        { "key": "C", "text": "Platelet receptor deficiency" },
+        { "key": "D", "text": "Stasis of blood flow" },
+        { "key": "E", "text": "Severe arterial turbulence" }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "Immobility reduces venous return and promotes stasis, a major driver of venous thrombosis.",
+        "source_page_refs": [108]
+      }
+    },
+    {
+      "number": 17,
+      "question_id": "ch4-q17",
+      "type": "single_choice",
+      "question": "A patient with rheumatic mitral stenosis develops atrial fibrillation and a left atrial mural thrombus.\n\nWhat is the MOST important local mechanism favoring thrombosis in this setting?",
+      "choices": [
+        { "key": "A", "text": "Systemic hypercalcemia" },
+        { "key": "B", "text": "Loss of vitamin K stores" },
+        { "key": "C", "text": "Stasis of blood in a dilated atrium" },
+        { "key": "D", "text": "Primary fibrinolysis" },
+        { "key": "E", "text": "Platelet GpIb deficiency" }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Mitral stenosis with atrial dilation and fibrillation creates local stasis, making the left atrium a prime site for thrombus formation.",
+        "source_page_refs": [108]
+      }
+    },
+    {
+      "number": 18,
+      "question_id": "ch4-q18",
+      "type": "single_choice",
+      "question": "What is the PRIMARY pathogenic effect of factor V Leiden?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Excess tissue factor expression by endothelium"
+        },
+        {
+          "key": "B",
+          "text": "Resistance of factor V to proteolysis by protein C"
+        },
+        { "key": "C", "text": "Reduced synthesis of fibrinogen" },
+        { "key": "D", "text": "Deficiency of factor VIII" },
+        { "key": "E", "text": "Failure of platelet GpIIb/IIIa activation" }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Factor V Leiden alters factor V so that it resists normal inactivation by protein C, increasing the risk of venous thrombosis.",
+        "source_page_refs": [108, 109]
+      }
+    },
+    {
+      "number": 19,
+      "question_id": "ch4-q19",
+      "type": "single_choice",
+      "question": "A patient treated with unfractionated heparin develops thrombocytopenia and a new thrombotic event.\n\nWhat is the MOST likely mechanism?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Autoantibodies against heparin-platelet factor 4 complexes"
+        },
+        { "key": "B", "text": "Direct depletion of protein C by heparin" },
+        { "key": "C", "text": "Inherited deficiency of antithrombin III" },
+        { "key": "D", "text": "Consumption of factor XIII alone" },
+        {
+          "key": "E",
+          "text": "Suppression of fibrinogen synthesis by the liver"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Heparin-induced thrombocytopenia is driven by autoantibodies against heparin-platelet factor 4 complexes, causing platelet activation and thrombosis.",
+        "source_page_refs": [109]
+      }
+    },
+    {
+      "number": 20,
+      "question_id": "ch4-q20",
+      "type": "single_choice",
+      "question": "A woman has repeated miscarriages, recurrent venous thromboses, and thrombocytopenia.\n\nWhich diagnosis BEST fits this presentation?",
+      "choices": [
+        { "key": "A", "text": "Antiphospholipid antibody syndrome" },
+        { "key": "B", "text": "Bernard-Soulier syndrome" },
+        { "key": "C", "text": "Disseminated strongyloidiasis" },
+        { "key": "D", "text": "Factor XII deficiency" },
+        { "key": "E", "text": "Vitamin C deficiency" }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Antiphospholipid antibody syndrome classically causes recurrent thrombosis, pregnancy loss, and thrombocytopenia.",
+        "source_page_refs": [109]
+      }
+    },
+    {
+      "number": 21,
+      "question_id": "ch4-q21",
+      "type": "single_choice",
+      "question": "A pathologist identifies a thrombus composed of alternating pale platelet-fibrin layers and darker red-cell-rich layers.\n\nWhat is the significance of this pattern?",
+      "choices": [
+        { "key": "A", "text": "It proves the clot formed after death" },
+        { "key": "B", "text": "It indicates a septic embolus" },
+        {
+          "key": "C",
+          "text": "It is a line of Zahn and implies formation in flowing blood"
+        },
+        { "key": "D", "text": "It occurs only in lymphatic channels" },
+        { "key": "E", "text": "It excludes arterial thrombosis" }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Lines of Zahn are laminations formed in flowing blood and help distinguish antemortem thrombi from postmortem clots.",
+        "source_page_refs": [110]
+      }
+    },
+    {
+      "number": 22,
+      "question_id": "ch4-q22",
+      "type": "single_choice",
+      "question": "Why are deep venous thromboses of the leg clinically dangerous even when they produce little local symptomatology?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "They invariably cause compartment syndrome before any other complication"
+        },
+        {
+          "key": "B",
+          "text": "They commonly progress to septic vegetations on heart valves"
+        },
+        {
+          "key": "C",
+          "text": "They may be silent until they embolize to the lungs"
+        },
+        {
+          "key": "D",
+          "text": "They rapidly become calcified and obstruct arteries"
+        },
+        {
+          "key": "E",
+          "text": "They usually convert directly into white infarcts of muscle"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Many DVTs are clinically silent and are recognized only after embolization to the pulmonary circulation.",
+        "source_page_refs": [111, 112]
+      }
+    },
+    {
+      "number": 23,
+      "question_id": "ch4-q23",
+      "type": "single_choice",
+      "question": "A patient with an obstetric complication develops diffuse microvascular thrombosis and then severe bleeding from venipuncture sites.\n\nWhy can bleeding and thrombosis coexist in this disorder?",
+      "choices": [
+        { "key": "A", "text": "Platelet production is selectively increased" },
+        {
+          "key": "B",
+          "text": "Coagulation factors and platelets are consumed while fibrinolysis is also activated"
+        },
+        { "key": "C", "text": "Tissue factor is absent from the circulation" },
+        { "key": "D", "text": "Lymphatic drainage is blocked by fibrin" },
+        { "key": "E", "text": "Only the intrinsic pathway is inhibited" }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "DIC causes widespread microvascular thrombosis that consumes platelets and coagulation proteins while fibrinolysis is simultaneously activated.",
+        "source_page_refs": [111]
+      }
+    },
+    {
+      "number": 24,
+      "question_id": "ch4-q24",
+      "type": "single_choice",
+      "question": "In more than 95% of pulmonary thromboembolism cases, the embolus originates from thrombi in which location?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Deep leg veins proximal to the popliteal fossa"
+        },
+        { "key": "B", "text": "Portal vein" },
+        { "key": "C", "text": "Right atrial appendage only" },
+        { "key": "D", "text": "Superficial varicose veins only" },
+        { "key": "E", "text": "Renal vein" }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Most pulmonary emboli come from deep venous thromboses in leg veins above the popliteal fossa.",
+        "source_page_refs": [112]
+      }
+    },
+    {
+      "number": 25,
+      "question_id": "ch4-q25",
+      "type": "single_choice",
+      "question": "Two days after a long-bone fracture, a patient develops dyspnea, tachycardia, confusion, thrombocytopenia, and a petechial rash.\n\nWhat is the MOST likely diagnosis?",
+      "choices": [
+        { "key": "A", "text": "Amniotic fluid embolism" },
+        { "key": "B", "text": "Air embolism" },
+        { "key": "C", "text": "Fat embolism syndrome" },
+        { "key": "D", "text": "Primary pulmonary hypertension" },
+        { "key": "E", "text": "Septic shock" }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Fat embolism syndrome classically appears 1 to 3 days after major skeletal trauma with pulmonary, neurologic, hematologic, and petechial features.",
+        "source_page_refs": [112, 113]
+      }
+    },
+    {
+      "number": 26,
+      "question_id": "ch4-q26",
+      "type": "single_choice",
+      "question": "Immediately after delivery, a woman develops sudden severe dyspnea, cyanosis, hypotension, seizures, and later disseminated intravascular coagulation.\n\nWhich diagnosis is MOST likely?",
+      "choices": [
+        { "key": "A", "text": "Amniotic fluid embolism" },
+        { "key": "B", "text": "Fat embolism syndrome" },
+        { "key": "C", "text": "Massive hemothorax" },
+        { "key": "D", "text": "Waterhouse-Friderichsen syndrome" },
+        { "key": "E", "text": "Caisson disease" }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Amniotic fluid embolism is a grave peripartum complication characterized by abrupt respiratory compromise, shock, neurologic collapse, and frequent DIC.",
+        "source_page_refs": [113]
+      }
+    },
+    {
+      "number": 27,
+      "question_id": "ch4-q27",
+      "type": "single_choice",
+      "question": "A wedge-shaped pale lesion is identified in the spleen after abrupt arterial occlusion.\n\nWhat type of infarct is this?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Hemorrhagic red infarct caused by venous obstruction"
+        },
+        { "key": "B", "text": "Liquefactive infarct typical of the brain" },
+        { "key": "C", "text": "Septic abscess caused by bacterial seeding" },
+        { "key": "D", "text": "White anemic infarct in an end-arterial organ" },
+        { "key": "E", "text": "Reperfusion infarct in dual circulation tissue" }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "The spleen is a solid organ with an end-arterial circulation, so arterial occlusion produces a pale white infarct.",
+        "source_page_refs": [114, 115]
+      }
+    },
+    {
+      "number": 28,
+      "question_id": "ch4-q28",
+      "type": "single_choice",
+      "question": "Which cell type is MOST rapidly and irreversibly injured by ischemia?",
+      "choices": [
+        { "key": "A", "text": "Fibroblast" },
+        { "key": "B", "text": "Hepatocyte" },
+        { "key": "C", "text": "Neuron" },
+        { "key": "D", "text": "Renal fibroblast" },
+        { "key": "E", "text": "Smooth muscle cell" }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Neurons sustain irreversible ischemic injury within only a few minutes, making them the most vulnerable among the options.",
+        "source_page_refs": [115]
+      }
+    },
+    {
+      "number": 29,
+      "question_id": "ch4-q29",
+      "type": "single_choice",
+      "question": "What BEST distinguishes septic shock from uncomplicated hypovolemic shock at the mechanistic level?",
+      "choices": [
+        { "key": "A", "text": "It is driven only by loss of red cell mass" },
+        {
+          "key": "B",
+          "text": "It results solely from abrupt myocardial pump failure"
+        },
+        {
+          "key": "C",
+          "text": "It reflects a host inflammatory response that causes vasodilation, endothelial injury, vascular leakage, and a procoagulant state"
+        },
+        {
+          "key": "D",
+          "text": "It is caused mainly by isolated factor VII deficiency"
+        },
+        { "key": "E", "text": "It occurs only with gram-negative organisms" }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Septic shock is caused by the host response to infection, with cytokine-driven vasodilation, endothelial activation, vascular leak, and often DIC.",
+        "source_page_refs": [116, 117]
+      }
+    },
+    {
+      "number": 30,
+      "question_id": "ch4-q30",
+      "type": "single_choice",
+      "question": "A patient with septic shock is examined early in the course of illness.\n\nWhich skin finding is MOST characteristic at this stage?",
+      "choices": [
+        { "key": "A", "text": "Cold, waxy skin from diffuse vasospasm" },
+        {
+          "key": "B",
+          "text": "Warm, flushed skin due to peripheral vasodilation"
+        },
+        { "key": "C", "text": "Localized urticaria only" },
+        { "key": "D", "text": "Profound jaundice from hemolysis" },
+        { "key": "E", "text": "Mottled purpura from vitamin C deficiency" }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Early septic shock may present with warm, flushed skin because peripheral vasodilation predominates, unlike the cool clammy skin of most other shock states.",
+        "source_page_refs": [119]
+      }
+    }
+  ]
+}

@@ -1,0 +1,1024 @@
+{
+  "schema_version": "1.2",
+  "resource_type": "exam_prep_question_set",
+  "title": "05 - Diseases of the Immune System - Exam Prep Questions",
+  "slug": "05-diseases-of-the-immune-system-exam-prep-questions",
+  "chapter": {
+    "number": 5,
+    "code": "05",
+    "title": "Diseases of the Immune System",
+    "status": "complete"
+  },
+  "description": "Third-party generated single-choice exam-prep questions for Chapter 5. The set is aligned primarily to the Chapter 5 textbook content and shaped to reflect the style, tone, and difficulty distribution of the RCPA Basic Pathological Sciences mock exam format. Choices are keyed so answers remain stable if an application randomizes display order.",
+  "disclaimer": {
+    "summary": "Third-party generated study aid.",
+    "endorsement_notice": "These questions are third-party generated study materials. They are not produced by, reviewed by, approved by, endorsed by, or affiliated with the textbook authors, Elsevier, the Royal College of Pathologists of Australasia, or any other authority, institution, publisher, or examining body.",
+    "answer_key_note": "Answers are included as stable choice keys with brief source-grounded rationales for study and review purposes."
+  },
+  "source_notes": [
+    {
+      "source_type": "primary_textbook_chapter",
+      "source_title": "Robbins Basic Pathology, 10th Edition, Chapter 5: Diseases of the Immune System",
+      "publisher": "Elsevier",
+      "edition": "10th Edition"
+    },
+    {
+      "source_type": "course_alignment_reference",
+      "source_title": "RCPA - Basic Pathological Sciences Syllabus 2026 - October 2025",
+      "organization": "Royal College of Pathologists of Australasia",
+      "reference_note": "Used for topic emphasis and exam framing."
+    },
+    {
+      "source_type": "style_reference",
+      "source_title": "BPS 2026 Mock Exam Question Set",
+      "organization": "Royal College of Pathologists of Australasia",
+      "reference_note": "Used as a style, structure, and difficulty reference."
+    }
+  ],
+  "format": {
+    "question_count": 30,
+    "question_type": "single_choice",
+    "choices_distribution": {
+      "4": 5,
+      "5": 25
+    },
+    "answer_key_included": true,
+    "answer_format": "correct_choice_key_with_reason",
+    "choice_keys_included": true,
+    "choice_key_format": "uppercase_letters",
+    "choice_order_randomizable": true,
+    "page_reference_style": "printed_book_page_numbers"
+  },
+  "questions": [
+    {
+      "number": 1,
+      "question_id": "ch5-q01",
+      "type": "single_choice",
+      "question": "A patient develops fever after recognition of bacterial products and tissue-injury signals by cytosolic NOD-like receptors.\n\nWhich cytokine is generated after inflammasome-associated caspase-1 cleaves its precursor?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "IL-1"
+        },
+        {
+          "key": "B",
+          "text": "IL-2"
+        },
+        {
+          "key": "C",
+          "text": "IL-4"
+        },
+        {
+          "key": "D",
+          "text": "IL-10"
+        },
+        {
+          "key": "E",
+          "text": "IFN-gamma"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "NOD-like receptor inflammasomes activate caspase-1, which cleaves pro-IL-1 into biologically active IL-1.",
+        "source_page_refs": [123]
+      }
+    },
+    {
+      "number": 2,
+      "question_id": "ch5-q02",
+      "type": "single_choice",
+      "question": "A virally infected hepatocyte displays endogenous peptide fragments to a cytotoxic T lymphocyte.\n\nWhich molecule is responsible for presenting these peptides?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Class I MHC molecule on a nucleated cell"
+        },
+        {
+          "key": "B",
+          "text": "Class II MHC molecule on an antigen-presenting cell"
+        },
+        {
+          "key": "C",
+          "text": "Membrane IgM on a B cell"
+        },
+        {
+          "key": "D",
+          "text": "Fc epsilon RI on a mast cell"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Class I MHC molecules are expressed on all nucleated cells and present cytosolic peptides to CD8+ T cells.",
+        "source_page_refs": [126]
+      }
+    },
+    {
+      "number": 3,
+      "question_id": "ch5-q03",
+      "type": "single_choice",
+      "question": "A B lymphocyte has ingested a protein antigen and is interacting with a helper T cell in a germinal center.\n\nWhich receptor-ligand pair is required for heavy-chain class switching?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "CD28 and B7"
+        },
+        {
+          "key": "B",
+          "text": "CD40L and CD40"
+        },
+        {
+          "key": "C",
+          "text": "Fas and Fas ligand"
+        },
+        {
+          "key": "D",
+          "text": "Perforin and granzyme"
+        },
+        {
+          "key": "E",
+          "text": "Selectin and sialyl-Lewis X"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Helper T cells drive B-cell class switching through CD40L-CD40 interactions together with cytokines.",
+        "source_page_refs": [132, 133]
+      }
+    },
+    {
+      "number": 4,
+      "question_id": "ch5-q04",
+      "type": "single_choice",
+      "question": "Which helper T-cell subset is most directly responsible for recruiting neutrophils and monocytes in host defense against some extracellular bacteria and fungi?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "TH1"
+        },
+        {
+          "key": "B",
+          "text": "TH2"
+        },
+        {
+          "key": "C",
+          "text": "TH17"
+        },
+        {
+          "key": "D",
+          "text": "Treg"
+        },
+        {
+          "key": "E",
+          "text": "NKT"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "TH17 cells produce IL-17 and related cytokines that recruit neutrophils and monocytes.",
+        "source_page_refs": [132]
+      }
+    },
+    {
+      "number": 5,
+      "question_id": "ch5-q05",
+      "type": "single_choice",
+      "question": "A patient with atopic asthma develops severe bronchospasm within minutes of inhaling cat dander.\n\nWhich newly synthesized mast-cell mediator is most responsible for the intense smooth muscle contraction?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "C3b"
+        },
+        {
+          "key": "B",
+          "text": "Histamine"
+        },
+        {
+          "key": "C",
+          "text": "IL-2"
+        },
+        {
+          "key": "D",
+          "text": "Leukotrienes C4 and D4"
+        },
+        {
+          "key": "E",
+          "text": "TGF-beta"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "Leukotrienes C4 and D4 are among the most potent mediators of bronchospasm and increased vascular permeability in immediate hypersensitivity.",
+        "source_page_refs": [136, 137]
+      }
+    },
+    {
+      "number": 6,
+      "question_id": "ch5-q06",
+      "type": "single_choice",
+      "question": "A woman with weight loss, heat intolerance, and diffuse goiter has an antibody directed against the thyroid-stimulating hormone receptor.\n\nWhat is the principal pathogenic mechanism of this disease?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Antibody-mediated stimulation of a receptor without direct tissue destruction"
+        },
+        {
+          "key": "B",
+          "text": "Complement-mediated lysis of thyroid follicular cells"
+        },
+        {
+          "key": "C",
+          "text": "Deposition of circulating immune complexes in thyroid vessels"
+        },
+        {
+          "key": "D",
+          "text": "IgE-dependent mast-cell degranulation"
+        },
+        {
+          "key": "E",
+          "text": "Direct cytotoxicity by CD8+ T cells"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Graves disease is a type II hypersensitivity disorder in which antibody stimulates the TSH receptor and drives hyperthyroidism.",
+        "source_page_refs": [140]
+      }
+    },
+    {
+      "number": 7,
+      "question_id": "ch5-q07",
+      "type": "single_choice",
+      "question": "Ten days after receiving horse anti-thymocyte globulin, a patient develops fever, urticaria, arthralgia, and proteinuria.\n\nWhat is the most likely underlying mechanism?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Deposition of circulating antigen-antibody complexes with complement-mediated inflammation"
+        },
+        {
+          "key": "B",
+          "text": "Direct antibody stimulation of cell-surface receptors"
+        },
+        {
+          "key": "C",
+          "text": "Immediate mast-cell degranulation driven by IgE"
+        },
+        {
+          "key": "D",
+          "text": "Loss of central tolerance in the thymus"
+        },
+        {
+          "key": "E",
+          "text": "CD8+ T-cell killing of endothelial cells"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Serum sickness is the prototype of systemic type III hypersensitivity caused by circulating immune complex deposition.",
+        "source_page_refs": [141, 142]
+      }
+    },
+    {
+      "number": 8,
+      "question_id": "ch5-q08",
+      "type": "single_choice",
+      "question": "An indurated tuberculin skin test peaks 48 hours after intradermal injection.\n\nWhich cell-cytokine pair is most directly responsible for this delayed reaction?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "TH1 cell and IFN-gamma"
+        },
+        {
+          "key": "B",
+          "text": "TH2 cell and IL-4"
+        },
+        {
+          "key": "C",
+          "text": "B cell and IgE"
+        },
+        {
+          "key": "D",
+          "text": "Plasma cell and IgM"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Delayed-type hypersensitivity is classically a TH1-mediated reaction driven by IFN-gamma and macrophage activation.",
+        "source_page_refs": [142, 143]
+      }
+    },
+    {
+      "number": 9,
+      "question_id": "ch5-q09",
+      "type": "single_choice",
+      "question": "A child with autoimmune polyendocrinopathy has a mutation in AIRE.\n\nWhat is the normal role of this protein?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Promoting thymic expression of peripheral self antigens for negative selection"
+        },
+        {
+          "key": "B",
+          "text": "Delivering costimulatory signals from B7 to CD28"
+        },
+        {
+          "key": "C",
+          "text": "Activating macrophage oxidative burst"
+        },
+        {
+          "key": "D",
+          "text": "Transporting peptides into the endoplasmic reticulum for class I loading"
+        },
+        {
+          "key": "E",
+          "text": "Stimulating class switching in germinal centers"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "AIRE promotes thymic expression of peripheral tissue antigens, allowing deletion of self-reactive immature T cells.",
+        "source_page_refs": [145, 146]
+      }
+    },
+    {
+      "number": 10,
+      "question_id": "ch5-q10",
+      "type": "single_choice",
+      "question": "Which mechanism of peripheral tolerance is most closely linked to FOXP3-expressing CD4+ CD25+ cells?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Deletion of immature B cells in bone marrow"
+        },
+        {
+          "key": "B",
+          "text": "Suppression of immune responses by regulatory T cells"
+        },
+        {
+          "key": "C",
+          "text": "Selection of CD8+ T cells by class I MHC"
+        },
+        {
+          "key": "D",
+          "text": "Mast-cell desensitization by IgG"
+        },
+        {
+          "key": "E",
+          "text": "Complement-mediated clearance of immune complexes"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "FOXP3-expressing CD4+ CD25+ regulatory T cells suppress autoreactive immune responses, partly through IL-10, TGF-beta, and CTLA-4.",
+        "source_page_refs": [146, 147]
+      }
+    },
+    {
+      "number": 11,
+      "question_id": "ch5-q11",
+      "type": "single_choice",
+      "question": "Rheumatic heart disease after streptococcal pharyngitis is the classic example of which mechanism promoting autoimmunity?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Anergy due to absent costimulation"
+        },
+        {
+          "key": "B",
+          "text": "Central deletion of self-reactive T cells"
+        },
+        {
+          "key": "C",
+          "text": "Molecular mimicry between microbial and self antigens"
+        },
+        {
+          "key": "D",
+          "text": "Random inactivation of one X chromosome"
+        },
+        {
+          "key": "E",
+          "text": "Class switching driven by follicular helper T cells"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Molecular mimicry allows immune responses directed at microbial epitopes to cross-react with self tissues.",
+        "source_page_refs": [148]
+      }
+    },
+    {
+      "number": 12,
+      "question_id": "ch5-q12",
+      "type": "single_choice",
+      "question": "A young woman presents with a malar rash, arthritis, and nephritis. Generic ANA testing is positive.\n\nWhich additional autoantibody is most specific for systemic lupus erythematosus?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Anti-centromere antibody"
+        },
+        {
+          "key": "B",
+          "text": "Anti-dsDNA antibody"
+        },
+        {
+          "key": "C",
+          "text": "Anti-histidyl tRNA synthetase antibody"
+        },
+        {
+          "key": "D",
+          "text": "Anti-Ro / SS-A antibody"
+        },
+        {
+          "key": "E",
+          "text": "Anti-Sm antibody"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "E",
+        "reason": "Anti-Sm antibody is highly specific for SLE, whereas anti-dsDNA is also strongly associated but anti-Sm is the classic specificity marker.",
+        "source_page_refs": [150, 151]
+      }
+    },
+    {
+      "number": 13,
+      "question_id": "ch5-q13",
+      "type": "single_choice",
+      "question": "A patient with lupus has recurrent miscarriages and venous thromboses despite a prolonged partial thromboplastin time in vitro.\n\nWhich antibody is most likely responsible?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Anti-centromere antibody"
+        },
+        {
+          "key": "B",
+          "text": "Anti-dsDNA antibody"
+        },
+        {
+          "key": "C",
+          "text": "Anti-phospholipid antibody"
+        },
+        {
+          "key": "D",
+          "text": "Anti-Ro / SS-A antibody"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Anti-phospholipid antibodies produce the paradox of prolonged clotting tests in vitro but a hypercoagulable state with thrombosis in vivo.",
+        "source_page_refs": [151]
+      }
+    },
+    {
+      "number": 14,
+      "question_id": "ch5-q14",
+      "type": "single_choice",
+      "question": "Renal biopsy from a patient with SLE shows diffuse proliferative glomerulonephritis with wire-loop lesions.\n\nWhat do these wire-loop lesions represent?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Amyloid deposited in the mesangium"
+        },
+        {
+          "key": "B",
+          "text": "Diffuse neutrophilic abscess formation"
+        },
+        {
+          "key": "C",
+          "text": "Extensive subendothelial immune-complex deposits"
+        },
+        {
+          "key": "D",
+          "text": "Linear anti-basement-membrane antibody deposition"
+        },
+        {
+          "key": "E",
+          "text": "Thrombotic microangiopathy limited to arterioles"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Wire-loop lesions in diffuse lupus nephritis correspond to large subendothelial immune-complex deposits that thicken capillary walls.",
+        "source_page_refs": [154, 155]
+      }
+    },
+    {
+      "number": 15,
+      "question_id": "ch5-q15",
+      "type": "single_choice",
+      "question": "A 56-year-old woman has dry eyes, dry mouth, parotid enlargement, and renal tubular acidosis.\n\nWhich pair of autoantibodies most strongly supports Sjogren syndrome?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Anti-Ro / SS-A and anti-La / SS-B"
+        },
+        {
+          "key": "B",
+          "text": "Anti-Scl-70 and anti-centromere"
+        },
+        {
+          "key": "C",
+          "text": "Anti-Sm and anti-dsDNA"
+        },
+        {
+          "key": "D",
+          "text": "Anti-Jo-1 and anti-Mi-2"
+        },
+        {
+          "key": "E",
+          "text": "Anti-phospholipid and anti-cardiolipin"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Anti-Ro / SS-A and anti-La / SS-B are the classic autoantibodies associated with Sjogren syndrome.",
+        "source_page_refs": [158, 159]
+      }
+    },
+    {
+      "number": 16,
+      "question_id": "ch5-q16",
+      "type": "single_choice",
+      "question": "A patient has Raynaud phenomenon, esophageal dysmotility, sclerodactyly, and telangiectasia with relatively limited skin disease.\n\nWhich autoantibody is most strongly associated with this pattern?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Anti-centromere antibody"
+        },
+        {
+          "key": "B",
+          "text": "Anti-dsDNA antibody"
+        },
+        {
+          "key": "C",
+          "text": "Anti-histone antibody"
+        },
+        {
+          "key": "D",
+          "text": "Anti-Ro / SS-A antibody"
+        },
+        {
+          "key": "E",
+          "text": "Anti-topoisomerase I antibody"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Limited systemic sclerosis (the CREST pattern) is strongly associated with anti-centromere antibodies.",
+        "source_page_refs": [159, 160, 161]
+      }
+    },
+    {
+      "number": 17,
+      "question_id": "ch5-q17",
+      "type": "single_choice",
+      "question": "A biopsy from a fibro-inflammatory mass in the bile duct shows a dense lymphoplasmacytic infiltrate with storiform fibrosis and obliterative phlebitis.\n\nWhich diagnosis is most likely?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Amyloidosis"
+        },
+        {
+          "key": "B",
+          "text": "Goodpasture syndrome"
+        },
+        {
+          "key": "C",
+          "text": "IgG4-related disease"
+        },
+        {
+          "key": "D",
+          "text": "Serum sickness"
+        },
+        {
+          "key": "E",
+          "text": "Systemic lupus erythematosus"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "IgG4-related disease is defined by IgG4-rich plasma cell infiltrates with storiform fibrosis and obliterative phlebitis.",
+        "source_page_refs": [162]
+      }
+    },
+    {
+      "number": 18,
+      "question_id": "ch5-q18",
+      "type": "single_choice",
+      "question": "A kidney allograft becomes cyanotic and anuric within minutes of revascularization.\n\nWhich mechanism best explains this event?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Acute cytokine-mediated injury by newly activated TH17 cells"
+        },
+        {
+          "key": "B",
+          "text": "Deposition of AA amyloid in graft vessels"
+        },
+        {
+          "key": "C",
+          "text": "Immediate binding of preformed recipient antibodies to graft endothelium with thrombosis"
+        },
+        {
+          "key": "D",
+          "text": "Progressive intimal smooth muscle proliferation over months"
+        },
+        {
+          "key": "E",
+          "text": "Slow immune complex deposition in glomeruli"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Hyperacute rejection is caused by preformed antibodies against graft endothelial antigens, producing complement activation, thrombosis, and ischemic necrosis.",
+        "source_page_refs": [163, 164]
+      }
+    },
+    {
+      "number": 19,
+      "question_id": "ch5-q19",
+      "type": "single_choice",
+      "question": "Ten days after renal transplantation, serum creatinine rises. Biopsy shows interstitial lymphocytes infiltrating tubules and undermining endothelium.\n\nWhich process best explains these findings?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Alloreactive T-cell-mediated tubulitis and endotheliitis"
+        },
+        {
+          "key": "B",
+          "text": "Amyloid deposition in the graft interstitium"
+        },
+        {
+          "key": "C",
+          "text": "Immediate IgE-mediated mast-cell activation"
+        },
+        {
+          "key": "D",
+          "text": "Passive transfer of maternal anti-HLA antibodies"
+        },
+        {
+          "key": "E",
+          "text": "Sterile immune complex deposition with neutrophilic vasculitis"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Tubulitis and endotheliitis are the classic biopsy findings of acute cellular rejection mediated by alloreactive T cells.",
+        "source_page_refs": [164, 165]
+      }
+    },
+    {
+      "number": 20,
+      "question_id": "ch5-q20",
+      "type": "single_choice",
+      "question": "Several years after kidney transplantation, renal function declines gradually and biopsy shows graft arteriosclerosis, interstitial fibrosis, and tubular atrophy.\n\nWhat is the dominant pathologic process?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Chronic alloreactive vascular injury with progressive intimal proliferation and fibrosis"
+        },
+        {
+          "key": "B",
+          "text": "Hyperacute rejection caused by naturally occurring anti-blood-group antibodies"
+        },
+        {
+          "key": "C",
+          "text": "Acute eosinophilic rejection driven by TH2 cytokines"
+        },
+        {
+          "key": "D",
+          "text": "Recurrent serum sickness localized to the graft"
+        },
+        {
+          "key": "E",
+          "text": "Complete tolerance of donor antigens with nonimmune scarring"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Chronic rejection is driven by persistent T-cell and antibody-mediated vascular injury, leading to graft arteriosclerosis and parenchymal fibrosis.",
+        "source_page_refs": [165]
+      }
+    },
+    {
+      "number": 21,
+      "question_id": "ch5-q21",
+      "type": "single_choice",
+      "question": "An immunologically compromised recipient develops a rash, jaundice, and bloody diarrhea after allogeneic hematopoietic stem-cell transplantation.\n\nWhich set of organs is classically targeted in acute graft-versus-host disease?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Adrenal glands, pituitary gland, and thyroid"
+        },
+        {
+          "key": "B",
+          "text": "Kidney, pancreas, and spleen"
+        },
+        {
+          "key": "C",
+          "text": "Liver, skin, and gut"
+        },
+        {
+          "key": "D",
+          "text": "Lung, heart, and skeletal muscle"
+        },
+        {
+          "key": "E",
+          "text": "Retina, meninges, and peripheral nerves"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Acute GVHD classically causes epithelial injury in skin, liver, and gastrointestinal tract.",
+        "source_page_refs": [166, 167]
+      }
+    },
+    {
+      "number": 22,
+      "question_id": "ch5-q22",
+      "type": "single_choice",
+      "question": "A male infant has severe viral, fungal, and bacterial infections with profound defects in both cellular and humoral immunity. A mutation in the common gamma chain of several cytokine receptors is found.\n\nWhich cytokine is most critical to the lymphocyte-development defect in this disorder?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "IL-1"
+        },
+        {
+          "key": "B",
+          "text": "IL-4"
+        },
+        {
+          "key": "C",
+          "text": "IL-7"
+        },
+        {
+          "key": "D",
+          "text": "TNF"
+        },
+        {
+          "key": "E",
+          "text": "TGF-beta"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "The common gamma chain mutation in X-linked SCID critically impairs IL-7 signaling, which is required for lymphocyte development.",
+        "source_page_refs": [168, 169]
+      }
+    },
+    {
+      "number": 23,
+      "question_id": "ch5-q23",
+      "type": "single_choice",
+      "question": "A 9-month-old boy develops recurrent otitis media and pneumonia after maternal antibodies have waned. Tonsils are absent and mature B cells are not detectable.\n\nWhat molecular defect is most likely present?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "AIRE mutation impairing thymic negative selection"
+        },
+        {
+          "key": "B",
+          "text": "ATM mutation impairing DNA-damage responses"
+        },
+        {
+          "key": "C",
+          "text": "BTK mutation blocking B-cell maturation"
+        },
+        {
+          "key": "D",
+          "text": "C1 inhibitor deficiency causing hereditary angioedema"
+        },
+        {
+          "key": "E",
+          "text": "WASP mutation impairing cytoskeletal signaling"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "X-linked agammaglobulinemia is caused by BTK mutation, which blocks maturation from the pre-B-cell stage to mature antibody-producing B cells.",
+        "source_page_refs": [170]
+      }
+    },
+    {
+      "number": 24,
+      "question_id": "ch5-q24",
+      "type": "single_choice",
+      "question": "A newborn with conotruncal cardiac malformation and hypocalcemic tetany develops recurrent viral and fungal infections.\n\nFailure of development of which structure best explains the immunologic defect?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Bone marrow sinusoidal endothelium"
+        },
+        {
+          "key": "B",
+          "text": "Germinal centers of lymph nodes"
+        },
+        {
+          "key": "C",
+          "text": "Parafollicular thyroid C cells"
+        },
+        {
+          "key": "D",
+          "text": "Thymus derived from the third and fourth pharyngeal pouches"
+        },
+        {
+          "key": "E",
+          "text": "Yolk-sac macrophage precursors"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "DiGeorge syndrome is caused by developmental failure of structures derived from the third and fourth pharyngeal pouches, including the thymus.",
+        "source_page_refs": [170]
+      }
+    },
+    {
+      "number": 25,
+      "question_id": "ch5-q25",
+      "type": "single_choice",
+      "question": "A boy has recurrent pyogenic infections and Pneumocystis pneumonia. Laboratory studies show high IgM with low IgG, IgA, and IgE.\n\nWhich defect is most likely?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Adenosine deaminase deficiency"
+        },
+        {
+          "key": "B",
+          "text": "BTK mutation"
+        },
+        {
+          "key": "C",
+          "text": "CD40L deficiency"
+        },
+        {
+          "key": "D",
+          "text": "Myeloperoxidase deficiency"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Hyper-IgM syndrome most often results from CD40L deficiency, preventing class switching and impairing macrophage activation.",
+        "source_page_refs": [170, 171]
+      }
+    },
+    {
+      "number": 26,
+      "question_id": "ch5-q26",
+      "type": "single_choice",
+      "question": "A child has recurrent bacterial infections and granuloma formation due to a defective oxidative burst in neutrophils.\n\nWhich enzyme system is deficient?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Adenosine deaminase"
+        },
+        {
+          "key": "B",
+          "text": "Activation-induced cytidine deaminase"
+        },
+        {
+          "key": "C",
+          "text": "C1 esterase inhibitor"
+        },
+        {
+          "key": "D",
+          "text": "Phagocyte oxidase"
+        },
+        {
+          "key": "E",
+          "text": "Tyrosine kinase BTK"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "Chronic granulomatous disease is caused by defects in phagocyte oxidase, producing failure of the respiratory burst and impaired microbial killing.",
+        "source_page_refs": [172]
+      }
+    },
+    {
+      "number": 27,
+      "question_id": "ch5-q27",
+      "type": "single_choice",
+      "question": "A person repeatedly exposed to HIV remains resistant to infection because they are homozygous for a mutated chemokine receptor that many viral strains use as a coreceptor.\n\nWhich receptor is absent?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "CCR5"
+        },
+        {
+          "key": "B",
+          "text": "CD21"
+        },
+        {
+          "key": "C",
+          "text": "CD40"
+        },
+        {
+          "key": "D",
+          "text": "CXCR5"
+        },
+        {
+          "key": "E",
+          "text": "Fc epsilon RI"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Many HIV strains use CCR5 as a coreceptor, and homozygous CCR5 mutation confers resistance to infection by these strains.",
+        "source_page_refs": [175]
+      }
+    },
+    {
+      "number": 28,
+      "question_id": "ch5-q28",
+      "type": "single_choice",
+      "question": "During the earliest phase of HIV infection, which cell population in mucosal tissues is preferentially infected and depleted?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Naive B cells expressing surface IgD"
+        },
+        {
+          "key": "B",
+          "text": "Memory CD4+ T cells expressing CCR5"
+        },
+        {
+          "key": "C",
+          "text": "Mature plasma cells in bone marrow"
+        },
+        {
+          "key": "D",
+          "text": "Resting NK cells lacking antigen receptors"
+        },
+        {
+          "key": "E",
+          "text": "TH2 cells in splenic white pulp"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Acute HIV infection begins in mucosal tissues, where memory CD4+ T cells that express CCR5 are rapidly infected and lost.",
+        "source_page_refs": [178]
+      }
+    },
+    {
+      "number": 29,
+      "question_id": "ch5-q29",
+      "type": "single_choice",
+      "question": "An HIV-infected man develops multiple violaceous skin and oral mucosal lesions. Biopsy shows a spindle-cell vascular neoplasm.\n\nWhich virus is necessary for the development of this tumor?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Cytomegalovirus"
+        },
+        {
+          "key": "B",
+          "text": "Epstein-Barr virus"
+        },
+        {
+          "key": "C",
+          "text": "Hepatitis B virus"
+        },
+        {
+          "key": "D",
+          "text": "Human herpesvirus 8"
+        },
+        {
+          "key": "E",
+          "text": "JC virus"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "Kaposi sarcoma is strongly linked to Kaposi sarcoma herpesvirus, also known as human herpesvirus 8.",
+        "source_page_refs": [180, 181]
+      }
+    },
+    {
+      "number": 30,
+      "question_id": "ch5-q30",
+      "type": "single_choice",
+      "question": "A patient on long-term hemodialysis develops carpal tunnel syndrome, scapulohumeral periarthritis, and flexor tenosynovitis.\n\nWhich protein most likely composes the amyloid deposits?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "AA protein derived from serum amyloid-associated protein"
+        },
+        {
+          "key": "B",
+          "text": "AL protein derived from immunoglobulin light chains"
+        },
+        {
+          "key": "C",
+          "text": "Amyloid beta derived from amyloid precursor protein"
+        },
+        {
+          "key": "D",
+          "text": "Beta-2-microglobulin"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "Hemodialysis-associated amyloidosis is caused by deposition of beta-2-microglobulin.",
+        "source_page_refs": [184]
+      }
+    }
+  ]
+}
