@@ -130,7 +130,12 @@
       "front": "What does thermal dimorphism mean in medical mycology?",
       "back": "Growth as hyphae at room temperature and as yeast at body temperature.",
       "source_page_refs": [343, 345],
-      "tags": ["pathology", "chapter-09", "infectious-agents", "thermal-dimorphism"]
+      "tags": [
+        "pathology",
+        "chapter-09",
+        "infectious-agents",
+        "thermal-dimorphism"
+      ]
     },
     {
       "number": 8,
@@ -251,7 +256,12 @@
       "front": "What genetic event made the 2011 outbreak E. coli strain more virulent?",
       "back": "Acquisition of a shiga-toxin gene from a bacteriophage.",
       "source_page_refs": [347],
-      "tags": ["pathology", "chapter-09", "emerging-infections", "bacteriophage"]
+      "tags": [
+        "pathology",
+        "chapter-09",
+        "emerging-infections",
+        "bacteriophage"
+      ]
     },
     {
       "number": 19,
@@ -416,7 +426,12 @@
       "front": "What are bacterial pathogenicity islands?",
       "back": "Clusters of virulence genes that help determine whether a bacterium can cause disease.",
       "source_page_refs": [353],
-      "tags": ["pathology", "chapter-09", "pathogenesis", "pathogenicity-islands"]
+      "tags": [
+        "pathology",
+        "chapter-09",
+        "pathogenesis",
+        "pathogenicity-islands"
+      ]
     },
     {
       "number": 34,
@@ -482,7 +497,12 @@
       "front": "What is antigenic variation?",
       "back": "Microbial alteration of surface antigens to evade preexisting immune recognition.",
       "source_page_refs": [355, 356],
-      "tags": ["pathology", "chapter-09", "immune-evasion", "antigenic-variation"]
+      "tags": [
+        "pathology",
+        "chapter-09",
+        "immune-evasion",
+        "antigenic-variation"
+      ]
     },
     {
       "number": 40,

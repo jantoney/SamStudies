@@ -80,10 +80,7 @@
       "answer": {
         "correct_choice_key": "C",
         "reason": "The chapter links climate change to flooding-related water contamination, changes in vector distribution, and broader increases in infectious disease burden.",
-        "source_page_refs": [
-          299,
-          300
-        ]
+        "source_page_refs": [299, 300]
       }
     },
     {
@@ -112,10 +109,7 @@
       "answer": {
         "correct_choice_key": "A",
         "reason": "Phase I reactions mediated by cytochrome P-450 can detoxify xenobiotics or activate them into reactive toxic intermediates.",
-        "source_page_refs": [
-          301,
-          302
-        ]
+        "source_page_refs": [301, 302]
       }
     },
     {
@@ -148,10 +142,7 @@
       "answer": {
         "correct_choice_key": "D",
         "reason": "Fine particulates under 10 micrometers travel to the alveoli, where they are phagocytosed and incite inflammation.",
-        "source_page_refs": [
-          302,
-          303
-        ]
+        "source_page_refs": [302, 303]
       }
     },
     {
@@ -180,9 +171,7 @@
       "answer": {
         "correct_choice_key": "B",
         "reason": "Carbon monoxide binds hemoglobin with very high affinity and forms carboxyhemoglobin, preventing effective oxygen transport.",
-        "source_page_refs": [
-          303
-        ]
+        "source_page_refs": [303]
       }
     },
     {
@@ -215,10 +204,7 @@
       "answer": {
         "correct_choice_key": "E",
         "reason": "Lead inhibits key heme-synthesis enzymes, producing microcytic anemia, basophilic stippling, and accumulation of zinc-protoporphyrin-related markers.",
-        "source_page_refs": [
-          304,
-          305
-        ]
+        "source_page_refs": [304, 305]
       }
     },
     {
@@ -251,9 +237,7 @@
       "answer": {
         "correct_choice_key": "C",
         "reason": "Fetal methyl mercury exposure from contaminated fish can produce Minamata disease, with severe CNS damage in the developing brain.",
-        "source_page_refs": [
-          305
-        ]
+        "source_page_refs": [305]
       }
     },
     {
@@ -286,9 +270,7 @@
       "answer": {
         "correct_choice_key": "A",
         "reason": "Acute arsenic toxicity is strongly linked to interference with oxidative phosphorylation, while chronic exposure causes distinctive skin and cancer changes.",
-        "source_page_refs": [
-          306
-        ]
+        "source_page_refs": [306]
       }
     },
     {
@@ -321,10 +303,7 @@
       "answer": {
         "correct_choice_key": "D",
         "reason": "Vinyl chloride exposure is a classic cause of hepatic angiosarcoma.",
-        "source_page_refs": [
-          306,
-          307
-        ]
+        "source_page_refs": [306, 307]
       }
     },
     {
@@ -357,10 +336,7 @@
       "answer": {
         "correct_choice_key": "B",
         "reason": "Tobacco is the most common exogenous cause of human cancer and is responsible for the great majority of lung cancers.",
-        "source_page_refs": [
-          307,
-          308
-        ]
+        "source_page_refs": [307, 308]
       }
     },
     {
@@ -393,10 +369,7 @@
       "answer": {
         "correct_choice_key": "E",
         "reason": "Smoking and alcohol together multiply the risk of oral, laryngeal, and esophageal cancers.",
-        "source_page_refs": [
-          309,
-          310
-        ]
+        "source_page_refs": [309, 310]
       }
     },
     {
@@ -425,9 +398,7 @@
       "answer": {
         "correct_choice_key": "A",
         "reason": "At usual intake, ethanol is metabolized mainly in hepatocyte cytosol by alcohol dehydrogenase.",
-        "source_page_refs": [
-          310
-        ]
+        "source_page_refs": [310]
       }
     },
     {
@@ -460,10 +431,7 @@
       "answer": {
         "correct_choice_key": "D",
         "reason": "Alcohol metabolism raises the NADH/NAD+ ratio, suppressing fatty-acid oxidation and promoting hepatic steatosis.",
-        "source_page_refs": [
-          310,
-          311
-        ]
+        "source_page_refs": [310, 311]
       }
     },
     {
@@ -496,9 +464,7 @@
       "answer": {
         "correct_choice_key": "B",
         "reason": "Acetaminophen overdose generates excess NAPQI, depletes glutathione, and produces centrilobular hepatic necrosis.",
-        "source_page_refs": [
-          314
-        ]
+        "source_page_refs": [314]
       }
     },
     {
@@ -531,9 +497,7 @@
       "answer": {
         "correct_choice_key": "C",
         "reason": "Aspirin irreversibly inhibits platelet cyclooxygenase and blocks thromboxane A2 production, impairing platelet aggregation.",
-        "source_page_refs": [
-          314
-        ]
+        "source_page_refs": [314]
       }
     },
     {
@@ -566,10 +530,7 @@
       "answer": {
         "correct_choice_key": "A",
         "reason": "Cocaine increases catecholamine signaling, causes coronary vasospasm, promotes platelet aggregation, and can precipitate myocardial infarction.",
-        "source_page_refs": [
-          315,
-          316
-        ]
+        "source_page_refs": [315, 316]
       }
     },
     {
@@ -602,9 +563,7 @@
       "answer": {
         "correct_choice_key": "D",
         "reason": "Intravenous heroin use is classically associated with right-sided infective endocarditis, especially involving the tricuspid valve.",
-        "source_page_refs": [
-          316
-        ]
+        "source_page_refs": [316]
       }
     },
     {
@@ -637,9 +596,7 @@
       "answer": {
         "correct_choice_key": "B",
         "reason": "Major burns cause rapid fluid movement into interstitium, producing hypovolemic shock early in the course.",
-        "source_page_refs": [
-          318
-        ]
+        "source_page_refs": [318]
       }
     },
     {
@@ -668,9 +625,7 @@
       "answer": {
         "correct_choice_key": "C",
         "reason": "Heat stroke reflects failure of thermoregulation with marked hyperthermia and high mortality, unlike heat exhaustion where temperature regulation is preserved.",
-        "source_page_refs": [
-          319
-        ]
+        "source_page_refs": [319]
       }
     },
     {
@@ -703,9 +658,7 @@
       "answer": {
         "correct_choice_key": "E",
         "reason": "Alternating current can trigger tetanic spasm, locking the victim onto the source and prolonging current flow.",
-        "source_page_refs": [
-          320
-        ]
+        "source_page_refs": [320]
       }
     },
     {
@@ -738,9 +691,7 @@
       "answer": {
         "correct_choice_key": "A",
         "reason": "The sievert expresses equivalent dose and corrects absorbed dose for biologic effectiveness of the radiation type.",
-        "source_page_refs": [
-          320
-        ]
+        "source_page_refs": [320]
       }
     },
     {
@@ -773,9 +724,7 @@
       "answer": {
         "correct_choice_key": "B",
         "reason": "At this dose range, the dominant acute radiation syndrome reflects marrow aplasia with severe cytopenias.",
-        "source_page_refs": [
-          323
-        ]
+        "source_page_refs": [323]
       }
     },
     {
@@ -808,10 +757,7 @@
       "answer": {
         "correct_choice_key": "D",
         "reason": "Marasmus reflects severe calorie deficiency with muscle and fat wasting and relatively preserved visceral protein stores.",
-        "source_page_refs": [
-          324,
-          325
-        ]
+        "source_page_refs": [324, 325]
       }
     },
     {
@@ -844,9 +790,7 @@
       "answer": {
         "correct_choice_key": "C",
         "reason": "Kwashiorkor is the edematous severe acute malnutrition syndrome caused by relative protein deficiency with visceral protein depletion.",
-        "source_page_refs": [
-          325
-        ]
+        "source_page_refs": [325]
       }
     },
     {
@@ -879,9 +823,7 @@
       "answer": {
         "correct_choice_key": "A",
         "reason": "Bulimia and anorexia can both produce hypokalemia, which increases the risk of lethal cardiac arrhythmias.",
-        "source_page_refs": [
-          326
-        ]
+        "source_page_refs": [326]
       }
     },
     {
@@ -914,10 +856,7 @@
       "answer": {
         "correct_choice_key": "E",
         "reason": "Vitamin A is required for normal visual pigment function and maintenance of specialized epithelia, explaining night blindness and xerophthalmia.",
-        "source_page_refs": [
-          328,
-          329
-        ]
+        "source_page_refs": [328, 329]
       }
     },
     {
@@ -946,10 +885,7 @@
       "answer": {
         "correct_choice_key": "B",
         "reason": "Vitamin D deficiency stimulates parathyroid hormone secretion, which helps normalize calcium but drives renal phosphate wasting.",
-        "source_page_refs": [
-          329,
-          330
-        ]
+        "source_page_refs": [329, 330]
       }
     },
     {
@@ -982,9 +918,7 @@
       "answer": {
         "correct_choice_key": "D",
         "reason": "Vitamin C is required for hydroxylation reactions during collagen synthesis, so deficiency weakens vessel walls and impairs wound repair.",
-        "source_page_refs": [
-          332
-        ]
+        "source_page_refs": [332]
       }
     },
     {
@@ -1017,10 +951,7 @@
       "answer": {
         "correct_choice_key": "C",
         "reason": "The chapter emphasizes that central or visceral obesity carries a far higher risk for metabolic syndrome and systemic disease than diffuse subcutaneous fat.",
-        "source_page_refs": [
-          334,
-          336
-        ]
+        "source_page_refs": [334, 336]
       }
     },
     {
@@ -1053,10 +984,7 @@
       "answer": {
         "correct_choice_key": "A",
         "reason": "Leptin is the main adiposity signal from fat stores and normally acts through the hypothalamus to reduce food intake and increase energy expenditure.",
-        "source_page_refs": [
-          335,
-          336
-        ]
+        "source_page_refs": [335, 336]
       }
     },
     {
@@ -1089,9 +1017,7 @@
       "answer": {
         "correct_choice_key": "E",
         "reason": "One proposed link between obesity and cancer is hyperinsulinemia with increased free IGF-1 signaling, which promotes growth pathways in susceptible cells.",
-        "source_page_refs": [
-          337
-        ]
+        "source_page_refs": [337]
       }
     }
   ]

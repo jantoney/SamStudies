@@ -62,7 +62,12 @@
       "front": "What are the three basic layers of a typical blood vessel wall?",
       "back": "Intima, media, and adventitia.",
       "source_page_refs": [361],
-      "tags": ["pathology", "chapter-10", "vascular-organization", "vessel-wall"]
+      "tags": [
+        "pathology",
+        "chapter-10",
+        "vascular-organization",
+        "vessel-wall"
+      ]
     },
     {
       "number": 2,
@@ -73,7 +78,12 @@
       "front": "What is the main functional role of elastic arteries such as the aorta?",
       "back": "They store energy during systole and recoil during diastole to maintain forward blood flow.",
       "source_page_refs": [362],
-      "tags": ["pathology", "chapter-10", "vascular-organization", "elastic-arteries"]
+      "tags": [
+        "pathology",
+        "chapter-10",
+        "vascular-organization",
+        "elastic-arteries"
+      ]
     },
     {
       "number": 3,
@@ -84,7 +94,13 @@
       "front": "Which class of vessels is the main site of peripheral resistance regulation?",
       "back": "Arterioles.",
       "source_page_refs": [362],
-      "tags": ["pathology", "chapter-10", "vascular-organization", "arterioles", "high-yield"]
+      "tags": [
+        "pathology",
+        "chapter-10",
+        "vascular-organization",
+        "arterioles",
+        "high-yield"
+      ]
     },
     {
       "number": 4,
@@ -95,7 +111,13 @@
       "front": "What happens to resistance if the diameter of an arteriole is halved?",
       "back": "Resistance increases 16-fold.",
       "source_page_refs": [362],
-      "tags": ["pathology", "chapter-10", "vascular-organization", "resistance", "arterioles"]
+      "tags": [
+        "pathology",
+        "chapter-10",
+        "vascular-organization",
+        "resistance",
+        "arterioles"
+      ]
     },
     {
       "number": 5,
@@ -106,7 +128,12 @@
       "front": "Why are capillaries ideal for exchange between blood and tissues?",
       "back": "They have very thin walls and slow flow across a huge total cross-sectional area.",
       "source_page_refs": [362],
-      "tags": ["pathology", "chapter-10", "vascular-organization", "capillaries"]
+      "tags": [
+        "pathology",
+        "chapter-10",
+        "vascular-organization",
+        "capillaries"
+      ]
     },
     {
       "number": 6,
@@ -128,7 +155,12 @@
       "front": "What are the vasa vasorum?",
       "back": "Small vessels that supply the outer wall of large blood vessels.",
       "source_page_refs": [362],
-      "tags": ["pathology", "chapter-10", "vascular-organization", "vasa-vasorum"]
+      "tags": [
+        "pathology",
+        "chapter-10",
+        "vascular-organization",
+        "vasa-vasorum"
+      ]
     },
     {
       "number": 8,
@@ -139,7 +171,13 @@
       "front": "Which gas released by endothelial cells causes vasodilation?",
       "back": "Nitric oxide.",
       "source_page_refs": [362, 363],
-      "tags": ["pathology", "chapter-10", "endothelium", "nitric-oxide", "high-yield"]
+      "tags": [
+        "pathology",
+        "chapter-10",
+        "endothelium",
+        "nitric-oxide",
+        "high-yield"
+      ]
     },
     {
       "number": 9,
@@ -161,7 +199,13 @@
       "front": "Blood pressure is the product of what two variables?",
       "back": "Cardiac output and peripheral vascular resistance.",
       "source_page_refs": [364],
-      "tags": ["pathology", "chapter-10", "hypertension", "hemodynamics", "high-yield"]
+      "tags": [
+        "pathology",
+        "chapter-10",
+        "hypertension",
+        "hemodynamics",
+        "high-yield"
+      ]
     },
     {
       "number": 11,
@@ -183,7 +227,12 @@
       "front": "About what proportion of hypertension cases are essential (primary) rather than secondary?",
       "back": "About 90% to 95%.",
       "source_page_refs": [366],
-      "tags": ["pathology", "chapter-10", "hypertension", "essential-hypertension"]
+      "tags": [
+        "pathology",
+        "chapter-10",
+        "hypertension",
+        "essential-hypertension"
+      ]
     },
     {
       "number": 13,
@@ -194,7 +243,13 @@
       "front": "Hyaline arteriolosclerosis is classically associated with what settings?",
       "back": "Benign hypertension and diabetic microangiopathy.",
       "source_page_refs": [367, 368],
-      "tags": ["pathology", "chapter-10", "hypertension", "hyaline-arteriolosclerosis", "high-yield"]
+      "tags": [
+        "pathology",
+        "chapter-10",
+        "hypertension",
+        "hyaline-arteriolosclerosis",
+        "high-yield"
+      ]
     },
     {
       "number": 14,
@@ -205,7 +260,12 @@
       "front": "What blood-pressure pattern is most strongly associated with hyperplastic arteriolosclerosis?",
       "back": "Severe or malignant hypertension.",
       "source_page_refs": [368],
-      "tags": ["pathology", "chapter-10", "hypertension", "hyperplastic-arteriolosclerosis"]
+      "tags": [
+        "pathology",
+        "chapter-10",
+        "hypertension",
+        "hyperplastic-arteriolosclerosis"
+      ]
     },
     {
       "number": 15,
@@ -216,7 +276,12 @@
       "front": "What additional small-vessel lesion often accompanies malignant hypertension?",
       "back": "Necrotizing arteriolitis with fibrinoid change.",
       "source_page_refs": [368],
-      "tags": ["pathology", "chapter-10", "hypertension", "malignant-hypertension"]
+      "tags": [
+        "pathology",
+        "chapter-10",
+        "hypertension",
+        "malignant-hypertension"
+      ]
     },
     {
       "number": 16,
@@ -249,7 +314,12 @@
       "front": "What is fibromuscular intimal hyperplasia?",
       "back": "A non-atherosclerotic SMC- and ECM-rich intimal thickening that can follow vascular injury or inflammation.",
       "source_page_refs": [369],
-      "tags": ["pathology", "chapter-10", "arteriosclerosis", "intimal-hyperplasia"]
+      "tags": [
+        "pathology",
+        "chapter-10",
+        "arteriosclerosis",
+        "intimal-hyperplasia"
+      ]
     },
     {
       "number": 19,
@@ -260,7 +330,13 @@
       "front": "What is an atheroma?",
       "back": "An intimal plaque with a fibrous cap over a lipid-rich necrotic core.",
       "source_page_refs": [369],
-      "tags": ["pathology", "chapter-10", "atherosclerosis", "plaque", "high-yield"]
+      "tags": [
+        "pathology",
+        "chapter-10",
+        "atherosclerosis",
+        "plaque",
+        "high-yield"
+      ]
     },
     {
       "number": 20,
@@ -271,7 +347,13 @@
       "front": "Which lipoprotein is the principal atherogenic cholesterol carrier?",
       "back": "LDL.",
       "source_page_refs": [371],
-      "tags": ["pathology", "chapter-10", "atherosclerosis", "ldl", "high-yield"]
+      "tags": [
+        "pathology",
+        "chapter-10",
+        "atherosclerosis",
+        "ldl",
+        "high-yield"
+      ]
     },
     {
       "number": 21,
@@ -293,7 +375,13 @@
       "front": "What are the four major modifiable risk factors for atherosclerosis?",
       "back": "Hyperlipidemia, hypertension, cigarette smoking, and diabetes mellitus.",
       "source_page_refs": [371, 372],
-      "tags": ["pathology", "chapter-10", "atherosclerosis", "risk-factors", "high-yield"]
+      "tags": [
+        "pathology",
+        "chapter-10",
+        "atherosclerosis",
+        "risk-factors",
+        "high-yield"
+      ]
     },
     {
       "number": 23,
@@ -304,7 +392,13 @@
       "front": "What is the first pathogenic step in the response-to-injury model of atherosclerosis?",
       "back": "Endothelial dysfunction.",
       "source_page_refs": [372, 373],
-      "tags": ["pathology", "chapter-10", "atherosclerosis", "endothelial-dysfunction", "high-yield"]
+      "tags": [
+        "pathology",
+        "chapter-10",
+        "atherosclerosis",
+        "endothelial-dysfunction",
+        "high-yield"
+      ]
     },
     {
       "number": 24,
@@ -392,7 +486,13 @@
       "front": "What morphologic feature best defines a vulnerable plaque?",
       "back": "A thin fibrous cap over a large lipid core with prominent inflammation.",
       "source_page_refs": [377, 378],
-      "tags": ["pathology", "chapter-10", "atherosclerosis", "vulnerable-plaque", "high-yield"]
+      "tags": [
+        "pathology",
+        "chapter-10",
+        "atherosclerosis",
+        "vulnerable-plaque",
+        "high-yield"
+      ]
     },
     {
       "number": 32,
@@ -414,7 +514,13 @@
       "front": "What distinguishes a true aneurysm from a false aneurysm?",
       "back": "A true aneurysm involves the vessel wall itself, whereas a false aneurysm is a contained extravascular hematoma communicating with the lumen.",
       "source_page_refs": [378],
-      "tags": ["pathology", "chapter-10", "aneurysm", "true-vs-false", "high-yield"]
+      "tags": [
+        "pathology",
+        "chapter-10",
+        "aneurysm",
+        "true-vs-false",
+        "high-yield"
+      ]
     },
     {
       "number": 34,
@@ -447,7 +553,13 @@
       "front": "What are the two most important predisposing conditions for aortic aneurysms?",
       "back": "Atherosclerosis and hypertension.",
       "source_page_refs": [379],
-      "tags": ["pathology", "chapter-10", "aneurysm", "risk-factors", "high-yield"]
+      "tags": [
+        "pathology",
+        "chapter-10",
+        "aneurysm",
+        "risk-factors",
+        "high-yield"
+      ]
     },
     {
       "number": 37,
@@ -491,7 +603,12 @@
       "front": "Which congenital valve abnormality is associated with thoracic aortic aneurysm?",
       "back": "Bicuspid aortic valve.",
       "source_page_refs": [380],
-      "tags": ["pathology", "chapter-10", "thoracic-aortic-aneurysm", "bicuspid-aortic-valve"]
+      "tags": [
+        "pathology",
+        "chapter-10",
+        "thoracic-aortic-aneurysm",
+        "bicuspid-aortic-valve"
+      ]
     },
     {
       "number": 41,
@@ -502,7 +619,13 @@
       "front": "What is aortic dissection?",
       "back": "Blood entering the media and splitting its laminar planes to create a false channel within the aortic wall.",
       "source_page_refs": [380, 381],
-      "tags": ["pathology", "chapter-10", "aortic-dissection", "definition", "high-yield"]
+      "tags": [
+        "pathology",
+        "chapter-10",
+        "aortic-dissection",
+        "definition",
+        "high-yield"
+      ]
     },
     {
       "number": 42,
@@ -524,7 +647,13 @@
       "front": "What feared complication of giant cell arteritis requires urgent treatment?",
       "back": "Irreversible blindness from ophthalmic artery involvement.",
       "source_page_refs": [384, 385],
-      "tags": ["pathology", "chapter-10", "vasculitis", "giant-cell-arteritis", "high-yield"]
+      "tags": [
+        "pathology",
+        "chapter-10",
+        "vasculitis",
+        "giant-cell-arteritis",
+        "high-yield"
+      ]
     },
     {
       "number": 44,
@@ -568,7 +697,13 @@
       "front": "What cardiovascular complication makes Kawasaki disease clinically important?",
       "back": "Coronary arteritis causing aneurysm, thrombosis, or myocardial infarction.",
       "source_page_refs": [387],
-      "tags": ["pathology", "chapter-10", "vasculitis", "kawasaki", "coronary-arteries"]
+      "tags": [
+        "pathology",
+        "chapter-10",
+        "vasculitis",
+        "kawasaki",
+        "coronary-arteries"
+      ]
     },
     {
       "number": 48,
@@ -579,7 +714,14 @@
       "front": "Which ANCA specificity is associated with granulomatosis with polyangiitis?",
       "back": "PR3-ANCA.",
       "source_page_refs": [384, 388],
-      "tags": ["pathology", "chapter-10", "vasculitis", "gpa", "anca", "high-yield"]
+      "tags": [
+        "pathology",
+        "chapter-10",
+        "vasculitis",
+        "gpa",
+        "anca",
+        "high-yield"
+      ]
     },
     {
       "number": 49,

@@ -40,12 +40,7 @@
     "flashcard_format": "basic",
     "card_count": 56,
     "primary_method": "active_recall_and_spaced_repetition",
-    "recommended_review_schedule": [
-      "Day 1",
-      "Day 2",
-      "Day 4",
-      "Day 7"
-    ],
+    "recommended_review_schedule": ["Day 1", "Day 2", "Day 4", "Day 7"],
     "topic_buckets": [
       "Climate change and toxicology",
       "Environmental pollution and heavy metals",
@@ -68,7 +63,12 @@
       "front": "What is the principal greenhouse gas emphasized in the chapter as a driver of modern climate change?",
       "back": "Carbon dioxide.",
       "source_page_refs": [299, 300],
-      "tags": ["pathology", "chapter-08", "climate-change-and-toxicology", "greenhouse-gases"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "climate-change-and-toxicology",
+        "greenhouse-gases"
+      ]
     },
     {
       "number": 2,
@@ -79,7 +79,12 @@
       "front": "Climate-change-related flooding most directly increases what infectious disease category?",
       "back": "Water-borne infections.",
       "source_page_refs": [300],
-      "tags": ["pathology", "chapter-08", "climate-change-and-toxicology", "waterborne-disease"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "climate-change-and-toxicology",
+        "waterborne-disease"
+      ]
     },
     {
       "number": 3,
@@ -90,7 +95,12 @@
       "front": "Shifts in vector number and geography caused by climate change increase what disease class?",
       "back": "Vector-borne infections such as malaria and dengue.",
       "source_page_refs": [300],
-      "tags": ["pathology", "chapter-08", "climate-change-and-toxicology", "vector-borne-disease"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "climate-change-and-toxicology",
+        "vector-borne-disease"
+      ]
     },
     {
       "number": 4,
@@ -101,7 +111,12 @@
       "front": "How does the chapter define toxicology?",
       "back": "The science of poisons.",
       "source_page_refs": [301],
-      "tags": ["pathology", "chapter-08", "climate-change-and-toxicology", "toxicology"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "climate-change-and-toxicology",
+        "toxicology"
+      ]
     },
     {
       "number": 5,
@@ -112,7 +127,12 @@
       "front": "What classic principle explains why a remedy can also become a poison?",
       "back": "Dose determines whether an agent acts as a remedy or a poison.",
       "source_page_refs": [301],
-      "tags": ["pathology", "chapter-08", "climate-change-and-toxicology", "dose-response"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "climate-change-and-toxicology",
+        "dose-response"
+      ]
     },
     {
       "number": 6,
@@ -123,7 +143,12 @@
       "front": "What are xenobiotics?",
       "back": "Exogenous chemicals absorbed through inhalation, ingestion, or skin contact.",
       "source_page_refs": [301],
-      "tags": ["pathology", "chapter-08", "climate-change-and-toxicology", "xenobiotics"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "climate-change-and-toxicology",
+        "xenobiotics"
+      ]
     },
     {
       "number": 7,
@@ -134,7 +159,12 @@
       "front": "What kinds of reactions make up phase I xenobiotic metabolism?",
       "back": "Oxidation, reduction, and hydrolysis.",
       "source_page_refs": [301],
-      "tags": ["pathology", "chapter-08", "climate-change-and-toxicology", "phase-i"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "climate-change-and-toxicology",
+        "phase-i"
+      ]
     },
     {
       "number": 8,
@@ -145,7 +175,12 @@
       "front": "What is the main purpose of phase II xenobiotic metabolism?",
       "back": "To conjugate compounds into water-soluble products that can be excreted.",
       "source_page_refs": [301],
-      "tags": ["pathology", "chapter-08", "climate-change-and-toxicology", "phase-ii"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "climate-change-and-toxicology",
+        "phase-ii"
+      ]
     },
     {
       "number": 9,
@@ -156,7 +191,12 @@
       "front": "Where is the body most active in cytochrome P-450-mediated xenobiotic metabolism?",
       "back": "In the endoplasmic reticulum of the liver.",
       "source_page_refs": [301, 302],
-      "tags": ["pathology", "chapter-08", "climate-change-and-toxicology", "cytochrome-p450"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "climate-change-and-toxicology",
+        "cytochrome-p450"
+      ]
     },
     {
       "number": 10,
@@ -167,7 +207,12 @@
       "front": "What is the main mechanism of ozone toxicity in the respiratory tract?",
       "back": "Free-radical injury to respiratory epithelial and alveolar lining cells.",
       "source_page_refs": [302, 303],
-      "tags": ["pathology", "chapter-08", "environmental-pollution-and-heavy-metals", "ozone"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "environmental-pollution-and-heavy-metals",
+        "ozone"
+      ]
     },
     {
       "number": 11,
@@ -178,7 +223,12 @@
       "front": "Which inhaled particles are especially harmful because they can reach the alveoli?",
       "back": "Particles less than 10 micrometers in diameter.",
       "source_page_refs": [303],
-      "tags": ["pathology", "chapter-08", "environmental-pollution-and-heavy-metals", "particulates"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "environmental-pollution-and-heavy-metals",
+        "particulates"
+      ]
     },
     {
       "number": 12,
@@ -189,7 +239,12 @@
       "front": "Carbon monoxide binds hemoglobin with roughly how much greater affinity than oxygen?",
       "back": "About 200-fold greater affinity.",
       "source_page_refs": [303],
-      "tags": ["pathology", "chapter-08", "environmental-pollution-and-heavy-metals", "carbon-monoxide"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "environmental-pollution-and-heavy-metals",
+        "carbon-monoxide"
+      ]
     },
     {
       "number": 13,
@@ -200,7 +255,12 @@
       "front": "What laboratory abnormality confirms carbon monoxide poisoning?",
       "back": "An elevated carboxyhemoglobin level.",
       "source_page_refs": [303],
-      "tags": ["pathology", "chapter-08", "environmental-pollution-and-heavy-metals", "carboxyhemoglobin"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "environmental-pollution-and-heavy-metals",
+        "carboxyhemoglobin"
+      ]
     },
     {
       "number": 14,
@@ -211,7 +271,12 @@
       "front": "What blood-film clue is classic in lead poisoning?",
       "back": "Basophilic stippling of red cells.",
       "source_page_refs": [304, 305],
-      "tags": ["pathology", "chapter-08", "environmental-pollution-and-heavy-metals", "lead"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "environmental-pollution-and-heavy-metals",
+        "lead"
+      ]
     },
     {
       "number": 15,
@@ -222,7 +287,12 @@
       "front": "In children, lead toxicity most often predominates in what part of the nervous system?",
       "back": "The central nervous system.",
       "source_page_refs": [304, 305],
-      "tags": ["pathology", "chapter-08", "environmental-pollution-and-heavy-metals", "lead-cns"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "environmental-pollution-and-heavy-metals",
+        "lead-cns"
+      ]
     },
     {
       "number": 16,
@@ -233,7 +303,12 @@
       "front": "What syndrome is caused by severe in utero methyl mercury exposure?",
       "back": "Minamata disease.",
       "source_page_refs": [305],
-      "tags": ["pathology", "chapter-08", "environmental-pollution-and-heavy-metals", "mercury"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "environmental-pollution-and-heavy-metals",
+        "mercury"
+      ]
     },
     {
       "number": 17,
@@ -244,7 +319,12 @@
       "front": "What chronic skin pattern is characteristic of arsenic exposure?",
       "back": "Hyperpigmentation and hyperkeratosis, often followed by multiple skin cancers.",
       "source_page_refs": [306],
-      "tags": ["pathology", "chapter-08", "environmental-pollution-and-heavy-metals", "arsenic"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "environmental-pollution-and-heavy-metals",
+        "arsenic"
+      ]
     },
     {
       "number": 18,
@@ -255,7 +335,12 @@
       "front": "Which two organ systems are preferentially injured by cadmium?",
       "back": "The kidneys and the lungs.",
       "source_page_refs": [306],
-      "tags": ["pathology", "chapter-08", "environmental-pollution-and-heavy-metals", "cadmium"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "environmental-pollution-and-heavy-metals",
+        "cadmium"
+      ]
     },
     {
       "number": 19,
@@ -266,7 +351,12 @@
       "front": "Occupational benzene exposure classically increases the risk of what hematologic malignancy?",
       "back": "Acute myeloid leukemia.",
       "source_page_refs": [306, 307],
-      "tags": ["pathology", "chapter-08", "occupational-exposure-tobacco-and-alcohol", "benzene"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "occupational-exposure-tobacco-and-alcohol",
+        "benzene"
+      ]
     },
     {
       "number": 20,
@@ -277,7 +367,12 @@
       "front": "What liver tumor is classically associated with vinyl chloride exposure?",
       "back": "Angiosarcoma of the liver.",
       "source_page_refs": [307],
-      "tags": ["pathology", "chapter-08", "occupational-exposure-tobacco-and-alcohol", "vinyl-chloride"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "occupational-exposure-tobacco-and-alcohol",
+        "vinyl-chloride"
+      ]
     },
     {
       "number": 21,
@@ -288,7 +383,12 @@
       "front": "What is the most common exogenous cause of human cancer?",
       "back": "Tobacco.",
       "source_page_refs": [307, 308],
-      "tags": ["pathology", "chapter-08", "occupational-exposure-tobacco-and-alcohol", "tobacco"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "occupational-exposure-tobacco-and-alcohol",
+        "tobacco"
+      ]
     },
     {
       "number": 22,
@@ -299,7 +399,12 @@
       "front": "Approximately what proportion of lung cancers occur in smokers?",
       "back": "About 90%.",
       "source_page_refs": [308],
-      "tags": ["pathology", "chapter-08", "occupational-exposure-tobacco-and-alcohol", "lung-cancer"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "occupational-exposure-tobacco-and-alcohol",
+        "lung-cancer"
+      ]
     },
     {
       "number": 23,
@@ -310,7 +415,12 @@
       "front": "Smoking and alcohol together multiply the risk of which cancer group?",
       "back": "Oral, laryngeal, and esophageal cancers.",
       "source_page_refs": [309, 310],
-      "tags": ["pathology", "chapter-08", "occupational-exposure-tobacco-and-alcohol", "smoking-and-alcohol"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "occupational-exposure-tobacco-and-alcohol",
+        "smoking-and-alcohol"
+      ]
     },
     {
       "number": 24,
@@ -321,7 +431,12 @@
       "front": "What common pediatric problem is increased by passive exposure to tobacco smoke at home?",
       "back": "Respiratory illness and asthma.",
       "source_page_refs": [310],
-      "tags": ["pathology", "chapter-08", "occupational-exposure-tobacco-and-alcohol", "passive-smoke"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "occupational-exposure-tobacco-and-alcohol",
+        "passive-smoke"
+      ]
     },
     {
       "number": 25,
@@ -332,7 +447,12 @@
       "front": "Which enzyme is the main route of ethanol oxidation at usual intake levels?",
       "back": "Alcohol dehydrogenase.",
       "source_page_refs": [310],
-      "tags": ["pathology", "chapter-08", "occupational-exposure-tobacco-and-alcohol", "alcohol-dehydrogenase"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "occupational-exposure-tobacco-and-alcohol",
+        "alcohol-dehydrogenase"
+      ]
     },
     {
       "number": 26,
@@ -343,7 +463,12 @@
       "front": "What metabolic shift during ethanol metabolism helps cause fatty liver?",
       "back": "An increased NADH/NAD+ ratio that suppresses fatty-acid oxidation.",
       "source_page_refs": [310, 311],
-      "tags": ["pathology", "chapter-08", "occupational-exposure-tobacco-and-alcohol", "fatty-liver"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "occupational-exposure-tobacco-and-alcohol",
+        "fatty-liver"
+      ]
     },
     {
       "number": 27,
@@ -354,7 +479,12 @@
       "front": "What reaction often occurs when a person with acetaldehyde dehydrogenase deficiency drinks alcohol?",
       "back": "Flushing, tachycardia, and hyperventilation from acetaldehyde accumulation.",
       "source_page_refs": [311],
-      "tags": ["pathology", "chapter-08", "occupational-exposure-tobacco-and-alcohol", "acetaldehyde"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "occupational-exposure-tobacco-and-alcohol",
+        "acetaldehyde"
+      ]
     },
     {
       "number": 28,
@@ -365,7 +495,12 @@
       "front": "What toxic metabolite mediates acetaminophen overdose injury?",
       "back": "NAPQI.",
       "source_page_refs": [314],
-      "tags": ["pathology", "chapter-08", "drug-injury-and-physical-agents", "napqi"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "drug-injury-and-physical-agents",
+        "napqi"
+      ]
     },
     {
       "number": 29,
@@ -376,7 +511,12 @@
       "front": "What is the key antidotal treatment for early acetaminophen overdose?",
       "back": "N-acetylcysteine.",
       "source_page_refs": [314],
-      "tags": ["pathology", "chapter-08", "drug-injury-and-physical-agents", "n-acetylcysteine"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "drug-injury-and-physical-agents",
+        "n-acetylcysteine"
+      ]
     },
     {
       "number": 30,
@@ -387,7 +527,12 @@
       "front": "Which platelet mediator is blocked by aspirin?",
       "back": "Thromboxane A2.",
       "source_page_refs": [314],
-      "tags": ["pathology", "chapter-08", "drug-injury-and-physical-agents", "aspirin"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "drug-injury-and-physical-agents",
+        "aspirin"
+      ]
     },
     {
       "number": 31,
@@ -398,7 +543,12 @@
       "front": "What is the key cardiac mechanism behind cocaine-associated myocardial ischemia?",
       "back": "Coronary vasoconstriction with enhanced platelet aggregation.",
       "source_page_refs": [315, 316],
-      "tags": ["pathology", "chapter-08", "drug-injury-and-physical-agents", "cocaine"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "drug-injury-and-physical-agents",
+        "cocaine"
+      ]
     },
     {
       "number": 32,
@@ -409,7 +559,12 @@
       "front": "What type of shock is the major early systemic danger in large burns?",
       "back": "Hypovolemic shock caused by rapid fluid shifts into interstitial compartments.",
       "source_page_refs": [318],
-      "tags": ["pathology", "chapter-08", "drug-injury-and-physical-agents", "burns"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "drug-injury-and-physical-agents",
+        "burns"
+      ]
     },
     {
       "number": 33,
@@ -420,7 +575,12 @@
       "front": "What remains the leading cause of death in major burn patients?",
       "back": "Sepsis with organ-system failure.",
       "source_page_refs": [318, 319],
-      "tags": ["pathology", "chapter-08", "drug-injury-and-physical-agents", "sepsis"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "drug-injury-and-physical-agents",
+        "sepsis"
+      ]
     },
     {
       "number": 34,
@@ -431,7 +591,12 @@
       "front": "What is the defining physiologic failure in heat stroke?",
       "back": "Failure of thermoregulation with marked hyperthermia.",
       "source_page_refs": [319],
-      "tags": ["pathology", "chapter-08", "drug-injury-and-physical-agents", "heat-stroke"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "drug-injury-and-physical-agents",
+        "heat-stroke"
+      ]
     },
     {
       "number": 35,
@@ -442,7 +607,12 @@
       "front": "Why is alternating current especially dangerous when a person grasps a live wire?",
       "back": "It induces tetanic muscle spasm that prolongs contact and current flow.",
       "source_page_refs": [320],
-      "tags": ["pathology", "chapter-08", "drug-injury-and-physical-agents", "electrical-injury"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "drug-injury-and-physical-agents",
+        "electrical-injury"
+      ]
     },
     {
       "number": 36,
@@ -453,7 +623,12 @@
       "front": "Which radiation unit measures biologic equivalent dose?",
       "back": "Sievert.",
       "source_page_refs": [320],
-      "tags": ["pathology", "chapter-08", "drug-injury-and-physical-agents", "radiation"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "drug-injury-and-physical-agents",
+        "radiation"
+      ]
     },
     {
       "number": 37,
@@ -464,7 +639,12 @@
       "front": "Which tissues are most radiosensitive to ionizing radiation?",
       "back": "Rapidly dividing tissues such as bone marrow, lymphoid tissue, gonads, and GI mucosa.",
       "source_page_refs": [320, 323],
-      "tags": ["pathology", "chapter-08", "drug-injury-and-physical-agents", "radiosensitivity"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "drug-injury-and-physical-agents",
+        "radiosensitivity"
+      ]
     },
     {
       "number": 38,
@@ -475,7 +655,12 @@
       "front": "What does secondary malnutrition mean?",
       "back": "Nutritional intake is adequate, but absorption, storage, use, loss, or demand is abnormal.",
       "source_page_refs": [324],
-      "tags": ["pathology", "chapter-08", "nutritional-diseases-and-vitamin-deficiency", "malnutrition"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "nutritional-diseases-and-vitamin-deficiency",
+        "malnutrition"
+      ]
     },
     {
       "number": 39,
@@ -486,7 +671,12 @@
       "front": "What is the hallmark of marasmus?",
       "back": "Severe calorie deficiency with marked muscle and fat wasting and little or no edema.",
       "source_page_refs": [324, 325],
-      "tags": ["pathology", "chapter-08", "nutritional-diseases-and-vitamin-deficiency", "marasmus"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "nutritional-diseases-and-vitamin-deficiency",
+        "marasmus"
+      ]
     },
     {
       "number": 40,
@@ -497,7 +687,12 @@
       "front": "What is the hallmark of kwashiorkor?",
       "back": "Relative protein deficiency with edema, hypoalbuminemia, and fatty liver.",
       "source_page_refs": [325],
-      "tags": ["pathology", "chapter-08", "nutritional-diseases-and-vitamin-deficiency", "kwashiorkor"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "nutritional-diseases-and-vitamin-deficiency",
+        "kwashiorkor"
+      ]
     },
     {
       "number": 41,
@@ -508,7 +703,12 @@
       "front": "What endocrine clue is especially common in anorexia nervosa?",
       "back": "Amenorrhea.",
       "source_page_refs": [326],
-      "tags": ["pathology", "chapter-08", "nutritional-diseases-and-vitamin-deficiency", "anorexia-nervosa"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "nutritional-diseases-and-vitamin-deficiency",
+        "anorexia-nervosa"
+      ]
     },
     {
       "number": 42,
@@ -519,7 +719,12 @@
       "front": "What electrolyte abnormality makes bulimia dangerous because it can trigger arrhythmias?",
       "back": "Hypokalemia.",
       "source_page_refs": [326],
-      "tags": ["pathology", "chapter-08", "nutritional-diseases-and-vitamin-deficiency", "bulimia"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "nutritional-diseases-and-vitamin-deficiency",
+        "bulimia"
+      ]
     },
     {
       "number": 43,
@@ -530,7 +735,12 @@
       "front": "What is one of the earliest symptoms of vitamin A deficiency?",
       "back": "Night blindness.",
       "source_page_refs": [327, 328],
-      "tags": ["pathology", "chapter-08", "nutritional-diseases-and-vitamin-deficiency", "vitamin-a"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "nutritional-diseases-and-vitamin-deficiency",
+        "vitamin-a"
+      ]
     },
     {
       "number": 44,
@@ -541,7 +751,12 @@
       "front": "What severe ocular deficiency state is classically caused by vitamin A lack?",
       "back": "Xerophthalmia.",
       "source_page_refs": [328, 329],
-      "tags": ["pathology", "chapter-08", "nutritional-diseases-and-vitamin-deficiency", "xerophthalmia"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "nutritional-diseases-and-vitamin-deficiency",
+        "xerophthalmia"
+      ]
     },
     {
       "number": 45,
@@ -552,7 +767,12 @@
       "front": "Vitamin D deficiency causes what major skeletal disease in children?",
       "back": "Rickets.",
       "source_page_refs": [330, 331],
-      "tags": ["pathology", "chapter-08", "nutritional-diseases-and-vitamin-deficiency", "rickets"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "nutritional-diseases-and-vitamin-deficiency",
+        "rickets"
+      ]
     },
     {
       "number": 46,
@@ -563,7 +783,12 @@
       "front": "Vitamin D deficiency causes what major skeletal disease in adults?",
       "back": "Osteomalacia.",
       "source_page_refs": [331],
-      "tags": ["pathology", "chapter-08", "nutritional-diseases-and-vitamin-deficiency", "osteomalacia"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "nutritional-diseases-and-vitamin-deficiency",
+        "osteomalacia"
+      ]
     },
     {
       "number": 47,
@@ -574,7 +799,12 @@
       "front": "What key biosynthetic step requires vitamin C and explains scurvy when it is deficient?",
       "back": "Hydroxylation of collagen proline and lysine residues.",
       "source_page_refs": [332],
-      "tags": ["pathology", "chapter-08", "nutritional-diseases-and-vitamin-deficiency", "vitamin-c"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "nutritional-diseases-and-vitamin-deficiency",
+        "vitamin-c"
+      ]
     },
     {
       "number": 48,
@@ -585,7 +815,12 @@
       "front": "What BMI is generally used to define obesity?",
       "back": "Greater than 30 kg/m2.",
       "source_page_refs": [334],
-      "tags": ["pathology", "chapter-08", "obesity-diet-and-systemic-disease", "bmi"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "obesity-diet-and-systemic-disease",
+        "bmi"
+      ]
     },
     {
       "number": 49,
@@ -596,7 +831,12 @@
       "front": "Which fat distribution pattern carries the highest metabolic risk?",
       "back": "Central or visceral obesity.",
       "source_page_refs": [334, 336],
-      "tags": ["pathology", "chapter-08", "obesity-diet-and-systemic-disease", "visceral-obesity"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "obesity-diet-and-systemic-disease",
+        "visceral-obesity"
+      ]
     },
     {
       "number": 50,
@@ -607,7 +847,12 @@
       "front": "What is leptin's overall effect on food intake and energy expenditure?",
       "back": "It decreases food intake and increases energy expenditure.",
       "source_page_refs": [335, 336],
-      "tags": ["pathology", "chapter-08", "obesity-diet-and-systemic-disease", "leptin"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "obesity-diet-and-systemic-disease",
+        "leptin"
+      ]
     },
     {
       "number": 51,
@@ -618,7 +863,12 @@
       "front": "What does adiponectin generally promote?",
       "back": "Fatty-acid oxidation and improved insulin sensitivity.",
       "source_page_refs": [336],
-      "tags": ["pathology", "chapter-08", "obesity-diet-and-systemic-disease", "adiponectin"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "obesity-diet-and-systemic-disease",
+        "adiponectin"
+      ]
     },
     {
       "number": 52,
@@ -629,7 +879,12 @@
       "front": "What is ghrelin's main effect on appetite?",
       "back": "It stimulates food intake.",
       "source_page_refs": [336],
-      "tags": ["pathology", "chapter-08", "obesity-diet-and-systemic-disease", "ghrelin"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "obesity-diet-and-systemic-disease",
+        "ghrelin"
+      ]
     },
     {
       "number": 53,
@@ -640,7 +895,12 @@
       "front": "What is the main physiologic effect of peptide YY?",
       "back": "It promotes satiety and slows gastric emptying.",
       "source_page_refs": [336],
-      "tags": ["pathology", "chapter-08", "obesity-diet-and-systemic-disease", "peptide-yy"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "obesity-diet-and-systemic-disease",
+        "peptide-yy"
+      ]
     },
     {
       "number": 54,
@@ -651,7 +911,12 @@
       "front": "What dyslipidemic pattern is typical in obesity and increases coronary risk?",
       "back": "Hypertriglyceridemia with low HDL cholesterol.",
       "source_page_refs": [336],
-      "tags": ["pathology", "chapter-08", "obesity-diet-and-systemic-disease", "dyslipidemia"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "obesity-diet-and-systemic-disease",
+        "dyslipidemia"
+      ]
     },
     {
       "number": 55,
@@ -662,7 +927,12 @@
       "front": "Which liver disease is commonly associated with obesity and type 2 diabetes?",
       "back": "Nonalcoholic fatty liver disease.",
       "source_page_refs": [337],
-      "tags": ["pathology", "chapter-08", "obesity-diet-and-systemic-disease", "nafld"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "obesity-diet-and-systemic-disease",
+        "nafld"
+      ]
     },
     {
       "number": 56,
@@ -673,7 +943,12 @@
       "front": "Hyperinsulinemia in obesity may increase the bioavailability of what mitogenic growth factor?",
       "back": "IGF-1.",
       "source_page_refs": [337],
-      "tags": ["pathology", "chapter-08", "obesity-diet-and-systemic-disease", "igf-1"]
+      "tags": [
+        "pathology",
+        "chapter-08",
+        "obesity-diet-and-systemic-disease",
+        "igf-1"
+      ]
     }
   ]
 }

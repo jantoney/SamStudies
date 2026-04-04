@@ -62,7 +62,12 @@
       "front": "What kind of genetic lesion changes gene dosage by a large gain, loss, or rearrangement of DNA?",
       "back": "Copy number variation.",
       "source_page_refs": [244, 245],
-      "tags": ["pathology", "chapter-07", "mutation-logic", "copy-number-variation"]
+      "tags": [
+        "pathology",
+        "chapter-07",
+        "mutation-logic",
+        "copy-number-variation"
+      ]
     },
     {
       "number": 2,
@@ -73,7 +78,12 @@
       "front": "Which inheritance pattern classically affects heterozygotes of both sexes and often involves structural proteins or receptors?",
       "back": "Autosomal dominant inheritance.",
       "source_page_refs": [246, 247],
-      "tags": ["pathology", "chapter-07", "mutation-logic", "autosomal-dominant"]
+      "tags": [
+        "pathology",
+        "chapter-07",
+        "mutation-logic",
+        "autosomal-dominant"
+      ]
     },
     {
       "number": 3,
@@ -84,7 +94,12 @@
       "front": "Which inheritance pattern classically requires mutation of both alleles and often reflects missing enzyme activity?",
       "back": "Autosomal recessive inheritance.",
       "source_page_refs": [246, 247],
-      "tags": ["pathology", "chapter-07", "mutation-logic", "autosomal-recessive"]
+      "tags": [
+        "pathology",
+        "chapter-07",
+        "mutation-logic",
+        "autosomal-recessive"
+      ]
     },
     {
       "number": 4,
@@ -106,7 +121,12 @@
       "front": "What kind of mutation is responsible for anticipation in disorders such as fragile X syndrome?",
       "back": "Trinucleotide-repeat expansion.",
       "source_page_refs": [269, 272],
-      "tags": ["pathology", "chapter-07", "mutation-logic", "trinucleotide-repeat"]
+      "tags": [
+        "pathology",
+        "chapter-07",
+        "mutation-logic",
+        "trinucleotide-repeat"
+      ]
     },
     {
       "number": 6,
@@ -117,7 +137,12 @@
       "front": "What inheritance pattern is characteristic of mitochondrial DNA mutations?",
       "back": "Maternal inheritance.",
       "source_page_refs": [272],
-      "tags": ["pathology", "chapter-07", "mutation-logic", "mitochondrial-inheritance"]
+      "tags": [
+        "pathology",
+        "chapter-07",
+        "mutation-logic",
+        "mitochondrial-inheritance"
+      ]
     },
     {
       "number": 7,
@@ -128,7 +153,12 @@
       "front": "What does genomic imprinting mean?",
       "back": "Parent-of-origin-specific epigenetic silencing of one allele.",
       "source_page_refs": [271, 272],
-      "tags": ["pathology", "chapter-07", "mutation-logic", "genomic-imprinting"]
+      "tags": [
+        "pathology",
+        "chapter-07",
+        "mutation-logic",
+        "genomic-imprinting"
+      ]
     },
     {
       "number": 8,
@@ -161,7 +191,12 @@
       "front": "What ocular finding is highly specific for Marfan syndrome?",
       "back": "Bilateral ectopia lentis.",
       "source_page_refs": [248],
-      "tags": ["pathology", "chapter-07", "single-gene-disorders", "ectopia-lentis"]
+      "tags": [
+        "pathology",
+        "chapter-07",
+        "single-gene-disorders",
+        "ectopia-lentis"
+      ]
     },
     {
       "number": 11,
@@ -172,7 +207,12 @@
       "front": "What is the major life-threatening cardiovascular complication of Marfan syndrome?",
       "back": "Aortic aneurysm with dissection or rupture.",
       "source_page_refs": [248],
-      "tags": ["pathology", "chapter-07", "single-gene-disorders", "aortic-dissection"]
+      "tags": [
+        "pathology",
+        "chapter-07",
+        "single-gene-disorders",
+        "aortic-dissection"
+      ]
     },
     {
       "number": 12,
@@ -183,7 +223,12 @@
       "front": "What abnormality defines the Ehlers-Danlos syndromes?",
       "back": "Defects in collagen synthesis or structure.",
       "source_page_refs": [248],
-      "tags": ["pathology", "chapter-07", "single-gene-disorders", "ehlers-danlos"]
+      "tags": [
+        "pathology",
+        "chapter-07",
+        "single-gene-disorders",
+        "ehlers-danlos"
+      ]
     },
     {
       "number": 13,
@@ -194,7 +239,12 @@
       "front": "Which Ehlers-Danlos subtype is classically caused by type III collagen defects and predisposes to arterial or bowel rupture?",
       "back": "Vascular Ehlers-Danlos syndrome.",
       "source_page_refs": [248],
-      "tags": ["pathology", "chapter-07", "single-gene-disorders", "vascular-eds"]
+      "tags": [
+        "pathology",
+        "chapter-07",
+        "single-gene-disorders",
+        "vascular-eds"
+      ]
     },
     {
       "number": 14,
@@ -205,7 +255,12 @@
       "front": "What two bedside clues should make you think of Ehlers-Danlos syndrome?",
       "back": "Hyperextensible skin and hypermobile joints.",
       "source_page_refs": [248],
-      "tags": ["pathology", "chapter-07", "single-gene-disorders", "joint-hypermobility"]
+      "tags": [
+        "pathology",
+        "chapter-07",
+        "single-gene-disorders",
+        "joint-hypermobility"
+      ]
     },
     {
       "number": 15,
@@ -216,7 +271,12 @@
       "front": "What receptor defect causes classic familial hypercholesterolemia?",
       "back": "Loss-of-function mutation of the LDL receptor.",
       "source_page_refs": [248, 249],
-      "tags": ["pathology", "chapter-07", "single-gene-disorders", "ldl-receptor"]
+      "tags": [
+        "pathology",
+        "chapter-07",
+        "single-gene-disorders",
+        "ldl-receptor"
+      ]
     },
     {
       "number": 16,
@@ -249,7 +309,12 @@
       "front": "What is the fundamental transport defect in cystic fibrosis?",
       "back": "Impaired chloride transport through CFTR.",
       "source_page_refs": [250, 252, 254],
-      "tags": ["pathology", "chapter-07", "single-gene-disorders", "chloride-transport"]
+      "tags": [
+        "pathology",
+        "chapter-07",
+        "single-gene-disorders",
+        "chloride-transport"
+      ]
     },
     {
       "number": 19,
@@ -260,7 +325,12 @@
       "front": "What neonatal intestinal presentation is classic for cystic fibrosis?",
       "back": "Meconium ileus.",
       "source_page_refs": [251],
-      "tags": ["pathology", "chapter-07", "single-gene-disorders", "meconium-ileus"]
+      "tags": [
+        "pathology",
+        "chapter-07",
+        "single-gene-disorders",
+        "meconium-ileus"
+      ]
     },
     {
       "number": 20,
@@ -271,7 +341,12 @@
       "front": "What chronic lung complication develops from recurrent infection and thick secretions in cystic fibrosis?",
       "back": "Bronchiectasis.",
       "source_page_refs": [252, 254],
-      "tags": ["pathology", "chapter-07", "single-gene-disorders", "bronchiectasis"]
+      "tags": [
+        "pathology",
+        "chapter-07",
+        "single-gene-disorders",
+        "bronchiectasis"
+      ]
     },
     {
       "number": 21,
@@ -282,7 +357,12 @@
       "front": "What characteristic male reproductive abnormality causes infertility in cystic fibrosis?",
       "back": "Congenital bilateral absence of the vas deferens.",
       "source_page_refs": [253, 254],
-      "tags": ["pathology", "chapter-07", "single-gene-disorders", "vas-deferens"]
+      "tags": [
+        "pathology",
+        "chapter-07",
+        "single-gene-disorders",
+        "vas-deferens"
+      ]
     },
     {
       "number": 22,
@@ -304,7 +384,12 @@
       "front": "What pregnancy complication is associated with poorly controlled maternal PKU?",
       "back": "Fetal malformations and neurologic impairment from transplacental phenylalanine metabolites.",
       "source_page_refs": [255],
-      "tags": ["pathology", "chapter-07", "single-gene-disorders", "maternal-pku"]
+      "tags": [
+        "pathology",
+        "chapter-07",
+        "single-gene-disorders",
+        "maternal-pku"
+      ]
     },
     {
       "number": 24,
@@ -315,7 +400,12 @@
       "front": "What enzyme is deficient in classic galactosemia?",
       "back": "Galactose-1-phosphate uridyltransferase.",
       "source_page_refs": [255, 256],
-      "tags": ["pathology", "chapter-07", "single-gene-disorders", "galactosemia"]
+      "tags": [
+        "pathology",
+        "chapter-07",
+        "single-gene-disorders",
+        "galactosemia"
+      ]
     },
     {
       "number": 25,
@@ -326,7 +416,12 @@
       "front": "What bacterium is classically associated with neonatal sepsis in galactosemia?",
       "back": "Escherichia coli.",
       "source_page_refs": [255, 256],
-      "tags": ["pathology", "chapter-07", "single-gene-disorders", "e-coli-sepsis"]
+      "tags": [
+        "pathology",
+        "chapter-07",
+        "single-gene-disorders",
+        "e-coli-sepsis"
+      ]
     },
     {
       "number": 26,
@@ -348,7 +443,12 @@
       "front": "What enzyme defect causes Niemann-Pick disease types A and B?",
       "back": "Sphingomyelinase deficiency.",
       "source_page_refs": [257, 258, 260],
-      "tags": ["pathology", "chapter-07", "single-gene-disorders", "niemann-pick"]
+      "tags": [
+        "pathology",
+        "chapter-07",
+        "single-gene-disorders",
+        "niemann-pick"
+      ]
     },
     {
       "number": 28,
@@ -381,7 +481,12 @@
       "front": "What is the classic microscopic description of Gaucher cell cytoplasm?",
       "back": "Wrinkled tissue paper.",
       "source_page_refs": [259],
-      "tags": ["pathology", "chapter-07", "single-gene-disorders", "gaucher-cell"]
+      "tags": [
+        "pathology",
+        "chapter-07",
+        "single-gene-disorders",
+        "gaucher-cell"
+      ]
     },
     {
       "number": 31,
@@ -414,7 +519,12 @@
       "front": "What is the usual mechanism of Down syndrome?",
       "back": "Meiotic nondisjunction producing trisomy 21.",
       "source_page_refs": [264, 265],
-      "tags": ["pathology", "chapter-07", "cytogenetic-disorders", "down-syndrome"]
+      "tags": [
+        "pathology",
+        "chapter-07",
+        "cytogenetic-disorders",
+        "down-syndrome"
+      ]
     },
     {
       "number": 34,
@@ -425,7 +535,12 @@
       "front": "What alternative cytogenetic mechanism can produce familial Down syndrome?",
       "back": "Robertsonian translocation involving chromosome 21.",
       "source_page_refs": [265],
-      "tags": ["pathology", "chapter-07", "cytogenetic-disorders", "robertsonian-translocation"]
+      "tags": [
+        "pathology",
+        "chapter-07",
+        "cytogenetic-disorders",
+        "robertsonian-translocation"
+      ]
     },
     {
       "number": 35,
@@ -436,7 +551,12 @@
       "front": "What congenital heart lesion type is classically associated with Down syndrome?",
       "back": "Endocardial cushion defect such as an atrioventricular septal defect.",
       "source_page_refs": [265],
-      "tags": ["pathology", "chapter-07", "cytogenetic-disorders", "endocardial-cushion"]
+      "tags": [
+        "pathology",
+        "chapter-07",
+        "cytogenetic-disorders",
+        "endocardial-cushion"
+      ]
     },
     {
       "number": 36,
@@ -458,7 +578,12 @@
       "front": "What karyotype is classic for Klinefelter syndrome?",
       "back": "47,XXY.",
       "source_page_refs": [267, 268],
-      "tags": ["pathology", "chapter-07", "cytogenetic-disorders", "klinefelter"]
+      "tags": [
+        "pathology",
+        "chapter-07",
+        "cytogenetic-disorders",
+        "klinefelter"
+      ]
     },
     {
       "number": 38,
@@ -469,7 +594,12 @@
       "front": "What gonadal pathology is classic for Turner syndrome?",
       "back": "Fibrotic streak ovaries.",
       "source_page_refs": [267, 268],
-      "tags": ["pathology", "chapter-07", "cytogenetic-disorders", "turner-syndrome"]
+      "tags": [
+        "pathology",
+        "chapter-07",
+        "cytogenetic-disorders",
+        "turner-syndrome"
+      ]
     },
     {
       "number": 39,
@@ -513,7 +643,12 @@
       "front": "What parental chromosome contribution is deleted or functionally lost in Prader-Willi syndrome?",
       "back": "The paternal chromosome 15q12 contribution.",
       "source_page_refs": [272, 273],
-      "tags": ["pathology", "chapter-07", "cytogenetic-disorders", "prader-willi"]
+      "tags": [
+        "pathology",
+        "chapter-07",
+        "cytogenetic-disorders",
+        "prader-willi"
+      ]
     },
     {
       "number": 43,
@@ -557,7 +692,12 @@
       "front": "What is the classic initiating event in Potter sequence?",
       "back": "Oligohydramnios.",
       "source_page_refs": [274],
-      "tags": ["pathology", "chapter-07", "congenital-neonatal", "potter-sequence"]
+      "tags": [
+        "pathology",
+        "chapter-07",
+        "congenital-neonatal",
+        "potter-sequence"
+      ]
     },
     {
       "number": 47,
@@ -590,7 +730,12 @@
       "front": "What does fetal hydrops mean?",
       "back": "Abnormal edema-fluid accumulation in the fetus.",
       "source_page_refs": [282, 285],
-      "tags": ["pathology", "chapter-07", "congenital-neonatal", "fetal-hydrops"]
+      "tags": [
+        "pathology",
+        "chapter-07",
+        "congenital-neonatal",
+        "fetal-hydrops"
+      ]
     },
     {
       "number": 50,
@@ -667,7 +812,12 @@
       "front": "What sequencing approach interrogates all coding regions of the genome?",
       "back": "Whole exome sequencing.",
       "source_page_refs": [295],
-      "tags": ["pathology", "chapter-07", "pediatric-tumors", "whole-exome-sequencing"]
+      "tags": [
+        "pathology",
+        "chapter-07",
+        "pediatric-tumors",
+        "whole-exome-sequencing"
+      ]
     }
   ]
 }

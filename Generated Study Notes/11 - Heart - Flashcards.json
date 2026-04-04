@@ -63,7 +63,12 @@
       "front": "What is congestive heart failure?",
       "back": "A state in which the heart cannot meet tissue metabolic demands, or can do so only at abnormally high filling pressures.",
       "source_page_refs": [400],
-      "tags": ["pathology", "chapter-11", "heart-failure-and-congenital-heart-disease", "chf"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "heart-failure-and-congenital-heart-disease",
+        "chf"
+      ]
     },
     {
       "number": 2,
@@ -74,7 +79,12 @@
       "front": "What is the core defect in systolic heart failure?",
       "back": "Inadequate myocardial contractility.",
       "source_page_refs": [400],
-      "tags": ["pathology", "chapter-11", "heart-failure-and-congenital-heart-disease", "systolic-dysfunction"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "heart-failure-and-congenital-heart-disease",
+        "systolic-dysfunction"
+      ]
     },
     {
       "number": 3,
@@ -85,7 +95,12 @@
       "front": "What is the core defect in diastolic heart failure?",
       "back": "Impaired ventricular relaxation and filling.",
       "source_page_refs": [400],
-      "tags": ["pathology", "chapter-11", "heart-failure-and-congenital-heart-disease", "diastolic-dysfunction"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "heart-failure-and-congenital-heart-disease",
+        "diastolic-dysfunction"
+      ]
     },
     {
       "number": 4,
@@ -96,7 +111,12 @@
       "front": "What hypertrophy pattern is produced by pressure overload?",
       "back": "Concentric hypertrophy from parallel addition of sarcomeres.",
       "source_page_refs": [400, 401],
-      "tags": ["pathology", "chapter-11", "heart-failure-and-congenital-heart-disease", "concentric-hypertrophy"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "heart-failure-and-congenital-heart-disease",
+        "concentric-hypertrophy"
+      ]
     },
     {
       "number": 5,
@@ -107,7 +127,12 @@
       "front": "What chamber response is typical of volume overload?",
       "back": "Eccentric hypertrophy with ventricular dilation from series addition of sarcomeres.",
       "source_page_refs": [400, 401],
-      "tags": ["pathology", "chapter-11", "heart-failure-and-congenital-heart-disease", "eccentric-hypertrophy"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "heart-failure-and-congenital-heart-disease",
+        "eccentric-hypertrophy"
+      ]
     },
     {
       "number": 6,
@@ -118,7 +143,12 @@
       "front": "Which congenital shunt lesion is often first diagnosed in adulthood?",
       "back": "Atrial septal defect.",
       "source_page_refs": [404, 405],
-      "tags": ["pathology", "chapter-11", "heart-failure-and-congenital-heart-disease", "asd"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "heart-failure-and-congenital-heart-disease",
+        "asd"
+      ]
     },
     {
       "number": 7,
@@ -129,7 +159,12 @@
       "front": "What murmur is classically associated with patent ductus arteriosus?",
       "back": "A continuous machinery murmur.",
       "source_page_refs": [405],
-      "tags": ["pathology", "chapter-11", "heart-failure-and-congenital-heart-disease", "pda"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "heart-failure-and-congenital-heart-disease",
+        "pda"
+      ]
     },
     {
       "number": 8,
@@ -140,7 +175,12 @@
       "front": "What is Eisenmenger syndrome?",
       "back": "Reversal of a long-standing left-to-right shunt after pulmonary hypertension raises pulmonary vascular resistance above systemic resistance.",
       "source_page_refs": [405, 406],
-      "tags": ["pathology", "chapter-11", "heart-failure-and-congenital-heart-disease", "eisenmenger-syndrome"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "heart-failure-and-congenital-heart-disease",
+        "eisenmenger-syndrome"
+      ]
     },
     {
       "number": 9,
@@ -151,7 +191,12 @@
       "front": "What structural change gives tetralogy of Fallot its boot-shaped heart silhouette?",
       "back": "Marked right ventricular hypertrophy.",
       "source_page_refs": [406, 407],
-      "tags": ["pathology", "chapter-11", "heart-failure-and-congenital-heart-disease", "tetralogy-of-fallot"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "heart-failure-and-congenital-heart-disease",
+        "tetralogy-of-fallot"
+      ]
     },
     {
       "number": 10,
@@ -162,7 +207,12 @@
       "front": "What permits survival in transposition of the great arteries before surgical repair?",
       "back": "A shunt that allows mixing between the systemic and pulmonary circulations, such as a VSD, PDA, or patent foramen ovale.",
       "source_page_refs": [407],
-      "tags": ["pathology", "chapter-11", "heart-failure-and-congenital-heart-disease", "transposition-of-the-great-arteries"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "heart-failure-and-congenital-heart-disease",
+        "transposition-of-the-great-arteries"
+      ]
     },
     {
       "number": 11,
@@ -173,7 +223,12 @@
       "front": "What hemodynamic pattern suggests postductal coarctation of the aorta?",
       "back": "Upper-extremity hypertension with weak lower-extremity pulses and lower-leg hypotension.",
       "source_page_refs": [407, 408],
-      "tags": ["pathology", "chapter-11", "heart-failure-and-congenital-heart-disease", "coarctation-of-the-aorta"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "heart-failure-and-congenital-heart-disease",
+        "coarctation-of-the-aorta"
+      ]
     },
     {
       "number": 12,
@@ -184,7 +239,12 @@
       "front": "What is cor pulmonale?",
       "back": "Right ventricular hypertrophy and dilation caused by pulmonary hypertension due to primary lung or pulmonary vascular disease.",
       "source_page_refs": [402, 422],
-      "tags": ["pathology", "chapter-11", "heart-failure-and-congenital-heart-disease", "cor-pulmonale"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "heart-failure-and-congenital-heart-disease",
+        "cor-pulmonale"
+      ]
     },
     {
       "number": 13,
@@ -195,7 +255,12 @@
       "front": "At roughly what degree of fixed coronary narrowing does stable angina usually appear?",
       "back": "More than 70% luminal stenosis.",
       "source_page_refs": [408, 409],
-      "tags": ["pathology", "chapter-11", "ischemic-heart-disease-and-myocardial-infarction", "stable-angina"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "ischemic-heart-disease-and-myocardial-infarction",
+        "stable-angina"
+      ]
     },
     {
       "number": 14,
@@ -206,7 +271,12 @@
       "front": "What is the usual immediate mechanism of unstable angina?",
       "back": "Abrupt plaque disruption with superimposed thrombosis, often with embolization or vasospasm.",
       "source_page_refs": [409, 410],
-      "tags": ["pathology", "chapter-11", "ischemic-heart-disease-and-myocardial-infarction", "unstable-angina"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "ischemic-heart-disease-and-myocardial-infarction",
+        "unstable-angina"
+      ]
     },
     {
       "number": 15,
@@ -217,7 +287,12 @@
       "front": "What is the mechanism of Prinzmetal angina?",
       "back": "Coronary artery vasospasm.",
       "source_page_refs": [411],
-      "tags": ["pathology", "chapter-11", "ischemic-heart-disease-and-myocardial-infarction", "prinzmetal-angina"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "ischemic-heart-disease-and-myocardial-infarction",
+        "prinzmetal-angina"
+      ]
     },
     {
       "number": 16,
@@ -228,7 +303,12 @@
       "front": "What plaque structure makes a coronary atheroma particularly rupture-prone?",
       "back": "A thin fibrous cap over a large lipid-rich core.",
       "source_page_refs": [409, 410],
-      "tags": ["pathology", "chapter-11", "ischemic-heart-disease-and-myocardial-infarction", "vulnerable-plaque"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "ischemic-heart-disease-and-myocardial-infarction",
+        "vulnerable-plaque"
+      ]
     },
     {
       "number": 17,
@@ -239,7 +319,12 @@
       "front": "Which myocardial region is injured first during prolonged ischemia?",
       "back": "The subendocardium.",
       "source_page_refs": [413, 414],
-      "tags": ["pathology", "chapter-11", "ischemic-heart-disease-and-myocardial-infarction", "subendocardium"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "ischemic-heart-disease-and-myocardial-infarction",
+        "subendocardium"
+      ]
     },
     {
       "number": 18,
@@ -250,7 +335,12 @@
       "front": "What pathologic infarct pattern corresponds to a STEMI?",
       "back": "A transmural infarction caused by persistent epicardial coronary occlusion.",
       "source_page_refs": [413, 414],
-      "tags": ["pathology", "chapter-11", "ischemic-heart-disease-and-myocardial-infarction", "stemi"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "ischemic-heart-disease-and-myocardial-infarction",
+        "stemi"
+      ]
     },
     {
       "number": 19,
@@ -261,7 +351,12 @@
       "front": "What pathologic infarct pattern corresponds to an NSTEMI?",
       "back": "A subendocardial infarction involving the inner portion of the ventricular wall.",
       "source_page_refs": [413, 414],
-      "tags": ["pathology", "chapter-11", "ischemic-heart-disease-and-myocardial-infarction", "nstemi"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "ischemic-heart-disease-and-myocardial-infarction",
+        "nstemi"
+      ]
     },
     {
       "number": 20,
@@ -272,7 +367,12 @@
       "front": "After roughly how long of severe ischemia does irreversible myocyte injury begin?",
       "back": "After about 20 to 40 minutes.",
       "source_page_refs": [413, 414],
-      "tags": ["pathology", "chapter-11", "ischemic-heart-disease-and-myocardial-infarction", "irreversible-injury"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "ischemic-heart-disease-and-myocardial-infarction",
+        "irreversible-injury"
+      ]
     },
     {
       "number": 21,
@@ -283,7 +383,12 @@
       "front": "What histologic change is the classic clue to reperfusion injury after MI?",
       "back": "Contraction band necrosis.",
       "source_page_refs": [415, 416],
-      "tags": ["pathology", "chapter-11", "ischemic-heart-disease-and-myocardial-infarction", "reperfusion-injury"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "ischemic-heart-disease-and-myocardial-infarction",
+        "reperfusion-injury"
+      ]
     },
     {
       "number": 22,
@@ -294,7 +399,12 @@
       "front": "For how long do cardiac troponins usually remain elevated after MI?",
       "back": "About 7 to 10 days.",
       "source_page_refs": [416],
-      "tags": ["pathology", "chapter-11", "ischemic-heart-disease-and-myocardial-infarction", "troponin"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "ischemic-heart-disease-and-myocardial-infarction",
+        "troponin"
+      ]
     },
     {
       "number": 23,
@@ -305,7 +415,12 @@
       "front": "When is myocardial rupture risk greatest after a transmural infarct?",
       "back": "About 3 to 7 days after the infarct.",
       "source_page_refs": [414, 417],
-      "tags": ["pathology", "chapter-11", "ischemic-heart-disease-and-myocardial-infarction", "mi-rupture"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "ischemic-heart-disease-and-myocardial-infarction",
+        "mi-rupture"
+      ]
     },
     {
       "number": 24,
@@ -316,7 +431,12 @@
       "front": "What is the most common type of myocardial rupture after MI?",
       "back": "Left ventricular free-wall rupture.",
       "source_page_refs": [417, 418],
-      "tags": ["pathology", "chapter-11", "ischemic-heart-disease-and-myocardial-infarction", "free-wall-rupture"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "ischemic-heart-disease-and-myocardial-infarction",
+        "free-wall-rupture"
+      ]
     },
     {
       "number": 25,
@@ -327,7 +447,12 @@
       "front": "What is the key rupture fact about a postinfarct ventricular aneurysm?",
       "back": "It rarely ruptures despite predisposing to heart failure, arrhythmias, and mural thrombi.",
       "source_page_refs": [417, 418],
-      "tags": ["pathology", "chapter-11", "ischemic-heart-disease-and-myocardial-infarction", "ventricular-aneurysm"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "ischemic-heart-disease-and-myocardial-infarction",
+        "ventricular-aneurysm"
+      ]
     },
     {
       "number": 26,
@@ -338,7 +463,12 @@
       "front": "How is the pulse classically described in atrial fibrillation?",
       "back": "Irregularly irregular.",
       "source_page_refs": [419, 420],
-      "tags": ["pathology", "chapter-11", "arrhythmias-sudden-death-and-hypertensive-heart-disease", "atrial-fibrillation"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "arrhythmias-sudden-death-and-hypertensive-heart-disease",
+        "atrial-fibrillation"
+      ]
     },
     {
       "number": 27,
@@ -349,7 +479,12 @@
       "front": "What class of disease is long QT syndrome?",
       "back": "A channelopathy caused by mutations affecting ion-channel function.",
       "source_page_refs": [419, 420],
-      "tags": ["pathology", "chapter-11", "arrhythmias-sudden-death-and-hypertensive-heart-disease", "long-qt-syndrome"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "arrhythmias-sudden-death-and-hypertensive-heart-disease",
+        "long-qt-syndrome"
+      ]
     },
     {
       "number": 28,
@@ -360,7 +495,12 @@
       "front": "What is the leading cause of sudden cardiac death?",
       "back": "Coronary artery disease.",
       "source_page_refs": [420],
-      "tags": ["pathology", "chapter-11", "arrhythmias-sudden-death-and-hypertensive-heart-disease", "sudden-cardiac-death"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "arrhythmias-sudden-death-and-hypertensive-heart-disease",
+        "sudden-cardiac-death"
+      ]
     },
     {
       "number": 29,
@@ -371,7 +511,12 @@
       "front": "What is the usual immediate mechanism of sudden cardiac death?",
       "back": "A lethal arrhythmia, usually sustained ventricular fibrillation or asystole.",
       "source_page_refs": [420],
-      "tags": ["pathology", "chapter-11", "arrhythmias-sudden-death-and-hypertensive-heart-disease", "ventricular-fibrillation"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "arrhythmias-sudden-death-and-hypertensive-heart-disease",
+        "ventricular-fibrillation"
+      ]
     },
     {
       "number": 30,
@@ -382,7 +527,12 @@
       "front": "What is the gross hallmark of systemic hypertensive heart disease?",
       "back": "Concentric left ventricular hypertrophy.",
       "source_page_refs": [420, 421],
-      "tags": ["pathology", "chapter-11", "arrhythmias-sudden-death-and-hypertensive-heart-disease", "hypertensive-heart-disease"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "arrhythmias-sudden-death-and-hypertensive-heart-disease",
+        "hypertensive-heart-disease"
+      ]
     },
     {
       "number": 31,
@@ -393,7 +543,12 @@
       "front": "In cardiac pathology, boxcar nuclei are a clue to hypertrophy in what disease?",
       "back": "Systemic hypertensive heart disease.",
       "source_page_refs": [421],
-      "tags": ["pathology", "chapter-11", "arrhythmias-sudden-death-and-hypertensive-heart-disease", "boxcar-nuclei"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "arrhythmias-sudden-death-and-hypertensive-heart-disease",
+        "boxcar-nuclei"
+      ]
     },
     {
       "number": 32,
@@ -404,7 +559,12 @@
       "front": "What does valvular stenosis mean?",
       "back": "Failure of a valve to open completely, causing obstruction to forward flow.",
       "source_page_refs": [422],
-      "tags": ["pathology", "chapter-11", "valvular-disease-and-endocarditis", "stenosis"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "valvular-disease-and-endocarditis",
+        "stenosis"
+      ]
     },
     {
       "number": 33,
@@ -415,7 +575,12 @@
       "front": "What does valvular insufficiency mean?",
       "back": "Failure of a valve to close completely, causing regurgitation.",
       "source_page_refs": [422],
-      "tags": ["pathology", "chapter-11", "valvular-disease-and-endocarditis", "insufficiency"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "valvular-disease-and-endocarditis",
+        "insufficiency"
+      ]
     },
     {
       "number": 34,
@@ -426,7 +591,12 @@
       "front": "What is the most common cause of acquired aortic stenosis?",
       "back": "Calcific degenerative valve disease.",
       "source_page_refs": [423, 424],
-      "tags": ["pathology", "chapter-11", "valvular-disease-and-endocarditis", "aortic-stenosis"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "valvular-disease-and-endocarditis",
+        "aortic-stenosis"
+      ]
     },
     {
       "number": 35,
@@ -437,7 +607,12 @@
       "front": "What major later-life problem is promoted by a bicuspid aortic valve?",
       "back": "Earlier-than-usual calcific aortic stenosis.",
       "source_page_refs": [423],
-      "tags": ["pathology", "chapter-11", "valvular-disease-and-endocarditis", "bicuspid-aortic-valve"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "valvular-disease-and-endocarditis",
+        "bicuspid-aortic-valve"
+      ]
     },
     {
       "number": 36,
@@ -448,7 +623,12 @@
       "front": "What auscultatory clue is classic for myxomatous mitral valve prolapse?",
       "back": "A midsystolic click.",
       "source_page_refs": [424, 425],
-      "tags": ["pathology", "chapter-11", "valvular-disease-and-endocarditis", "mitral-valve-prolapse"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "valvular-disease-and-endocarditis",
+        "mitral-valve-prolapse"
+      ]
     },
     {
       "number": 37,
@@ -459,7 +639,12 @@
       "front": "What lesion is pathognomonic for acute rheumatic carditis?",
       "back": "An Aschoff body.",
       "source_page_refs": [425, 426],
-      "tags": ["pathology", "chapter-11", "valvular-disease-and-endocarditis", "rheumatic-heart-disease"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "valvular-disease-and-endocarditis",
+        "rheumatic-heart-disease"
+      ]
     },
     {
       "number": 38,
@@ -470,7 +655,12 @@
       "front": "What gross valve shape is classic for chronic rheumatic mitral stenosis?",
       "back": "A fishmouth or buttonhole stenosis.",
       "source_page_refs": [426],
-      "tags": ["pathology", "chapter-11", "valvular-disease-and-endocarditis", "mitral-stenosis"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "valvular-disease-and-endocarditis",
+        "mitral-stenosis"
+      ]
     },
     {
       "number": 39,
@@ -481,7 +671,12 @@
       "front": "What is the most consistent clinical sign of infective endocarditis?",
       "back": "Fever.",
       "source_page_refs": [427, 428],
-      "tags": ["pathology", "chapter-11", "valvular-disease-and-endocarditis", "infective-endocarditis"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "valvular-disease-and-endocarditis",
+        "infective-endocarditis"
+      ]
     },
     {
       "number": 40,
@@ -492,7 +687,12 @@
       "front": "Which organism classically causes subacute infective endocarditis on a damaged valve after dental bacteremia?",
       "back": "Viridans streptococci.",
       "source_page_refs": [427, 428],
-      "tags": ["pathology", "chapter-11", "valvular-disease-and-endocarditis", "streptococcus-viridans"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "valvular-disease-and-endocarditis",
+        "streptococcus-viridans"
+      ]
     },
     {
       "number": 41,
@@ -503,7 +703,12 @@
       "front": "In what setting is nonbacterial thrombotic endocarditis classically seen?",
       "back": "Hypercoagulable or wasting states, especially mucinous adenocarcinoma.",
       "source_page_refs": [428],
-      "tags": ["pathology", "chapter-11", "valvular-disease-and-endocarditis", "nbte"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "valvular-disease-and-endocarditis",
+        "nbte"
+      ]
     },
     {
       "number": 42,
@@ -514,7 +719,12 @@
       "front": "Libman-Sacks endocarditis is associated with what disease?",
       "back": "Systemic lupus erythematosus.",
       "source_page_refs": [428, 429],
-      "tags": ["pathology", "chapter-11", "valvular-disease-and-endocarditis", "libman-sacks"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "valvular-disease-and-endocarditis",
+        "libman-sacks"
+      ]
     },
     {
       "number": 43,
@@ -525,7 +735,12 @@
       "front": "What is the fundamental functional defect in dilated cardiomyopathy?",
       "back": "Ineffective contraction with systolic dysfunction.",
       "source_page_refs": [429, 433],
-      "tags": ["pathology", "chapter-11", "cardiomyopathies-and-myocarditis", "dilated-cardiomyopathy"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "cardiomyopathies-and-myocarditis",
+        "dilated-cardiomyopathy"
+      ]
     },
     {
       "number": 44,
@@ -536,7 +751,12 @@
       "front": "What gross cardiac phenotype is typical of dilated cardiomyopathy?",
       "back": "A flabby enlarged heart with four-chamber dilation.",
       "source_page_refs": [429, 433],
-      "tags": ["pathology", "chapter-11", "cardiomyopathies-and-myocarditis", "dcm-morphology"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "cardiomyopathies-and-myocarditis",
+        "dcm-morphology"
+      ]
     },
     {
       "number": 45,
@@ -547,7 +767,12 @@
       "front": "Mutations in what class of proteins are strongly linked to arrhythmogenic right ventricular cardiomyopathy?",
       "back": "Desmosomal junctional proteins.",
       "source_page_refs": [432],
-      "tags": ["pathology", "chapter-11", "cardiomyopathies-and-myocarditis", "arvc"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "cardiomyopathies-and-myocarditis",
+        "arvc"
+      ]
     },
     {
       "number": 46,
@@ -558,7 +783,12 @@
       "front": "Hypertrophic cardiomyopathy is usually caused by mutations in what type of proteins?",
       "back": "Sarcomeric contractile proteins.",
       "source_page_refs": [432, 433],
-      "tags": ["pathology", "chapter-11", "cardiomyopathies-and-myocarditis", "hcm"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "cardiomyopathies-and-myocarditis",
+        "hcm"
+      ]
     },
     {
       "number": 47,
@@ -569,7 +799,12 @@
       "front": "What is the hallmark histologic finding in hypertrophic cardiomyopathy?",
       "back": "Myofiber disarray.",
       "source_page_refs": [433],
-      "tags": ["pathology", "chapter-11", "cardiomyopathies-and-myocarditis", "myofiber-disarray"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "cardiomyopathies-and-myocarditis",
+        "myofiber-disarray"
+      ]
     },
     {
       "number": 48,
@@ -580,7 +815,12 @@
       "front": "What left-ventricular cavity shape is classically described in hypertrophic cardiomyopathy?",
       "back": "A banana-like cavity.",
       "source_page_refs": [433],
-      "tags": ["pathology", "chapter-11", "cardiomyopathies-and-myocarditis", "banana-shaped-cavity"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "cardiomyopathies-and-myocarditis",
+        "banana-shaped-cavity"
+      ]
     },
     {
       "number": 49,
@@ -591,7 +831,12 @@
       "front": "What is the core physiologic defect in restrictive cardiomyopathy?",
       "back": "Impaired ventricular compliance with reduced diastolic filling.",
       "source_page_refs": [433, 434],
-      "tags": ["pathology", "chapter-11", "cardiomyopathies-and-myocarditis", "restrictive-cardiomyopathy"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "cardiomyopathies-and-myocarditis",
+        "restrictive-cardiomyopathy"
+      ]
     },
     {
       "number": 50,
@@ -602,7 +847,12 @@
       "front": "What is the most common cause of myocarditis in the United States?",
       "back": "Viral infection, especially coxsackieviruses and other enteroviruses.",
       "source_page_refs": [434, 435],
-      "tags": ["pathology", "chapter-11", "cardiomyopathies-and-myocarditis", "myocarditis"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "cardiomyopathies-and-myocarditis",
+        "myocarditis"
+      ]
     },
     {
       "number": 51,
@@ -613,7 +863,12 @@
       "front": "Which inflammatory cell type is especially prominent in hypersensitivity myocarditis?",
       "back": "Eosinophils.",
       "source_page_refs": [435],
-      "tags": ["pathology", "chapter-11", "cardiomyopathies-and-myocarditis", "hypersensitivity-myocarditis"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "cardiomyopathies-and-myocarditis",
+        "hypersensitivity-myocarditis"
+      ]
     },
     {
       "number": 52,
@@ -624,7 +879,12 @@
       "front": "What is the prognosis pattern of giant cell myocarditis?",
       "back": "It is an aggressive form of myocarditis with a poor prognosis.",
       "source_page_refs": [435],
-      "tags": ["pathology", "chapter-11", "cardiomyopathies-and-myocarditis", "giant-cell-myocarditis"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "cardiomyopathies-and-myocarditis",
+        "giant-cell-myocarditis"
+      ]
     },
     {
       "number": 53,
@@ -635,7 +895,12 @@
       "front": "What life-threatening effect can follow a rapidly accumulating acute hemopericardium?",
       "back": "Cardiac tamponade with impaired chamber filling.",
       "source_page_refs": [436],
-      "tags": ["pathology", "chapter-11", "pericardial-disease-tumors-carcinoid-disease-and-transplantation", "tamponade"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "pericardial-disease-tumors-carcinoid-disease-and-transplantation",
+        "tamponade"
+      ]
     },
     {
       "number": 54,
@@ -646,7 +911,12 @@
       "front": "What type of pericarditis gives a bread-and-butter gross appearance?",
       "back": "Fibrinous pericarditis.",
       "source_page_refs": [436, 437],
-      "tags": ["pathology", "chapter-11", "pericardial-disease-tumors-carcinoid-disease-and-transplantation", "pericarditis"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "pericardial-disease-tumors-carcinoid-disease-and-transplantation",
+        "pericarditis"
+      ]
     },
     {
       "number": 55,
@@ -657,7 +927,12 @@
       "front": "What is the main hemodynamic effect of constrictive pericarditis?",
       "back": "The heart cannot expand normally during diastole because it is encased by dense fibrous scarring.",
       "source_page_refs": [437],
-      "tags": ["pathology", "chapter-11", "pericardial-disease-tumors-carcinoid-disease-and-transplantation", "constrictive-pericarditis"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "pericardial-disease-tumors-carcinoid-disease-and-transplantation",
+        "constrictive-pericarditis"
+      ]
     },
     {
       "number": 56,
@@ -668,7 +943,12 @@
       "front": "What is the most common primary cardiac tumor in adults?",
       "back": "Myxoma.",
       "source_page_refs": [437],
-      "tags": ["pathology", "chapter-11", "pericardial-disease-tumors-carcinoid-disease-and-transplantation", "myxoma"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "pericardial-disease-tumors-carcinoid-disease-and-transplantation",
+        "myxoma"
+      ]
     },
     {
       "number": 57,
@@ -679,7 +959,12 @@
       "front": "Where do most cardiac myxomas arise?",
       "back": "In the left atrium, usually near the fossa ovalis.",
       "source_page_refs": [437],
-      "tags": ["pathology", "chapter-11", "pericardial-disease-tumors-carcinoid-disease-and-transplantation", "left-atrium"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "pericardial-disease-tumors-carcinoid-disease-and-transplantation",
+        "left-atrium"
+      ]
     },
     {
       "number": 58,
@@ -690,7 +975,12 @@
       "front": "What cytokine helps explain the constitutional symptoms of cardiac myxoma?",
       "back": "IL-6.",
       "source_page_refs": [437, 438],
-      "tags": ["pathology", "chapter-11", "pericardial-disease-tumors-carcinoid-disease-and-transplantation", "il-6"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "pericardial-disease-tumors-carcinoid-disease-and-transplantation",
+        "il-6"
+      ]
     },
     {
       "number": 59,
@@ -701,7 +991,12 @@
       "front": "What is the most common primary cardiac tumor in infants and children?",
       "back": "Rhabdomyoma.",
       "source_page_refs": [437, 438],
-      "tags": ["pathology", "chapter-11", "pericardial-disease-tumors-carcinoid-disease-and-transplantation", "rhabdomyoma"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "pericardial-disease-tumors-carcinoid-disease-and-transplantation",
+        "rhabdomyoma"
+      ]
     },
     {
       "number": 60,
@@ -712,7 +1007,12 @@
       "front": "Which side of the heart is usually affected by carcinoid heart disease?",
       "back": "The right side, especially the tricuspid and pulmonic valves.",
       "source_page_refs": [438, 439],
-      "tags": ["pathology", "chapter-11", "pericardial-disease-tumors-carcinoid-disease-and-transplantation", "carcinoid-heart-disease"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "pericardial-disease-tumors-carcinoid-disease-and-transplantation",
+        "carcinoid-heart-disease"
+      ]
     },
     {
       "number": 61,
@@ -723,7 +1023,12 @@
       "front": "What is the major long-term limitation of cardiac transplantation?",
       "back": "Allograft arteriopathy with diffuse progressive intimal proliferation in coronary arteries.",
       "source_page_refs": [439, 440],
-      "tags": ["pathology", "chapter-11", "pericardial-disease-tumors-carcinoid-disease-and-transplantation", "cardiac-transplantation"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "pericardial-disease-tumors-carcinoid-disease-and-transplantation",
+        "cardiac-transplantation"
+      ]
     },
     {
       "number": 62,
@@ -734,7 +1039,12 @@
       "front": "What histologic pattern is typical of acute cardiac allograft rejection?",
       "back": "Interstitial lymphocytic inflammation with myocyte damage.",
       "source_page_refs": [439],
-      "tags": ["pathology", "chapter-11", "pericardial-disease-tumors-carcinoid-disease-and-transplantation", "acute-rejection"]
+      "tags": [
+        "pathology",
+        "chapter-11",
+        "pericardial-disease-tumors-carcinoid-disease-and-transplantation",
+        "acute-rejection"
+      ]
     }
   ]
 }
