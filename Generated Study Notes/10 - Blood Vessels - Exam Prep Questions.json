@@ -1,0 +1,1020 @@
+{
+  "schema_version": "1.2",
+  "resource_type": "exam_prep_question_set",
+  "title": "10 - Blood Vessels - Exam Prep Questions",
+  "slug": "10-blood-vessels-exam-prep-questions",
+  "chapter": {
+    "number": 10,
+    "code": "10",
+    "title": "Blood Vessels",
+    "status": "complete"
+  },
+  "description": "Third-party generated single-choice exam-prep questions for Chapter 10. The set is aligned primarily to the Chapter 10 textbook content and shaped to reflect the style, tone, and difficulty distribution of the RCPA Basic Pathological Sciences mock exam format. Questions prioritize the syllabus emphasis on arteriosclerosis, hypertension, atherosclerosis, aneurysms/dissection, and vasculitis.",
+  "disclaimer": {
+    "summary": "Third-party generated study aid.",
+    "endorsement_notice": "These questions are third-party generated study materials. They are not produced by, reviewed by, approved by, endorsed by, or affiliated with the textbook authors, Elsevier, the Royal College of Pathologists of Australasia, or any other authority, institution, publisher, or examining body.",
+    "answer_key_note": "Answers are included as stable choice keys with brief source-grounded rationales for study and review purposes."
+  },
+  "source_notes": [
+    {
+      "source_type": "primary_textbook_chapter",
+      "source_title": "Robbins Basic Pathology, 10th Edition, Chapter 10: Blood Vessels",
+      "publisher": "Elsevier",
+      "edition": "10th Edition"
+    },
+    {
+      "source_type": "course_alignment_reference",
+      "source_title": "RCPA - Basic Pathological Sciences Syllabus 2026 - October 2025",
+      "organization": "Royal College of Pathologists of Australasia",
+      "reference_note": "Used for topic emphasis and exam framing; vascular tumours and pathology of vascular intervention are not currently in syllabus emphasis."
+    },
+    {
+      "source_type": "style_reference",
+      "source_title": "BPS 2026 Mock Exam Question Set",
+      "organization": "Royal College of Pathologists of Australasia",
+      "reference_note": "Used as a style, structure, and difficulty reference."
+    }
+  ],
+  "format": {
+    "question_count": 30,
+    "question_type": "single_choice",
+    "choices_distribution": {
+      "4": 6,
+      "5": 24
+    },
+    "answer_key_included": true,
+    "answer_format": "correct_choice_key_with_reason",
+    "choice_keys_included": true,
+    "choice_key_format": "uppercase_letters",
+    "choice_order_randomizable": true,
+    "page_reference_style": "printed_book_page_numbers"
+  },
+  "questions": [
+    {
+      "number": 1,
+      "question_id": "ch10-q01",
+      "type": "single_choice",
+      "question": "A 59-year-old man with atherosclerosis-related peripheral arterial disease is found to have endothelial activation at arterial branch points where flow is disturbed.\n\nWhich event BEST represents the earliest pathogenic step that permits atherosclerotic plaque formation?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Endothelial dysfunction with increased permeability and leukocyte adhesion"
+        },
+        {
+          "key": "B",
+          "text": "Fibrous cap rupture with thrombosis"
+        },
+        {
+          "key": "C",
+          "text": "Medial calcification of the internal elastic lamina"
+        },
+        {
+          "key": "D",
+          "text": "Smooth muscle apoptosis within an established plaque"
+        },
+        {
+          "key": "E",
+          "text": "Organization of a pre-existing mural thrombus"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "The response-to-injury model begins with endothelial dysfunction, which increases permeability, leukocyte adhesion, and thrombogenicity.",
+        "source_page_refs": [372, 373]
+      }
+    },
+    {
+      "number": 2,
+      "question_id": "ch10-q02",
+      "type": "single_choice",
+      "question": "A patient with renovascular hypertension is treated with an ACE inhibitor.\n\nWhich effect MOST directly lowers the blood pressure?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Reduced generation of angiotensin II"
+        },
+        {
+          "key": "B",
+          "text": "Increased endothelin release"
+        },
+        {
+          "key": "C",
+          "text": "Increased aldosterone secretion"
+        },
+        {
+          "key": "D",
+          "text": "Increased arteriolar wall calcification"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "ACE inhibitors lower blood pressure primarily by reducing angiotensin II formation, thereby decreasing vasoconstriction and aldosterone-driven sodium retention.",
+        "source_page_refs": [365]
+      }
+    },
+    {
+      "number": 3,
+      "question_id": "ch10-q03",
+      "type": "single_choice",
+      "question": "A kidney biopsy from a patient with malignant hypertension shows concentric laminated thickening of arteriolar walls with marked luminal narrowing.\n\nWhat vascular lesion is MOST likely present?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Atherosclerosis"
+        },
+        {
+          "key": "B",
+          "text": "Fibromuscular dysplasia"
+        },
+        {
+          "key": "C",
+          "text": "Hyaline arteriolosclerosis"
+        },
+        {
+          "key": "D",
+          "text": "Hyperplastic arteriolosclerosis"
+        },
+        {
+          "key": "E",
+          "text": "Monckeberg medial sclerosis"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "Hyperplastic arteriolosclerosis produces the classic onion-skin concentric laminated arteriolar thickening seen in severe or malignant hypertension.",
+        "source_page_refs": [367, 368]
+      }
+    },
+    {
+      "number": 4,
+      "question_id": "ch10-q04",
+      "type": "single_choice",
+      "question": "A patient with long-standing benign hypertension and diabetes has homogeneous pink thickening of small arteriolar walls with luminal narrowing and chronic renal ischemic change.\n\nWhat lesion BEST explains this morphology?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Dissecting hematoma"
+        },
+        {
+          "key": "B",
+          "text": "Hyaline arteriolosclerosis"
+        },
+        {
+          "key": "C",
+          "text": "Hyperplastic arteriolosclerosis"
+        },
+        {
+          "key": "D",
+          "text": "Necrotizing vasculitis"
+        },
+        {
+          "key": "E",
+          "text": "Thromboangiitis obliterans"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Hyaline arteriolosclerosis is the benign-hypertension pattern, also common in diabetes, and causes diffuse small-vessel narrowing and nephrosclerosis.",
+        "source_page_refs": [367, 368]
+      }
+    },
+    {
+      "number": 5,
+      "question_id": "ch10-q05",
+      "type": "single_choice",
+      "question": "An elderly patient has calcified muscular arteries visible on imaging, but the vessel lumina remain patent and the lesion is considered largely incidental.\n\nWhat is the BEST diagnosis?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Atherosclerosis"
+        },
+        {
+          "key": "B",
+          "text": "Hyperplastic arteriolosclerosis"
+        },
+        {
+          "key": "C",
+          "text": "Monckeberg medial sclerosis"
+        },
+        {
+          "key": "D",
+          "text": "Necrotizing arteriolitis"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Monckeberg medial sclerosis is medial calcification of muscular arteries, usually in older adults, and typically does not encroach on the lumen.",
+        "source_page_refs": [369]
+      }
+    },
+    {
+      "number": 6,
+      "question_id": "ch10-q06",
+      "type": "single_choice",
+      "question": "Six months after coronary stent placement, a patient develops restenosis at the treated segment.\n\nWhat pathologic process MOST directly underlies this complication?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Acute fibrinoid necrosis of the media"
+        },
+        {
+          "key": "B",
+          "text": "Neointimal fibromuscular hyperplasia"
+        },
+        {
+          "key": "C",
+          "text": "Transmural granulomatous inflammation"
+        },
+        {
+          "key": "D",
+          "text": "Widespread dystrophic calcification"
+        },
+        {
+          "key": "E",
+          "text": "Primary endothelial neoplasia"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Restenosis after intervention reflects the stereotyped vascular healing response: SMC migration into the intima, proliferation, and ECM deposition.",
+        "source_page_refs": [368, 369]
+      }
+    },
+    {
+      "number": 7,
+      "question_id": "ch10-q07",
+      "type": "single_choice",
+      "question": "Which circulating lipoprotein is MOST protective against atherosclerosis because it mobilizes cholesterol from plaques and returns it to the liver?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Chylomicron"
+        },
+        {
+          "key": "B",
+          "text": "HDL"
+        },
+        {
+          "key": "C",
+          "text": "IDL"
+        },
+        {
+          "key": "D",
+          "text": "LDL"
+        },
+        {
+          "key": "E",
+          "text": "VLDL"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "HDL is protective because it removes cholesterol from developing and established plaques and transports it to the liver for excretion.",
+        "source_page_refs": [371]
+      }
+    },
+    {
+      "number": 8,
+      "question_id": "ch10-q08",
+      "type": "single_choice",
+      "question": "Within an early atherosclerotic lesion, macrophages become foam cells primarily by ingesting which form of LDL?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Acetylated LDL by the LDL receptor"
+        },
+        {
+          "key": "B",
+          "text": "Native LDL by caveolar transport"
+        },
+        {
+          "key": "C",
+          "text": "Oxidized LDL by scavenger receptors"
+        },
+        {
+          "key": "D",
+          "text": "VLDL by mannose-6-phosphate receptors"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Macrophages ingest oxidized LDL through scavenger receptors, producing foam cells within the intima.",
+        "source_page_refs": [374]
+      }
+    },
+    {
+      "number": 9,
+      "question_id": "ch10-q09",
+      "type": "single_choice",
+      "question": "Minute extracellular cholesterol crystals in early atherosclerotic lesions act as danger signals that stimulate production of which mediator?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Bradykinin"
+        },
+        {
+          "key": "B",
+          "text": "Histamine"
+        },
+        {
+          "key": "C",
+          "text": "IL-1"
+        },
+        {
+          "key": "D",
+          "text": "Plasmin"
+        },
+        {
+          "key": "E",
+          "text": "Thromboxane A2"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Cholesterol crystals activate innate immune pathways, including the inflammasome, leading to IL-1 production.",
+        "source_page_refs": [374]
+      }
+    },
+    {
+      "number": 10,
+      "question_id": "ch10-q10",
+      "type": "single_choice",
+      "question": "In the coronary circulation, symptoms of stable angina typically appear when the lumen is narrowed by approximately what percentage?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "30%"
+        },
+        {
+          "key": "B",
+          "text": "50%"
+        },
+        {
+          "key": "C",
+          "text": "70%"
+        },
+        {
+          "key": "D",
+          "text": "95%"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "In coronary arteries, demand usually exceeds supply and produces stable angina when stenosis reaches about 70%.",
+        "source_page_refs": [377]
+      }
+    },
+    {
+      "number": 11,
+      "question_id": "ch10-q11",
+      "type": "single_choice",
+      "question": "A patient suffers an acute myocardial infarction from a coronary lesion that had not previously caused significant exertional symptoms.\n\nWhat is the MOST likely explanation?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Chronic fixed stenosis gradually progressed to complete occlusion without thrombosis"
+        },
+        {
+          "key": "B",
+          "text": "Medial calcification abruptly obliterated the lumen"
+        },
+        {
+          "key": "C",
+          "text": "Plaque rupture or erosion triggered acute thrombosis on a vulnerable lesion"
+        },
+        {
+          "key": "D",
+          "text": "The lesion was a venous thrombus that embolized retrograde"
+        },
+        {
+          "key": "E",
+          "text": "Atherosclerotic plaques only cause infarction after years of stable angina"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Many acute coronary syndromes arise when a previously asymptomatic vulnerable plaque ruptures or erodes and induces acute thrombosis.",
+        "source_page_refs": [376, 377]
+      }
+    },
+    {
+      "number": 12,
+      "question_id": "ch10-q12",
+      "type": "single_choice",
+      "question": "A coronary plaque has a thin fibrous cap, a large lipid-rich necrotic core, and prominent inflammatory infiltrates.\n\nHow should this plaque be classified?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Fibromuscular hyperplasia"
+        },
+        {
+          "key": "B",
+          "text": "Stable plaque"
+        },
+        {
+          "key": "C",
+          "text": "Vulnerable plaque"
+        },
+        {
+          "key": "D",
+          "text": "Monckeberg lesion"
+        },
+        {
+          "key": "E",
+          "text": "Organized mural thrombus"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "A thin cap, large lipid core, and dense inflammation are the defining features of a vulnerable plaque prone to rupture.",
+        "source_page_refs": [377, 378]
+      }
+    },
+    {
+      "number": 13,
+      "question_id": "ch10-q13",
+      "type": "single_choice",
+      "question": "In descending order of severity, which vascular bed is MOST commonly the most severely affected by atherosclerosis?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Coronary arteries"
+        },
+        {
+          "key": "B",
+          "text": "Internal carotid arteries"
+        },
+        {
+          "key": "C",
+          "text": "Infrarenal abdominal aorta"
+        },
+        {
+          "key": "D",
+          "text": "Mesenteric arteries"
+        },
+        {
+          "key": "E",
+          "text": "Upper-extremity arteries"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "The infrarenal abdominal aorta is the site of greatest typical atherosclerotic severity, followed by coronary and selected peripheral/cerebral vessels.",
+        "source_page_refs": [374, 375]
+      }
+    },
+    {
+      "number": 14,
+      "question_id": "ch10-q14",
+      "type": "single_choice",
+      "question": "Which combination lists the major modifiable risk factors for atherosclerosis highlighted in Chapter 10?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Age, male sex, family history, and hypertension"
+        },
+        {
+          "key": "B",
+          "text": "Clonal hematopoiesis, age, smoking, and female sex"
+        },
+        {
+          "key": "C",
+          "text": "Hyperlipidemia, hypertension, cigarette smoking, and diabetes mellitus"
+        },
+        {
+          "key": "D",
+          "text": "Hyperhomocysteinemia, obesity, pregnancy, and hemophilia"
+        },
+        {
+          "key": "E",
+          "text": "Male sex, metabolic syndrome, family history, and lipoprotein(a)"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "The core major modifiable risk factors are hyperlipidemia, hypertension, smoking, and diabetes; inflammation is also highlighted as important.",
+        "source_page_refs": [371, 372]
+      }
+    },
+    {
+      "number": 15,
+      "question_id": "ch10-q15",
+      "type": "single_choice",
+      "question": "A 68-year-old smoker is found to have an asymptomatic 5.5 cm infrarenal abdominal aortic aneurysm.\n\nWhat is the approximate annual risk of rupture?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Almost 0%"
+        },
+        {
+          "key": "B",
+          "text": "1%"
+        },
+        {
+          "key": "C",
+          "text": "11%"
+        },
+        {
+          "key": "D",
+          "text": "25%"
+        },
+        {
+          "key": "E",
+          "text": "50%"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "AAAs measuring 5 to 6 cm carry an annual rupture risk of about 11%, which is why repair is generally considered at this size range.",
+        "source_page_refs": [380]
+      }
+    },
+    {
+      "number": 16,
+      "question_id": "ch10-q16",
+      "type": "single_choice",
+      "question": "Where do most abdominal aortic aneurysms typically occur?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "At the aortic root only"
+        },
+        {
+          "key": "B",
+          "text": "Between the renal arteries and the aortic bifurcation"
+        },
+        {
+          "key": "C",
+          "text": "Confined to the thoracic arch"
+        },
+        {
+          "key": "D",
+          "text": "Within the pulmonary trunk"
+        },
+        {
+          "key": "E",
+          "text": "Within the carotid bifurcation"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Most AAAs arise in the abdominal aorta between the renal arteries and the aortic bifurcation.",
+        "source_page_refs": [379, 380]
+      }
+    },
+    {
+      "number": 17,
+      "question_id": "ch10-q17",
+      "type": "single_choice",
+      "question": "Which condition is particularly associated with thoracic aortic aneurysm rather than the usual atherosclerotic abdominal aneurysm pattern?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Bicuspid aortic valve"
+        },
+        {
+          "key": "B",
+          "text": "Gallstones"
+        },
+        {
+          "key": "C",
+          "text": "Portal hypertension"
+        },
+        {
+          "key": "D",
+          "text": "Varicose veins"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Thoracic aortic aneurysms are commonly associated with hypertension, bicuspid aortic valves, and Marfan syndrome rather than the classic abdominal atherosclerotic pattern.",
+        "source_page_refs": [380]
+      }
+    },
+    {
+      "number": 18,
+      "question_id": "ch10-q18",
+      "type": "single_choice",
+      "question": "Which description BEST defines aortic dissection?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A focal outpouching involving all three layers of the aortic wall"
+        },
+        {
+          "key": "B",
+          "text": "Blood splitting the laminar planes of the media to create a channel within the wall"
+        },
+        {
+          "key": "C",
+          "text": "A mural thrombus adherent to an intact intima"
+        },
+        {
+          "key": "D",
+          "text": "Medial calcification without luminal compromise"
+        },
+        {
+          "key": "E",
+          "text": "A postinflammatory fibrous scar of the adventitia"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Aortic dissection occurs when blood enters the media and splays apart its laminar planes, creating a false channel within the wall.",
+        "source_page_refs": [380, 381]
+      }
+    },
+    {
+      "number": 19,
+      "question_id": "ch10-q19",
+      "type": "single_choice",
+      "question": "A 52-year-old man with long-standing hypertension develops sudden excruciating tearing chest pain radiating to the back.\n\nWhat is the MOST likely diagnosis?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Aortic dissection"
+        },
+        {
+          "key": "B",
+          "text": "Abdominal aortic aneurysm"
+        },
+        {
+          "key": "C",
+          "text": "Giant cell arteritis"
+        },
+        {
+          "key": "D",
+          "text": "Polyarteritis nodosa"
+        },
+        {
+          "key": "E",
+          "text": "Takayasu arteritis"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "The classic symptom of aortic dissection is sudden tearing or stabbing chest pain radiating to the back, especially in hypertensive middle-aged men.",
+        "source_page_refs": [381, 382]
+      }
+    },
+    {
+      "number": 20,
+      "question_id": "ch10-q20",
+      "type": "single_choice",
+      "question": "A 72-year-old woman presents with new headache, scalp tenderness, jaw pain, and transient visual symptoms.\n\nWhat feared complication makes urgent treatment essential?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Cardiac tamponade"
+        },
+        {
+          "key": "B",
+          "text": "Coronary aneurysm"
+        },
+        {
+          "key": "C",
+          "text": "Irreversible blindness"
+        },
+        {
+          "key": "D",
+          "text": "Portal hypertension"
+        },
+        {
+          "key": "E",
+          "text": "Pulmonary embolism"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Giant cell arteritis can involve the ophthalmic artery and cause sudden permanent blindness, so prompt diagnosis and treatment are critical.",
+        "source_page_refs": [384, 385]
+      }
+    },
+    {
+      "number": 21,
+      "question_id": "ch10-q21",
+      "type": "single_choice",
+      "question": "A temporal artery biopsy is negative in a patient whose clinical picture strongly suggests giant cell arteritis.\n\nWhat is the BEST explanation?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The disease never affects the temporal artery"
+        },
+        {
+          "key": "B",
+          "text": "The vascular inflammation is characteristically patchy"
+        },
+        {
+          "key": "C",
+          "text": "The disorder only affects veins"
+        },
+        {
+          "key": "D",
+          "text": "ANCAs suppress the histologic response"
+        },
+        {
+          "key": "E",
+          "text": "Biopsy becomes positive only after steroid therapy"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "The lesions of giant cell arteritis are notoriously patchy, so a negative temporal artery biopsy does not exclude the diagnosis.",
+        "source_page_refs": [385]
+      }
+    },
+    {
+      "number": 22,
+      "question_id": "ch10-q22",
+      "type": "single_choice",
+      "question": "A 28-year-old woman has constitutional symptoms, reduced upper-extremity pulses, visual disturbance, and marked narrowing of the aortic arch branches.\n\nWhich vasculitis is MOST likely?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Giant cell arteritis"
+        },
+        {
+          "key": "B",
+          "text": "Kawasaki disease"
+        },
+        {
+          "key": "C",
+          "text": "Polyarteritis nodosa"
+        },
+        {
+          "key": "D",
+          "text": "Takayasu arteritis"
+        },
+        {
+          "key": "E",
+          "text": "Thromboangiitis obliterans"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "Takayasu arteritis is a granulomatous large-vessel vasculitis of the aortic arch and great vessels that causes pulseless disease and ocular symptoms in younger patients.",
+        "source_page_refs": [385, 386]
+      }
+    },
+    {
+      "number": 23,
+      "question_id": "ch10-q23",
+      "type": "single_choice",
+      "question": "A systemic necrotizing vasculitis involves renal and visceral arteries, causes hypertension and abdominal pain, and spares the pulmonary circulation.\n\nWhich disorder is MOST likely?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Granulomatosis with polyangiitis"
+        },
+        {
+          "key": "B",
+          "text": "Kawasaki disease"
+        },
+        {
+          "key": "C",
+          "text": "Polyarteritis nodosa"
+        },
+        {
+          "key": "D",
+          "text": "Takayasu arteritis"
+        },
+        {
+          "key": "E",
+          "text": "Temporal arteritis"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Polyarteritis nodosa is a small- to medium-sized muscular artery vasculitis that classically involves renal and visceral vessels while sparing the lungs.",
+        "source_page_refs": [386, 387]
+      }
+    },
+    {
+      "number": 24,
+      "question_id": "ch10-q24",
+      "type": "single_choice",
+      "question": "A 3-year-old child has fever, conjunctival and oral erythema, rash, edema of the hands and feet, and cervical lymphadenopathy.\n\nWhy is this disease especially important to recognize?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "It predictably causes portal hypertension"
+        },
+        {
+          "key": "B",
+          "text": "It produces coronary arteritis with aneurysm and thrombosis risk"
+        },
+        {
+          "key": "C",
+          "text": "It causes pulmonary artery dissection in most cases"
+        },
+        {
+          "key": "D",
+          "text": "It is the most common cause of abdominal aortic aneurysm"
+        },
+        {
+          "key": "E",
+          "text": "It is always associated with chronic hepatitis B infection"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Kawasaki disease is clinically important because coronary arteritis can produce aneurysm, thrombosis, and myocardial infarction.",
+        "source_page_refs": [387]
+      }
+    },
+    {
+      "number": 25,
+      "question_id": "ch10-q25",
+      "type": "single_choice",
+      "question": "Which ANCA specificity is most strongly associated with granulomatosis with polyangiitis?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Anti-centromere antibody"
+        },
+        {
+          "key": "B",
+          "text": "Anti-dsDNA antibody"
+        },
+        {
+          "key": "C",
+          "text": "MPO-ANCA"
+        },
+        {
+          "key": "D",
+          "text": "PR3-ANCA"
+        },
+        {
+          "key": "E",
+          "text": "Rheumatoid factor"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "PR3-ANCA is the classic ANCA associated with granulomatosis with polyangiitis.",
+        "source_page_refs": [384, 388]
+      }
+    },
+    {
+      "number": 26,
+      "question_id": "ch10-q26",
+      "type": "single_choice",
+      "question": "A patient has chronic sinus disease, lung nodules, and rapidly progressive glomerulonephritis.\n\nWhich diagnosis BEST fits this triad?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Giant cell arteritis"
+        },
+        {
+          "key": "B",
+          "text": "Granulomatosis with polyangiitis"
+        },
+        {
+          "key": "C",
+          "text": "Kawasaki disease"
+        },
+        {
+          "key": "D",
+          "text": "Polyarteritis nodosa"
+        },
+        {
+          "key": "E",
+          "text": "Takayasu arteritis"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Granulomatosis with polyangiitis classically combines upper/lower respiratory tract granulomatous disease with necrotizing glomerulonephritis.",
+        "source_page_refs": [388, 389]
+      }
+    },
+    {
+      "number": 27,
+      "question_id": "ch10-q27",
+      "type": "single_choice",
+      "question": "A healthy young woman develops episodic white-blue-red color changes of the fingers during cold exposure, without evidence of systemic autoimmune disease.\n\nWhat is the MOST likely mechanism?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Exaggerated vasomotor responses to cold or emotion"
+        },
+        {
+          "key": "B",
+          "text": "Fibromuscular hyperplasia of digital arteries"
+        },
+        {
+          "key": "C",
+          "text": "Large-vessel granulomatous arteritis"
+        },
+        {
+          "key": "D",
+          "text": "Occlusive thrombosis of deep veins"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Primary Raynaud phenomenon is caused by exaggerated central and local vasomotor responses, typically without early structural vessel disease.",
+        "source_page_refs": [390]
+      }
+    },
+    {
+      "number": 28,
+      "question_id": "ch10-q28",
+      "type": "single_choice",
+      "question": "A woman with long-standing lower-limb varicosities develops chronic edema, pain, stasis dermatitis, and a poorly healing ulcer near the ankle.\n\nWhat pathophysiologic change underlies these complications?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Coronary ostial narrowing"
+        },
+        {
+          "key": "B",
+          "text": "Lymphatic agenesis"
+        },
+        {
+          "key": "C",
+          "text": "Valve incompetence with venous stasis"
+        },
+        {
+          "key": "D",
+          "text": "Vasa vasorum obliteration"
+        },
+        {
+          "key": "E",
+          "text": "Widespread arterial embolization"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Varicose dilation renders venous valves incompetent, producing venous stasis, edema, pain, skin change, and chronic ulceration.",
+        "source_page_refs": [390]
+      }
+    },
+    {
+      "number": 29,
+      "question_id": "ch10-q29",
+      "type": "single_choice",
+      "question": "In deep venous thrombosis of the legs, which factor is considered the MOST important risk factor?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Oral contraceptive use"
+        },
+        {
+          "key": "B",
+          "text": "Pregnancy"
+        },
+        {
+          "key": "C",
+          "text": "Prolonged immobilization with venous stasis"
+        },
+        {
+          "key": "D",
+          "text": "Varicose veins alone"
+        },
+        {
+          "key": "E",
+          "text": "Young age"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Prolonged immobilization is the most important risk factor for lower-extremity DVT because it promotes venous stasis.",
+        "source_page_refs": [391]
+      }
+    },
+    {
+      "number": 30,
+      "question_id": "ch10-q30",
+      "type": "single_choice",
+      "question": "A woman develops chronic arm swelling and peau d'orange change after axillary lymph-node dissection for breast carcinoma.\n\nWhat is the MOST likely explanation?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Acute lymphangitis from bacterial seeding"
+        },
+        {
+          "key": "B",
+          "text": "Primary congenital absence of lymphatics"
+        },
+        {
+          "key": "C",
+          "text": "Secondary obstructive lymphedema from severed lymphatic connections"
+        },
+        {
+          "key": "D",
+          "text": "Systemic arterial vasospasm"
+        },
+        {
+          "key": "E",
+          "text": "Superior vena cava syndrome"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Secondary lymphedema commonly follows tumor treatment that disrupts previously normal lymphatic drainage, leading to chronic edema and fibrotic skin change.",
+        "source_page_refs": [391]
+      }
+    }
+  ]
+}

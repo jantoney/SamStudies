@@ -1,0 +1,1024 @@
+{
+  "schema_version": "1.2",
+  "resource_type": "exam_prep_question_set",
+  "title": "07 - Genetic and Pediatric Diseases - Exam Prep Questions",
+  "slug": "07-genetic-and-pediatric-diseases-exam-prep-questions",
+  "chapter": {
+    "number": 7,
+    "code": "07",
+    "title": "Genetic and Pediatric Diseases",
+    "status": "complete"
+  },
+  "description": "Third-party generated single-choice exam-prep questions for Chapter 7. The set is aligned primarily to the Chapter 7 textbook content and shaped to reflect the style, structure, and difficulty distribution of the RCPA Basic Pathological Sciences mock exam format. Choices are keyed so answers remain stable if an application randomizes display order.",
+  "disclaimer": {
+    "summary": "Third-party generated study aid.",
+    "endorsement_notice": "These questions are third-party generated study materials. They are not produced by, reviewed by, approved by, endorsed by, or affiliated with the textbook authors, Elsevier, the Royal College of Pathologists of Australasia, or any other authority, institution, publisher, or examining body.",
+    "answer_key_note": "Answers are included as stable choice keys with brief source-grounded rationales for study and review purposes."
+  },
+  "source_notes": [
+    {
+      "source_type": "primary_textbook_chapter",
+      "source_title": "Robbins Basic Pathology, 10th Edition, Chapter 7: Genetic and Pediatric Diseases",
+      "publisher": "Elsevier",
+      "edition": "10th Edition"
+    },
+    {
+      "source_type": "course_alignment_reference",
+      "source_title": "RCPA - Basic Pathological Sciences Syllabus 2026 - October 2025",
+      "organization": "Royal College of Pathologists of Australasia",
+      "reference_note": "Used for topic emphasis and exam framing."
+    },
+    {
+      "source_type": "style_reference",
+      "source_title": "BPS 2026 Mock Exam Question Set",
+      "organization": "Royal College of Pathologists of Australasia",
+      "reference_note": "Used as a style, structure, and difficulty reference."
+    }
+  ],
+  "format": {
+    "question_count": 30,
+    "question_type": "single_choice",
+    "choices_distribution": {
+      "4": 5,
+      "5": 25
+    },
+    "answer_key_included": true,
+    "answer_format": "correct_choice_key_with_reason",
+    "choice_keys_included": true,
+    "choice_key_format": "uppercase_letters",
+    "choice_order_randomizable": true,
+    "page_reference_style": "printed_book_page_numbers"
+  },
+  "questions": [
+    {
+      "number": 1,
+      "question_id": "ch7-q01",
+      "type": "single_choice",
+      "question": "A child is found to have a developmental disorder caused by loss of a large chromosomal segment, altering gene dosage without changing the sequence of the remaining allele.\n\nWhat type of genetic abnormality BEST describes this lesion?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Copy number variation"
+        },
+        {
+          "key": "B",
+          "text": "Genomic imprinting"
+        },
+        {
+          "key": "C",
+          "text": "Mitochondrial inheritance"
+        },
+        {
+          "key": "D",
+          "text": "Synonymous point mutation"
+        },
+        {
+          "key": "E",
+          "text": "Trinucleotide-repeat expansion"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Large gains, losses, or rearrangements alter gene dosage and are classified as copy number changes rather than simple point mutations.",
+        "source_page_refs": [244, 245]
+      }
+    },
+    {
+      "number": 2,
+      "question_id": "ch7-q02",
+      "type": "single_choice",
+      "question": "A disorder is expressed in heterozygotes, affects males and females equally, and commonly involves abnormal structural proteins.\n\nWhat is the MOST likely inheritance pattern?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Autosomal dominant"
+        },
+        {
+          "key": "B",
+          "text": "Autosomal recessive"
+        },
+        {
+          "key": "C",
+          "text": "X-linked recessive"
+        },
+        {
+          "key": "D",
+          "text": "Mitochondrial"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Autosomal dominant disorders are expressed in heterozygotes, affect both sexes equally, and often involve structural proteins or receptors.",
+        "source_page_refs": [246, 247]
+      }
+    },
+    {
+      "number": 3,
+      "question_id": "ch7-q03",
+      "type": "single_choice",
+      "question": "A tall adolescent with arachnodactyly has bilateral lens subluxation and progressive aortic root dilation.\n\nWhat molecular abnormality MOST directly explains this syndrome?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Activating mutation of PCSK9"
+        },
+        {
+          "key": "B",
+          "text": "Defective fibrillin with excessive TGF-beta signaling"
+        },
+        {
+          "key": "C",
+          "text": "Deficiency of galactose-1-phosphate uridyltransferase"
+        },
+        {
+          "key": "D",
+          "text": "Loss of CFTR-mediated chloride transport"
+        },
+        {
+          "key": "E",
+          "text": "Loss of type III collagen restricted to vascular smooth muscle"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Marfan syndrome results from FBN1 mutation, producing defective fibrillin and excessive TGF-beta signaling with skeletal, ocular, and aortic disease.",
+        "source_page_refs": [247, 248]
+      }
+    },
+    {
+      "number": 4,
+      "question_id": "ch7-q04",
+      "type": "single_choice",
+      "question": "A young adult has hyperextensible skin, hypermobile joints, and spontaneous bowel perforation.\n\nWhich defect is MOST likely?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Beta subunit of hexosaminidase deficiency"
+        },
+        {
+          "key": "B",
+          "text": "Fibrillin mutation"
+        },
+        {
+          "key": "C",
+          "text": "LDL receptor overexpression"
+        },
+        {
+          "key": "D",
+          "text": "Type III collagen defect"
+        },
+        {
+          "key": "E",
+          "text": "WT1 inactivation"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "Vascular Ehlers-Danlos syndrome results from type III collagen defects and is associated with tissue fragility, including bowel and arterial rupture.",
+        "source_page_refs": [248]
+      }
+    },
+    {
+      "number": 5,
+      "question_id": "ch7-q05",
+      "type": "single_choice",
+      "question": "A patient with tendon xanthomas and premature coronary artery disease is found to have familial hypercholesterolemia.\n\nWhat is the PRIMARY metabolic consequence of the classic receptor defect?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Excess intestinal galactose absorption"
+        },
+        {
+          "key": "B",
+          "text": "Failure of LDL uptake with loss of feedback control of cholesterol metabolism"
+        },
+        {
+          "key": "C",
+          "text": "Increased hepatic glycogen breakdown from glucose-6-phosphatase deficiency"
+        },
+        {
+          "key": "D",
+          "text": "Increased sphingomyelin degradation in macrophages"
+        },
+        {
+          "key": "E",
+          "text": "Uncontrolled chloride secretion into airway lumen"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Loss of LDL receptor function reduces cellular LDL uptake and disrupts the normal feedback mechanisms that regulate cholesterol homeostasis.",
+        "source_page_refs": [248, 249, 250]
+      }
+    },
+    {
+      "number": 6,
+      "question_id": "ch7-q06",
+      "type": "single_choice",
+      "question": "A newborn develops meconium ileus and later recurrent sinopulmonary infections with progressive bronchiectasis.\n\nWhat is the fundamental defect in this disease?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Defective chloride transport through CFTR"
+        },
+        {
+          "key": "B",
+          "text": "Impaired LDL receptor recycling"
+        },
+        {
+          "key": "C",
+          "text": "Loss of fibrillin microfibrils"
+        },
+        {
+          "key": "D",
+          "text": "Loss of phenylalanine hydroxylase"
+        },
+        {
+          "key": "E",
+          "text": "Reduced type II collagen synthesis"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Cystic fibrosis is caused by CFTR mutation, producing abnormal chloride transport, high-salt sweat, and thick secretions in lung and gastrointestinal tract.",
+        "source_page_refs": [250, 251, 252, 254]
+      }
+    },
+    {
+      "number": 7,
+      "question_id": "ch7-q07",
+      "type": "single_choice",
+      "question": "A woman with poorly controlled phenylketonuria becomes pregnant and does not maintain dietary restriction.\n\nWhat fetal complication is MOST directly associated with this maternal metabolic state?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Fetal malformations and neurologic injury from transplacental phenylalanine metabolites"
+        },
+        {
+          "key": "B",
+          "text": "Generalized fetal edema from Rh incompatibility"
+        },
+        {
+          "key": "C",
+          "text": "Thymic hypoplasia from 22q11.2 deletion"
+        },
+        {
+          "key": "D",
+          "text": "Trisomy 21 from maternal nondisjunction"
+        },
+        {
+          "key": "E",
+          "text": "Vas deferens agenesis from CFTR mutation"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Maternal PKU can injure the fetus through transplacental exposure to phenylalanine metabolites even when the fetus does not carry PAH deficiency.",
+        "source_page_refs": [255]
+      }
+    },
+    {
+      "number": 8,
+      "question_id": "ch7-q08",
+      "type": "single_choice",
+      "question": "A neonate develops jaundice, vomiting, cataracts, and sepsis after milk feeds. Blood studies suggest an inborn error of galactose metabolism.\n\nWhich enzyme is MOST likely deficient?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Acid maltase"
+        },
+        {
+          "key": "B",
+          "text": "Galactose-1-phosphate uridyltransferase"
+        },
+        {
+          "key": "C",
+          "text": "Glucocerebrosidase"
+        },
+        {
+          "key": "D",
+          "text": "Hexosaminidase beta"
+        },
+        {
+          "key": "E",
+          "text": "Phenylalanine hydroxylase"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Classic galactosemia results from GALT deficiency and presents early with liver injury, cataracts, and risk of E. coli sepsis after lactose ingestion.",
+        "source_page_refs": [255, 256]
+      }
+    },
+    {
+      "number": 9,
+      "question_id": "ch7-q09",
+      "type": "single_choice",
+      "question": "An infant is normal at birth but soon develops motor weakness, blindness, and severe neurologic decline due to accumulation of GM2 ganglioside.\n\nWhich enzyme deficiency is MOST likely?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Galactose-1-phosphate uridyltransferase"
+        },
+        {
+          "key": "B",
+          "text": "Glucocerebrosidase"
+        },
+        {
+          "key": "C",
+          "text": "Hexosaminidase beta"
+        },
+        {
+          "key": "D",
+          "text": "Sphingomyelinase"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Tay-Sachs disease is caused by deficiency of the beta subunit of hexosaminidase, leading to GM2 ganglioside accumulation in the CNS.",
+        "source_page_refs": [256, 257]
+      }
+    },
+    {
+      "number": 10,
+      "question_id": "ch7-q10",
+      "type": "single_choice",
+      "question": "A child with hepatosplenomegaly and bone pain has macrophages with abundant wrinkled tissue-paper cytoplasm.\n\nWhich enzyme deficiency BEST explains these findings?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Acid sphingomyelinase"
+        },
+        {
+          "key": "B",
+          "text": "Galactose-1-phosphate uridyltransferase"
+        },
+        {
+          "key": "C",
+          "text": "Glucocerebrosidase"
+        },
+        {
+          "key": "D",
+          "text": "Hexosaminidase beta"
+        },
+        {
+          "key": "E",
+          "text": "LDL receptor"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Gaucher disease results from glucocerebrosidase deficiency, producing lipid-laden macrophages with characteristic wrinkled tissue-paper cytoplasm.",
+        "source_page_refs": [258, 259, 260]
+      }
+    },
+    {
+      "number": 11,
+      "question_id": "ch7-q11",
+      "type": "single_choice",
+      "question": "An infant develops cardiomegaly and cardiorespiratory failure caused by glycogen accumulation within lysosomes.\n\nWhich enzyme is MOST likely deficient?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Acid maltase"
+        },
+        {
+          "key": "B",
+          "text": "Glucose-6-phosphatase"
+        },
+        {
+          "key": "C",
+          "text": "Muscle phosphorylase"
+        },
+        {
+          "key": "D",
+          "text": "Phenylalanine hydroxylase"
+        },
+        {
+          "key": "E",
+          "text": "Sphingomyelinase"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Pompe disease is the lysosomal glycogen storage disease caused by acid maltase deficiency, with predominant cardiac involvement.",
+        "source_page_refs": [260, 261]
+      }
+    },
+    {
+      "number": 12,
+      "question_id": "ch7-q12",
+      "type": "single_choice",
+      "question": "A common disorder clusters in families, but no clean Mendelian pedigree is identified and severity varies continuously across affected individuals.\n\nWhat is the BEST interpretation?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A complex multigenic disorder produced by multiple low-impact genes plus environment"
+        },
+        {
+          "key": "B",
+          "text": "A fully penetrant autosomal dominant disorder"
+        },
+        {
+          "key": "C",
+          "text": "An X-linked recessive disorder"
+        },
+        {
+          "key": "D",
+          "text": "Disease caused only by mitochondrial DNA mutation"
+        },
+        {
+          "key": "E",
+          "text": "Disease caused only by parental imprinting"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Complex multigenic disorders reflect the combined effects of multiple low-impact genes and environmental influences rather than a single Mendelian lesion.",
+        "source_page_refs": [261, 262]
+      }
+    },
+    {
+      "number": 13,
+      "question_id": "ch7-q13",
+      "type": "single_choice",
+      "question": "A newborn with Down syndrome is born to phenotypically normal parents.\n\nWhat is the MOST common underlying mechanism?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Deletion of maternal chromosome 15q12"
+        },
+        {
+          "key": "B",
+          "text": "Meiotic nondisjunction, usually in the maternal ovum"
+        },
+        {
+          "key": "C",
+          "text": "Mitotic amplification of MYCN"
+        },
+        {
+          "key": "D",
+          "text": "Paternal uniparental disomy of chromosome 15"
+        },
+        {
+          "key": "E",
+          "text": "Somatic RB mutation only"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Most cases of Down syndrome are due to meiotic nondisjunction producing trisomy 21, and the extra chromosome is usually maternal in origin.",
+        "source_page_refs": [264, 265]
+      }
+    },
+    {
+      "number": 14,
+      "question_id": "ch7-q14",
+      "type": "single_choice",
+      "question": "An infant has a conotruncal cardiac defect, recurrent infections caused by T-cell deficiency, and hypocalcemia.\n\nWhich chromosomal abnormality is MOST likely?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "22q11.2 deletion"
+        },
+        {
+          "key": "B",
+          "text": "45,X monosomy"
+        },
+        {
+          "key": "C",
+          "text": "47,XXY aneuploidy"
+        },
+        {
+          "key": "D",
+          "text": "Maternal uniparental disomy of chromosome 15"
+        },
+        {
+          "key": "E",
+          "text": "Trisomy 21"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "The 22q11.2 deletion syndrome spectrum includes conotruncal cardiac disease, thymic hypoplasia with T-cell deficiency, and parathyroid hypoplasia with hypocalcemia.",
+        "source_page_refs": [266]
+      }
+    },
+    {
+      "number": 15,
+      "question_id": "ch7-q15",
+      "type": "single_choice",
+      "question": "A tall adolescent male has gynecomastia, infertility, and markedly small testes.\n\nWhich karyotype is MOST likely?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "45,X"
+        },
+        {
+          "key": "B",
+          "text": "46,XY"
+        },
+        {
+          "key": "C",
+          "text": "47,XXY"
+        },
+        {
+          "key": "D",
+          "text": "47,XYY"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Klinefelter syndrome is the classic XXY disorder producing testicular atrophy, infertility, reduced body hair, and gynecomastia.",
+        "source_page_refs": [267, 268]
+      }
+    },
+    {
+      "number": 16,
+      "question_id": "ch7-q16",
+      "type": "single_choice",
+      "question": "A short adolescent girl has webbing of the neck, primary amenorrhea, and fibrotic streak ovaries.\n\nWhat is the MOST likely cytogenetic basis?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Complete or partial monosomy of genes on the short arm of the X chromosome"
+        },
+        {
+          "key": "B",
+          "text": "Expansion of CGG repeats in FMR1"
+        },
+        {
+          "key": "C",
+          "text": "Maternal transmission of a mitochondrial mutation"
+        },
+        {
+          "key": "D",
+          "text": "Paternal 15q12 deletion"
+        },
+        {
+          "key": "E",
+          "text": "Trisomy 18"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Turner syndrome usually reflects complete or partial monosomy of genes on the short arm of the X chromosome, classically with a 45,X karyotype.",
+        "source_page_refs": [267, 268]
+      }
+    },
+    {
+      "number": 17,
+      "question_id": "ch7-q17",
+      "type": "single_choice",
+      "question": "A woman carries an FMR1 premutation.\n\nDuring which process is expansion to a full mutation MOST likely to occur?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Early embryonic mitosis"
+        },
+        {
+          "key": "B",
+          "text": "Oogenesis"
+        },
+        {
+          "key": "C",
+          "text": "Somatic cell replication in adulthood"
+        },
+        {
+          "key": "D",
+          "text": "Spermatogenesis"
+        },
+        {
+          "key": "E",
+          "text": "Transcription of FMR1 mRNA"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Fragile X premutations typically expand to full mutations during oogenesis, explaining anticipation in maternal transmission.",
+        "source_page_refs": [271, 272]
+      }
+    },
+    {
+      "number": 18,
+      "question_id": "ch7-q18",
+      "type": "single_choice",
+      "question": "An older man with an FMR1 premutation develops intention tremor and cerebellar ataxia.\n\nWhat is the MOST likely mechanism of this disorder?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Excessive LDL receptor degradation by PCSK9"
+        },
+        {
+          "key": "B",
+          "text": "Failure of TGF-beta sequestration by fibrillin"
+        },
+        {
+          "key": "C",
+          "text": "Toxic accumulation of CGG-containing FMR1 mRNA with sequestration of nuclear proteins"
+        },
+        {
+          "key": "D",
+          "text": "Total silencing of FMR1 by promoter methylation from a full mutation"
+        },
+        {
+          "key": "E",
+          "text": "Uniparental disomy of chromosome 15"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Fragile X tremor/ataxia syndrome is a premutation disorder in which toxic FMR1 mRNA accumulates in nuclei and sequesters proteins required for neuronal function.",
+        "source_page_refs": [271, 272]
+      }
+    },
+    {
+      "number": 19,
+      "question_id": "ch7-q19",
+      "type": "single_choice",
+      "question": "A pedigree shows that an affected mother transmits disease to sons and daughters, but an affected father transmits it to none of his children.\n\nWhat is the MOST likely mode of inheritance?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Autosomal dominant"
+        },
+        {
+          "key": "B",
+          "text": "Autosomal recessive"
+        },
+        {
+          "key": "C",
+          "text": "Genomic imprinting"
+        },
+        {
+          "key": "D",
+          "text": "Mitochondrial"
+        },
+        {
+          "key": "E",
+          "text": "X-linked recessive"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "Mitochondrial DNA is transmitted through the ovum, so affected mothers may transmit disease to all children whereas affected fathers do not transmit it.",
+        "source_page_refs": [272]
+      }
+    },
+    {
+      "number": 20,
+      "question_id": "ch7-q20",
+      "type": "single_choice",
+      "question": "A child with hypotonia, obesity, small hands and feet, and hypogonadism has Prader-Willi syndrome caused by uniparental disomy.\n\nWhich chromosomal finding is MOST likely?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Two normal maternal copies of chromosome 15"
+        },
+        {
+          "key": "B",
+          "text": "Two normal paternal copies of chromosome 15"
+        },
+        {
+          "key": "C",
+          "text": "Deletion of maternal 22q11.2"
+        },
+        {
+          "key": "D",
+          "text": "Trisomy 21 mosaicism"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Prader-Willi syndrome can result from maternal uniparental disomy of chromosome 15, leaving the child without the required paternal contribution at the imprinted locus.",
+        "source_page_refs": [272, 273]
+      }
+    },
+    {
+      "number": 21,
+      "question_id": "ch7-q21",
+      "type": "single_choice",
+      "question": "An infant is born with pulmonary hypoplasia, flattened facies, and positional limb abnormalities caused by oligohydramnios.\n\nWhat type of congenital abnormality pattern is described?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Deformation"
+        },
+        {
+          "key": "B",
+          "text": "Disruption"
+        },
+        {
+          "key": "C",
+          "text": "Malformation syndrome"
+        },
+        {
+          "key": "D",
+          "text": "Sequence"
+        },
+        {
+          "key": "E",
+          "text": "Syndrome"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "Oligohydramnios gives rise to Potter sequence, in which one initiating event produces a characteristic cascade of abnormalities.",
+        "source_page_refs": [274]
+      }
+    },
+    {
+      "number": 22,
+      "question_id": "ch7-q22",
+      "type": "single_choice",
+      "question": "A fetus develops limb constriction defects after rupture of the amnion with formation of fibrous bands.\n\nWhat term BEST describes this mechanism?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Deformation"
+        },
+        {
+          "key": "B",
+          "text": "Disruption"
+        },
+        {
+          "key": "C",
+          "text": "Malformation"
+        },
+        {
+          "key": "D",
+          "text": "Sequence"
+        },
+        {
+          "key": "E",
+          "text": "Trisomy"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Amniotic bands cause a disruption, meaning secondary destruction of tissue that was previously developing normally.",
+        "source_page_refs": [274]
+      }
+    },
+    {
+      "number": 23,
+      "question_id": "ch7-q23",
+      "type": "single_choice",
+      "question": "During which developmental period does an environmental insult generally have the greatest effect on producing major structural congenital anomalies?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "After birth"
+        },
+        {
+          "key": "B",
+          "text": "During organogenesis"
+        },
+        {
+          "key": "C",
+          "text": "Late adulthood"
+        },
+        {
+          "key": "D",
+          "text": "The last week of gestation"
+        },
+        {
+          "key": "E",
+          "text": "The second postnatal year"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "The chapter emphasizes that earlier in utero insults, especially during organogenesis, have the greatest impact on structural development.",
+        "source_page_refs": [275, 276]
+      }
+    },
+    {
+      "number": 24,
+      "question_id": "ch7-q24",
+      "type": "single_choice",
+      "question": "A premature infant born to a diabetic mother develops severe respiratory distress shortly after birth.\n\nWhat is the fundamental abnormality?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Decreased pulmonary surfactant with failure of alveolar expansion"
+        },
+        {
+          "key": "B",
+          "text": "Immune destruction of fetal erythrocytes by maternal antibody"
+        },
+        {
+          "key": "C",
+          "text": "Loss of catecholamine secretion by adrenal medulla"
+        },
+        {
+          "key": "D",
+          "text": "Mechanical airway obstruction by thick meconium only"
+        },
+        {
+          "key": "E",
+          "text": "Primary failure of thymic development"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Neonatal respiratory distress syndrome is caused by surfactant deficiency, and infants of diabetic mothers are at increased risk because hyperinsulinemia suppresses surfactant synthesis.",
+        "source_page_refs": [277, 278, 279]
+      }
+    },
+    {
+      "number": 25,
+      "question_id": "ch7-q25",
+      "type": "single_choice",
+      "question": "What is the MOST compelling current hypothesis for the pathogenesis of sudden infant death syndrome?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Delayed development of arousal and cardiorespiratory control in a vulnerable infant"
+        },
+        {
+          "key": "B",
+          "text": "Early closure of the ductus arteriosus"
+        },
+        {
+          "key": "C",
+          "text": "Failure of surfactant synthesis after term delivery"
+        },
+        {
+          "key": "D",
+          "text": "Inherited absence of the vas deferens"
+        },
+        {
+          "key": "E",
+          "text": "Postzygotic trisomy 21 mosaicism"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "The strongest current model is delayed maturation of brain-stem arousal and cardiorespiratory control in a vulnerable infant exposed to environmental stressors during sleep.",
+        "source_page_refs": [280, 281]
+      }
+    },
+    {
+      "number": 26,
+      "question_id": "ch7-q26",
+      "type": "single_choice",
+      "question": "In contemporary practice, which group of causes accounts for MOST cases of fetal hydrops?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Immune hemolysis caused by Rh incompatibility"
+        },
+        {
+          "key": "B",
+          "text": "Maternal phenylketonuria"
+        },
+        {
+          "key": "C",
+          "text": "Nonimmune causes such as chromosomal abnormalities, cardiovascular defects, and fetal anemia"
+        },
+        {
+          "key": "D",
+          "text": "Only in utero viral myocarditis"
+        },
+        {
+          "key": "E",
+          "text": "Only Turner syndrome"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Because Rh prophylaxis has reduced immune hydrops, the majority of current cases are nonimmune, especially from chromosomal disease, cardiovascular defects, and fetal anemia.",
+        "source_page_refs": [282, 283, 285]
+      }
+    },
+    {
+      "number": 27,
+      "question_id": "ch7-q27",
+      "type": "single_choice",
+      "question": "A child has a tumor of the adrenal medulla composed of primitive neural crest-derived cells.\n\nWhich finding is associated with WORSE prognosis?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "MYCN amplification"
+        },
+        {
+          "key": "B",
+          "text": "Presence of stage 4S disease in an infant"
+        },
+        {
+          "key": "C",
+          "text": "Spontaneous maturation into ganglion cells"
+        },
+        {
+          "key": "D",
+          "text": "Urinary VMA excretion"
+        },
+        {
+          "key": "E",
+          "text": "Young age at diagnosis"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Neuroblastoma prognosis is strongly influenced by age, stage, ploidy, and MYCN amplification, the last of which is a major adverse marker.",
+        "source_page_refs": [287, 288]
+      }
+    },
+    {
+      "number": 28,
+      "question_id": "ch7-q28",
+      "type": "single_choice",
+      "question": "A young child with bilateral multifocal retinal tumors is found to have a germline RB mutation.\n\nWhat additional malignancy is this child at increased risk of developing later in life?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Colon adenocarcinoma"
+        },
+        {
+          "key": "B",
+          "text": "Diffuse large B-cell lymphoma"
+        },
+        {
+          "key": "C",
+          "text": "Osteosarcoma"
+        },
+        {
+          "key": "D",
+          "text": "Papillary thyroid carcinoma"
+        },
+        {
+          "key": "E",
+          "text": "Seminoma"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Familial retinoblastoma reflects germline RB mutation and carries increased later risk of osteosarcoma and other soft-tissue tumors.",
+        "source_page_refs": [289, 290]
+      }
+    },
+    {
+      "number": 29,
+      "question_id": "ch7-q29",
+      "type": "single_choice",
+      "question": "A child with macroglossia and hemihyperplasia develops Wilms tumor.\n\nWhat genetic mechanism MOST likely underlies the syndrome predisposing to this neoplasm?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Activating mutation of PCSK9"
+        },
+        {
+          "key": "B",
+          "text": "Imprinting abnormality at the WT2 locus involving IGF2"
+        },
+        {
+          "key": "C",
+          "text": "Loss of hexosaminidase beta"
+        },
+        {
+          "key": "D",
+          "text": "Maternal transmission of mitochondrial DNA mutation"
+        },
+        {
+          "key": "E",
+          "text": "Paternal deletion of 15q12"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Beckwith-Wiedemann syndrome predisposes to Wilms tumor through imprinting abnormalities at the WT2 locus, particularly involving IGF2.",
+        "source_page_refs": [289, 290]
+      }
+    },
+    {
+      "number": 30,
+      "question_id": "ch7-q30",
+      "type": "single_choice",
+      "question": "A critically ill infant is suspected of having 22q11.2 deletion syndrome, and a rapid test that can evaluate interphase nuclei is required.\n\nWhich technique is MOST appropriate?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "FISH"
+        },
+        {
+          "key": "B",
+          "text": "Karyotyping only after cell culture"
+        },
+        {
+          "key": "C",
+          "text": "Linkage analysis"
+        },
+        {
+          "key": "D",
+          "text": "GWAS"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "FISH can be applied to interphase nuclei and is especially useful for rapid detection of microdeletions, aneuploidy, and gene amplification.",
+        "source_page_refs": [292, 293]
+      }
+    }
+  ]
+}

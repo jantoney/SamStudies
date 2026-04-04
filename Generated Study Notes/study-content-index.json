@@ -3,7 +3,7 @@
   "index_type": "study_content_catalog",
   "collection_title": "Generated Study Notes",
   "collection_slug": "generated-study-notes",
-  "description": "Website-ready index of generated pathology study assets. Chapters 1 through 6 currently have complete third-party generated study notes, exam-prep questions with keyed answers and brief source-grounded rationales, and flashcards for spaced-repetition revision. Later chapters can be added to this same index as new assets are created, including additional flashcard resources.",
+  "description": "Website-ready index of generated pathology study assets. Completed chapters contain third-party generated study notes, exam-prep questions with keyed answers and brief source-grounded rationales, and flashcards for spaced-repetition revision. Later chapters can be added to this same index as new assets are created, including additional flashcard resources.",
   "supported_asset_types": [
     "study_notes_markdown",
     "exam_prep_questions_json",
@@ -16,8 +16,8 @@
   },
   "content_status": {
     "chapter_count_total": 24,
-    "chapter_count_complete": 6,
-    "chapter_count_planned": 18
+    "chapter_count_complete": 12,
+    "chapter_count_planned": 12
   },
   "source_registry": [
     {
@@ -518,85 +518,397 @@
       "chapter_code": "07",
       "title": "Genetic and Pediatric Diseases",
       "slug": "07-genetic-and-pediatric-diseases",
-      "status": "planned",
+      "status": "complete",
+      "website": {
+        "nav_label": "Chapter 7",
+        "card_title": "Genetic and Pediatric Diseases",
+        "card_description": "Single-gene disorders, chromosomal syndromes, congenital anomalies, neonatal disease, and childhood tumors."
+      },
+      "description": "Third-party generated Chapter 7 revision assets based primarily on Robbins Basic Pathology, 10th Edition, Chapter 7, with RCPA syllabus framing and mock-exam style alignment.",
+      "topics": [
+        "Mutation classes",
+        "Mendelian inheritance patterns",
+        "Marfan syndrome and Ehlers-Danlos syndromes",
+        "Familial hypercholesterolemia",
+        "Cystic fibrosis",
+        "Phenylketonuria and galactosemia",
+        "Lysosomal and glycogen storage diseases",
+        "Complex multigenic disorders",
+        "Down syndrome and 22q11.2 deletion syndrome",
+        "Klinefelter and Turner syndromes",
+        "Fragile X syndrome, mitochondrial inheritance, and genomic imprinting",
+        "Congenital anomalies",
+        "Prematurity and neonatal respiratory distress syndrome",
+        "Sudden infant death syndrome and fetal hydrops",
+        "Neuroblastoma, retinoblastoma, and Wilms tumor",
+        "Molecular diagnosis in genetics"
+      ],
       "sources_used": [
         "robbins-basic-pathology-10e",
-        "rcpa-bps-syllabus-2026-oct-2025"
+        "robbins-cotran-pathologic-basis-of-disease-10e",
+        "rcpa-bps-syllabus-2026-oct-2025",
+        "bps-2026-mock-exam-question-set"
       ],
       "recommended_asset_types": [
         "study_notes_markdown",
         "exam_prep_questions_json",
         "flashcards_json"
       ],
-      "assets": []
+      "assets": [
+        {
+          "asset_type": "study_notes_markdown",
+          "title": "07 - Genetic and Pediatric Diseases - Study Notes",
+          "path": "Generated Study Notes/07 - Genetic and Pediatric Diseases - Study Notes.md",
+          "status": "complete"
+        },
+        {
+          "asset_type": "exam_prep_questions_json",
+          "title": "07 - Genetic and Pediatric Diseases - Exam Prep Questions",
+          "path": "Generated Study Notes/07 - Genetic and Pediatric Diseases - Exam Prep Questions.json",
+          "status": "complete",
+          "question_count": 30,
+          "answer_key_included": true,
+          "description": "Single-choice JSON question set with keyed choices, keyed answers, and brief source-grounded rationales.",
+          "answer_key_format": "correct_choice_key_with_reason",
+          "choice_key_format": "uppercase_letters",
+          "choice_order_randomizable": true,
+          "page_reference_style": "printed_book_page_numbers"
+        },
+        {
+          "asset_type": "flashcards_json",
+          "title": "07 - Genetic and Pediatric Diseases - Flashcards",
+          "path": "Generated Study Notes/07 - Genetic and Pediatric Diseases - Flashcards.json",
+          "status": "complete",
+          "description": "Structured Chapter 7 flashcard deck with bucket metadata, tags, and printed-page references for app ingestion.",
+          "card_count": 56,
+          "deck_name": "Pathology::Chapter 07 - Genetic and Pediatric Diseases",
+          "flashcard_format": "basic",
+          "tags": [
+            "pathology",
+            "chapter-07",
+            "active-recall",
+            "spaced-repetition"
+          ]
+        }
+      ]
     },
     {
       "chapter_number": 8,
       "chapter_code": "08",
       "title": "Environmental and Nutritional Diseases",
       "slug": "08-environmental-and-nutritional-diseases",
-      "status": "planned",
+      "status": "complete",
+      "website": {
+        "nav_label": "Chapter 8",
+        "card_title": "Environmental and Nutritional Diseases",
+        "card_description": "Climate change, pollutants, tobacco and alcohol, drug injury, burns, radiation, malnutrition, vitamin deficiency, and obesity."
+      },
+      "description": "Third-party generated Chapter 8 revision assets based primarily on Robbins Basic Pathology, 10th Edition, Chapter 8, with RCPA syllabus framing and mock-exam style alignment.",
+      "topics": [
+        "Health effects of climate change",
+        "Toxicology principles",
+        "Air pollution and carbon monoxide",
+        "Lead, mercury, arsenic, and cadmium",
+        "Occupational and industrial exposures",
+        "Effects of tobacco",
+        "Effects of alcohol",
+        "Adverse drug reactions",
+        "Cocaine, opioids, and marijuana",
+        "Mechanical trauma and burns",
+        "Electrical injury",
+        "Ionizing radiation",
+        "Primary and secondary malnutrition",
+        "Marasmus and kwashiorkor",
+        "Anorexia nervosa and bulimia",
+        "Vitamin A, D, and C deficiency",
+        "Obesity and metabolic regulation",
+        "Diet, systemic disease, and cancer risk"
+      ],
       "sources_used": [
         "robbins-basic-pathology-10e",
-        "rcpa-bps-syllabus-2026-oct-2025"
+        "robbins-cotran-pathologic-basis-of-disease-10e",
+        "rcpa-bps-syllabus-2026-oct-2025",
+        "bps-2026-mock-exam-question-set"
       ],
       "recommended_asset_types": [
         "study_notes_markdown",
         "exam_prep_questions_json",
         "flashcards_json"
       ],
-      "assets": []
+      "assets": [
+        {
+          "asset_type": "study_notes_markdown",
+          "title": "08 - Environmental and Nutritional Diseases - Study Notes",
+          "path": "Generated Study Notes/08 - Environmental and Nutritional Diseases - Study Notes.md",
+          "status": "complete",
+          "description": "Exam-focused Chapter 8 study notes with printed-page citations, summary tables, and mechanism-driven revision structure."
+        },
+        {
+          "asset_type": "exam_prep_questions_json",
+          "title": "08 - Environmental and Nutritional Diseases - Exam Prep Questions",
+          "path": "Generated Study Notes/08 - Environmental and Nutritional Diseases - Exam Prep Questions.json",
+          "status": "complete",
+          "question_count": 30,
+          "answer_key_included": true,
+          "description": "Single-choice JSON question set with keyed choices, keyed answers, and brief source-grounded rationales.",
+          "answer_key_format": "correct_choice_key_with_reason",
+          "choice_key_format": "uppercase_letters",
+          "choice_order_randomizable": true,
+          "page_reference_style": "printed_book_page_numbers"
+        },
+        {
+          "asset_type": "flashcards_json",
+          "title": "08 - Environmental and Nutritional Diseases - Flashcards",
+          "path": "Generated Study Notes/08 - Environmental and Nutritional Diseases - Flashcards.json",
+          "status": "complete",
+          "description": "Structured Chapter 8 flashcard deck with bucket metadata, tags, and printed-page references for app ingestion.",
+          "card_count": 56,
+          "deck_name": "Pathology::Chapter 08 - Environmental and Nutritional Diseases",
+          "flashcard_format": "basic",
+          "tags": [
+            "pathology",
+            "chapter-08",
+            "active-recall",
+            "spaced-repetition"
+          ]
+        }
+      ]
     },
     {
       "chapter_number": 9,
       "chapter_code": "09",
       "title": "General Pathology of Infectious Diseases",
       "slug": "09-general-pathology-of-infectious-diseases",
-      "status": "planned",
+      "status": "complete",
+      "website": {
+        "nav_label": "Chapter 9",
+        "card_title": "General Pathology of Infectious Diseases",
+        "card_description": "Microbial classes, diagnostics, transmission, virulence mechanisms, immune evasion, and tissue response patterns."
+      },
+      "description": "Third-party generated Chapter 9 revision assets based primarily on Robbins Basic Pathology, 10th Edition, Chapter 9, with RCPA infectious-disease framing and mock-exam style alignment.",
+      "topics": [
+        "Microbial classes",
+        "Prions and viruses",
+        "Bacteria, fungi, protozoa, helminths, and ectoparasites",
+        "Microbiome and dysbiosis",
+        "Diagnostic microbiology techniques",
+        "Emerging and reemerging infections",
+        "Bioterrorism agents",
+        "Routes of entry and transmission",
+        "Dissemination through lymphatics, blood, and nerves",
+        "Viral injury mechanisms",
+        "Bacterial virulence factors and toxins",
+        "Immune evasion",
+        "Patterns of inflammatory response to infection",
+        "Infections in immunodeficiency"
+      ],
       "sources_used": [
         "robbins-basic-pathology-10e",
-        "rcpa-bps-syllabus-2026-oct-2025"
+        "robbins-cotran-pathologic-basis-of-disease-10e",
+        "rcpa-bps-syllabus-2026-oct-2025",
+        "bps-2026-mock-exam-question-set"
       ],
       "recommended_asset_types": [
         "study_notes_markdown",
         "exam_prep_questions_json",
         "flashcards_json"
       ],
-      "assets": []
+      "assets": [
+        {
+          "asset_type": "study_notes_markdown",
+          "title": "09 - General Pathology of Infectious Diseases - Study Notes",
+          "path": "Generated Study Notes/09 - General Pathology of Infectious Diseases - Study Notes.md",
+          "status": "complete",
+          "description": "Exam-focused Chapter 9 study notes with printed-page citations, summary tables, and mechanism-driven revision structure."
+        },
+        {
+          "asset_type": "exam_prep_questions_json",
+          "title": "09 - General Pathology of Infectious Diseases - Exam Prep Questions",
+          "path": "Generated Study Notes/09 - General Pathology of Infectious Diseases - Exam Prep Questions.json",
+          "status": "complete",
+          "question_count": 30,
+          "answer_key_included": true,
+          "description": "Single-choice JSON question set with keyed choices, keyed answers, and brief source-grounded rationales.",
+          "answer_key_format": "correct_choice_key_with_reason",
+          "choice_key_format": "uppercase_letters",
+          "choice_order_randomizable": true,
+          "page_reference_style": "printed_book_page_numbers"
+        },
+        {
+          "asset_type": "flashcards_json",
+          "title": "09 - General Pathology of Infectious Diseases - Flashcards",
+          "path": "Generated Study Notes/09 - General Pathology of Infectious Diseases - Flashcards.json",
+          "status": "complete",
+          "description": "Structured Chapter 9 flashcard deck with bucket metadata, tags, and printed-page references for app ingestion.",
+          "card_count": 54,
+          "deck_name": "Pathology::Chapter 09 - General Pathology of Infectious Diseases",
+          "flashcard_format": "basic",
+          "tags": [
+            "pathology",
+            "chapter-09",
+            "active-recall",
+            "spaced-repetition"
+          ]
+        }
+      ]
     },
     {
       "chapter_number": 10,
       "chapter_code": "10",
       "title": "Blood Vessels",
       "slug": "10-blood-vessels",
-      "status": "planned",
+      "status": "complete",
+      "website": {
+        "nav_label": "Chapter 10",
+        "card_title": "Blood Vessels",
+        "card_description": "Vascular organization, hypertension, arteriosclerosis, atherosclerosis, aneurysms, dissection, vasculitis, and key venous disease."
+      },
+      "description": "Third-party generated Chapter 10 revision assets based primarily on Robbins Basic Pathology, 10th Edition, Chapter 10, with RCPA syllabus framing and mock-exam style alignment.",
+      "topics": [
+        "Vascular organization",
+        "Endothelial cell biology",
+        "Blood pressure regulation",
+        "Hypertensive vascular disease",
+        "Intimal thickening and vascular injury response",
+        "Arteriosclerosis",
+        "Atherosclerosis",
+        "Aneurysms and dissections",
+        "Vasculitis",
+        "Raynaud phenomenon",
+        "Varicose veins and venous thrombosis",
+        "Lymphatic disorders"
+      ],
       "sources_used": [
         "robbins-basic-pathology-10e",
-        "rcpa-bps-syllabus-2026-oct-2025"
+        "robbins-cotran-pathologic-basis-of-disease-10e",
+        "rcpa-bps-syllabus-2026-oct-2025",
+        "bps-2026-mock-exam-question-set"
       ],
       "recommended_asset_types": [
         "study_notes_markdown",
         "exam_prep_questions_json",
         "flashcards_json"
       ],
-      "assets": []
+      "assets": [
+        {
+          "asset_type": "study_notes_markdown",
+          "title": "10 - Blood Vessels - Study Notes",
+          "path": "Generated Study Notes/10 - Blood Vessels - Study Notes.md",
+          "status": "complete",
+          "description": "Exam-focused Chapter 10 study notes with printed-page citations, summary tables, and mechanism-driven revision structure."
+        },
+        {
+          "asset_type": "exam_prep_questions_json",
+          "title": "10 - Blood Vessels - Exam Prep Questions",
+          "path": "Generated Study Notes/10 - Blood Vessels - Exam Prep Questions.json",
+          "status": "complete",
+          "question_count": 30,
+          "answer_key_included": true,
+          "description": "Single-choice JSON question set with keyed choices, keyed answers, and brief source-grounded rationales.",
+          "answer_key_format": "correct_choice_key_with_reason",
+          "choice_key_format": "uppercase_letters",
+          "choice_order_randomizable": true,
+          "page_reference_style": "printed_book_page_numbers"
+        },
+        {
+          "asset_type": "flashcards_json",
+          "title": "10 - Blood Vessels - Flashcards",
+          "path": "Generated Study Notes/10 - Blood Vessels - Flashcards.json",
+          "status": "complete",
+          "description": "Structured Chapter 10 flashcard deck with bucket metadata, tags, and printed-page references for app ingestion.",
+          "card_count": 50,
+          "deck_name": "Pathology::Chapter 10 - Blood Vessels",
+          "flashcard_format": "basic",
+          "tags": [
+            "pathology",
+            "chapter-10",
+            "active-recall",
+            "spaced-repetition"
+          ]
+        }
+      ]
     },
     {
       "chapter_number": 11,
       "chapter_code": "11",
       "title": "Heart",
       "slug": "11-heart",
-      "status": "planned",
+      "status": "complete",
+      "website": {
+        "nav_label": "Chapter 11",
+        "card_title": "Heart",
+        "card_description": "Heart failure, congenital heart disease, ischemia, infarction, valvular disease, cardiomyopathy, myocarditis, and pericardial disorders."
+      },
+      "description": "Third-party generated Chapter 11 revision assets based primarily on Robbins Basic Pathology, 10th Edition, Chapter 11, with trusted-source exam framing and mock-exam style alignment.",
+      "topics": [
+        "Overview of heart disease",
+        "Heart failure",
+        "Left-sided heart failure",
+        "Right-sided heart failure and cor pulmonale",
+        "Congenital heart disease",
+        "Left-to-right shunts and Eisenmenger syndrome",
+        "Tetralogy of Fallot and transposition of the great arteries",
+        "Aortic coarctation",
+        "Ischemic heart disease and angina",
+        "Myocardial infarction and reperfusion injury",
+        "Complications of myocardial infarction and chronic ischemic heart disease",
+        "Arrhythmias and sudden cardiac death",
+        "Hypertensive heart disease",
+        "Valvular disease and endocarditis",
+        "Cardiomyopathies",
+        "Myocarditis",
+        "Pericardial disease",
+        "Cardiac tumors, carcinoid heart disease, and transplantation"
+      ],
       "sources_used": [
         "robbins-basic-pathology-10e",
-        "rcpa-bps-syllabus-2026-oct-2025"
+        "robbins-cotran-pathologic-basis-of-disease-10e",
+        "rcpa-bps-syllabus-2026-oct-2025",
+        "bps-2026-mock-exam-question-set"
       ],
       "recommended_asset_types": [
         "study_notes_markdown",
         "exam_prep_questions_json",
         "flashcards_json"
       ],
-      "assets": []
+      "assets": [
+        {
+          "asset_type": "study_notes_markdown",
+          "title": "11 - Heart - Study Notes",
+          "path": "Generated Study Notes/11 - Heart - Study Notes.md",
+          "status": "complete",
+          "description": "Exam-focused Chapter 11 study notes with printed-page citations, summary tables, and mechanism-driven revision structure."
+        },
+        {
+          "asset_type": "exam_prep_questions_json",
+          "title": "11 - Heart - Exam Prep Questions",
+          "path": "Generated Study Notes/11 - Heart - Exam Prep Questions.json",
+          "status": "complete",
+          "question_count": 30,
+          "answer_key_included": true,
+          "description": "Single-choice JSON question set with keyed choices, keyed answers, and brief source-grounded rationales.",
+          "answer_key_format": "correct_choice_key_with_reason",
+          "choice_key_format": "uppercase_letters",
+          "choice_order_randomizable": true,
+          "page_reference_style": "printed_book_page_numbers"
+        },
+        {
+          "asset_type": "flashcards_json",
+          "title": "11 - Heart - Flashcards",
+          "path": "Generated Study Notes/11 - Heart - Flashcards.json",
+          "status": "complete",
+          "description": "Structured Chapter 11 flashcard deck with bucket metadata, tags, and printed-page references for app ingestion.",
+          "card_count": 62,
+          "deck_name": "Pathology::Chapter 11 - Heart",
+          "flashcard_format": "basic",
+          "tags": [
+            "pathology",
+            "chapter-11",
+            "active-recall",
+            "spaced-repetition"
+          ]
+        }
+      ]
     },
     {
       "chapter_number": 12,

@@ -1,0 +1,1024 @@
+{
+  "schema_version": "1.2",
+  "resource_type": "exam_prep_question_set",
+  "title": "11 - Heart - Exam Prep Questions",
+  "slug": "11-heart-exam-prep-questions",
+  "chapter": {
+    "number": 11,
+    "code": "11",
+    "title": "Heart",
+    "status": "complete"
+  },
+  "description": "Third-party generated single-choice exam-prep questions for Chapter 11. The set is aligned primarily to the Chapter 11 textbook content and shaped to reflect the style, tone, and choice distribution of the RCPA Basic Pathological Sciences mock exam format.",
+  "disclaimer": {
+    "summary": "Third-party generated study aid.",
+    "endorsement_notice": "These questions are third-party generated study materials. They are not produced by, reviewed by, approved by, endorsed by, or affiliated with the textbook authors, Elsevier, the Royal College of Pathologists of Australasia, or any other authority, institution, publisher, or examining body.",
+    "answer_key_note": "Answers are included as stable choice keys with brief source-grounded rationales for study and review purposes."
+  },
+  "source_notes": [
+    {
+      "source_type": "primary_textbook_chapter",
+      "source_title": "Robbins Basic Pathology, 10th Edition, Chapter 11: Heart",
+      "publisher": "Elsevier",
+      "edition": "10th Edition"
+    },
+    {
+      "source_type": "course_alignment_reference",
+      "source_title": "RCPA - Basic Pathological Sciences Syllabus 2026 - October 2025",
+      "organization": "Royal College of Pathologists of Australasia",
+      "reference_note": "Used for broad exam framing only; this organ-system chapter is not directly mirrored by a single syllabus section."
+    },
+    {
+      "source_type": "style_reference",
+      "source_title": "BPS 2026 Mock Exam Question Set",
+      "organization": "Royal College of Pathologists of Australasia",
+      "reference_note": "Used as a style, structure, and choice-distribution reference."
+    }
+  ],
+  "format": {
+    "question_count": 30,
+    "question_type": "single_choice",
+    "choices_distribution": {
+      "4": 5,
+      "5": 25
+    },
+    "answer_key_included": true,
+    "answer_format": "correct_choice_key_with_reason",
+    "choice_keys_included": true,
+    "choice_key_format": "uppercase_letters",
+    "choice_order_randomizable": true,
+    "page_reference_style": "printed_book_page_numbers"
+  },
+  "questions": [
+    {
+      "number": 1,
+      "question_id": "ch11-q01",
+      "type": "single_choice",
+      "question": "A 68-year-old man with long-standing systemic hypertension develops marked thickening of the left ventricular wall without marked chamber dilation.\n\nWhat structural adaptation best explains this finding?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Parallel addition of sarcomeres causing concentric hypertrophy"
+        },
+        {
+          "key": "B",
+          "text": "Series addition of sarcomeres causing eccentric hypertrophy"
+        },
+        {
+          "key": "C",
+          "text": "Diffuse myofiber disarray from a sarcomeric mutation"
+        },
+        {
+          "key": "D",
+          "text": "Loss of myocytes with compensatory fatty replacement"
+        },
+        {
+          "key": "E",
+          "text": "Deposition of amyloid within the ventricular wall"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Pressure overload states such as systemic hypertension produce concentric hypertrophy by adding new sarcomeres in parallel.",
+        "source_page_refs": [400, 401]
+      }
+    },
+    {
+      "number": 2,
+      "question_id": "ch11-q02",
+      "type": "single_choice",
+      "question": "A patient presents with dyspnea, orthopnea, bibasal crackles, and hemosiderin-laden macrophages in alveoli.\n\nWhich hemodynamic abnormality is most likely present?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Elevated pulmonary venous pressure from left-sided heart failure"
+        },
+        {
+          "key": "B",
+          "text": "Isolated systemic venous congestion from right-sided heart failure"
+        },
+        {
+          "key": "C",
+          "text": "Acute aortic dissection with hemopericardium"
+        },
+        {
+          "key": "D",
+          "text": "Obstruction of the superior vena cava"
+        },
+        {
+          "key": "E",
+          "text": "Pulmonary arterial hypertension without left-heart disease"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Orthopnea, pulmonary edema, and heart failure cells reflect pulmonary venous congestion caused by left-sided heart failure.",
+        "source_page_refs": [401, 402]
+      }
+    },
+    {
+      "number": 3,
+      "question_id": "ch11-q03",
+      "type": "single_choice",
+      "question": "A man with advanced diffuse interstitial lung disease develops right ventricular hypertrophy, hepatomegaly, and peripheral edema.\n\nWhat term best describes this form of heart disease?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Cor pulmonale"
+        },
+        {
+          "key": "B",
+          "text": "Hypertrophic cardiomyopathy"
+        },
+        {
+          "key": "C",
+          "text": "Restrictive cardiomyopathy"
+        },
+        {
+          "key": "D",
+          "text": "Dressler syndrome"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Pulmonary hypertensive heart disease due to primary lung or pulmonary vascular disease is termed cor pulmonale.",
+        "source_page_refs": [402, 422]
+      }
+    },
+    {
+      "number": 4,
+      "question_id": "ch11-q04",
+      "type": "single_choice",
+      "question": "A 34-year-old woman is found to have right atrial and right ventricular dilation after a paradoxical embolic stroke. The defect was well tolerated for years and is now being diagnosed in adulthood.\n\nWhich lesion is most likely?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Atrial septal defect"
+        },
+        {
+          "key": "B",
+          "text": "Coarctation of the aorta"
+        },
+        {
+          "key": "C",
+          "text": "Patent ductus arteriosus"
+        },
+        {
+          "key": "D",
+          "text": "Tetralogy of Fallot"
+        },
+        {
+          "key": "E",
+          "text": "Ventricular septal defect"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "ASDs are often well tolerated for years, commonly present in adulthood, and can permit paradoxical embolization.",
+        "source_page_refs": [404, 405]
+      }
+    },
+    {
+      "number": 5,
+      "question_id": "ch11-q05",
+      "type": "single_choice",
+      "question": "A patient with a long-standing ventricular septal defect develops progressive cyanosis, clubbing, and polycythemia after years of pulmonary hypertension.\n\nWhat complication has occurred?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Cor pulmonale"
+        },
+        {
+          "key": "B",
+          "text": "Eisenmenger syndrome"
+        },
+        {
+          "key": "C",
+          "text": "Prinzmetal angina"
+        },
+        {
+          "key": "D",
+          "text": "Sudden cardiac death"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Pulmonary hypertension can reverse a long-standing left-to-right shunt, producing right-to-left flow with cyanosis and clubbing, which is Eisenmenger syndrome.",
+        "source_page_refs": [405, 406]
+      }
+    },
+    {
+      "number": 6,
+      "question_id": "ch11-q06",
+      "type": "single_choice",
+      "question": "A cyanotic infant has a boot-shaped heart on imaging and marked right ventricular hypertrophy.\n\nWhich additional lesion is classically part of tetralogy of Fallot?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Aortic valve myxomatous degeneration"
+        },
+        {
+          "key": "B",
+          "text": "Overriding aorta"
+        },
+        {
+          "key": "C",
+          "text": "Mitral valve stenosis"
+        },
+        {
+          "key": "D",
+          "text": "Persistent left superior vena cava"
+        },
+        {
+          "key": "E",
+          "text": "Left atrial hypoplasia"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Tetralogy of Fallot consists of VSD, RV outflow obstruction, overriding aorta, and RV hypertrophy.",
+        "source_page_refs": [406, 407]
+      }
+    },
+    {
+      "number": 7,
+      "question_id": "ch11-q07",
+      "type": "single_choice",
+      "question": "A neonate has transposition of the great arteries.\n\nWhat associated abnormality is essential for survival before definitive repair?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A communication that allows mixing between the systemic and pulmonary circulations"
+        },
+        {
+          "key": "B",
+          "text": "Complete closure of the ductus arteriosus"
+        },
+        {
+          "key": "C",
+          "text": "Marked left ventricular hypertrophy"
+        },
+        {
+          "key": "D",
+          "text": "A severely stenotic pulmonary valve"
+        },
+        {
+          "key": "E",
+          "text": "Absence of the foramen ovale"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Transposition creates parallel circulations, so survival depends on a shunt such as a VSD, PDA, or foramen ovale that permits blood mixing.",
+        "source_page_refs": [407]
+      }
+    },
+    {
+      "number": 8,
+      "question_id": "ch11-q08",
+      "type": "single_choice",
+      "question": "A young adult has upper-extremity hypertension, diminished femoral pulses, lower-limb claudication, and rib notching on chest imaging.\n\nWhich congenital lesion best explains these findings?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Atrial septal defect"
+        },
+        {
+          "key": "B",
+          "text": "Coarctation of the aorta"
+        },
+        {
+          "key": "C",
+          "text": "Patent ductus arteriosus"
+        },
+        {
+          "key": "D",
+          "text": "Pulmonic valve atresia"
+        },
+        {
+          "key": "E",
+          "text": "Transposition of the great arteries"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Postductal coarctation produces upper-body hypertension, weak lower-extremity pulses, and collateral intercostal flow with rib notching.",
+        "source_page_refs": [407, 408]
+      }
+    },
+    {
+      "number": 9,
+      "question_id": "ch11-q09",
+      "type": "single_choice",
+      "question": "Stable exertional angina most commonly appears when a fixed atherosclerotic coronary lesion narrows the lumen by approximately what degree?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "About 30%"
+        },
+        {
+          "key": "B",
+          "text": "About 50%"
+        },
+        {
+          "key": "C",
+          "text": "More than 70%"
+        },
+        {
+          "key": "D",
+          "text": "Complete 100% occlusion"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Coronary stenoses greater than 70% are considered critical and typically produce symptoms when demand rises during exertion.",
+        "source_page_refs": [408, 409]
+      }
+    },
+    {
+      "number": 10,
+      "question_id": "ch11-q10",
+      "type": "single_choice",
+      "question": "Most cases of unstable angina and acute myocardial infarction are triggered by what immediate event within a coronary artery?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Abrupt plaque disruption with superimposed thrombosis"
+        },
+        {
+          "key": "B",
+          "text": "Gradual concentric intimal fibrosis without inflammation"
+        },
+        {
+          "key": "C",
+          "text": "Diffuse coronary amyloid deposition"
+        },
+        {
+          "key": "D",
+          "text": "Bacterial colonization of an atheroma"
+        },
+        {
+          "key": "E",
+          "text": "Compression of the coronary ostium by pericardial fluid"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Acute coronary syndromes usually reflect plaque erosion or rupture that exposes thrombogenic material and rapidly generates thrombus.",
+        "source_page_refs": [409, 410]
+      }
+    },
+    {
+      "number": 11,
+      "question_id": "ch11-q11",
+      "type": "single_choice",
+      "question": "During prolonged myocardial ischemia, which region is injured first?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Epicardium"
+        },
+        {
+          "key": "B",
+          "text": "Mid-myocardium"
+        },
+        {
+          "key": "C",
+          "text": "Papillary muscle only"
+        },
+        {
+          "key": "D",
+          "text": "Subendocardium"
+        },
+        {
+          "key": "E",
+          "text": "Pericardium"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "The subendocardium is furthest from epicardial coronary supply and is subjected to the highest intramural pressure, so necrosis begins there.",
+        "source_page_refs": [413, 414]
+      }
+    },
+    {
+      "number": 12,
+      "question_id": "ch11-q12",
+      "type": "single_choice",
+      "question": "A patient has recurrent episodes of chest pain at rest that respond promptly to nitroglycerin. Coronary vasospasm is suspected.\n\nWhich form of angina is most likely?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Prinzmetal angina"
+        },
+        {
+          "key": "B",
+          "text": "Silent myocardial infarction"
+        },
+        {
+          "key": "C",
+          "text": "Stable angina"
+        },
+        {
+          "key": "D",
+          "text": "Unstable angina"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Prinzmetal angina is caused by coronary vasospasm, often occurs at rest, and responds rapidly to vasodilators.",
+        "source_page_refs": [411]
+      }
+    },
+    {
+      "number": 13,
+      "question_id": "ch11-q13",
+      "type": "single_choice",
+      "question": "An electrocardiogram shows ST-segment elevation and later development of pathologic Q waves after acute coronary occlusion.\n\nWhat pathologic pattern is most likely present?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Microinfarction from scattered arteriolar emboli"
+        },
+        {
+          "key": "B",
+          "text": "Subendocardial infarction confined to the inner third of the wall"
+        },
+        {
+          "key": "C",
+          "text": "Transmural infarction caused by persistent epicardial vessel occlusion"
+        },
+        {
+          "key": "D",
+          "text": "Remote healed infarction with dense scarring"
+        },
+        {
+          "key": "E",
+          "text": "Pericarditis with secondary epicardial irritation"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "ST-elevation myocardial infarction corresponds to a transmural infarct produced by sustained epicardial coronary occlusion.",
+        "source_page_refs": [413, 414]
+      }
+    },
+    {
+      "number": 14,
+      "question_id": "ch11-q14",
+      "type": "single_choice",
+      "question": "A patient undergoes urgent angioplasty for an acute myocardial infarction. Histology later shows intensely eosinophilic cross-bands in damaged myocytes within a hemorrhagic infarct.\n\nWhat is the name of this morphologic change?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Caseous necrosis"
+        },
+        {
+          "key": "B",
+          "text": "Contraction band necrosis"
+        },
+        {
+          "key": "C",
+          "text": "Fibrinoid necrosis"
+        },
+        {
+          "key": "D",
+          "text": "Myxomatous degeneration"
+        },
+        {
+          "key": "E",
+          "text": "Wavy fiber change"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Reperfusion injury can produce hemorrhagic infarction with contraction band necrosis from calcium-driven hypercontracture of irreversibly injured myocytes.",
+        "source_page_refs": [415, 416]
+      }
+    },
+    {
+      "number": 15,
+      "question_id": "ch11-q15",
+      "type": "single_choice",
+      "question": "A patient presents 8 days after onset of chest pain. Which laboratory test is most likely to remain clearly elevated from the infarct?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Cardiac troponin"
+        },
+        {
+          "key": "B",
+          "text": "CK-MB only"
+        },
+        {
+          "key": "C",
+          "text": "Serum amylase"
+        },
+        {
+          "key": "D",
+          "text": "Serum lactate dehydrogenase 5"
+        },
+        {
+          "key": "E",
+          "text": "Urinary catecholamines"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Cardiac troponins remain elevated for 7 to 10 days after infarction, far longer than CK-MB.",
+        "source_page_refs": [416]
+      }
+    },
+    {
+      "number": 16,
+      "question_id": "ch11-q16",
+      "type": "single_choice",
+      "question": "At what interval after a transmural myocardial infarction is ventricular free-wall rupture most likely to occur?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "0-6 hours"
+        },
+        {
+          "key": "B",
+          "text": "12-24 hours"
+        },
+        {
+          "key": "C",
+          "text": "3-7 days"
+        },
+        {
+          "key": "D",
+          "text": "6-8 weeks"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Rupture risk peaks 3 to 7 days after MI, when necrotic myocardium is soft and friable but mature scar is not yet present.",
+        "source_page_refs": [414, 417]
+      }
+    },
+    {
+      "number": 17,
+      "question_id": "ch11-q17",
+      "type": "single_choice",
+      "question": "Five days after a large anterior myocardial infarction, a patient suddenly collapses with pulseless electrical activity. Pericardial tamponade is found.\n\nWhich lesion most likely caused the decompensation?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Left ventricular free-wall rupture"
+        },
+        {
+          "key": "B",
+          "text": "Mural thrombus embolization to the lungs"
+        },
+        {
+          "key": "C",
+          "text": "Papillary muscle fibrosis"
+        },
+        {
+          "key": "D",
+          "text": "Right ventricular aneurysm"
+        },
+        {
+          "key": "E",
+          "text": "Valve myxomatous degeneration"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Free-wall rupture is the most common myocardial rupture after MI and causes rapidly fatal hemopericardium with tamponade.",
+        "source_page_refs": [417, 418]
+      }
+    },
+    {
+      "number": 18,
+      "question_id": "ch11-q18",
+      "type": "single_choice",
+      "question": "Several months after a large anteroseptal infarct, imaging shows a thinned bulging segment of scarred ventricular wall. The lesion is associated with heart failure, arrhythmias, and mural thrombus but seldom ruptures.\n\nWhat is the best diagnosis?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Cardiac myxoma"
+        },
+        {
+          "key": "B",
+          "text": "Papillary fibroelastoma"
+        },
+        {
+          "key": "C",
+          "text": "Ventricular aneurysm"
+        },
+        {
+          "key": "D",
+          "text": "Mural vegetation"
+        },
+        {
+          "key": "E",
+          "text": "Pseudoaneurysm from acute rupture"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "A late postinfarct ventricular aneurysm is a thin fibrous scar that predisposes to thrombus, arrhythmia, and heart failure but rarely ruptures.",
+        "source_page_refs": [417, 418]
+      }
+    },
+    {
+      "number": 19,
+      "question_id": "ch11-q19",
+      "type": "single_choice",
+      "question": "A man dies suddenly while walking to work. Autopsy shows severe coronary atherosclerosis but no fresh myocardial necrosis.\n\nWhat is the most likely immediate mechanism of death?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Cardiac tamponade from free-wall rupture"
+        },
+        {
+          "key": "B",
+          "text": "Fatal arrhythmia triggered by ischemic electrical instability"
+        },
+        {
+          "key": "C",
+          "text": "Massive septic embolization from infective endocarditis"
+        },
+        {
+          "key": "D",
+          "text": "Complete AV block from rheumatic carditis"
+        },
+        {
+          "key": "E",
+          "text": "Acute restrictive pericarditis"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Most sudden cardiac deaths in patients with CAD are caused by lethal arrhythmias arising from electrically unstable ischemic myocardium rather than a fresh infarct.",
+        "source_page_refs": [419, 420]
+      }
+    },
+    {
+      "number": 20,
+      "question_id": "ch11-q20",
+      "type": "single_choice",
+      "question": "A heart from a patient with long-standing hypertension shows concentric left ventricular hypertrophy, enlarged hyperchromatic boxcar nuclei, and interstitial fibrosis.\n\nWhat is the best clinicopathologic diagnosis?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Arrhythmogenic right ventricular cardiomyopathy"
+        },
+        {
+          "key": "B",
+          "text": "Hypertrophic cardiomyopathy"
+        },
+        {
+          "key": "C",
+          "text": "Restrictive cardiomyopathy"
+        },
+        {
+          "key": "D",
+          "text": "Systemic hypertensive heart disease"
+        },
+        {
+          "key": "E",
+          "text": "Viral myocarditis"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "Concentric LV hypertrophy with boxcar nuclei and fibrosis in a hypertensive patient defines systemic hypertensive heart disease.",
+        "source_page_refs": [420, 421]
+      }
+    },
+    {
+      "number": 21,
+      "question_id": "ch11-q21",
+      "type": "single_choice",
+      "question": "An older adult with severe calcific aortic stenosis develops exertional chest pain despite no new coronary lesion.\n\nWhat best explains the angina?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Concentric LV hypertrophy has increased oxygen demand beyond what the capillary supply can meet"
+        },
+        {
+          "key": "B",
+          "text": "Acute immune-complex valvulitis has destroyed the cusps"
+        },
+        {
+          "key": "C",
+          "text": "Vegetations are embolizing into intramural vessels"
+        },
+        {
+          "key": "D",
+          "text": "Right-to-left shunting has reduced coronary oxygen content"
+        },
+        {
+          "key": "E",
+          "text": "Atrial myxoma is intermittently occluding the aortic orifice"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "In severe calcific aortic stenosis, chronic pressure overload causes concentric LV hypertrophy that raises oxygen demand beyond available perfusion.",
+        "source_page_refs": [423, 424]
+      }
+    },
+    {
+      "number": 22,
+      "question_id": "ch11-q22",
+      "type": "single_choice",
+      "question": "A 27-year-old woman has a midsystolic click on auscultation. Echocardiography shows a redundant mitral leaflet bowing into the left atrium during systole.\n\nWhat is the underlying lesion?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Calcific degeneration of the mitral annulus with commissural fusion"
+        },
+        {
+          "key": "B",
+          "text": "Fibroelastic thickening of the tricuspid valve"
+        },
+        {
+          "key": "C",
+          "text": "Myxomatous degeneration causing mitral valve prolapse"
+        },
+        {
+          "key": "D",
+          "text": "Rheumatic scarring with buttonhole stenosis"
+        },
+        {
+          "key": "E",
+          "text": "Sterile thrombotic vegetation from NBTE"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Myxomatous mitral valve disease produces floppy redundant leaflets that prolapse during systole and create the classic midsystolic click.",
+        "source_page_refs": [424, 425]
+      }
+    },
+    {
+      "number": 23,
+      "question_id": "ch11-q23",
+      "type": "single_choice",
+      "question": "Which lesion is pathognomonic for acute rheumatic carditis?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Aschoff body with Anitschkow cells"
+        },
+        {
+          "key": "B",
+          "text": "Caseating granuloma with giant cells"
+        },
+        {
+          "key": "C",
+          "text": "Lambl excrescence"
+        },
+        {
+          "key": "D",
+          "text": "Verrucous lesion of Libman-Sacks endocarditis"
+        },
+        {
+          "key": "E",
+          "text": "Myxoid nodule with spider cells"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Acute rheumatic fever produces Aschoff bodies composed of inflammatory cells, including activated macrophages called Anitschkow cells.",
+        "source_page_refs": [425, 426]
+      }
+    },
+    {
+      "number": 24,
+      "question_id": "ch11-q24",
+      "type": "single_choice",
+      "question": "A patient with a previously damaged mitral valve develops a low-grade fever and positive blood cultures after a dental procedure.\n\nWhich organism is classically responsible for this type of subacute infective endocarditis?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Candida albicans"
+        },
+        {
+          "key": "B",
+          "text": "Haemophilus ducreyi"
+        },
+        {
+          "key": "C",
+          "text": "Staphylococcus aureus"
+        },
+        {
+          "key": "D",
+          "text": "Streptococcus viridans"
+        },
+        {
+          "key": "E",
+          "text": "Treponema pallidum"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "Viridans streptococci from the oral flora classically cause subacute infective endocarditis on previously abnormal valves after transient bacteremia.",
+        "source_page_refs": [427, 428]
+      }
+    },
+    {
+      "number": 25,
+      "question_id": "ch11-q25",
+      "type": "single_choice",
+      "question": "A cachectic patient with metastatic mucinous adenocarcinoma is found to have small sterile vegetations on previously normal cardiac valves.\n\nWhat is the best diagnosis?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Calcific aortic stenosis"
+        },
+        {
+          "key": "B",
+          "text": "Libman-Sacks endocarditis"
+        },
+        {
+          "key": "C",
+          "text": "Nonbacterial thrombotic endocarditis"
+        },
+        {
+          "key": "D",
+          "text": "Rheumatic valvulitis"
+        },
+        {
+          "key": "E",
+          "text": "Subacute infective endocarditis"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "NBTE produces small sterile bland vegetations, often on previously normal valves, in hypercoagulable or wasting states such as mucinous adenocarcinoma.",
+        "source_page_refs": [428, 429]
+      }
+    },
+    {
+      "number": 26,
+      "question_id": "ch11-q26",
+      "type": "single_choice",
+      "question": "A 42-year-old patient has a flabby enlarged heart with four-chamber dilation, mural thrombi, and an ejection fraction of 20%.\n\nWhich primary myocardial disorder best fits this picture?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Dilated cardiomyopathy"
+        },
+        {
+          "key": "B",
+          "text": "Hypertrophic cardiomyopathy"
+        },
+        {
+          "key": "C",
+          "text": "Myxomatous valve disease"
+        },
+        {
+          "key": "D",
+          "text": "Restrictive cardiomyopathy"
+        },
+        {
+          "key": "E",
+          "text": "Viral pericarditis"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Dilated cardiomyopathy is the classic flabby four-chamber dilation phenotype with severe systolic dysfunction and mural thrombus risk.",
+        "source_page_refs": [429, 433]
+      }
+    },
+    {
+      "number": 27,
+      "question_id": "ch11-q27",
+      "type": "single_choice",
+      "question": "A competitive athlete dies suddenly. Autopsy shows severe thinning of the right ventricular free wall with fibrofatty replacement of myocardium.\n\nMutations in which class of proteins are most strongly associated with this disorder?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Basement-membrane laminins"
+        },
+        {
+          "key": "B",
+          "text": "Desmosomal junctional proteins"
+        },
+        {
+          "key": "C",
+          "text": "Immunoglobulin light chains"
+        },
+        {
+          "key": "D",
+          "text": "Mannose-6-phosphate receptors"
+        },
+        {
+          "key": "E",
+          "text": "Tubulin motor proteins"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Arrhythmogenic right ventricular cardiomyopathy is strongly associated with mutations in desmosomal proteins at the intercalated disk.",
+        "source_page_refs": [432]
+      }
+    },
+    {
+      "number": 28,
+      "question_id": "ch11-q28",
+      "type": "single_choice",
+      "question": "A teenager collapses during exercise. The heart is heavy, nondilated, and shows marked asymmetric septal hypertrophy with myofiber disarray.\n\nWhat is the most likely underlying cause?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Autosomal dominant mutation in a sarcomeric protein"
+        },
+        {
+          "key": "B",
+          "text": "Chronic alcohol toxicity"
+        },
+        {
+          "key": "C",
+          "text": "Diffuse viral myocarditis"
+        },
+        {
+          "key": "D",
+          "text": "Long-standing left-to-right shunt"
+        },
+        {
+          "key": "E",
+          "text": "Systemic amyloid deposition"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Hypertrophic cardiomyopathy is usually caused by autosomal dominant sarcomeric gain-of-function mutations and features asymmetric septal hypertrophy with myofiber disarray.",
+        "source_page_refs": [432, 434]
+      }
+    },
+    {
+      "number": 29,
+      "question_id": "ch11-q29",
+      "type": "single_choice",
+      "question": "What is the most common cause of myocarditis in the United States?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Coxsackievirus and other enteroviral infections"
+        },
+        {
+          "key": "B",
+          "text": "Group A streptococcal pharyngitis"
+        },
+        {
+          "key": "C",
+          "text": "Mucinous adenocarcinoma"
+        },
+        {
+          "key": "D",
+          "text": "Pulmonary embolism"
+        },
+        {
+          "key": "E",
+          "text": "Tuberculous pericarditis"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "In the United States, viral myocarditis is the most common form, especially from coxsackieviruses and other enteroviruses.",
+        "source_page_refs": [434, 435]
+      }
+    },
+    {
+      "number": 30,
+      "question_id": "ch11-q30",
+      "type": "single_choice",
+      "question": "A patient develops a rapidly accumulating 250-mL hemopericardium after myocardial rupture.\n\nWhy can this relatively small volume be fatal?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Acute pericardial pressure prevents cardiac chamber filling, causing tamponade"
+        },
+        {
+          "key": "B",
+          "text": "Blood instantly calcifies and fixes the pericardium in place"
+        },
+        {
+          "key": "C",
+          "text": "The fluid triggers diffuse coronary vasospasm"
+        },
+        {
+          "key": "D",
+          "text": "The hemopericardium immediately causes bacterial pericarditis"
+        },
+        {
+          "key": "E",
+          "text": "A small volume always indicates severe chronic constrictive pericarditis"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "When blood accumulates rapidly, even a few hundred milliliters can acutely compress the heart and cause fatal cardiac tamponade.",
+        "source_page_refs": [436]
+      }
+    }
+  ]
+}
