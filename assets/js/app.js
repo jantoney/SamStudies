@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const backHash =
       chapter && hasViewAsset(chapter, "notes")
         ? buildHash(chapter.slug, "notes")
-        : buildHash(state.selectedChapterSlug, null);
+        : getHomeHash();
     window.location.hash = backHash;
   });
 
@@ -110,12 +110,41 @@ function getChapters() {
   return state.index?.chapters ?? [];
 }
 
+function getChaptersForSelect() {
+  return [...getChapters()].sort((left, right) => {
+    const codeDiff = Number(left.chapter_code) - Number(right.chapter_code);
+    if (codeDiff !== 0) {
+      return codeDiff;
+    }
+
+    return left.title.localeCompare(right.title);
+  });
+}
+
 function getDefaultChapter() {
   return (
     getChapters().find((chapter) => chapter.status === "complete") ??
     getChapters()[0] ??
     null
   );
+}
+
+function getFirstAvailableView(chapter) {
+  return Object.keys(VIEW_ASSET_TYPES).find((view) => hasViewAsset(chapter, view));
+}
+
+function getHomeHash() {
+  const defaultChapter = getDefaultChapter();
+
+  if (!defaultChapter) {
+    return "#/";
+  }
+
+  const preferredView = hasViewAsset(defaultChapter, "notes")
+    ? "notes"
+    : getFirstAvailableView(defaultChapter) ?? null;
+
+  return buildHash(defaultChapter.slug, preferredView);
 }
 
 function getChapterBySlug(slug) {
@@ -169,8 +198,7 @@ function applyRoute(hash) {
     return;
   }
 
-  const firstAvailable =
-    Object.keys(VIEW_ASSET_TYPES).find((v) => hasViewAsset(chapter, v)) ?? null;
+  const firstAvailable = getFirstAvailableView(chapter) ?? null;
   const requestedView =
     parsed.view && Object.hasOwn(VIEW_ASSET_TYPES, parsed.view)
       ? parsed.view
@@ -218,9 +246,13 @@ function applyRoute(hash) {
 }
 
 function renderChapterSelect() {
-  elements.chapterSelect.innerHTML = getChapters()
+  elements.chapterSelect.innerHTML = getChaptersForSelect()
     .map((chapter) => {
-      const label = `Chapter ${chapter.chapter_code} — ${chapter.title}`;
+      const navLabel = chapter.website?.nav_label?.trim() ?? "";
+      const label =
+        navLabel && /^chapter\b/i.test(navLabel)
+          ? `${navLabel} — ${chapter.title}`
+          : navLabel || chapter.title;
       return `<option value="${escapeHtml(chapter.slug)}" ${chapter.slug === state.selectedChapterSlug ? "selected" : ""}>${escapeHtml(label)}</option>`;
     })
     .join("");
@@ -630,6 +662,7 @@ async function renderQuestionsView(chapter) {
 function renderQuizSetup(chapter, questionSet, questionsAsset) {
   const totalQuestions = questionSet.questions.length;
   const defaultCount = Math.min(10, totalQuestions);
+  const riskNotice = renderQuizSetupRiskNotice(questionSet);
   setViewRootScrollable(true);
   updateImmersiveTitle("Exam questions");
   updateImmersiveAction(null);
@@ -637,6 +670,7 @@ function renderQuizSetup(chapter, questionSet, questionsAsset) {
   elements.viewRoot.innerHTML = `
     <div class="section-stack quiz-screen quiz-screen--setup">
       <form class="quiz-settings" id="quiz-settings-form">
+        ${riskNotice}
         <p class="quiz-settings__summary">Questions will be randomized from (${totalQuestions}) total available questions.</p>
         <div class="quiz-settings__grid">
           <div>
@@ -703,6 +737,40 @@ function renderQuizSetup(chapter, questionSet, questionsAsset) {
   questionCountInput.addEventListener("focus", () => {
     questionCountInput.select();
   });
+}
+
+function renderQuizSetupRiskNotice(questionSet) {
+  const disclaimer = questionSet?.disclaimer ?? {};
+  const sourceNotes = Array.isArray(questionSet?.source_notes)
+    ? questionSet.source_notes
+    : [];
+  const sourceReference = sourceNotes.find(
+    (source) => source.source_type === "past_exam_paper_ocr_extract",
+  );
+
+  if (!sourceReference) {
+    return "";
+  }
+
+  const summary =
+    disclaimer.summary ||
+    "Important: This question set was OCR'd from the original exam paper. AI was used to answer and explain the questions. Use this study material at your own risk.";
+  const answerKeyNote =
+    disclaimer.answer_key_note ||
+    "Cross-check uncertain answers and explanations against the original paper and your source material.";
+
+  return `
+    <div class="quiz-risk-notice" role="alert" aria-live="polite">
+      <p class="quiz-risk-notice__title">Important before you start</p>
+      <p class="disclaimer-note quiz-risk-notice__body">${escapeHtml(summary)}</p>
+      <p class="review-note quiz-risk-notice__body">${escapeHtml(answerKeyNote)}</p>
+      ${
+        sourceReference.reference_note
+          ? `<p class="helper-text quiz-risk-notice__source">${escapeHtml(sourceReference.reference_note)}</p>`
+          : ""
+      }
+    </div>
+  `;
 }
 
 function renderQuizQuestion(questionSet) {

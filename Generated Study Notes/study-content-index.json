@@ -15,8 +15,8 @@
     "use_note": "Use these materials as revision support alongside the original source material."
   },
   "content_status": {
-    "chapter_count_total": 24,
-    "chapter_count_complete": 12,
+    "chapter_count_total": 25,
+    "chapter_count_complete": 13,
     "chapter_count_planned": 12
   },
   "source_registry": [
@@ -45,6 +45,12 @@
       "source_id": "bps-2026-mock-exam-question-set",
       "source_type": "mock_exam_style_reference",
       "source_title": "BPS 2026 Mock Exam Question Set",
+      "organization": "Royal College of Pathologists of Australasia"
+    },
+    {
+      "source_id": "rcpa-bps-exam-2021-ocr",
+      "source_type": "past_exam_paper_ocr_extract",
+      "source_title": "RCPA Basic Pathological Sciences Exam 2021 (OCR Extract)",
       "organization": "Royal College of Pathologists of Australasia"
     }
   ],
@@ -907,6 +913,53 @@
             "active-recall",
             "spaced-repetition"
           ]
+        }
+      ]
+    },
+    {
+      "chapter_number": 2021,
+      "chapter_code": "00",
+      "title": "BPS 2021 Exam",
+      "slug": "bps-2021-exam",
+      "status": "complete",
+      "website": {
+        "nav_label": "BPS 2021 Exam",
+        "card_title": "BPS 2021 Exam",
+        "card_description": "OCR-extracted 100-question past paper with keyed answer choices and brief study rationales."
+      },
+      "description": "OCR-extracted 2021 Basic Pathological Sciences exam questions converted into the app's keyed single-choice format for test-style revision.",
+      "topics": [
+        "General pathology",
+        "Immunology",
+        "Genetics",
+        "Neoplasia",
+        "Inflammation",
+        "Infectious disease",
+        "Cell injury",
+        "Environmental pathology",
+        "Epidemiology",
+        "System-wide past paper revision"
+      ],
+      "sources_used": [
+        "rcpa-bps-exam-2021-ocr",
+        "rcpa-bps-syllabus-2026-oct-2025"
+      ],
+      "recommended_asset_types": [
+        "exam_prep_questions_json"
+      ],
+      "assets": [
+        {
+          "asset_type": "exam_prep_questions_json",
+          "title": "00 - BPS 2021 Exam - Exam Questions",
+          "path": "Generated Study Notes/00 - BPS 2021 Exam - Exam Questions.json",
+          "status": "complete",
+          "question_count": 100,
+          "answer_key_included": true,
+          "description": "Canonical single-choice JSON conversion of the OCR-extracted 2021 exam with keyed answers and short rationales.",
+          "answer_key_format": "correct_choice_key_with_reason",
+          "choice_key_format": "uppercase_letters",
+          "choice_order_randomizable": true,
+          "page_reference_style": "not_available_in_source"
         }
       ]
     },

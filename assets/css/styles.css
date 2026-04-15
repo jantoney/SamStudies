@@ -756,6 +756,39 @@ button {
   color: var(--muted);
 }
 
+.quiz-risk-notice {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 18px;
+  padding: 16px;
+  border: 1px solid rgba(177, 77, 30, 0.2);
+  border-radius: 18px;
+  background: linear-gradient(180deg, rgba(246, 225, 203, 0.92), rgba(255, 250, 243, 0.98));
+}
+
+.quiz-risk-notice__title {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8a3d16;
+}
+
+.quiz-risk-notice__body,
+.quiz-risk-notice__source {
+  margin: 0;
+}
+
+[data-theme="dark"] .quiz-risk-notice {
+  border-color: rgba(255, 184, 120, 0.22);
+  background: linear-gradient(180deg, rgba(78, 45, 28, 0.92), rgba(34, 25, 20, 0.98));
+}
+
+[data-theme="dark"] .quiz-risk-notice__title {
+  color: #ffc48e;
+}
+
 .flashcard-summary-actions {
   width: 100%;
 }

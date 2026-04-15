@@ -1,0 +1,3242 @@
+{
+  "schema_version": "1.2",
+  "resource_type": "exam_prep_question_set",
+  "title": "00 - BPS 2021 Exam - Exam Questions",
+  "slug": "bps-2021-exam-questions",
+  "chapter": {
+    "number": 2021,
+    "code": "00",
+    "title": "BPS 2021 Exam",
+    "status": "complete"
+  },
+  "description": "OCR-extracted single-choice question set from the 2021 RCPA Basic Pathological Sciences exam. The original stems and options are preserved, while answers are encoded as stable choice keys with brief study rationales for app use.",
+  "disclaimer": {
+    "summary": "This question set was OCR'd from the original exam paper. AI was used to answer and explain the questions. Use this study material at your own risk.",
+    "endorsement_notice": "These questions are OCR-extracted and reformatted study materials. They are not produced by, reviewed by, approved by, endorsed by, or affiliated with the Royal College of Pathologists of Australasia or any other authority, institution, publisher, or examining body.",
+    "answer_key_note": "The answer keys and explanations were generated for revision support only. Cross-check anything important against the original exam paper and trusted source material."
+  },
+  "source_notes": [
+    {
+      "source_type": "past_exam_paper_ocr_extract",
+      "source_title": "RCPA Basic Pathological Sciences Exam 2021",
+      "organization": "Royal College of Pathologists of Australasia",
+      "publication_year": 2021,
+      "reference_note": ""
+    }
+  ],
+  "format": {
+    "question_count": 100,
+    "question_type": "single_choice",
+    "choices_distribution": {
+      "5": 100
+    },
+    "answer_key_included": true,
+    "answer_format": "correct_choice_key_with_reason",
+    "choice_keys_included": true,
+    "choice_key_format": "uppercase_letters",
+    "choice_order_randomizable": true,
+    "page_reference_style": "not_available_in_source"
+  },
+  "questions": [
+    {
+      "number": 1,
+      "question_id": "bps-2021-q001",
+      "type": "single_choice",
+      "question": "Ante mortem blood clots may be distinguished from post-mortem blood clots by the presence of Lines of Zahn. Which of the following constitute the Lines of Zahn?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Bands of collagen and fibroblasts, alternating with masses of coagulated blood"
+        },
+        {
+          "key": "B",
+          "text": "Bands of leukocytes alternating with bands of erythrocytes"
+        },
+        {
+          "key": "C",
+          "text": "Bands of macrophages mixed with erythrocytes alternating with strips of collagen"
+        },
+        {
+          "key": "D",
+          "text": "Bands of platelets and fibrin alternating with trapped erythrocytes"
+        },
+        {
+          "key": "E",
+          "text": "Bands of scar tissue alternating with bands of fibrin"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "Lines of Zahn are alternating pale platelet/fibrin layers and darker red-cell layers, showing antemortem flow."
+      }
+    },
+    {
+      "number": 2,
+      "question_id": "bps-2021-q002",
+      "type": "single_choice",
+      "question": "Myasthenia gravis is an example of what type of immune damage?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Antibody mediated cellular dysfunction"
+        },
+        {
+          "key": "B",
+          "text": "Complement mediated injury"
+        },
+        {
+          "key": "C",
+          "text": "Fc receptor mediated injury"
+        },
+        {
+          "key": "D",
+          "text": "Opsonization of endogenous antigen"
+        },
+        {
+          "key": "E",
+          "text": "Type I mediated hypersensitivity"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Myasthenia gravis is caused by antibodies that impair acetylcholine receptor function rather than directly lysing cells."
+      }
+    },
+    {
+      "number": 3,
+      "question_id": "bps-2021-q003",
+      "type": "single_choice",
+      "question": "A child with developmental delay, a ventricular septal defect, distinctive facial dysmorphism and unusual speech quality is referred for assessment. Which of the following BEST describes the child's condition?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Agenesis"
+        },
+        {
+          "key": "B",
+          "text": "Deformation"
+        },
+        {
+          "key": "C",
+          "text": "Malformation"
+        },
+        {
+          "key": "D",
+          "text": "Sequence"
+        },
+        {
+          "key": "E",
+          "text": "Syndrome"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "E",
+        "reason": "Multiple anomalies affecting different systems with a characteristic pattern are classified as a syndrome."
+      }
+    },
+    {
+      "number": 4,
+      "question_id": "bps-2021-q004",
+      "type": "single_choice",
+      "question": "Which of the following cells of the immune system is able to phagocytose and present antigen?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Macrophages"
+        },
+        {
+          "key": "B",
+          "text": "Natural killer cells"
+        },
+        {
+          "key": "C",
+          "text": "Neutrophils"
+        },
+        {
+          "key": "D",
+          "text": "Tγδ lymphocytes"
+        },
+        {
+          "key": "E",
+          "text": "TH17 lymphocytes"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Macrophages both ingest material and present processed antigen to T cells."
+      }
+    },
+    {
+      "number": 5,
+      "question_id": "bps-2021-q005",
+      "type": "single_choice",
+      "question": "Individuals with Fragile-X syndrome are MOST likely to have which of the following DNA changes identified?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Frameshift mutation"
+        },
+        {
+          "key": "B",
+          "text": "Mutation within a non-coding sequence"
+        },
+        {
+          "key": "C",
+          "text": "Nonsense mutation"
+        },
+        {
+          "key": "D",
+          "text": "Point mutation within a coding sequence"
+        },
+        {
+          "key": "E",
+          "text": "Trinucleotide repeat mutations"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "E",
+        "reason": "Fragile-X is classically due to CGG trinucleotide repeat expansion in FMR1."
+      }
+    },
+    {
+      "number": 6,
+      "question_id": "bps-2021-q006",
+      "type": "single_choice",
+      "question": "Exposure to tobacco smoke is strongly linked to the development of malignant neoplasms. Which of the following chemical components of tobacco smoke is MOST likely to be an initiator of carcinogenesis?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Formaldehyde"
+        },
+        {
+          "key": "B",
+          "text": "Nicotine"
+        },
+        {
+          "key": "C",
+          "text": "Nitrogen oxides"
+        },
+        {
+          "key": "D",
+          "text": "Phenol"
+        },
+        {
+          "key": "E",
+          "text": "Polycyclic hydrocarbons"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "E",
+        "reason": "Polycyclic aromatic hydrocarbons in smoke are metabolically activated carcinogens that can initiate DNA damage."
+      }
+    },
+    {
+      "number": 7,
+      "question_id": "bps-2021-q007",
+      "type": "single_choice",
+      "question": "A 38-year-old female on examination is found to have a red, painful subcutaneous streak on her leg and enlarged lymph nodes in the groin. She is MOST likely to have which of the following conditions?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Deep venous thrombosis"
+        },
+        {
+          "key": "B",
+          "text": "Lymphangitis"
+        },
+        {
+          "key": "C",
+          "text": "Lymphedema"
+        },
+        {
+          "key": "D",
+          "text": "Polyarteritis nodosa"
+        },
+        {
+          "key": "E",
+          "text": "Metastatic carcinoma"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "A tender red streak with regional lymphadenopathy indicates inflammation spreading along lymphatic channels."
+      }
+    },
+    {
+      "number": 8,
+      "question_id": "bps-2021-q008",
+      "type": "single_choice",
+      "question": "If individuals with renal artery stenosis have hypertension, this is MOST likely due to which of the following mechanisms?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Embolisation from the stenotic artery to the non-affected kidney"
+        },
+        {
+          "key": "B",
+          "text": "Increased angiotensin converting enzyme activity in the non-affected kidney"
+        },
+        {
+          "key": "C",
+          "text": "Increased pressure in the afferent arteriole of the affected kidney"
+        },
+        {
+          "key": "D",
+          "text": "Increased renin secretion in the affected kidney"
+        },
+        {
+          "key": "E",
+          "text": "Sclerosis of the affected glomerulus"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "Renal hypoperfusion from stenosis stimulates renin release from the affected kidney, activating RAAS."
+      }
+    },
+    {
+      "number": 9,
+      "question_id": "bps-2021-q009",
+      "type": "single_choice",
+      "question": "Phenylketonuria (PKU) is an inborn error of metabolism which if left untreated often results in which of the following conditions?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Cirrhosis"
+        },
+        {
+          "key": "B",
+          "text": "Heart Failure"
+        },
+        {
+          "key": "C",
+          "text": "Increased hair pigment"
+        },
+        {
+          "key": "D",
+          "text": "Myopathy"
+        },
+        {
+          "key": "E",
+          "text": "Seizures"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "E",
+        "reason": "Untreated PKU causes neurologic injury, including intellectual disability and seizures."
+      }
+    },
+    {
+      "number": 10,
+      "question_id": "bps-2021-q010",
+      "type": "single_choice",
+      "question": "The overall consequences of radiation exposure vary according to the dose of radiation and type of exposure. Which of the following organs is MOST susceptible to acute radiation effects at the lowest threshold dose?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Brain"
+        },
+        {
+          "key": "B",
+          "text": "Heart"
+        },
+        {
+          "key": "C",
+          "text": "Lungs"
+        },
+        {
+          "key": "D",
+          "text": "Testis"
+        },
+        {
+          "key": "E",
+          "text": "Skin"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "Germ cells in the testis are among the most radiosensitive tissues at low acute doses."
+      }
+    },
+    {
+      "number": 11,
+      "question_id": "bps-2021-q011",
+      "type": "single_choice",
+      "question": "In antigen recognition by cytotoxic T lymphocytes, the T-cell receptor recognises antigens bound to which of the following?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Class I molecules"
+        },
+        {
+          "key": "B",
+          "text": "Class II molecules"
+        },
+        {
+          "key": "C",
+          "text": "Class III molecules"
+        },
+        {
+          "key": "D",
+          "text": "Complement Component 3b (C3b)"
+        },
+        {
+          "key": "E",
+          "text": "Fc portion of IgG"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Cytotoxic T cells recognise peptide antigen presented by MHC class I."
+      }
+    },
+    {
+      "number": 12,
+      "question_id": "bps-2021-q012",
+      "type": "single_choice",
+      "question": "Which of the following pathogens causes disease in the large bowel as a result of toxin formation?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Campylobacter jejuni"
+        },
+        {
+          "key": "B",
+          "text": "Clostridioides (Clostridium) difficile"
+        },
+        {
+          "key": "C",
+          "text": "Escherichia coli"
+        },
+        {
+          "key": "D",
+          "text": "Helicobacter pylori"
+        },
+        {
+          "key": "E",
+          "text": "Salmonella species"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "This organism causes pseudomembranous colitis through toxin-mediated epithelial injury."
+      }
+    },
+    {
+      "number": 13,
+      "question_id": "bps-2021-q013",
+      "type": "single_choice",
+      "question": "A 22-year-old male presented to his local practitioner complaining of a hard lump which occurred 6 weeks after he was hit on the lower thigh playing soccer. X-ray showed a circumferential soft tissue area of calcification with a lucent centre. This condition is an example of what type of process?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Atrophy"
+        },
+        {
+          "key": "B",
+          "text": "Coagulative necrosis"
+        },
+        {
+          "key": "C",
+          "text": "Dysplasia"
+        },
+        {
+          "key": "D",
+          "text": "Hypertrophy"
+        },
+        {
+          "key": "E",
+          "text": "Metaplasia"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "E",
+        "reason": "Post-traumatic myositis ossificans represents heterotopic bone formation by metaplastic change."
+      }
+    },
+    {
+      "number": 14,
+      "question_id": "bps-2021-q014",
+      "type": "single_choice",
+      "question": "A 30-year-old man has a testicular biopsy for the investigation of primary infertility. On examination he is found to have testicular atrophy and gynaecomastia. The biopsy shows areas of tubular atrophy, primitive tubules and prominent Leydig cell hyperplasia. What is the MOST likely karyotype in this individual?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "46,XY"
+        },
+        {
+          "key": "B",
+          "text": "45,X"
+        },
+        {
+          "key": "C",
+          "text": "47,XXY"
+        },
+        {
+          "key": "D",
+          "text": "45,X/47,XXX"
+        },
+        {
+          "key": "E",
+          "text": "47,XY,+21"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Infertility, testicular atrophy, gynaecomastia and Leydig hyperplasia are typical of Klinefelter syndrome."
+      }
+    },
+    {
+      "number": 15,
+      "question_id": "bps-2021-q015",
+      "type": "single_choice",
+      "question": "What is the MOST likely reason to explain why a pulmonary infarct is haemorrhagic rather than pale?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Emboli to the lungs are typically red rather than white"
+        },
+        {
+          "key": "B",
+          "text": "Infarction leads to an increase in haemosiderin-laden macrophages"
+        },
+        {
+          "key": "C",
+          "text": "The area of infarction contains oxygenated rather than deoxygenated blood"
+        },
+        {
+          "key": "D",
+          "text": "The lung has a dual blood supply"
+        },
+        {
+          "key": "E",
+          "text": "Vascular occlusion leads to endothelial damage and then necrosis"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "Pulmonary infarcts are haemorrhagic because bronchial and pulmonary circulations provide dual blood supply."
+      }
+    },
+    {
+      "number": 16,
+      "question_id": "bps-2021-q016",
+      "type": "single_choice",
+      "question": "A 5-year-old child is brought to the emergency department because his parents were worried that his face appeared puffier than normal. On examination he had periorbital oedema, pitting oedema and abdominal swelling. Marked proteinuria was identified. This systemic oedema is MOST likely due to which of the following mechanisms?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Decreased plasma oncotic pressure"
+        },
+        {
+          "key": "B",
+          "text": "Increased fluid intake"
+        },
+        {
+          "key": "C",
+          "text": "Increased hydrostatic pressure"
+        },
+        {
+          "key": "D",
+          "text": "Increased salt retention"
+        },
+        {
+          "key": "E",
+          "text": "Lowered cardiac output"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Heavy proteinuria lowers albumin and plasma oncotic pressure, producing generalised oedema."
+      }
+    },
+    {
+      "number": 17,
+      "question_id": "bps-2021-q017",
+      "type": "single_choice",
+      "question": "At birth a child is found to have a 3 cm diameter mass in the sacrum. This is excised and the pathology report states that this lesion contains cartilage, squamous epithelium, neural tissue, thyroid epithelium and bone. The nomenclature of this mass MOST likely represents what type of lesion?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Adenoma sarcoma"
+        },
+        {
+          "key": "B",
+          "text": "Desmoid tumour"
+        },
+        {
+          "key": "C",
+          "text": "Hamartoma"
+        },
+        {
+          "key": "D",
+          "text": "Sarcoma"
+        },
+        {
+          "key": "E",
+          "text": "Teratoma"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "E",
+        "reason": "A mass containing tissues from multiple germ layers is a teratoma."
+      }
+    },
+    {
+      "number": 18,
+      "question_id": "bps-2021-q018",
+      "type": "single_choice",
+      "question": "Individuals with alpha 1-antitrypsin disease may have an increased incidence of emphysema and liver cirrhosis. In inflammation, the main role of alpha 1-antitrypsin is in which of the following?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Activation of the alternate complement pathway"
+        },
+        {
+          "key": "B",
+          "text": "Degranulation of mast cells"
+        },
+        {
+          "key": "C",
+          "text": "Peptidoglycan bone"
+        },
+        {
+          "key": "D",
+          "text": "Inhibition of neutrophil elastase"
+        },
+        {
+          "key": "E",
+          "text": "Inhibition of the respiratory burst"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "Alpha-1 antitrypsin protects tissue by inhibiting neutrophil elastase."
+      }
+    },
+    {
+      "number": 19,
+      "question_id": "bps-2021-q019",
+      "type": "single_choice",
+      "question": "A 45-year-old female is found to have an enlarged thyroid gland. Histology shows a papillary carcinoma and the report indicates the presence of numerous psammoma bodies. Which of the following components is MOST likely increased in these bodies?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Calcium"
+        },
+        {
+          "key": "B",
+          "text": "Haemosiderin"
+        },
+        {
+          "key": "C",
+          "text": "Iron"
+        },
+        {
+          "key": "D",
+          "text": "Lipofuscin"
+        },
+        {
+          "key": "E",
+          "text": "Melanin"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Psammoma bodies are concentrically laminated calcifications."
+      }
+    },
+    {
+      "number": 20,
+      "question_id": "bps-2021-q020",
+      "type": "single_choice",
+      "question": "Methods to quantify the probable clinical aggressiveness of a given neoplasm and its apparent extent and spread are necessary for accurate prognostication. Grading of a tumour is MOST often based on which of the following features?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Amount of fibrosis"
+        },
+        {
+          "key": "B",
+          "text": "Differentiation of the tumour cells"
+        },
+        {
+          "key": "C",
+          "text": "Number of lymph nodes involved"
+        },
+        {
+          "key": "D",
+          "text": "Presence of blood-borne metastases"
+        },
+        {
+          "key": "E",
+          "text": "Size of the tumour"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Tumour grade is mainly based on differentiation and anaplasia, not anatomic spread."
+      }
+    },
+    {
+      "number": 21,
+      "question_id": "bps-2021-q021",
+      "type": "single_choice",
+      "question": "Which of the following abnormalities is MOST likely seen in individuals with Klinefelter syndrome?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Coarctation of the aorta"
+        },
+        {
+          "key": "B",
+          "text": "Hirschsprung's disease"
+        },
+        {
+          "key": "C",
+          "text": "Mitral valve stenosis"
+        },
+        {
+          "key": "D",
+          "text": "Streak gonads"
+        },
+        {
+          "key": "E",
+          "text": "Testicular atrophy"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "E",
+        "reason": "Klinefelter syndrome causes seminiferous tubular atrophy and small firm testes."
+      }
+    },
+    {
+      "number": 22,
+      "question_id": "bps-2021-q022",
+      "type": "single_choice",
+      "question": "Biopsies from the gastric antrum of a 52-year-old man show several Helicobacter pylori organisms with active chronic gastritis. Which of the following is MOST likely to be a serious long-term complication if he was not treated for his infection?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Gastric carcinoid tumour"
+        },
+        {
+          "key": "B",
+          "text": "Gastric granulomata"
+        },
+        {
+          "key": "C",
+          "text": "Gastric leiomyoma"
+        },
+        {
+          "key": "D",
+          "text": "Gastric lymphoma"
+        },
+        {
+          "key": "E",
+          "text": "Gastrointestinal stromal tumour"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "Chronic H. pylori gastritis can lead to gastric MALT lymphoma."
+      }
+    },
+    {
+      "number": 23,
+      "question_id": "bps-2021-q023",
+      "type": "single_choice",
+      "question": "Which of the following differentiation antigens is present on B-cells and has been targeted by monoclonal antibodies to manage B cell neoplasms?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "CD3"
+        },
+        {
+          "key": "B",
+          "text": "CD5"
+        },
+        {
+          "key": "C",
+          "text": "CD20"
+        },
+        {
+          "key": "D",
+          "text": "CD23"
+        },
+        {
+          "key": "E",
+          "text": "CD56"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "The major therapeutic B-cell marker targeted in many B-cell neoplasms is CD20."
+      }
+    },
+    {
+      "number": 24,
+      "question_id": "bps-2021-q024",
+      "type": "single_choice",
+      "question": "Which of the conditions is MOST likely to result from intracellular accumulation of cholesterol within macrophages?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Gaucher disease"
+        },
+        {
+          "key": "B",
+          "text": "McArdle disease"
+        },
+        {
+          "key": "C",
+          "text": "Niemann-Pick Disease"
+        },
+        {
+          "key": "D",
+          "text": "Tay-Sachs Disease"
+        },
+        {
+          "key": "E",
+          "text": "Xanthomatosis"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "E",
+        "reason": "Xanthomas are composed of lipid/cholesterol-laden macrophages."
+      }
+    },
+    {
+      "number": 25,
+      "question_id": "bps-2021-q025",
+      "type": "single_choice",
+      "question": "In the pleural cavity one of the outcomes of acute inflammation is healing by fibrosis. What is the cardinal feature of fibrosis?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Agent removal"
+        },
+        {
+          "key": "B",
+          "text": "Angiogenesis"
+        },
+        {
+          "key": "C",
+          "text": "Clearance of inflammatory cells"
+        },
+        {
+          "key": "D",
+          "text": "Loss of function"
+        },
+        {
+          "key": "E",
+          "text": "Restoration of the epithelium"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "Fibrosis replaces normal tissue with scar, commonly causing reduced function."
+      }
+    },
+    {
+      "number": 26,
+      "question_id": "bps-2021-q026",
+      "type": "single_choice",
+      "question": "A 50-year-old man presents with a 3-year history of a slowly growing mass on the leg near the knee. It is removed and the pathology report states that this is a leiomyoma. The tumour will MOST likely resemble what type of normal tissue?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Bone"
+        },
+        {
+          "key": "B",
+          "text": "Cartilage"
+        },
+        {
+          "key": "C",
+          "text": "Fat"
+        },
+        {
+          "key": "D",
+          "text": "Smooth muscle"
+        },
+        {
+          "key": "E",
+          "text": "Synovium"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "A leiomyoma is a benign tumour showing smooth-muscle differentiation."
+      }
+    },
+    {
+      "number": 27,
+      "question_id": "bps-2021-q027",
+      "type": "single_choice",
+      "question": "A 50-year-old male with a history of smoking is found to have a squamous cell carcinoma of the lung. On routine biochemical examination his serum calcium is elevated. Which of the following properties of the malignant cells is MOST likely to explain this biochemical finding?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Inhibition of factors that stimulate breakdown of bone"
+        },
+        {
+          "key": "B",
+          "text": "Production of increased amounts of calcitonin"
+        },
+        {
+          "key": "C",
+          "text": "Production of increased amounts of parathyroid hormone-related protein"
+        },
+        {
+          "key": "D",
+          "text": "Secretion of factors that block the effects of calcitonin"
+        },
+        {
+          "key": "E",
+          "text": "Spread from the lung causing osteoblastic metastases"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Squamous lung carcinomas can cause humoral hypercalcaemia via PTH-related peptide."
+      }
+    },
+    {
+      "number": 28,
+      "question_id": "bps-2021-q028",
+      "type": "single_choice",
+      "question": "A 12-year-old male has an intellectual disability, although he can feed and dress himself. He has oblique palpebral fissures with prominent epicanthal folds, a transverse palmar crease on each hand, and a systolic murmur. Which of the following conditions is he MOST likely to develop by age 20?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Acute leukaemia"
+        },
+        {
+          "key": "B",
+          "text": "Acute myocardial infarction"
+        },
+        {
+          "key": "C",
+          "text": "Aortic dissection"
+        },
+        {
+          "key": "D",
+          "text": "Chronic renal failure"
+        },
+        {
+          "key": "E",
+          "text": "Macro-orchidism"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Down syndrome markedly increases the risk of acute leukaemia in childhood."
+      }
+    },
+    {
+      "number": 29,
+      "question_id": "bps-2021-q029",
+      "type": "single_choice",
+      "question": "Which of the following neoplasms is associated with history of Epstein-Barr virus infection?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Endometrial carcinoma"
+        },
+        {
+          "key": "B",
+          "text": "Kaposi sarcoma"
+        },
+        {
+          "key": "C",
+          "text": "Myeloid sarcoma"
+        },
+        {
+          "key": "D",
+          "text": "Nasopharyngeal carcinoma"
+        },
+        {
+          "key": "E",
+          "text": "Osteosarcoma"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "EBV is strongly associated with nasopharyngeal carcinoma."
+      }
+    },
+    {
+      "number": 30,
+      "question_id": "bps-2021-q030",
+      "type": "single_choice",
+      "question": "A 37-year-old man stepped on broken glass and sustained a 2 cm laceration. Which of the following molecules activates both the coagulation sequence and the kinin system on contact with an injured vascular basement membrane and a deficiency may contribute to thrombosis?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Factor XI"
+        },
+        {
+          "key": "B",
+          "text": "Factor XII"
+        },
+        {
+          "key": "C",
+          "text": "Plasmin"
+        },
+        {
+          "key": "D",
+          "text": "Platelet activating factor"
+        },
+        {
+          "key": "E",
+          "text": "Thromboxane"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Factor XII initiates contact activation, linking intrinsic coagulation with the kinin system."
+      }
+    },
+    {
+      "number": 31,
+      "question_id": "bps-2021-q031",
+      "type": "single_choice",
+      "question": "Computer generated random numbers may be used in clinical trials which compare different treatments in consenting participants. Which of the following statements is the most correct?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Consenting before randomisation leads to a form of selection bias"
+        },
+        {
+          "key": "B",
+          "text": "Random allocation using random numbers ensures that the assessors are blinded to the treatments"
+        },
+        {
+          "key": "C",
+          "text": "Random allocation using random numbers creates groups of subjects that are similar except the treatment they receive"
+        },
+        {
+          "key": "D",
+          "text": "Subjects will receive both treatments one after another"
+        },
+        {
+          "key": "E",
+          "text": "There is a high risk of confounding bias"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Random allocation is intended to make comparison groups similar apart from treatment assignment."
+      }
+    },
+    {
+      "number": 32,
+      "question_id": "bps-2021-q032",
+      "type": "single_choice",
+      "question": "In an individual with cystic fibrosis, the viscous mucus secretions in the lungs lead to the development of which of the following conditions?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Bronchiectasis"
+        },
+        {
+          "key": "B",
+          "text": "Chronic bronchitis"
+        },
+        {
+          "key": "C",
+          "text": "Emphysema"
+        },
+        {
+          "key": "D",
+          "text": "Interstitial pneumonia"
+        },
+        {
+          "key": "E",
+          "text": "Pulmonary fibrosis"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Thick secretions and recurrent infection in cystic fibrosis lead to bronchial dilation."
+      }
+    },
+    {
+      "number": 33,
+      "question_id": "bps-2021-q033",
+      "type": "single_choice",
+      "question": "A 20-year-old female presents to her general practitioner complaining of a 1 cm nodule which arose in her ear following piercing 3 months ago. On examination there is a firm raised nodule palpated. If this nodule is removed and sent for pathology examination, which of the following histological features will MOST likely be seen?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Desmoid tumour"
+        },
+        {
+          "key": "B",
+          "text": "Excess collagen formation"
+        },
+        {
+          "key": "C",
+          "text": "Granulation tissue formation"
+        },
+        {
+          "key": "D",
+          "text": "Lymphoid aggregate formation"
+        },
+        {
+          "key": "E",
+          "text": "Vascular congestion with increased numbers of neutrophils"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "A firm raised nodule after piercing is most consistent with a keloid, due to excess collagen."
+      }
+    },
+    {
+      "number": 34,
+      "question_id": "bps-2021-q034",
+      "type": "single_choice",
+      "question": "Fetal hydrops refers to the accumulation of oedema fluid in the fetus during intrauterine growth. The MOST common cause of nonimmune hydrops worldwide is considered to be which of the following?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Congenital heart malformations"
+        },
+        {
+          "key": "B",
+          "text": "Homozygous α-thalassemia"
+        },
+        {
+          "key": "C",
+          "text": "Maternal Rh isoimmunization"
+        },
+        {
+          "key": "D",
+          "text": "Trisomy 21"
+        },
+        {
+          "key": "E",
+          "text": "Turner syndrome"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Worldwide teaching commonly highlights Hb Bart hydrops from homozygous alpha-thalassaemia as a major nonimmune cause."
+      }
+    },
+    {
+      "number": 35,
+      "question_id": "bps-2021-q035",
+      "type": "single_choice",
+      "question": "It is estimated that chronic alcohol consumption is responsible for more than 6,000 deaths annually in Australia. Chronic alcoholics develop fatty liver because of a deficiency of nicotinamide adenine dinucleotide (NAD). Which of the following enzymes is responsible for producing this deficiency?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Acetaldehyde dehydrogenase (ALDH)"
+        },
+        {
+          "key": "B",
+          "text": "Alcohol dehydrogenase (ADH)"
+        },
+        {
+          "key": "C",
+          "text": "Catalase"
+        },
+        {
+          "key": "D",
+          "text": "Cytochrome P-450 isoenzyme"
+        },
+        {
+          "key": "E",
+          "text": "Cytochrome P450 2E1 (CYP2E1)"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Alcohol dehydrogenase converts ethanol to acetaldehyde while consuming NAD+, raising the NADH/NAD+ ratio."
+      }
+    },
+    {
+      "number": 36,
+      "question_id": "bps-2021-q036",
+      "type": "single_choice",
+      "question": "A 35-year-old male presented for investigation of infertility and mentioned that he had mumps as a child. If a biopsy of the testis is performed as part of the work up for his infertility, which of the following changes is MOST likely present in the interstitium?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Fibrosis"
+        },
+        {
+          "key": "B",
+          "text": "Granulomatous inflammation"
+        },
+        {
+          "key": "C",
+          "text": "Increased Sertoli cells"
+        },
+        {
+          "key": "D",
+          "text": "Lymphocytic infiltration"
+        },
+        {
+          "key": "E",
+          "text": "Monocytic infiltration"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "Mumps orchitis characteristically produces interstitial lymphocytic inflammation with later atrophy."
+      }
+    },
+    {
+      "number": 37,
+      "question_id": "bps-2021-q037",
+      "type": "single_choice",
+      "question": "Whether the lesion is in the skin, lungs, bones, or heart valves, Staphylococcus aureus causes inflammation that is distinctive for which of the following features?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Growth of organisms in pairs or chains"
+        },
+        {
+          "key": "B",
+          "text": "High density of neutrophils"
+        },
+        {
+          "key": "C",
+          "text": "Lack of angiogenesis"
+        },
+        {
+          "key": "D",
+          "text": "Local destruction of host tissue"
+        },
+        {
+          "key": "E",
+          "text": "Well-demarcated necrotic oval lesions"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Staphylococcal infection is typically pyogenic, with dense neutrophilic inflammation and abscess formation."
+      }
+    },
+    {
+      "number": 38,
+      "question_id": "bps-2021-q038",
+      "type": "single_choice",
+      "question": "Which of the following malignancies is caused by the deletion of a tumour suppressor gene?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Burkitt lymphoma"
+        },
+        {
+          "key": "B",
+          "text": "Chondrosarcoma"
+        },
+        {
+          "key": "C",
+          "text": "Chronic myeloid leukaemia"
+        },
+        {
+          "key": "D",
+          "text": "Hepatocellular carcinoma"
+        },
+        {
+          "key": "E",
+          "text": "Retinoblastoma"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "E",
+        "reason": "Retinoblastoma follows loss of both RB tumour-suppressor alleles."
+      }
+    },
+    {
+      "number": 39,
+      "question_id": "bps-2021-q039",
+      "type": "single_choice",
+      "question": "A 55-year-old female presents with progressive interstitial and perivascular fibrosis in the skin and multiple organs, including the lungs, and widespread damage to small blood vessels. She is MOST likely to have which of the following conditions?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "IgG4-related disease"
+        },
+        {
+          "key": "B",
+          "text": "Polyarteritis nodosa"
+        },
+        {
+          "key": "C",
+          "text": "Rheumatoid arthritis"
+        },
+        {
+          "key": "D",
+          "text": "Sjögren syndrome"
+        },
+        {
+          "key": "E",
+          "text": "Systemic sclerosis"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "E",
+        "reason": "Diffuse fibrosis with small-vessel injury across skin and organs is characteristic of systemic sclerosis."
+      }
+    },
+    {
+      "number": 40,
+      "question_id": "bps-2021-q040",
+      "type": "single_choice",
+      "question": "In an individual with a lysosomal storage disease, which part of the cell do lysosomal enzymes pinch off to fuse with the lysosome?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Endosome"
+        },
+        {
+          "key": "B",
+          "text": "Golgi"
+        },
+        {
+          "key": "C",
+          "text": "Mitochondria"
+        },
+        {
+          "key": "D",
+          "text": "Rough endoplasmic reticulum"
+        },
+        {
+          "key": "E",
+          "text": "Smooth endoplasmic reticulum"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Lysosomal enzymes are tagged and packaged in vesicles that bud from the Golgi apparatus."
+      }
+    },
+    {
+      "number": 41,
+      "question_id": "bps-2021-q041",
+      "type": "single_choice",
+      "question": "Which of the following types of necrosis would be MOST likely to be associated with the obstruction of arterial blood supply?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Caseous necrosis"
+        },
+        {
+          "key": "B",
+          "text": "Coagulative necrosis"
+        },
+        {
+          "key": "C",
+          "text": "Fat necrosis"
+        },
+        {
+          "key": "D",
+          "text": "Fibrinoid necrosis"
+        },
+        {
+          "key": "E",
+          "text": "Liquefactive necrosis"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Ischaemic infarction from arterial occlusion usually produces coagulative necrosis outside the brain."
+      }
+    },
+    {
+      "number": 42,
+      "question_id": "bps-2021-q042",
+      "type": "single_choice",
+      "question": "A 65-year-old female is hospitalized with endocarditis. Her condition had been stable while on IV antibiotics but she now has a decrease in her platelet count from 161 x 10^9/L on day 7 to 60 x 10^9/L on day 9. She has been on low molecular weight heparin since her admission. What is the MOST likely mechanism for the laboratory abnormality?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Acquired von Willebrand disease"
+        },
+        {
+          "key": "B",
+          "text": "Antibodies to heparin and platelet factor 4"
+        },
+        {
+          "key": "C",
+          "text": "Antiphospholipid antibody formation"
+        },
+        {
+          "key": "D",
+          "text": "Autoantibodies to antithrombin III"
+        },
+        {
+          "key": "E",
+          "text": "Factor V Leiden deficiency"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "The timing and thrombocytopenia after heparin fit immune HIT caused by anti-PF4/heparin antibodies."
+      }
+    },
+    {
+      "number": 43,
+      "question_id": "bps-2021-q043",
+      "type": "single_choice",
+      "question": "Recent studies have found individuals with rheumatoid arthritis and osteoarthritis have increased levels of metalloproteinase in their synovial fluid. What is the MOST likely role of metalloproteinase in these two conditions?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Chondrocyte necrosis"
+        },
+        {
+          "key": "B",
+          "text": "Degradation of collagens"
+        },
+        {
+          "key": "C",
+          "text": "Reduce protease production"
+        },
+        {
+          "key": "D",
+          "text": "Stimulation of synovial cell production leading to hyperplasia"
+        },
+        {
+          "key": "E",
+          "text": "Stimulation of vascular endothelial growth factor (VEGF)"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Matrix metalloproteinases degrade extracellular matrix, especially collagen in cartilage and synovium."
+      }
+    },
+    {
+      "number": 44,
+      "question_id": "bps-2021-q044",
+      "type": "single_choice",
+      "question": "You read in a journal of a new antibody for the detection of mesothelioma in the blood. The authors state that the new antibody detects tumour cells in 43% of cases, when the old technique detects tumour cells in 38% of cases. The article states that p > 0.05. What does this p-value mean?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The findings of a difference between the two antibodies are significant"
+        },
+        {
+          "key": "B",
+          "text": "The probability is greater than 1 in 20 that the difference in results between the old and new antibody occurred by chance alone"
+        },
+        {
+          "key": "C",
+          "text": "The probability is greater than 95% that the study is accurate"
+        },
+        {
+          "key": "D",
+          "text": "The probability that the experiment would produce the same result if performed again is less than 95%"
+        },
+        {
+          "key": "E",
+          "text": "There is an overlap of 5% between the old and the new antibody"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "A p value above 0.05 means the observed difference could plausibly be due to chance at more than the 5% threshold."
+      }
+    },
+    {
+      "number": 45,
+      "question_id": "bps-2021-q045",
+      "type": "single_choice",
+      "question": "A 20-year-old female with cystic fibrosis develops fever, shortness of breath and respiratory distress. Despite treatment she dies, and at autopsy there is a necrotising pneumonia present affecting the terminal airways characterised by a pale necrotic centre and haemorrhage in the periphery. Culture of this area shows Gram negative bacilli. Which of the following bacteria is MOST likely the cause of the infection?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Escherichia coli"
+        },
+        {
+          "key": "B",
+          "text": "Klebsiella pneumoniae"
+        },
+        {
+          "key": "C",
+          "text": "Pseudomonas aeruginosa"
+        },
+        {
+          "key": "D",
+          "text": "Streptococcus pneumoniae"
+        },
+        {
+          "key": "E",
+          "text": "Streptococcus pyogenes"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Cystic fibrosis predisposes to necrotising Gram-negative pneumonia from Pseudomonas."
+      }
+    },
+    {
+      "number": 46,
+      "question_id": "bps-2021-q046",
+      "type": "single_choice",
+      "question": "The faecal occult blood (FOB) screening test is used in 203 people to look for bowel cancer. The results are shown in the table: True Positive = 2, False Positive = 18, False Negative = 1, True Negative = 182. The sensitivity of the test to the nearest percent is:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "10%"
+        },
+        {
+          "key": "B",
+          "text": "33%"
+        },
+        {
+          "key": "C",
+          "text": "67%"
+        },
+        {
+          "key": "D",
+          "text": "91%"
+        },
+        {
+          "key": "E",
+          "text": "99%"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Sensitivity is TP/(TP+FN)=2/(2+1)=67% to the nearest percent."
+      }
+    },
+    {
+      "number": 47,
+      "question_id": "bps-2021-q047",
+      "type": "single_choice",
+      "question": "An individual with end stage renal failure is found to have defective platelet function. Though no cause is found for this defective function, which of the following clinical haemorrhagic abnormalities is the person MOST likely to have?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Haemarthrosis"
+        },
+        {
+          "key": "B",
+          "text": "Haematoma"
+        },
+        {
+          "key": "C",
+          "text": "Multiple ecchymoses"
+        },
+        {
+          "key": "D",
+          "text": "Multiple petechiae"
+        },
+        {
+          "key": "E",
+          "text": "Solitary ecchymoses"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "Platelet dysfunction causes mucocutaneous bleeding, especially petechiae."
+      }
+    },
+    {
+      "number": 48,
+      "question_id": "bps-2021-q048",
+      "type": "single_choice",
+      "question": "Which of the following is the main mechanism by which Human Immunodeficiency Virus (HIV) is able to evade the host's immune response?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Blocking host production of complement"
+        },
+        {
+          "key": "B",
+          "text": "Genetic variation in the surface antigens, preventing recognition by the host's immune defences"
+        },
+        {
+          "key": "C",
+          "text": "Resistance to cationic antimicrobial peptides secreted by host neutrophils"
+        },
+        {
+          "key": "D",
+          "text": "Surface antigens that are shielded by a carbohydrate capsule, preventing recognition and phagocytosis of the organisms by host neutrophils"
+        },
+        {
+          "key": "E",
+          "text": "Secretion of proteases that degrade antibodies"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "HIV immune evasion is driven largely by rapid mutation and antigenic variation of envelope proteins."
+      }
+    },
+    {
+      "number": 49,
+      "question_id": "bps-2021-q049",
+      "type": "single_choice",
+      "question": "Which of the following sites of the body is regarded as an adult stem cell 'niche'?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "The bulge region of hair follicles"
+        },
+        {
+          "key": "B",
+          "text": "The cerebellar vermis"
+        },
+        {
+          "key": "C",
+          "text": "The ovarian stroma"
+        },
+        {
+          "key": "D",
+          "text": "The Peyer's patches of the small intestine"
+        },
+        {
+          "key": "E",
+          "text": "The thymic medulla"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "The hair-follicle bulge is a recognised adult stem-cell niche."
+      }
+    },
+    {
+      "number": 50,
+      "question_id": "bps-2021-q050",
+      "type": "single_choice",
+      "question": "Which of the following substances or compounds functions as an opsonin to enhance phagocytosis?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Complement component 5b (C5b)"
+        },
+        {
+          "key": "B",
+          "text": "Fibrinogen"
+        },
+        {
+          "key": "C",
+          "text": "Immunoglobulin G"
+        },
+        {
+          "key": "D",
+          "text": "P selectin"
+        },
+        {
+          "key": "E",
+          "text": "Siglec-2"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "IgG opsonises microbes by binding Fc receptors on phagocytes."
+      }
+    },
+    {
+      "number": 51,
+      "question_id": "bps-2021-q051",
+      "type": "single_choice",
+      "question": "Which of the following is one of the postulated roles of oxidised LDL in atherosclerosis?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Endothelial cell dysfunction"
+        },
+        {
+          "key": "B",
+          "text": "Formation of C-reactive protein"
+        },
+        {
+          "key": "C",
+          "text": "Macrophage inactivation"
+        },
+        {
+          "key": "D",
+          "text": "Reduced activity of metalloproteinases"
+        },
+        {
+          "key": "E",
+          "text": "Release of platelet-derived growth factor"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Oxidised LDL promotes endothelial dysfunction and inflammatory recruitment in atherogenesis."
+      }
+    },
+    {
+      "number": 52,
+      "question_id": "bps-2021-q052",
+      "type": "single_choice",
+      "question": "Which of the following disorders is MOST likely to be accompanied by an increase in amyloid-associated (AA) protein?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Alzheimer's disease"
+        },
+        {
+          "key": "B",
+          "text": "Long-term haemodialysis"
+        },
+        {
+          "key": "C",
+          "text": "Renal tubular dysfunction"
+        },
+        {
+          "key": "D",
+          "text": "Rheumatoid arthritis"
+        },
+        {
+          "key": "E",
+          "text": "Senile cardiac amyloidosis"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "AA amyloid derives from serum amyloid A, which rises in chronic inflammatory diseases such as rheumatoid arthritis."
+      }
+    },
+    {
+      "number": 53,
+      "question_id": "bps-2021-q053",
+      "type": "single_choice",
+      "question": "A 25-year-old female develops acute shortness of breath, cyanosis and shock 20 minutes after delivery of a baby, and despite intensive resuscitation dies. Which of the following features would MOST likely be seen at autopsy in the respiratory system?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Alveolar oedema with haemosiderophages"
+        },
+        {
+          "key": "B",
+          "text": "Diffuse alveolar damage"
+        },
+        {
+          "key": "C",
+          "text": "Pulmonary vessels filled with fetal squamous cells"
+        },
+        {
+          "key": "D",
+          "text": "Saddle thromboembolism in pulmonary vein"
+        },
+        {
+          "key": "E",
+          "text": "Wedge-shaped infarct in lung"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Acute collapse after delivery suggests amniotic fluid embolism, with fetal squames in pulmonary vessels."
+      }
+    },
+    {
+      "number": 54,
+      "question_id": "bps-2021-q054",
+      "type": "single_choice",
+      "question": "A 35-year-old man is diagnosed with right-sided colorectal adenocarcinoma. His father, paternal uncle and grandfather were all diagnosed with early onset colorectal adenocarcinoma and his mother with endometrial carcinoma. Which of the following groups of genes are the MOST likely to contain the gene that is mutated in this man's family?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Cyclin Dependent Kinase Inhibitor 2A (CDKN2A) genes"
+        },
+        {
+          "key": "B",
+          "text": "Fibroblast growth factor receptor (FGFR) genes"
+        },
+        {
+          "key": "C",
+          "text": "Mismatch repair (MMR) genes"
+        },
+        {
+          "key": "D",
+          "text": "Nucleotide excision repair (NER) genes"
+        },
+        {
+          "key": "E",
+          "text": "Ras signalling pathway genes"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Early right-sided colon cancer with endometrial cancer in the family suggests Lynch syndrome from MMR defects."
+      }
+    },
+    {
+      "number": 55,
+      "question_id": "bps-2021-q055",
+      "type": "single_choice",
+      "question": "It has been found that individuals with calorie restriction have increased longevity by increasing which of the following proteins or enzymes?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Insulin"
+        },
+        {
+          "key": "B",
+          "text": "Mechanistic target of rapamycin (m-TOR)"
+        },
+        {
+          "key": "C",
+          "text": "Protein kinase B (AKT)"
+        },
+        {
+          "key": "D",
+          "text": "Sirtuin"
+        },
+        {
+          "key": "E",
+          "text": "Telomerase"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "Calorie restriction is linked to longevity pathways involving increased sirtuin activity."
+      }
+    },
+    {
+      "number": 56,
+      "question_id": "bps-2021-q056",
+      "type": "single_choice",
+      "question": "Workers exposed to large quantities of organic solvents such as benzene are MOST likely to develop which of the following conditions?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Acute myeloid leukaemia"
+        },
+        {
+          "key": "B",
+          "text": "Bladder cancer"
+        },
+        {
+          "key": "C",
+          "text": "Chloracne"
+        },
+        {
+          "key": "D",
+          "text": "Peripheral neuropathy"
+        },
+        {
+          "key": "E",
+          "text": "Proximal tubular damage"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Benzene exposure is classically associated with bone-marrow toxicity and acute myeloid leukaemia."
+      }
+    },
+    {
+      "number": 57,
+      "question_id": "bps-2021-q057",
+      "type": "single_choice",
+      "question": "Atherosclerosis is a chronic condition endemic in Western societies. Which of the following is MOST characteristic of early atherosclerotic lesions?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "They cause intimal thinning and weakness"
+        },
+        {
+          "key": "B",
+          "text": "They contain macrophages and T cells"
+        },
+        {
+          "key": "C",
+          "text": "They lack type I collagen and fibroblasts"
+        },
+        {
+          "key": "D",
+          "text": "They typically are circumferential"
+        },
+        {
+          "key": "E",
+          "text": "They usually involve the retinal artery"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Early fatty streaks contain lipid-laden macrophages and inflammatory T cells."
+      }
+    },
+    {
+      "number": 58,
+      "question_id": "bps-2021-q058",
+      "type": "single_choice",
+      "question": "A distinction between polyclonal (non-neoplastic) T cell proliferation and monoclonal (neoplastic) T cell proliferation can be made by analysis of certain T cell genes. Which of the following components of this cell is the MOST variable?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "CD3 complex"
+        },
+        {
+          "key": "B",
+          "text": "CD4"
+        },
+        {
+          "key": "C",
+          "text": "CD28"
+        },
+        {
+          "key": "D",
+          "text": "Class II MHC α chain"
+        },
+        {
+          "key": "E",
+          "text": "TCR-α"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "E",
+        "reason": "T-cell clonality is assessed through rearranged T-cell receptor genes, especially variable receptor regions."
+      }
+    },
+    {
+      "number": 59,
+      "question_id": "bps-2021-q059",
+      "type": "single_choice",
+      "question": "Which of the following intracellular organelles is involved in very long chain fatty acid metabolism, and is abnormal in Zellweger syndrome?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Golgi apparatus"
+        },
+        {
+          "key": "B",
+          "text": "Lysosomes"
+        },
+        {
+          "key": "C",
+          "text": "Peroxisomes"
+        },
+        {
+          "key": "D",
+          "text": "Proteasomes"
+        },
+        {
+          "key": "E",
+          "text": "Rough endoplasmic reticulum"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Peroxisomes metabolise very-long-chain fatty acids and are defective in Zellweger syndrome."
+      }
+    },
+    {
+      "number": 60,
+      "question_id": "bps-2021-q060",
+      "type": "single_choice",
+      "question": "A 35-year-old male with a past history of asthma presents to the Accident and Emergency department complaining of a 2-week history of shortness of breath. He works in a factory that has been recently built to produce ozone generators. Which of the following cells of the respiratory system has MOST likely been damaged?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Alveolar endothelial cells"
+        },
+        {
+          "key": "B",
+          "text": "Nasal mucus producing cells"
+        },
+        {
+          "key": "C",
+          "text": "Pulmonary macrophages"
+        },
+        {
+          "key": "D",
+          "text": "Smooth muscle cells of the bronchus"
+        },
+        {
+          "key": "E",
+          "text": "Type I pneumocytes"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "E",
+        "reason": "Ozone oxidant injury targets respiratory epithelium, including type I pneumocytes in distal airspaces."
+      }
+    },
+    {
+      "number": 61,
+      "question_id": "bps-2021-q061",
+      "type": "single_choice",
+      "question": "Laboratory studies are done on a 70-year-old male who is admitted to hospital with a diagnosis of endotoxic shock. Blood is oozing from all needle puncture sites and he has ecchymoses, petechiae and gastrointestinal bleeding. What is the MOST likely diagnosis, given the following results? Haemoglobin: 90 g/L (normal >130 g/L); Platelet count: 75 x 10^9/L (normal 150-400 x 10^9/L); Prothrombin time (PT): 20 seconds (usually 11-15 seconds); Activated partial thromboplastin time (aPTT): 50 seconds (usually 25-35 seconds); d-dimer: positive.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Autoimmune thrombocytopenia (AITP)"
+        },
+        {
+          "key": "B",
+          "text": "Circulating anticoagulant"
+        },
+        {
+          "key": "C",
+          "text": "Disseminated intravascular coagulation (DIC)"
+        },
+        {
+          "key": "D",
+          "text": "Primary fibrinolysis"
+        },
+        {
+          "key": "E",
+          "text": "Thrombotic thrombocytopenic purpura (TTP)"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Sepsis with thrombocytopenia, prolonged PT/aPTT and positive D-dimer indicates consumptive coagulopathy."
+      }
+    },
+    {
+      "number": 62,
+      "question_id": "bps-2021-q062",
+      "type": "single_choice",
+      "question": "A 25-year-old female with a known history of atopy is admitted to hospital complaining of a two-hour history of acute shortness of breath and is diagnosed with asthma. Which of the following mediators or cytokines secreted by TH2 cells acts on B cells to stimulate class switching?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Complement component 3a (C3a)"
+        },
+        {
+          "key": "B",
+          "text": "Complement component 5a (C5a)"
+        },
+        {
+          "key": "C",
+          "text": "Interferon-gamma (IFNγ)"
+        },
+        {
+          "key": "D",
+          "text": "Interleukin (IL4)"
+        },
+        {
+          "key": "E",
+          "text": "Interleukin 5 (IL5)"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "IL-4 from TH2 cells drives B-cell class switching, especially toward IgE."
+      }
+    },
+    {
+      "number": 63,
+      "question_id": "bps-2021-q063",
+      "type": "single_choice",
+      "question": "There has been an increasing role in the use of tyrosine kinase inhibitors for the management of a number of malignancies. Which of the following actions is the MOST direct role of tyrosine kinases in the signal transduction pathway?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Activation of G-protein coupled receptors"
+        },
+        {
+          "key": "B",
+          "text": "Conversion of adenosine triphosphate (ATP) to cyclic adenosine monophosphate (cAMP)"
+        },
+        {
+          "key": "C",
+          "text": "Inhibition of RAS oncoprotein"
+        },
+        {
+          "key": "D",
+          "text": "Phosphorylation of target molecules"
+        },
+        {
+          "key": "E",
+          "text": "Stimulate Notch receptors"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "Tyrosine kinases transmit signals by phosphorylating tyrosine residues on target proteins."
+      }
+    },
+    {
+      "number": 64,
+      "question_id": "bps-2021-q064",
+      "type": "single_choice",
+      "question": "Which of the following tumours has been documented to have the BRAF V600E mutation but the response is often transient to BRAF inhibition?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Acute myeloid leukaemia"
+        },
+        {
+          "key": "B",
+          "text": "Colonic adenocarcinoma"
+        },
+        {
+          "key": "C",
+          "text": "Malignant melanoma"
+        },
+        {
+          "key": "D",
+          "text": "Medullary carcinoma of the thyroid"
+        },
+        {
+          "key": "E",
+          "text": "Squamous cell carcinoma of the lung"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "BRAF V600E colorectal cancer often shows poor or transient response to BRAF inhibition because of feedback pathway activation."
+      }
+    },
+    {
+      "number": 65,
+      "question_id": "bps-2021-q065",
+      "type": "single_choice",
+      "question": "Many diseases result in alterations of apoptosis including individuals with Alzheimer's disease. Which of the following enzymes or proteins is activated in apoptosis?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "B cell lymphoma 2 (Bcl-2)"
+        },
+        {
+          "key": "B",
+          "text": "B cell lymphoma extra large (Bcl-xL)"
+        },
+        {
+          "key": "C",
+          "text": "Caspase"
+        },
+        {
+          "key": "D",
+          "text": "Interleukin 1"
+        },
+        {
+          "key": "E",
+          "text": "Tumour necrosis factor alpha (TNF α)"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Execution of apoptosis depends on activation of caspases."
+      }
+    },
+    {
+      "number": 66,
+      "question_id": "bps-2021-q066",
+      "type": "single_choice",
+      "question": "In the vascular type of Ehlers-Danlos syndrome, which of the following protein defects is MOST likely affected?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Collagen I"
+        },
+        {
+          "key": "B",
+          "text": "Collagen II"
+        },
+        {
+          "key": "C",
+          "text": "Collagen III"
+        },
+        {
+          "key": "D",
+          "text": "Elastin"
+        },
+        {
+          "key": "E",
+          "text": "Fibrillin"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "The vascular form of Ehlers-Danlos syndrome is caused by type III collagen defects."
+      }
+    },
+    {
+      "number": 67,
+      "question_id": "bps-2021-q067",
+      "type": "single_choice",
+      "question": "Excessive chronic arsenic ingestion is MOST likely to predispose to the development of which of the following conditions?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Adenocarcinoma of the nose"
+        },
+        {
+          "key": "B",
+          "text": "Kaposi sarcoma"
+        },
+        {
+          "key": "C",
+          "text": "Mesothelioma"
+        },
+        {
+          "key": "D",
+          "text": "Myelodysplastic syndrome"
+        },
+        {
+          "key": "E",
+          "text": "Squamous cell carcinoma of the skin"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "E",
+        "reason": "Chronic arsenic exposure predisposes to hyperkeratosis and cutaneous squamous carcinoma."
+      }
+    },
+    {
+      "number": 68,
+      "question_id": "bps-2021-q068",
+      "type": "single_choice",
+      "question": "Which of the following chemicals or factors will diminish cytochrome P450 activity?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Alcohol"
+        },
+        {
+          "key": "B",
+          "text": "Copy number variants"
+        },
+        {
+          "key": "C",
+          "text": "Smoking"
+        },
+        {
+          "key": "D",
+          "text": "Starvation"
+        },
+        {
+          "key": "E",
+          "text": "Steroid hormones"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "Starvation or fasting can decrease cytochrome P450 activity, whereas alcohol and smoking commonly induce it."
+      }
+    },
+    {
+      "number": 69,
+      "question_id": "bps-2021-q069",
+      "type": "single_choice",
+      "question": "Many cell types participate in innate immunity. Which of the following cells capture protein antigens and display peptides for recognition by T lymphocytes?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Dendritic cells"
+        },
+        {
+          "key": "B",
+          "text": "Eosinophil"
+        },
+        {
+          "key": "C",
+          "text": "Natural killer cells"
+        },
+        {
+          "key": "D",
+          "text": "Neutrophils"
+        },
+        {
+          "key": "E",
+          "text": "Plasma cells"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Dendritic cells capture protein antigens and present peptides to T cells."
+      }
+    },
+    {
+      "number": 70,
+      "question_id": "bps-2021-q070",
+      "type": "single_choice",
+      "question": "Which of the following infectious agents can spread from person to person because of resistance to inactivation by bile, acid and pancreatic enzymes?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Clostridium difficile"
+        },
+        {
+          "key": "B",
+          "text": "Helicobacter pylori"
+        },
+        {
+          "key": "C",
+          "text": "Norovirus"
+        },
+        {
+          "key": "D",
+          "text": "Staphylococcus aureus"
+        },
+        {
+          "key": "E",
+          "text": "Vibrio cholerae"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Norovirus remains infectious through the gastrointestinal environment, enabling efficient faecal-oral spread."
+      }
+    },
+    {
+      "number": 71,
+      "question_id": "bps-2021-q071",
+      "type": "single_choice",
+      "question": "When cells are damaged they may produce free radicals. Which of the following enzymes, or antioxidants located in the peroxisome acts as a free radical scavenger to decompose H2O2?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Catalase"
+        },
+        {
+          "key": "B",
+          "text": "Glutathione peroxidase"
+        },
+        {
+          "key": "C",
+          "text": "Superoxide dismutase"
+        },
+        {
+          "key": "D",
+          "text": "Vitamin A"
+        },
+        {
+          "key": "E",
+          "text": "Vitamin E"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Peroxisomal catalase decomposes hydrogen peroxide."
+      }
+    },
+    {
+      "number": 72,
+      "question_id": "bps-2021-q072",
+      "type": "single_choice",
+      "question": "A 5-year-old child is brought to the Accident and Emergency Department following an accidental ingestion of 3 grams of acetylsalicylic acid. The toxic effects are MOST likely due to which of the following mechanisms?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Inhibition of leukotrienes"
+        },
+        {
+          "key": "B",
+          "text": "Inhibition of prostaglandins"
+        },
+        {
+          "key": "C",
+          "text": "Platelet disaggregation"
+        },
+        {
+          "key": "D",
+          "text": "Respiratory acidosis"
+        },
+        {
+          "key": "E",
+          "text": "Uncoupling of oxidative phosphorylation"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "E",
+        "reason": "High-dose salicylate toxicity includes uncoupling oxidative phosphorylation."
+      }
+    },
+    {
+      "number": 73,
+      "question_id": "bps-2021-q073",
+      "type": "single_choice",
+      "question": "In an individual with chronic myeloid leukaemia, which of the following techniques is MOST appropriate for monitoring the frequency of genetic lesions in the blood?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Flow cytometry"
+        },
+        {
+          "key": "B",
+          "text": "Fluorescent in-situ hybridization (FISH)"
+        },
+        {
+          "key": "C",
+          "text": "Real-time polymerase chain reaction (PCR)"
+        },
+        {
+          "key": "D",
+          "text": "Sanger sequencing"
+        },
+        {
+          "key": "E",
+          "text": "Single Nucleotide Polymorphism (SNP) genotype array"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "CML molecular response is monitored quantitatively by real-time PCR for BCR-ABL1 transcripts."
+      }
+    },
+    {
+      "number": 74,
+      "question_id": "bps-2021-q074",
+      "type": "single_choice",
+      "question": "The antiviral effect of interferon in infections such as SARS-CoV-2 is triggered by which of the following pathways or receptors?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Cyclic adenosine monophosphate (cAMP) pathway"
+        },
+        {
+          "key": "B",
+          "text": "Janus kinase signal transducer and activator of transcription (JAK/STAT) pathway"
+        },
+        {
+          "key": "C",
+          "text": "Inositol trisphosphate (IP3) pathway"
+        },
+        {
+          "key": "D",
+          "text": "Nucleotide-binding and oligomerization domain (NOD)-like receptor"
+        },
+        {
+          "key": "E",
+          "text": "Retinoic acid-inducible gene (RIG)-like receptor"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Interferon receptors signal through JAK/STAT to induce antiviral genes."
+      }
+    },
+    {
+      "number": 75,
+      "question_id": "bps-2021-q075",
+      "type": "single_choice",
+      "question": "An 18-year-old Japanese student presents to the Accident and Emergency Department with a 2-day history of fever, headache and photophobia. Cerebrospinal fluid (CSF) shows Gram positive diplococci. Which of the following inherited defects has been associated with an increased rate of serious infection in this condition?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Complement component 1q (C1q)"
+        },
+        {
+          "key": "B",
+          "text": "Complement component 9 (C9)"
+        },
+        {
+          "key": "C",
+          "text": "Immunoglobulin A"
+        },
+        {
+          "key": "D",
+          "text": "Mannose binding lectin"
+        },
+        {
+          "key": "E",
+          "text": "Nicotinamide adenine dinucleotide phosphate oxidase (NAPDH) oxidase"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "The likely intended scenario is meningococcal meningitis; terminal complement deficiency, including C9, increases this risk. The stem's 'Gram positive' wording is inconsistent."
+      }
+    },
+    {
+      "number": 76,
+      "question_id": "bps-2021-q076",
+      "type": "single_choice",
+      "question": "The antithrombotic properties of endothelium inhibiting platelet function are due to which of the following components?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Endothelial protein C"
+        },
+        {
+          "key": "B",
+          "text": "Nitric oxide"
+        },
+        {
+          "key": "C",
+          "text": "Protein C"
+        },
+        {
+          "key": "D",
+          "text": "Thrombomodulin"
+        },
+        {
+          "key": "E",
+          "text": "Tissue plasminogen activator"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Endothelial nitric oxide inhibits platelet adhesion/aggregation and causes vasodilation."
+      }
+    },
+    {
+      "number": 77,
+      "question_id": "bps-2021-q077",
+      "type": "single_choice",
+      "question": "Which of the following diseases is caused by a point mutation within the coding sequence?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Cystic fibrosis"
+        },
+        {
+          "key": "B",
+          "text": "Marfan syndrome"
+        },
+        {
+          "key": "C",
+          "text": "Neurofibromatosis type 1"
+        },
+        {
+          "key": "D",
+          "text": "Phenylketonuria"
+        },
+        {
+          "key": "E",
+          "text": "Sickle cell anaemia"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "E",
+        "reason": "Sickle cell anaemia is caused by a single coding-sequence point mutation in beta-globin."
+      }
+    },
+    {
+      "number": 78,
+      "question_id": "bps-2021-q078",
+      "type": "single_choice",
+      "question": "Which of the following intermediate filaments is the MOST common component in muscle cells?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Cytokeratin"
+        },
+        {
+          "key": "B",
+          "text": "Desmin"
+        },
+        {
+          "key": "C",
+          "text": "Lamin A"
+        },
+        {
+          "key": "D",
+          "text": "Myosin"
+        },
+        {
+          "key": "E",
+          "text": "Vimentin"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Desmin is the intermediate filament characteristic of muscle cells."
+      }
+    },
+    {
+      "number": 79,
+      "question_id": "bps-2021-q079",
+      "type": "single_choice",
+      "question": "An 82-year-old male develops shock following an emergency operation for a perforated viscus. He is found to have hyperglycaemia on biochemistry profile. Which of the following mechanisms is MOST likely responsible for this finding?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Bacteria suppressing insulin release"
+        },
+        {
+          "key": "B",
+          "text": "Impaired expression of GLUT-4"
+        },
+        {
+          "key": "C",
+          "text": "Increased release of inflammatory mediators by activated neutrophils"
+        },
+        {
+          "key": "D",
+          "text": "Inflammatory mediators stimulating insulin release"
+        },
+        {
+          "key": "E",
+          "text": "Stress hormones inhibiting gluconeogenesis"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Critical illness causes insulin resistance with impaired GLUT-4-mediated glucose uptake, contributing to hyperglycaemia."
+      }
+    },
+    {
+      "number": 80,
+      "question_id": "bps-2021-q080",
+      "type": "single_choice",
+      "question": "A frail 90-year-old female with previous breast cancer is admitted to hospital with a hip fracture after falling out of bed. Her risk of pulmonary thromboembolism is MOST likely related to which of the following conditions?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Acute blood loss at the fracture site"
+        },
+        {
+          "key": "B",
+          "text": "Advanced age"
+        },
+        {
+          "key": "C",
+          "text": "Dehydration"
+        },
+        {
+          "key": "D",
+          "text": "Immobilisation"
+        },
+        {
+          "key": "E",
+          "text": "Previous breast cancer"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "Hip fracture and bed rest cause venous stasis, the key immediate risk for pulmonary embolism."
+      }
+    },
+    {
+      "number": 81,
+      "question_id": "bps-2021-q081",
+      "type": "single_choice",
+      "question": "The decreased tissue perfusion that leads to ischemia in individuals with cerebral malaria is thought to be due to which of the following mechanisms?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Binding of the parasite to sialic acid on endothelial cells"
+        },
+        {
+          "key": "B",
+          "text": "Binding to P-selectin"
+        },
+        {
+          "key": "C",
+          "text": "Endothelial sequestration"
+        },
+        {
+          "key": "D",
+          "text": "Nitric oxide formation"
+        },
+        {
+          "key": "E",
+          "text": "Red blood cell lysis"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Cerebral malaria is driven by sequestration of parasitised erythrocytes in cerebral microvasculature."
+      }
+    },
+    {
+      "number": 82,
+      "question_id": "bps-2021-q082",
+      "type": "single_choice",
+      "question": "Individuals with Prader-Willi syndrome are often obese. Which of the following hormones secreted by the gastrointestinal tract or pancreas is DECREASED in this condition?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Adiponectin"
+        },
+        {
+          "key": "B",
+          "text": "Ghrelin"
+        },
+        {
+          "key": "C",
+          "text": "Insulin"
+        },
+        {
+          "key": "D",
+          "text": "Leptin"
+        },
+        {
+          "key": "E",
+          "text": "Peptide YY"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "E",
+        "reason": "Peptide YY is an anorexigenic gut hormone; reduced post-prandial signalling contributes to hyperphagia in PWS."
+      }
+    },
+    {
+      "number": 83,
+      "question_id": "bps-2021-q083",
+      "type": "single_choice",
+      "question": "Vascular leakage is a feature of the acute inflammatory response. In which of the following conditions will this vascular leakage be delayed rather than immediate?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Exposure to bacterial toxins"
+        },
+        {
+          "key": "B",
+          "text": "Gamma irradiation"
+        },
+        {
+          "key": "C",
+          "text": "Sunburn"
+        },
+        {
+          "key": "D",
+          "text": "Thermal burns"
+        },
+        {
+          "key": "E",
+          "text": "UV radiation"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Sunburn is the classic delayed, prolonged vascular-leakage response after UV injury."
+      }
+    },
+    {
+      "number": 84,
+      "question_id": "bps-2021-q084",
+      "type": "single_choice",
+      "question": "In SARS-CoV-2 infection, corticosteroid use has been advocated. Which of the following mechanisms is MOST likely involved in steroid treatment?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Cyclooxygenase 2 enzyme inhibition"
+        },
+        {
+          "key": "B",
+          "text": "Destruction of virus infected cells"
+        },
+        {
+          "key": "C",
+          "text": "Inhibition of inflammatory lipoxins"
+        },
+        {
+          "key": "D",
+          "text": "Receptor binding to interleukin 6"
+        },
+        {
+          "key": "E",
+          "text": "Reduction of genes encoding proinflammatory cytokines"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "E",
+        "reason": "Corticosteroids suppress transcription of genes encoding proinflammatory cytokines."
+      }
+    },
+    {
+      "number": 85,
+      "question_id": "bps-2021-q085",
+      "type": "single_choice",
+      "question": "A 35-year-old man was found to have a cyst of the left maxillary lateral incisor and excision was performed. The pathology report stated that numerous Russell bodies were seen in plasma cells in the stroma of the cyst. These bodies are MOST likely an increase in what intracellular component?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Collagen"
+        },
+        {
+          "key": "B",
+          "text": "Glycogen"
+        },
+        {
+          "key": "C",
+          "text": "Intermediate filament"
+        },
+        {
+          "key": "D",
+          "text": "Lipid"
+        },
+        {
+          "key": "E",
+          "text": "Protein"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "E",
+        "reason": "Russell bodies are intracellular accumulations of immunoglobulin protein in plasma cells."
+      }
+    },
+    {
+      "number": 86,
+      "question_id": "bps-2021-q086",
+      "type": "single_choice",
+      "question": "For many years, fibronectin has been used as an indicator of impending labour and delivery, but recent meta-analyses of this test have found that its performance is too low to be clinically relevant. What is the MOST likely role of fibronectin in pregnancy?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A component of the basement membrane"
+        },
+        {
+          "key": "B",
+          "text": "An intracellular intermediate filament"
+        },
+        {
+          "key": "C",
+          "text": "An interstitial matrix protein/glycoprotein/component"
+        },
+        {
+          "key": "D",
+          "text": "A protein that gives tensile strength to connective tissue"
+        },
+        {
+          "key": "E",
+          "text": "Binding to integrin receptors to fight infection"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "Fibronectin is an extracellular matrix glycoprotein of interstitial connective tissue."
+      }
+    },
+    {
+      "number": 87,
+      "question_id": "bps-2021-q087",
+      "type": "single_choice",
+      "question": "Recent studies have shown that the cells in patients with hepatocellular carcinoma have a high level of clathrin, with activation of TGF-β. What is the MOST likely role for clathrin?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "A coating for endocytic vesicles"
+        },
+        {
+          "key": "B",
+          "text": "An intermediate filament in the cell"
+        },
+        {
+          "key": "C",
+          "text": "A protein involved in intracellular catabolism"
+        },
+        {
+          "key": "D",
+          "text": "A protein involved in receptor dimerization"
+        },
+        {
+          "key": "E",
+          "text": "A receptor binding protein"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Clathrin forms the coat of endocytic vesicles."
+      }
+    },
+    {
+      "number": 88,
+      "question_id": "bps-2021-q088",
+      "type": "single_choice",
+      "question": "Many genetic variations (polymorphisms) associated with diseases are in non-protein-coding regions of the genome. Which of the following statements is true of single nucleotide polymorphisms (SNPs)?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Causes minimal human phenotypic diversity"
+        },
+        {
+          "key": "B",
+          "text": "Consist of different numbers of small contiguous stretches of DNA"
+        },
+        {
+          "key": "C",
+          "text": "\"Neutral\" variants affect individual phenotype"
+        },
+        {
+          "key": "D",
+          "text": "Occur across the genome including within exons"
+        },
+        {
+          "key": "E",
+          "text": "Their effect on disease susceptibility is strong"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "SNPs are single-base variants that can occur throughout the genome, including exons."
+      }
+    },
+    {
+      "number": 89,
+      "question_id": "bps-2021-q089",
+      "type": "single_choice",
+      "question": "A 50-year-old female with a past history of diabetes developed rapidly progressive swelling in the skin of the abdomen 3 days after laparotomy for hysterectomy. This swelling was associated with pain, and on examination the skin appeared gangrenous. An urgent Gram stain showed Gram positive cocci growing in chains. Which of the following microorganisms is MOST likely present to cause this condition?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Corynebacterium diphtheriae"
+        },
+        {
+          "key": "B",
+          "text": "Pseudomonas aeruginosa"
+        },
+        {
+          "key": "C",
+          "text": "Staphylococcus aureus"
+        },
+        {
+          "key": "D",
+          "text": "Staphylococcus saprophyticus"
+        },
+        {
+          "key": "E",
+          "text": "Streptococcus pyogenes"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "E",
+        "reason": "Rapid necrotising soft-tissue infection with Gram-positive cocci in chains indicates group A streptococcus."
+      }
+    },
+    {
+      "number": 90,
+      "question_id": "bps-2021-q090",
+      "type": "single_choice",
+      "question": "Angiogenesis is seen in an experiment where the skin of mice is exposed to chemicals. Which of the following factors is MOST likely to influence the proliferation of endothelial cells?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Epidermal growth factor (EGF)"
+        },
+        {
+          "key": "B",
+          "text": "Fibroblast growth factor (FGF)"
+        },
+        {
+          "key": "C",
+          "text": "Platelet-derived growth factor (PDGF)"
+        },
+        {
+          "key": "D",
+          "text": "Phospholipase C-gamma (PLC G1)"
+        },
+        {
+          "key": "E",
+          "text": "Transforming growth factor beta (TGF-β)"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "FGF is a potent endothelial-cell mitogen involved in angiogenesis."
+      }
+    },
+    {
+      "number": 91,
+      "question_id": "bps-2021-q091",
+      "type": "single_choice",
+      "question": "A healthy young female cut herself while working in the kitchen. Which of the following chemical factors played a major role in cessation of bleeding?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Adenosine diphosphatase"
+        },
+        {
+          "key": "B",
+          "text": "Nitric oxide"
+        },
+        {
+          "key": "C",
+          "text": "Plasminogen"
+        },
+        {
+          "key": "D",
+          "text": "Prostacyclin"
+        },
+        {
+          "key": "E",
+          "text": "Thromboxane A2"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "E",
+        "reason": "Thromboxane A2 promotes platelet aggregation and vasoconstriction during haemostasis."
+      }
+    },
+    {
+      "number": 92,
+      "question_id": "bps-2021-q092",
+      "type": "single_choice",
+      "question": "What is the name given to a type of observational research that analyses data of variables collected at one given point in time across a sample population?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Cross-sectional study"
+        },
+        {
+          "key": "B",
+          "text": "Longitudinal study"
+        },
+        {
+          "key": "C",
+          "text": "Nested case control study"
+        },
+        {
+          "key": "D",
+          "text": "Prospective case control study"
+        },
+        {
+          "key": "E",
+          "text": "Prospective cohort study"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "A cross-sectional study measures variables in a population at a single point in time."
+      }
+    },
+    {
+      "number": 93,
+      "question_id": "bps-2021-q093",
+      "type": "single_choice",
+      "question": "Parvovirus B19 is a cause of adverse pregnancy outcome including spontaneous second trimester miscarriage and stillbirth. In which of the following cells are inclusions MOST likely to be detected?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Endothelial cells"
+        },
+        {
+          "key": "B",
+          "text": "Erythroblasts"
+        },
+        {
+          "key": "C",
+          "text": "Hepatocytes"
+        },
+        {
+          "key": "D",
+          "text": "Lymphoblasts"
+        },
+        {
+          "key": "E",
+          "text": "Monocytes"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "Parvovirus B19 infects erythroid precursors, producing inclusions in erythroblasts."
+      }
+    },
+    {
+      "number": 94,
+      "question_id": "bps-2021-q094",
+      "type": "single_choice",
+      "question": "The induction and regulation of immune responses involve multiple interactions by cell contact or secreted proteins known as cytokines. Cytokines contribute to different types of immune responses. In adaptive immune responses they are produced principally by which of the following cells?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "B cells"
+        },
+        {
+          "key": "B",
+          "text": "CD8+ T lymphocytes"
+        },
+        {
+          "key": "C",
+          "text": "CD4+ T lymphocytes"
+        },
+        {
+          "key": "D",
+          "text": "Macrophages"
+        },
+        {
+          "key": "E",
+          "text": "Plasma cells"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "C",
+        "reason": "CD4 helper T cells are the principal cytokine-producing cells in adaptive immune responses."
+      }
+    },
+    {
+      "number": 95,
+      "question_id": "bps-2021-q095",
+      "type": "single_choice",
+      "question": "It has been estimated that in about 2-3% of individuals with childhood schizophrenia there is an abnormality on chromosome 22. Which of the following is now considered the MOST appropriate and quickest test for diagnosing this disorder in developed countries?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Conventional karyotype"
+        },
+        {
+          "key": "B",
+          "text": "Fluorescence in-situ hybridization (FISH)"
+        },
+        {
+          "key": "C",
+          "text": "Immunohistochemistry"
+        },
+        {
+          "key": "D",
+          "text": "Polymerase chain reaction (PCR)"
+        },
+        {
+          "key": "E",
+          "text": "Southern Blotting"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "A 22q11 microdeletion is rapidly detected by targeted FISH among the listed options."
+      }
+    },
+    {
+      "number": 96,
+      "question_id": "bps-2021-q096",
+      "type": "single_choice",
+      "question": "A 65-year-old male presents with vasculitis involving medium sized arteries but not the aorta, capillary or veins. Granulomas are evident on histology in the wall of some vessels. He is MOST likely to have which primary form of vasculitis?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Buerger Disease"
+        },
+        {
+          "key": "B",
+          "text": "Churg-Strauss Syndrome"
+        },
+        {
+          "key": "C",
+          "text": "Granulomatosis with polyangiitis"
+        },
+        {
+          "key": "D",
+          "text": "Rheumatoid arthritis"
+        },
+        {
+          "key": "E",
+          "text": "Takayasu arteritis"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Among the listed choices, Buerger disease best matches granulomatous inflammation of small-to-medium vessels; the stem is not a perfect fit."
+      }
+    },
+    {
+      "number": 97,
+      "question_id": "bps-2021-q097",
+      "type": "single_choice",
+      "question": "Vitamin D deficiency usually leads to which of the following conditions?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Decreased production of bone matrix"
+        },
+        {
+          "key": "B",
+          "text": "Hyperostosis"
+        },
+        {
+          "key": "C",
+          "text": "Increased absorption of calcium"
+        },
+        {
+          "key": "D",
+          "text": "Increased calcium excretion in the urine"
+        },
+        {
+          "key": "E",
+          "text": "Relative excess of osteoid tissue"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "E",
+        "reason": "Vitamin D deficiency impairs mineralisation, leaving excess unmineralised osteoid."
+      }
+    },
+    {
+      "number": 98,
+      "question_id": "bps-2021-q098",
+      "type": "single_choice",
+      "question": "The predisposition in individuals with acquired immunodeficiency syndrome (AIDS) to developing malignancies such as large cell lymphoma of the brain and squamous cell carcinoma of the cervix or anus is MOST directly related to:",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Increased viral load"
+        },
+        {
+          "key": "B",
+          "text": "Predisposition to acquiring oncogenic virus infections"
+        },
+        {
+          "key": "C",
+          "text": "Reduced CD4 and macrophage responses"
+        },
+        {
+          "key": "D",
+          "text": "Reduced CD8 T lymphocyte responses"
+        },
+        {
+          "key": "E",
+          "text": "Reduced NK cell responses"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "B",
+        "reason": "AIDS-related cancers commonly reflect impaired control of oncogenic viruses such as EBV and HPV."
+      }
+    },
+    {
+      "number": 99,
+      "question_id": "bps-2021-q099",
+      "type": "single_choice",
+      "question": "Intracellular protein accumulation can have various causes. Which of the following conditions is associated with an accumulation of cytoskeletal protein in the cytoplasm?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Alcoholic liver disease"
+        },
+        {
+          "key": "B",
+          "text": "Amyloidosis"
+        },
+        {
+          "key": "C",
+          "text": "Haemochromatosis"
+        },
+        {
+          "key": "D",
+          "text": "Niemann-Pick disease"
+        },
+        {
+          "key": "E",
+          "text": "Steatosis"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "A",
+        "reason": "Alcoholic liver disease features Mallory-Denk bodies, which are cytoplasmic keratin intermediate filaments."
+      }
+    },
+    {
+      "number": 100,
+      "question_id": "bps-2021-q100",
+      "type": "single_choice",
+      "question": "Individuals with acute Epstein-Barr virus infection may have abnormal B cell activation. Which of the following mechanisms is this due to?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "c-Myc inactivation"
+        },
+        {
+          "key": "B",
+          "text": "Lysis of atypical mononuclear cells"
+        },
+        {
+          "key": "C",
+          "text": "Production of Epstein-Barr nuclear antigen 1 (EBNA1)"
+        },
+        {
+          "key": "D",
+          "text": "Production of latent membrane protein 1 (LMP1)"
+        },
+        {
+          "key": "E",
+          "text": "Translocation of the 8:14 chromosome"
+        }
+      ],
+      "answer": {
+        "correct_choice_key": "D",
+        "reason": "EBV latent membrane protein 1 mimics CD40 signalling and promotes B-cell activation."
+      }
+    }
+  ]
+}
